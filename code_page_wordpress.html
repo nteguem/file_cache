@@ -1,0 +1,30 @@
+<div align='center'style='width:100%;margin:0px auto;'>
+<div align='center' style='display:inline-block;float:left;width:50%;'>
+<button class="btn vd_btn vd_bg-blue btn-lg btn-block" onclick="document.getElementById('mywidget').style.display = 'block';document.getElementById('myfiltre').style.display='block'">
+Prendre un Rendez-Vous<br/>
+<small class="subtitle">Nous allons vous guider pour prendre un rendez-vous pas à pas</small> 
+</button> 
+</div>
+
+<div align='center' style='display:inline-block;float:left;width:50%;'>
+<button class="btn vd_btn vd_bg-blue btn-lg btn-block" onclick="document.getElementById('mywidgetcompte').style.display = 'block';document.getElementById('myfiltre').style.display='block'">
+Vous avez déjà un compte ?<br/>
+<small class="subtitle">Accédez à votre compte pour modifier vos informations</small> 
+</button> 
+</div>
+</div>
+<div id='myfiltre' style='display: none;position: fixed;top: 0%;left: 0%;width: 100%;height: 100%;background-color: #2F2F2F;z-index:10000;opacity:0.7;filter: alpha(opacity=70);' onclick="document.getElementById('mywidget').style.display='none';document.getElementById('mywidgetcompte').style.display='none';document.getElementById('myfiltre').style.display='none'"></div>
+
+<div id='mywidget' style='width: 800px;height:90%;display: none;position:fixed;top: 50%;left: 50%;padding: 0;margin: 0px auto;border: 0px;background-color: white;z-index:10001; overflow: inherit;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);'><iframe src="https://prod8.alaxione.fr/index_public.php?idc=1abcd" width="100%" height="100%" frameborder='0' ></iframe></div>
+
+<div id='mywidgetcompte' style='width: 800px;height:90%;display: none;position:fixed;top: 50%;left: 50%;padding: 0;margin: 0px auto;border: 0px;background-color: white;z-index:10001; overflow: inherit;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);'><iframe src="https://prod8.alaxione.fr/index_public_compte.php?idc=1abcd" width="100%" height="100%" frameborder='0' ></iframe></div>
+
+
+
+====================================================================================================
+OU
+
+
+<script type="text/javascript">var idc = "identifiant_structure";</script>
+<script type="text/javascript" src="http://prod.alaxione.fr/js/client.js"></script> 
+<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>

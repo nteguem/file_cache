@@ -1,0 +1,13 @@
+{
+  "require": {
+    "aranyasen/hl7": "^2.0",
+    "spipu/html2pdf": "^5.2",
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "^7.4",
+    "ext-json": "*",
+    "php-amqplib/php-amqplib": "^3.2",
+    "phpseclib/phpseclib": "^3.0",
+    "paragonie/random_compat": "^9.99",
+    "paragonie/constant_time_encoding": "^2.5"
+  }
+}

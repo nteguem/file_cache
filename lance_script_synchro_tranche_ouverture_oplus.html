@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>
+			Execution du script...
+		</p>
+		
+		<div id="response"></div>
+		<div id="after"></div>
+
+	</body>
+	<script type="text/javascript">
+		var parameters = location.search.substring(1).split("&");
+		if (parameters[0].length == 0)
+		{
+			alert("MANQUE PARAMETRE...");
+			document.getElementById("after").innerHTML = "Annulation du script";
+		}
+		else
+		{
+			document.getElementById("after").innerHTML = "TRAITEMENT EN COURS...";
+			var temp = parameters[0].split("=");
+			p1 = unescape(temp[1]);
+
+			// affichage de la reponse apres execution du script
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() 
+			{
+				if (xhttp.readyState == 4 && xhttp.status == 200) 
+				{
+					// pour afficher les echo du php (ne s'afficheront qu'à la fin de l'execution)
+					document.getElementById("response").innerHTML = xhttp.responseText;
+					document.getElementById("after").innerHTML = "Fin du script";
+				}
+			}
+			var commande = "script/script_maj_algo_planning_synchro_oplus.php?param="+p1;
+			xhttp.open("GET", commande, true);
+			xhttp.send();
+		}
+	</script>
+</html>
