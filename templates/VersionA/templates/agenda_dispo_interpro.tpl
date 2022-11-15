@@ -1,4 +1,5 @@
-<script type="text/javascript" src="js/datepicker-fr.js"></script>
+<?php $datepickerFr = filemtime(PATH_ASSETS.'js/datepicker-fr'); ?>
+<script type="text/javascript" src="js/datepicker-fr.<?php echo $datepickerFr ?>.js"></script>
 
 
 {literal}
