@@ -210,7 +210,7 @@
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5shiv.js"></script>
     <script type="text/javascript" src="js/respond.min.js"></script>
-    <![endif]-->
+    <![endif]--> 
 
 
 
