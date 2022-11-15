@@ -86,7 +86,7 @@
             border-color: #f85d2c !important;
         }
 
-        .fils_simple {
+        .fils_simple { 
             border-color: #f85d2c !important;
         }
 
