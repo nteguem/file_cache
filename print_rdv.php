@@ -420,9 +420,9 @@ if ($hasTemplate) {
 
     <!-- Head SCRIPTS -->
     <script type="text/javascript" src="js/modernizr.js"></script>
-    <?php $mobileDetectMin = filemtime(PATH_ASSETS . 'js/mobile-detect.min.js'); ?>
+    <?php $mobileDetectMin = filemtime(PATH_ASSETS . 'js/mobile-detect.min'); ?>
     <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin ?>.js"></script>
-    <?php $mobileDetectModernizr = filemtime(PATH_ASSETS . 'js/mobile-detect-modernizr.js'); ?>
+    <?php $mobileDetectModernizr = filemtime(PATH_ASSETS . 'js/mobile-detect-modernizr'); ?>
     <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectModernizr ?>.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -437,24 +437,24 @@ if ($hasTemplate) {
     <script src='plugins/fullcalendar-2.3.1/lib/jquery.min.js'></script>
 
     <!--[if lt IE 9]>
-    <?php $excanvas = filemtime(PATH_ASSETS . 'js/excanvas.js'); ?>
+    <?php $excanvas = filemtime(PATH_ASSETS . 'js/excanvas'); ?>
     <script type="text/javascript" src="js/excanvas.<?php echo $excanvas ?>.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <?php $JquerryCustomMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui/jquery-ui.custom.min.js'); ?>
+    <?php $JquerryCustomMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui/jquery-ui.custom.min'); ?>
     <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $JquerryCustomMin ?>.js'></script>
-    <?php $jQuerryTouchPunchMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); ?>
+    <?php $jQuerryTouchPunchMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min'); ?>
     <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $jQuerryTouchPunchMin ?>.js"></script>
 
     <script type="text/javascript" src="js/caroufredsel.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-    <?php $frameWorkJs = filemtime(PATH_ASSETS . 'js/framwork_js.js'); ?>
+    <?php $frameWorkJs = filemtime(PATH_ASSETS . 'js/framwork_js'); ?>
     <script type="text/javascript" src="js/framwork_js.<?php echo $frameWorkJs ?>.js"></script>
 
     <!-- Script pour l auto-completion -->
-    <?php $jQuerryAutoCompleteMin = filemtime(PATH_ASSETS . 'js/jquery.autocomplete.min.js'); ?>
+    <?php $jQuerryAutoCompleteMin = filemtime(PATH_ASSETS . 'js/jquery.autocomplete.min'); ?>
     <script type="text/javascript" src="js/jquery.autocomplete.min.<?php echo $jQuerryAutoCompleteMin ?>.js"></script>
-    <?php $breakPoint = filemtime(PATH_ASSETS . 'plugins/breakpoints/breakpoints.js'); ?>
+    <?php $breakPoint = filemtime(PATH_ASSETS . 'plugins/breakpoints/breakpoints'); ?>
     <script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breakPoint ?>.js"></script>
     <?php $jQUerryDataTableMin = filemtime(PATH_ASSETS . 'plugins/dataTables/jquery.dataTables.min'); ?>
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jQUerryDataTableMin ?>.js"></script>
