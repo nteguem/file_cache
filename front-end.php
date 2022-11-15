@@ -305,9 +305,12 @@
     </style>
 
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../../js/modernizr.js"></script> 
-    <script type="text/javascript" src="../../js/mobile-detect.min.js"></script> 
-    <script type="text/javascript" src="../../js/mobile-detect-modernizr.js"></script> 
+	<?php $modernizr_1_1 = filemtime(PATH_ASSETS.'../../js/modernizr.js'); ?>
+    <script type="text/javascript" src="../../js/modernizr.<?php echo $modernizr_1_1 ?>.js"></script> 
+	<?php $mobileDtectMin_1_1 = filemtime(PATH_ASSETS.'../../js/mobile-detect.min.js'); ?>
+	<script type="text/javascript" src="../../js/mobile-detect.min.<?php echo $mobileDtectMin_1_1 ?>.js"></script> 
+	<?php $mobileDtectModernizr = filemtime(PATH_ASSETS.'../../js/mobile-detect-modernizr.js'); ?>
+	<script type="text/javascript" src="../../js/mobile-detect-modernizr.<?php echo $mobileDtectModernizr ?>.js"></script> 
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -580,7 +583,8 @@
         		<div class="col-md-12">
 		          	<h1 class="text-center vd_blue"> Prendre un rendez-vous en ligne ? </h1>
 					<script type="text/javascript">var idc = "<?php echo $tabInfo[0]['identifiant_entite']; ?>";</script>
-					<script type="text/javascript" src="http://prod.alaxione.fr/js/client.js"></script> 
+					<?php $client_7 = filemtime(PATH_ASSETS.'http://prod.alaxione.fr/js/client.js'); ?>
+					<script type="text/javascript" src="http://prod.alaxione.fr/js/client.<?php echo $client_7 ?>.js"></script> 
       			</div>
     		</div>
   		</div>
@@ -641,37 +645,58 @@
 <!--[if lt IE 9]>
   <script type="text/javascript" src="js/excanvas.js"></script>      
 <![endif]-->
-<script type="text/javascript" src="../../js/bootstrap.min.js"></script> 
-<script type="text/javascript" src='../../plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-<script type="text/javascript" src="../../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+<?php $bootstapMin_2 = filemtime(PATH_ASSETS.'../../js/bootstrap.min.js'); ?>
+<script type="text/javascript" src="../../js/bootstrap.min.<?php echo $bootstapMin_2 ?>.js"></script> 
+<?php $jqueryUiCustomMin = filemtime(PATH_ASSETS.'../../plugins/jquery-ui/jquery-ui.custom.min.js'); ?>
+<script type="text/javascript" src='../../plugins/jquery-ui/jquery-ui.custom.min.<?php echo $jqueryUiCustomMin ?>.js'></script>
+<?php $jqueryUiTouchPunchMin = filemtime(PATH_ASSETS.'../../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); ?>
+<script type="text/javascript" src="../../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $jqueryUiTouchPunchMin ?>.js"></script>
 
-<script type="text/javascript" src="../../js/caroufredsel.js"></script> 
-<script type="text/javascript" src="../../js/plugins.js"></script>
+<?php $caroufRedSel_2 = filemtime(PATH_ASSETS.'../../js/caroufredsel.js'); ?>
+<script type="text/javascript" src="../../js/caroufredsel.<?php echo $caroufRedSel_2 ?>.js"></script> 
+<?php $plugins_2 = filemtime(PATH_ASSETS.'../../js/plugins.js'); ?>
+<script type="text/javascript" src="../../js/plugins.<?php echo $plugins_2 ?>.js"></script>
 
-<script type="text/javascript" src="../../plugins/breakpoints/breakpoints.js"></script>
-<script type="text/javascript" src="../../plugins/dataTables/jquery.dataTables.min.js"></script>
-<script type="text/javascript" src="../../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script> 
+<?php $pluginsBreackPoints_2 = filemtime(PATH_ASSETS.'../../plugins/breakpoints/breakpoints.js'); ?>
+<script type="text/javascript" src="../../plugins/breakpoints/breakpoints.<?php echo $pluginsBreackPoints_2 ?>.js"></script>
+<?php $dataTablesMin_1 = filemtime(PATH_ASSETS.'../../plugins/dataTables/jquery.dataTables.min.js'); ?>
+<script type="text/javascript" src="../../plugins/dataTables/jquery.dataTables.min.<?php echo $dataTablesMin_1 ?>.js"></script>
+<?php $prettyPhoto_1 = filemtime(PATH_ASSETS.'../../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'); ?>
+<script type="text/javascript" src="../../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $prettyPhoto_1 ?>.js"></script> 
 
-<script type="text/javascript" src="../../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="../../plugins/tagsInput/jquery.tagsinput.min.js"></script>
-<script type="text/javascript" src="../../plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-<script type="text/javascript" src="../../plugins/blockUI/jquery.blockUI.js"></script>
-<script type="text/javascript" src="../../plugins/pnotify/js/jquery.pnotify.min.js"></script>
+<?php $mCustomScrollbarConcatMin_1 = filemtime(PATH_ASSETS.'../../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'); ?>
+<script type="text/javascript" src="../../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $mCustomScrollbarConcatMin_1 ?>.js"></script>
+<?php $tagsInputMin_1 = filemtime(PATH_ASSETS.'../../plugins/tagsInput/jquery.tagsinput.min.js'); ?>
+<script type="text/javascript" src="../../plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInputMin_1 ?>.js"></script>
+<?php $bootstrapSwitchMin_1 = filemtime(PATH_ASSETS.'../../plugins/bootstrap-switch/bootstrap-switch.min.js'); ?>
+<script type="text/javascript" src="../../plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootstrapSwitchMin_1 ?>.js"></script>
+<?php $blockUi_1 = filemtime(PATH_ASSETS.'../../plugins/blockUI/jquery.blockUI.js'); ?>
+<script type="text/javascript" src="../../plugins/blockUI/jquery.blockUI.<?php echo $blockUi_1 ?>.js"></script>
+<?php $pnotifyMin_1 = filemtime(PATH_ASSETS.'../../plugins/pnotify/js/jquery.pnotify.min.js'); ?>
+<script type="text/javascript" src="../../plugins/pnotify/js/jquery.pnotify.min.<?php echo $pnotifyMin_1 ?>.js"></script>
 
-<script type="text/javascript" src="../../js/theme.js"></script>
-<script type="text/javascript" src="../../custom/custom.js"></script>
+<?php $theme_2 = filemtime(PATH_ASSETS.'../../js/theme.js'); ?>
+<script type="text/javascript" src="../../js/theme.<?php echo $theme_2 ?>.js"></script>
+<?php $custom_2 = filemtime(PATH_ASSETS.'../../custom/custom.js'); ?>
+<script type="text/javascript" src="../../custom/custom.<?php echo $custom_2 ?>.js"></script>
  
 
 
 <!-- Specific Page Scripts Put Here -->
-<script type="text/javascript" src="../../plugins/stellar/jquery.stellar.js"></script>
-<script type="text/javascript" src="../../plugins/waypoints/waypoints.min.js"></script>
-<script type="text/javascript" src="../../plugins/jquery-easing/jquery.easing.1.3.js"></script>
+<?php $jqueryStellar = filemtime(PATH_ASSETS.'../../plugins/stellar/jquery.stellar.js'); ?>
+<script type="text/javascript" src="../../plugins/stellar/jquery.stellar.<?php echo $jqueryStellar ?>.js"></script>
+<?php $wayPointsMin = filemtime(PATH_ASSETS.'../../plugins/waypoints/waypoints.min.js'); ?>
+<script type="text/javascript" src="../../plugins/waypoints/waypoints.min.<?php echo $wayPointsMin ?>.js"></script>
+<?php $jqueryEasing = filemtime(PATH_ASSETS.'../../plugins/jquery-easing/jquery.easing.1.3.js'); ?>
+<script type="text/javascript" src="../../plugins/jquery-easing/jquery.easing.1.3.<?php echo $jqueryEasing ?>.js"></script>
 
-<script src="../../plugins/layerslider/js/greensock.js" type="text/javascript"></script>
+<?php $greenSock = filemtime(PATH_ASSETS.'../../plugins/layerslider/js/greensock.js'); ?>
+<script src="../../plugins/layerslider/js/greensock.<?php echo $greenSock ?>.js" type="text/javascript"></script>
 <!-- LayerSlider script files -->
-<script src="../../plugins/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-<script src="../../plugins/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+<?php $layersliderTransitions = filemtime(PATH_ASSETS.'../../plugins/layerslider/js/layerslider.transitions.js'); ?>
+<script src="../../plugins/layerslider/js/layerslider.transitions.<?php echo $layersliderTransitions ?>.js" type="text/javascript"></script>
+<?php $layersliderKreaturamediaJquery = filemtime(PATH_ASSETS.'../../plugins/layerslider/js/layerslider.kreaturamedia.jquery.js'); ?>
+<script src="../../plugins/layerslider/js/layerslider.kreaturamedia.jquery.<?php echo $layersliderKreaturamediaJquery ?>.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
