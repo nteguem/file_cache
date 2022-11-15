@@ -305,9 +305,17 @@
     </style>
 
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../../js/modernizr.js"></script> 
+	<?php
+  $moderne = filemtime(PATH_ASSETS.'../../js/modernizr.js');
+?>
+    <script type="text/javascript" src="../../js/modernizr.<? php echo $moderne?>.js"></script> 
     <script type="text/javascript" src="../../js/mobile-detect.min.js"></script> 
-    <script type="text/javascript" src="../../js/mobile-detect-modernizr.js"></script> 
+
+	<?php
+  $mobilDetect= filemtime(PATH_ASSETS.'../../js/mobile-detect-modernizr.js');
+?>
+
+    <script type="text/javascript" src="../../js/mobile-detect-modernizr.<? php echo $js"></script> 
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
