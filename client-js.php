@@ -88,7 +88,9 @@
                                     var idc = "identifiant_structure";
                                     var alx_v = "1";
                                     </script>'); ?><br/>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                   <?php $client = filemtime('https://'.$_SERVER["SERVER_NAME"].'/js/client.js');
+?>
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client'.$client.'.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
