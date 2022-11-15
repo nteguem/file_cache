@@ -22,8 +22,7 @@
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
-<?php $select2Min = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min'); ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $select2Min ?>.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css">
 
@@ -1927,7 +1926,7 @@
                                                             <input type="text" placeholder="Téléphone mobile" name="tel_mobile_patient_prendre_rdv_calendar" autocomplete="new-password" id="tel_mobile_patient_prendre_rdv_calendar" value="" class="input-widget" />
                                                             {literal}
                                                             <script type="text/javascript">
-                                                            
+
                                                                 $(document).ready(function () {
                                                                     $("#tel_mobile_patient_prendre_rdv_calendar").intlTelInput({
                                                                         preferredCountries: ["fr", "be", "ch"],
