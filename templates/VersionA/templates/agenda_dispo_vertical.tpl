@@ -2,16 +2,28 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
 
-<script type="text/javascript" src="js/datepicker-fr.js"></script>
+<?php $datepickerFr = filemtime(PATH_ASSETS.'js/datepicker-fr'); ?>
+<script type="text/javascript" src="js/datepicker-fr.<?php echo $datepickerFr ?>.js"></script>
 
-<script type="text/javascript" src="js/liste_e7.js?{$stime}"></script>
-<script type="text/javascript" src="js/js_planning_dispo.js?{$stime}"></script>
-<script type="text/javascript" src="js/jquery.contextmenu.js"></script>
-<script type="text/javascript" src="js/bootstrap-treeview.js"></script>
-<script type="text/javascript" src="js/rechercher_code_postal.js"></script>
+<?php $liste_e7 = filemtime(PATH_ASSETS.'js/liste_e7'); ?>
+<script type="text/javascript" src="js/liste_e7.<?php echo $liste_e7 ?>.js?{$stime}"></script>
+
+<?php $jsPLanningDispo = filemtime(PATH_ASSETS.'js/js_planning_dispo'); ?>
+<script type="text/javascript" src="js/js_planning_dispo.<?php echo $jsPLanningDispo ?>.js?{$stime}"></script>
+
+<?php $jQuerryContextMenu = filemtime(PATH_ASSETS.'js/jquery.contextmenu'); ?>
+<script type="text/javascript" src="js/jquery.contextmenu.<?php echo $jQuerryContextMenu ?>.js"></script>
+
+<?php $bootstrapTreeView = filemtime(PATH_ASSETS.'js/bootstrap-treeview'); ?>
+<script type="text/javascript" src="js/bootstrap-treeview.<?php echo $bootstrapTreeView ?>.js"></script>
+
+<?php $rechercherCodePostal = filemtime(PATH_ASSETS.'js/rechercher_code_postal'); ?>
+<script type="text/javascript" src="js/rechercher_code_postal.<?php echo $rechercherCodePostal ?>.js"></script>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+<?php $select2Min = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min'); ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $select2Min ?>.js"></script>
 
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css">
 
@@ -1915,6 +1927,7 @@
                                                             <input type="text" placeholder="Téléphone mobile" name="tel_mobile_patient_prendre_rdv_calendar" autocomplete="new-password" id="tel_mobile_patient_prendre_rdv_calendar" value="" class="input-widget" />
                                                             {literal}
                                                             <script type="text/javascript">
+                                                            
                                                                 $(document).ready(function () {
                                                                     $("#tel_mobile_patient_prendre_rdv_calendar").intlTelInput({
                                                                         preferredCountries: ["fr", "be", "ch"],
