@@ -23,7 +23,11 @@ function enreg_planning(daterdv,heurerdv,heurefin,nomdocteur,iddocteur,idlieu,id
   {$sMessageSucess}
 </div>
 {/if}
-<script type="text/javascript" src="js/liste_e6.js"></script>
+  <?php
+  $listeE6 = filemtime(PATH_ASSETS.'js/liste_e6.js');
+?>
+<script type="text/javascript" src="js/liste_e6.<?php echo $listeE6 ?>.js"></script>
+
 {if $berror}
 <div class="alert alert-danger">
   <button type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="icon-cross"></i></button>
