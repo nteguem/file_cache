@@ -1,7 +1,6 @@
 <?php $liste_e5 = filemtime(PATH_ASSETS.'js/liste_e5'); ?>
 <script type="text/javascript" src="js/liste_e5.<?php echo $liste_e5 ?>.js"></script>
 
-
 {literal}
 <style type="text/css">
 .fc-time-grid .fc-slats td {
