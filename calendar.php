@@ -81,6 +81,7 @@
 
 
     <!-- Head SCRIPTS -->
+    <?php $modernizr = filemtime(PATH_ASSETS.'js/modernizr.js'); ?>
     <script type="text/javascript" src="js/modernizr.js"></script> 
     <script type="text/javascript" src="js/mobile-detect.min.js"></script> 
     <script type="text/javascript" src="js/mobile-detect-modernizr.js"></script> 
