@@ -164,7 +164,11 @@
                                             <div class="col-sm-6 controls">
                                                 {if isset($objRech.select2) and $objRech.select2 eq 'ok'}
                                                     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+                                                    <?php
+                                                    $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
+                                                    ?>
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
                                                     <div class="col-sm-12 input-group" id="id_selectmotif">
                                                         <select
                                                         id="id_form_{$objRech.nom_variable}"
