@@ -78,7 +78,7 @@
 
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-    <?php $jQuery_1 filemtime(PATH_ASSETS.'/js/jquery.js') ?>
+    <?php $jQuery_1 filemtime(PATH_ASSETS.'../js/jquery.js') ?>
 
     <script type="text/javascript" src="../js/jquery.<?php echo $jQuery_1 ?>.js"></script>
     <!--[if lt IE 9]>
@@ -108,7 +108,7 @@
     <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $ContctMin_01 ?>.js"></script>
     <?php $tagsInput_01 filemtime(PATH_ASSETS.'../plugins/tagsInput/jquery.tagsinput.min.js') ?>
     <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInput_01 ?>.js"></script>
-    <?php $bootstrapSwitchMin. filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
+    <?php $bootstrapSwitchMin filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
     <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootstrapSwitchMin ?>.js"></script>
     <?php $blockUI_01 filemtime(PATH_ASSETS.'../plugins/blockUI/jquery.blockUI.js') ?>
     <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.<?php echo $blockUI_01 ?>.js"></script>
@@ -132,7 +132,7 @@
     <!-- Head SCRIPTS -->
     <?php $modernzr_01 filemtime(PATH_ASSETS.'../js/modernizr.js') ?>
     <script type="text/javascript" src="../js/modernizr.<?php echo $modernzr_01 ?>.js"></script>
-    <?php $mobileDetectMin.filemtime(PATH_ASSETS.'../js/mobile-detect.min.js') ?>
+    <?php $mobileDetectMin filemtime(PATH_ASSETS.'../js/mobile-detect.min.js') ?>
     <script type="text/javascript" src="../js/mobile-detect.min.<?php echo $mobileDetectMin ?>.js"></script>
     <?php $mobileDetectModernizr filemtime(PATH_ASSETS.'../js/mobile-detect-modernizr.js') ?>
     <script type="text/javascript" src="../js/mobile-detect-modernizr.<?php echo $mobileDetectModernizr ?>.js"></script>
