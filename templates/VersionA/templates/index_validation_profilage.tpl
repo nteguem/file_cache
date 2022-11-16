@@ -213,7 +213,7 @@
     <?php $theme_1 = filemtime(PATH_ASSETS.'js/theme.js') ?>
 <script type="text/javascript" src="js/theme.<?php echo $theme_1 ?>.js"></script>
     <?php $customCustom_1 = filemtime(PATH_ASSETS.'custom/custom.js') ?>
-<script type="text/javascript" src="custom/custom.<?php echo $ ?>.js"></script>
+<script type="text/javascript" src="custom/custom.<?php echo $customCustom_1 ?>.js"></script>
 
 </body>
 </html>

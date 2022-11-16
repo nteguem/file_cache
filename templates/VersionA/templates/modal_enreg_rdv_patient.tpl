@@ -77,44 +77,66 @@
 
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-    <script type="text/javascript" src="js/jquery.js"></script> 
+    <?php $jQuery_9 = filemtime(PATH_ASSETS.'js/jquery.js') ?>
+<script type="text/javascript" src="js/jquery.<?php echo $jQuery_9 ?>.js"></script>
+
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/excanvas.js"></script>      
     <![endif]-->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <?php $bootstrapMin_09 = filemtime(PATH_ASSETS.'js/bootstrap.min.js') ?>
+<script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrapMin_09 ?>.js"></script>
+    <?php $customMin_09 = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
+<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMin_09 ?>.js'></script>
+    <?php $touchPunch_09 = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
+<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $touchPunch_09 ?>.js"></script>
+    <?php $caroufRed_009 = filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
+<script type="text/javascript" src="js/caroufredsel.<?php echo $caroufRed_009 ?>.js"></script>
+    <?php $plugins_09 = filemtime(PATH_ASSETS.'js/plugins.js') ?>
+<script type="text/javascript" src="js/plugins.<?php echo $plugins_09 ?>.js"></script>
+    <?php $breackPoint_09 = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js') ?>
+<script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breackPoint_09 ?>.js"></script>
+    <?php $dataTables_09 = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
+<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $dataTables_09 ?>.js"></script>
+    <?php $prettyPhoto_09 = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
+<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $prettyPhoto_09 ?>.js"></script>
+    <?php $contactMin_09 = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
+<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $contactMin_09 ?>.js"></script>
+    <?php $tagsInput_09 = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js') ?>
+<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInput_09 ?>.js"></script>
+    <?php $bootStrap_09 = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
+<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootStrap_09 ?>.js"></script>
+    <?php $blockUi_09 = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js') ?>
+<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.<?php echo $blockUi_09 ?>.js"></script>
+    <?php $pnotify_09 = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js') ?>
+<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $pnotify_09 ?>.js"></script>
 
-    <script type="text/javascript" src="js/caroufredsel.js"></script> 
-    <script type="text/javascript" src="js/plugins.js"></script>
+    <?php $theme_09 = filemtime(PATH_ASSETS.'js/theme.js') ?>
+    <script type="text/javascript" src="js/theme.<?php echo $theme_09 ?>.js"></script>
+    <?php $customCustom_09 = filemtime(PATH_ASSETS.'custom/custom.js') ?>
+    <script type="text/javascript" src="custom/custom.<?php echo $customCustom_09 ?>.js"></script>
 
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.js"></script>
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script> 
-
-    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.js"></script>
-    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.js"></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script> 
-
-    <script type="text/javascript" src="js/theme.js"></script>
-    <script type="text/javascript" src="custom/custom.js"></script>
+    <?php $maskedIput_09 = filemtime(PATH_ASSETS.'js/jquery.maskedinput.min.js') ?>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.<?php echo $maskedIput_09 ?>.js"></script> 
      
     <!-- Specific Page Scripts Put Here -->
+    <?php $wizardMin_09 = filemtime(PATH_ASSETS.'plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') ?>
+    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.<?php echo $wizardMin_09 ?>.js'></script>
 
-    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'></script>
-
-    <script type="text/javascript" src="js/datepicker-fr.js"></script>
+    <?php $frPicked_09 = filemtime(PATH_ASSETS.'js/datepicker-fr.js') ?>
+    <script type="text/javascript" src="js/datepicker-fr.<?php $frPicked_09 ?>.js"></script>
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="js/modernizr.js"></script> 
-    <script type="text/javascript" src="js/mobile-detect.min.js"></script> 
-    <script type="text/javascript" src="js/mobile-detect-modernizr.js"></script> 
+    <?php $modernizr_09 = filemtime(PATH_ASSETS.'js/modernizr.js') ?>
+    <script type="text/javascript" src="js/modernizr.<?php echo $modernizr_09 ?>.js"></script>
+        <?php $mobileDetectMin_09 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js') ?>
+<script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin_09 ?>.js"></script>
+        <?php $mobileDetectMdernizr_09 = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
+<script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdernizr_09 ?>.js"></script>09
     
-    <script type="text/javascript" src="js/compte_widget.js"></script>     
+<?php $compteWidget_09 = filemtime(PATH_ASSETS.'js/compte_widget.js') ?>
+    <script type="text/javascript" src="js/compte_widget.<?php echo $compteWidget_09 ?>.js"></script>     
    <!-- Script pour l'auto-completion -->
-    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+   <?php $autoCompleMin_09 = filemtime(PATH_ASSETS.'js/jquery.autocomplete.min.js') ?>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.<?php echo $autoCompleMin_09 ?>.js"></script>
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
