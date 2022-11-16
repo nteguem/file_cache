@@ -94,7 +94,7 @@
     <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $punchMin_001 ?>.js"></script>
     <?php $caroufred_02 filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
     <script type="text/javascript" src="js/caroufredsel.<?php echo $caroufred_02 ?>.js"></script>
-    <?php $plugins_02 filemtime(PATH_ASSETS.'/js/plugins.js') ?>
+    <?php $plugins_02 filemtime(PATH_ASSETS.'js/plugins.js') ?>
     <script type="text/javascript" src="js/plugins.<?php echo $plugins_02 ?>.js"></script>
     <?php $jqueryDataTablesMin_1 filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jqueryDataTablesMin_1 ?>.js"></script>
