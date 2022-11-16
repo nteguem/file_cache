@@ -545,7 +545,7 @@
                                             </div>
                                             {literal}
                                                 <?php
-                                                $datepicker = filemtime(PATH_ASSETS.'js/datepicker-fr.js');
+                                                $datepicker1 = filemtime(PATH_ASSETS.'js/datepicker-fr.js');
                                                 ?>
                                                 <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker ?>.js"></script>
                                                 <script type="text/javascript">
