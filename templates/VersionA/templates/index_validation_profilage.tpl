@@ -57,9 +57,9 @@
     <?php $modernizr_1 = filemtime(PATH_ASSETS.'js/modernizr.js') ?>
     <script type="text/javascript" src="js/modernizr.<?php echo $modernizr_1 ?>.js"></script>
         <?php $mobileDetectMin_1 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js') ?>
-<script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin_1 ?>.js"></script>
+        <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin_1 ?>.js"></script>
         <?php $mobileDetectMdernizr = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
-<script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdernizr ?>.js"></script>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdernizr ?>.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/html5shiv.js"></script>
