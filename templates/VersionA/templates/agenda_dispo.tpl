@@ -1,5 +1,6 @@
-<?php $liste_e5 = filemtime(PATH_ASSETS.'js/liste_e5.js'); ?>
-<script type="text/javascript" src="js/liste_e5.<?php echo $liste_e5 ?>.js"></script>
+<?php $liste = filemtime(PATH_ASSETS . 'js/liste_e5.js) ?>
+<script type="text/javascript" src="js/liste_e5.<?php echo $liste ?>.js"></script>
+
 
 {literal}
 <style type="text/css">

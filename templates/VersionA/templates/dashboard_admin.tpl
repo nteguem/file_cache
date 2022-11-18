@@ -223,19 +223,30 @@
 
 <!-- Specific Page Scripts Put Here -->
 <!-- Flot Chart  -->
-<script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.resize.js"></script>
+<?php $flotMin = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.min.<?php echo $flotMin ?>.js"></script>
+
+<?php $flotResize = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.resize.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.resize.<?php echo $flotResize ?>.js"></script>
 <script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.time.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.js"></script>
+
+<?php $flotCategories = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.categories.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.<?php echo $flotCategories ?>.js"></script>
+
+<?php $flotTime = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.time.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.time.min.<?php echo $flotTime ?>.js"></script>
+<?php $flotAnimator = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.animator.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.<?php echo $flotAnimator ?>.js"></script>
 
 <!-- Vector Map -->
-<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<?php $vectorMap = filemtime(PATH_ASSETS . 'plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') ?>
+<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.<?php echo $vectorMap ?>.js"></script>
+<?php $vectorMapWorld = filemtime(PATH_ASSETS, 'plugins/jvectormap/jquery-jvectormap-world-mill-en.js')
+<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.<?php echo $vectorMapWorld ?>.js"></script>
 
 <!-- Sky Icons -->
-<script type="text/javascript" src='plugins/skycons/skycons.js'></script>
+<?php $skycons = filemtime(PATH_ASSETS, 'plugins/skycons/skycons.js') ?>
+<script type="text/javascript" src='plugins/skycons/skycons.<?php echo $skycons ?>.js'></script>
 
 
 <script type="text/javascript">
