@@ -1,4 +1,4 @@
-<?php $dasboard = filemtime(PATH_ASSETS.'js/dasboard'); ?>
+<?php $dasboard = filemtime(PATH_ASSETS.'js/dasboard.js'); ?>
 <script type="text/javascript" src="js/dasboard.<?php echo $dasboard ?>.js"></script>
 
 
@@ -251,34 +251,34 @@
 <!-- Specific Page Scripts Put Here -->
 <!-- Flot Chart  -->
 
-<?php $jQuerryFlotMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.min'); ?>
+<?php $jQuerryFlotMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.min.js'); ?>
 <script type="text/javascript" src="plugins/flot/jquery.flot.min.<?php echo $jQuerryFlotMin ?>.js"></script>
 
-<?php $jQuerryFlotResize = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.resize'); ?>
+<?php $jQuerryFlotResize = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.resize.js'); ?>
 <script type="text/javascript" src="plugins/flot/jquery.flot.resize.<?php echo $jQuerryFlotResize ?>.js"></script>
 
-<?php $jQuerryFlotPieMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.pie.min'); ?>
+<?php $jQuerryFlotPieMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.pie.min.js'); ?>
 <script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.<?php echo $jQuerryFlotPieMin ?>.js"></script>
 
-<?php $jQuerryFlotCategoriesMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.categories.min'); ?>
+<?php $jQuerryFlotCategoriesMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.categories.min.js'); ?>
 <script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.<?php echo $jQuerryFlotCategoriesMin ?>.js"></script>
 
-<?php $jQuerryFlotTimeMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.time.min'); ?>
+<?php $jQuerryFlotTimeMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.time.min.js'); ?>
 <script type="text/javascript" src="plugins/flot/jquery.flot.time.min.<?php echo $jQuerryFlotTimeMin ?>.js"></script>
 
-<?php $jQuerryFlotAnimatorMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.animator.min'); ?>
+<?php $jQuerryFlotAnimatorMin = filemtime(PATH_ASSETS.'plugins/flot/jquery.flot.animator.min.js'); ?>
 <script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.<?php echo $jQuerryFlotAnimatorMin ?>.js"></script>
 
 <!-- Vector Map -->
-<?php $jQuerryJvectorMap = filemtime(PATH_ASSETS.'plugins/jvectormap/jquery-jvectormap-1.2.2.min'); ?>
+<?php $jQuerryJvectorMap = filemtime(PATH_ASSETS.'plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'); ?>
 <script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.<?php echo $jQuerryJvectorMap ?>.js"></script>
 
-<?php $jQuerryVectorMapWorld = filemtime(PATH_ASSETS.'plugins/jvectormap/jquery-jvectormap-world-mill-en'); ?>
+<?php $jQuerryVectorMapWorld = filemtime(PATH_ASSETS.'plugins/jvectormap/jquery-jvectormap-world-mill-en.js'); ?>
 <script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.<?php echo $jQuerryVectorMapWorld ?>.js"></script>
 
 <!-- Sky Icons -->
 
-<?php $skycons = filemtime(PATH_ASSETS.'plugins/skycons/skycons'); ?>
+<?php $skycons = filemtime(PATH_ASSETS.'plugins/skycons/skycons.js'); ?>
 <script type="text/javascript" src='plugins/skycons/skycons.<?php echo $skycons ?>.js'></script>
 
 
