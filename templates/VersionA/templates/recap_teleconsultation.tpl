@@ -32,7 +32,8 @@
                             </div>
                         </div>
                         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+                        <?php $select2 = filemtime(PATH_ASSETS . 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js') ?>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $select2 ?>.js"></script>
 
 
                         <label  class="col-sm-2 control-label">Choix des centres</label>
@@ -224,19 +225,28 @@
 
 <!-- Specific Page Scripts Put Here -->
 <!-- Flot Chart  -->
-<script type="text/javascript" src="plugins/flot/jquery.flot.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.resize.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.time.min.js"></script>
-<script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.js"></script>
+<?php $flot = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.min.<?php echo $flot ?>.js"></script>
+<?php $resize = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.resize.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.resize.<?php echo $flot ?>.js"></script>
+<?php $pie = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.pie.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.<?php echo $pie ?>.js"></script>
+<?php $categories = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.categories.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.<?php echo $categories ?>.js"></script>
+<?php $time = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.time.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.time.min.<?php echo $time ?>.js"></script>
+<?php $animator = filemtime(PATH_ASSETS . 'plugins/flot/jquery.flot.animator.min.js') ?>
+<script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.<?php echo $animator ?>.js"></script>
 
 <!-- Vector Map -->
-<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<?php $Vector = filemtime(PATH_ASSETS . 'plugins/jvectormap/jquery-jvectormap-1.2.2.min.js') ?>
+<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.<?php echo $Vector ?>.js"></script>
+<?php $world = filemtime(PATH_ASSETS . 'plugins/jvectormap/jquery-jvectormap-world-mill-en.js') ?>
+<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.<?php echo $world ?>.js"></script>
 
 <!-- Sky Icons -->
-<script type="text/javascript" src='plugins/skycons/skycons.js'></script>
+<?php $skycons = filemtime(PATH_ASSETS . 'plugins/skycons/skycons.js') ?>
+<script type="text/javascript" src='plugins/skycons/skycons.<?php echo $skycons ?>.js'></script>
 
 
 
