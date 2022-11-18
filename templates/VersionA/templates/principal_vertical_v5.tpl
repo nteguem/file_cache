@@ -69,9 +69,15 @@
 
 {literal}
     <!-- JS -->
-    <script type="text/javascript" src="js/modernizr.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
-    <script type="text/javascript" src="js/mobile-detect.min.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+
+    <?php $moderVertical = filemtime(PATH_ASSETS.'js/modernizr.js?v={/literal}{$numero_version_alaxione}{literal}') ?>
+    <script type="text/javascript" src="js/modernizr.<?php echo $moderVertical ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+        <?php $mobileDetecVertical = filemtime(PATH_ASSETS.'js/mobile-detect.min.js?v={/literal}{$numero_version_alaxione}{literal}') ?>
+        <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetecVertical ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+        <?php $mobileDetectMdVertical = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js?v={/literal}{$numero_version_alaxione}{literal}') ?>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdVertical ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    
+    
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/html5shiv.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
       <script type="text/javascript" src="js/respond.min.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
