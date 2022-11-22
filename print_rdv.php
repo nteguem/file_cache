@@ -364,44 +364,79 @@ if($hasTemplate){
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapMinPrintRdv = filemtime(PATH_ASSETS.'css/bootstrap.min.css') ?>
+    <link href="css/bootstrap.min.<?php echo $bootstrapMinPrintRdv ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $awesomeMinPrintRdv = filemtime(PATH_ASSETS.'css/font-awesome.min.css') ?>
+    <link href="css/font-awesome.min.<?php echo $awesomeMinPrintRdv ?>.css" rel="stylesheet" type="text/css">    
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
+    <?php $fontEntypoMinPrintRdv = filemtime(PATH_ASSETS.'css/font-entypo.css') ?>
+    <link href="css/font-entypo.<?php $fontEntypoMinPrintRdv ?>.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <?php $customMinPrintRdv = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMinPrintRdv ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $prettyPhotoMinPrintRdv = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css') ?>
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhotoMinPrintRdv ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $isotopnPrintRdv = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css') ?>
+    <link href="plugins/isotope/css/isotope.<?php echo $isotopnPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $pnotifnPrintRdv = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css') ?>
+    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnotifnPrintRdv ?>.css" media="screen" rel="stylesheet" type="text/css">    
+    <?php $prettyPrettnPrintRdv = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css') ?>
+    <link href="plugins/google-code-prettify/prettify.<?php $prettyPrettnPrintRdv ?>.css" rel="stylesheet" type="text/css"> 
+
+    <?php $fontMinPrintRdv = filemtime(PATH_ASSETS.'css/fonts.css') ?>
+    <link href="css/fonts.<?php echo $fontMinPrintRdv ?>.css"  rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+        
+    <?php $mCustomScrollbarPrintRdv = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css') ?>
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mCustomScrollbarPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $tagsInputPrintRdv = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
+    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsInputPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapSwiPrintRdv = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css') ?>
+    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $bootstrapSwiPrintRdv ?>.css" rel="stylesheet" type="text/css">    
+    <?php $dateAngePickerPrintRdv = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css') ?>
+    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $dateAngePickerPrintRdv ?>.css" rel="stylesheet" type="text/css">    
+    <?php $timpickerPrintRdv = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css') ?>
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timpickerPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $colorPickerPrintRdv = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css') ?>
+    <link href="plugins/colorpicker/css/colorpicker.<?php echo $colorPickerPrintRdv ?>.css" rel="stylesheet" type="text/css">        
 
-
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
     <!-- Specific CSS -->
-    <link href="plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <?php $dataTablesPrintRdv = filemtime(PATH_ASSETS.'plugins/dataTables/css/jquery.dataTables.min.css') ?>
+    <link href="plugins/dataTables/css/jquery.dataTables.min.<?php echo $dataTablesPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapDataTablesPrintRdv = filemtime(PATH_ASSETS.'plugins/dataTables/css/dataTables.bootstrap.css') ?>
+    <link href="plugins/dataTables/css/dataTables.bootstrap.<?php echo $bootstrapDataTablesPrintRdv ?>.css" rel="stylesheet" type="text/css">    
+    
+    <?php $fileUploadPrintRdv = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/css/jquery.fileupload.css') ?>
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload.<?php echo $fileUploadPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $fileUploadUiPrintRdv = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/css/jquery.fileupload-ui.css') ?>
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.<?php echo $fileUploadUiPrintRdv ?>.css" rel="stylesheet" type="text/css">
+    <?php $wysihtlmPrintRdv = filemtime(PATH_ASSETS.'plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css') ?>
+    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.<?php echo $wysihtlmPrintRdv ?>.css" rel="stylesheet" type="text/css">  
+
+    
+
+    <?php $fullCalendarPrintRdv = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.3.1/fullcalendar.css') ?>
+	<link href='plugins/fullcalendar-2.3.1/fullcalendar.<?php echo $fullCalendarPrintRdv ?>.css' rel='stylesheet' />
+	
+    <?php $fullCalenderPrintPrintRdv = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.3.1/fullcalendar.print.css') ?>
+    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.<?php echo $fullCalenderPrintPrintRdv ?>.css' rel='stylesheet' media='print' />
+
     <!-- Theme CSS -->
     <link href="css/theme.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+    <?php $chromePrintRdv = filemtime(PATH_ASSETS.'css/chrome.css') ?>
+    <link href="css/chrome.<?php echo $chromePrintRdv ?>.css" rel="stylesheet" type="text/chrome">
+   <!-- chrome only css -->
 
 
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <?php $responsivePrintRdv = filemtime(PATH_ASSETS.'css/theme-responsive.min.css') ?>
+    <link href="css/theme-responsive.min.<?php echo $responsivePrintRdv ?>.css" rel="stylesheet" type="text/css">     
 
 
 
@@ -412,8 +447,8 @@ if($hasTemplate){
 
 
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
-
+    <?php $customCustomPrintRdv = filemtime(PATH_ASSETS.'custom/custom.css') ?>
+    <link href="custom/custom.<?php echo $customCustomPrintRdv ?>.css" rel="stylesheet" type="text/css">
 
 
     <!-- Head SCRIPTS -->

@@ -382,7 +382,8 @@
 						                    </label>
 					                        <div class="col-sm-6 controls">
 												{if isset($objForm.select2) and $objForm.select2 eq 'ok'}
-													<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+												<?php $selectLocation = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+												<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $selectLocation ?>.css" rel="stylesheet" />
 													<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 													<div class="col-sm-12 input-group" id="id_selectmotif">
 														<select
@@ -562,7 +563,8 @@
 										{if isset($objForm.style) and $objForm.style eq 'line'}
 											<hr style='margin:0 50px; border-color: #888888; margin-bottom: 15px;' >
 										{elseif isset($objForm.style) and $objForm.style eq 'consigne'}
-											<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+										    <?php $select2Location = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+											<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $select2Location ?>.css" rel="stylesheet" />
 											<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 											<div id='bloc-consigne'>
 												
@@ -1009,7 +1011,8 @@
 					                          	<div class="vd_checkbox checkbox-success">
 
 													{if isset($objForm.select2) and $objForm.select2 eq 'ok'}
-														<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+													    <?php $select3Location = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+														<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $select3Location ?>.css" rel="stylesheet" />
 														<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 														<div class="col-sm-12 input-group" id="id_selectmotif">
 															<select name="{$objForm.nom_variable}[]" id="{$objForm.nom_variable}" class="js-example-basic-multiple"  multiple="multiple" style="width: 100%;">

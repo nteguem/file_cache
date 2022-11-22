@@ -1,7 +1,10 @@
 <!-- agenda v4-->
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
-  <link rel="stylesheet" href="css/header_responsive.css" type="text/css">
+<?php $contextMenuCss = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextMenuCss ?>.css">
+  <?php $treeViewCss = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewCss ?>.css">
+  <?php $responsiveCss_1 = filemtime(PATH_ASSETS.'css/header_responsive.css') ?>
+  <link rel="stylesheet" href="css/header_responsive.<?php echo $responsiveCss_1 ?>.css" type="text/css">
 
   <script type="text/javascript" src="js/datepicker-fr.js"></script>
 
@@ -10,7 +13,8 @@
   <script type="text/javascript" src="js/jquery.contextmenu.js"></script>
   <script type="text/javascript" src="js/bootstrap-treeview.js"></script>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+  <?php $select1AgendaCss = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $select1AgendaCss ?>.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   {literal}
       <script type="text/javascript">

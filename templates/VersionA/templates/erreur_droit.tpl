@@ -32,42 +32,58 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapErreurDroit = filemtime(PATH_ASSETS.'css/bootstrap.min.css') ?>
+    <link href="css/bootstrap.min.<?php echo $bootstrapErreurDroit ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $awesomeMinErreur = filemtime(PATH_ASSETS.'css/font-awesome.min.css') ?>
+    <link href="css/font-awesome.min.<?php echo $awesomeMinErreur ?>.css" rel="stylesheet" type="text/css">
+
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
+    <?php $fontEntypoMinErreur = filemtime(PATH_ASSETS.'css/font-entypo.css') ?>
+    <link href="css/font-entypo.<?php $fontEntypoMinErreur?>.css" rel="stylesheet" type="text/css"> 
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <?php $customErreur = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customErreur ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $prettyPhotoErreur = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css') ?>
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhotoErreur ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $isotErreur = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css') ?>
+    <link href="plugins/isotope/css/isotope.<?php echo $isotErreur ?>.css" rel="stylesheet" type="text/css">
+    <?php $pnotErreur = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css') ?>
+    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnotErreur ?>.css" media="screen" rel="stylesheet" type="text/css">    
+    <?php $prettyPreErreur = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css') ?>
+    <link href="plugins/google-code-prettify/prettify.<?php $prettyPreErreur ?>.css" rel="stylesheet" type="text/css"> 
+
 
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <?php $mCustomScrollbarErreur = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css') ?>
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mCustomScrollbarErreur ?>.css" rel="stylesheet" type="text/css">
+    <?php $tagsInputErreur = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
+    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsInputErreur ?>.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapSwiErreur = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css') ?>
+    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $bootstrapSwiErreur ?>.css" rel="stylesheet" type="text/css">    
+    <?php $dateAngePickerErreur = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css') ?>
+    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $dateAngePickerErreur ?>.css" rel="stylesheet" type="text/css">    
+    <?php $timpickerErreur = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css') ?>
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timpickerErreur ?>.css" rel="stylesheet" type="text/css">
+    <?php $colorPickerErreur = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css') ?>
+    <link href="plugins/colorpicker/css/colorpicker.<?php echo $colorPickerErreur ?>.css" rel="stylesheet" type="text/css">           
 
-
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
 
     <!-- Specific CSS -->
-
-
-    <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <?php $themeMinErreur = filemtime(PATH_ASSETS.'css/theme.min.css') ?>
+    <link href="css/theme.min.<?php echo $themeMinErreur ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <link href="css/ie.css" rel="stylesheet"> <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
-
+    <?php $chromeErreur = filemtime(PATH_ASSETS.'css/chrome.css') ?>
+    <link href="css/chrome.<?php echo $chromeErreur ?>.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <?php $responsiveErreur = filemtime(PATH_ASSETS.'css/theme-responsive.min.css') ?>
+    <link href="css/theme-responsive.min.<?php echo $responsiveErreur ?>.css" rel="stylesheet" type="text/css"> 
 
 
     <!-- for specific page in style css -->
@@ -76,7 +92,8 @@
 
 
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <?php $customCustomErreur = filemtime(PATH_ASSETS.'custom/custom.css') ?>
+    <link href="custom/custom.<?php echo $customCustomErreur ?>.css" rel="stylesheet" type="text/css">
 
 
     <!-- Head SCRIPTS -->

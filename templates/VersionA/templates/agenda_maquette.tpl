@@ -1,5 +1,9 @@
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-<link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
+
+<?php $contextdispoMaquette = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispoMaquette ?>.css">
+
+<?php $treeViewdisTreeview = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
+<link href="plugins/tagsInput/jquery.tagsinput.<?php echo $treeViewdisTreeview ?>.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="js/liste_dispo.js?v={$numero_version_alaxione}"></script>
 <script type="text/javascript" src="js/js_planning_dispo.js?v={$numero_version_alaxione}"></script>
@@ -1276,7 +1280,8 @@ document.getElementById("iframerdv").src = "modal/modal_disponibilite_suppressio
 
                                         <div class="col-sm-3">
                                             <div class="controls">
-                                                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+                                            <?php $agendaMauette = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+                                                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $agendaMauette ?>.css"
                                                     rel="stylesheet" />
                                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                                                 <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">

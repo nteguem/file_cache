@@ -1,5 +1,8 @@
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-<link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
+<?php $contextdispoTrancheCss = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispoTrancheCss ?>.css">
+
+<?php $tagsTranchesCss = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
+<link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsTranchesCss ?>.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="js/liste_dispo.js?v={$numero_version_alaxione}"></script>
 <script type="text/javascript" src="js/js_planning_dispo.js?v={$numero_version_alaxione}"></script>
@@ -935,7 +938,8 @@
                         {/foreach}
 
                         <div class="controls">
-                            <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+                            <?php $slectDispoTranche = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+                            <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $slectDispoTranche ?>.css"
                                 rel="stylesheet" />
                             <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                             <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">

@@ -1,24 +1,29 @@
 <!-- Fullcalendar v5 -->
-<link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.css">
+<?php $calMinVuetous = filemtime(PATH_ASSETS.'') ?>
+<link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.<?php echo $calMinVuetous ?>.css">
 <script src="plugins/fullcalendar-v5/main.min.js"></script>
 <script src="plugins/fullcalendar-v5/locales/fr.js"></script>
 
 <!-- jQuery contextmenu (rightclick) -->
-<link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.css">
+<?php $contxtVueTous = filemtime(PATH_ASSETS.'') ?>
+<link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.<?php echo $contxtVueTous ?>css">
 <script src="plugins/jquery-contextmenu/jquery.contextMenu.min.js"></script>
 <script src="plugins/jquery-contextmenu/jquery.ui.position.js"></script>
 
 <!-- Pikaday -->
-<link href="plugins/pikaday1.8.2/pikaday.css" rel="stylesheet">
+<?php $pikaday = filemtime(PATH_ASSETS.'') ?>
+<link href="plugins/pikaday1.8.2/pikaday.<?php echo $pikaday ?>css" rel="stylesheet">
 <script src="plugins/pikaday1.8.2/pikaday.min.js"></script>
 
 <!-- script chelou de Guy -->
 <script type="text/javascript" src="js/js_planning_dispo.js"></script>
 
 <!-- Calendar -->
-<link rel="stylesheet" href="css/calendar.css">
+<?php $calVueTous = filemtime(PATH_ASSETS.'js/calendar.js') ?>
+<link rel="stylesheet" href="css/calendar.<?php echo $calVueTous ?>.css">
 <script type="text/javascript" src="js/calendar.js"></script>
-<link href="css/font-icomoon.css" rel="stylesheet" type="text/css">
+<?php $icommoonVuetous = filemtime(PATH_ASSETS.'css/font-icomoon.css') ?>
+<link href="css/font-icomoon.<?php echo $icommoonVuetous ?>.css" rel="stylesheet" type="text/css">
 
 <div id="calendarVueTous" style="display:flex;">
     <div class="menuBar">

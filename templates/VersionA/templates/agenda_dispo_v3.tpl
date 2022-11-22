@@ -1,9 +1,13 @@
 
 
 <!-- Yannick test 2-->
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
 
+<?php $contextdispo_v3 = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispo_v3 ?>.css">
+
+  <?php $treeViewdispo_v3 = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewdispo_v3 ?>.css">
+  
   <script type="text/javascript" src="js/datepicker-fr.js"></script>
 
   <script type="text/javascript" src="js/liste_e7.js?{$stime}"></script>

@@ -1,6 +1,12 @@
 <!-- agenda v4-->
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
+
+
+<?php $contextdispo_v4 = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispo_v4 ?>.css">
+
+  <?php $treeViewdispo_v4 = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewdispo_v4 ?>.css">
+  
 
   <script type="text/javascript" src="js/datepicker-fr.js"></script>
 

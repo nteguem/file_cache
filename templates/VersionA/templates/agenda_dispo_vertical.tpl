@@ -1,6 +1,11 @@
 <!-- agenda v4-->
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
+
+<?php $contextdispoVertical = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispoVertical ?>.css">
+
+  <?php $treeViewdispoVertical = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewdispoVertical ?>.css">
+  
 
 <script type="text/javascript" src="js/datepicker-fr.js"></script>
 
@@ -10,10 +15,12 @@
 <script type="text/javascript" src="js/bootstrap-treeview.js"></script>
 <script type="text/javascript" src="js/rechercher_code_postal.js"></script>
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<?php $selectDispoVerticalSelect = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $selectDispoVerticalSelect ?>.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css">
+<?php $uiCsspoVertical = filemtime(PATH_ASSETS.'https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css') ?>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.<?php echo $uiCsspoVertical ?>.css">
 
 {literal}
 <script type="text/javascript">
