@@ -29,27 +29,49 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <?php  $boostrapMin = filemtime(PATH_ASSETS.'css/bootstrap.min.css');?>
+    <link href="css/bootstrap.min.<?php echo $boostrapMin ?>.css" rel="stylesheet" type="text/css">
+    
+    <?php  $awesomeMin = filemtime(PATH_ASSETS.'css/font-awesome.min.css');?>
+    <link href="css/font-awesome.min.<?php echo $awesomeMin ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
+    
+    <?php  $entypo_4 = filemtime(PATH_ASSETS.'css/font-entypo.css');?>
+    <link href="css/font-entypo.<?php echo $entypo_4 ?>.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    
+    <?php  $fonts_5 = filemtime(PATH_ASSETS.'css/fonts.css');?>
+    <link href="css/fonts.<?php echo $fonts_5 ?>.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <?php  $customMin = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css');?>
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMin ?>.css" rel="stylesheet" type="text/css">
+    
+    <?php  $prettyphoto_8 = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css');?>
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyphoto_8 ?>.css" rel="stylesheet" type="text/css">
+   
+    <?php  $isotope_2 = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css');?>
+    <link href="plugins/isotope/css/isotope.<?php echo $isotope_2 ?>.css" rel="stylesheet" type="text/css">
+    
+    <?php  $pnotify_3 = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css');?>
+    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnotify_3 ?>.css" media="screen" rel="stylesheet" type="text/css">
+    
+    <?php  $prettify_4 = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css');?>
+    <link href="plugins/google-code-prettify/prettify.<?php echo $prettify_4 ?>.css" rel="stylesheet" type="text/css">
 
-
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
+    <?php  $customScrollbar_2 = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css');?>
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $customScrollbar_2 ?>.css" rel="stylesheet" type="text/css">
+    
+    <?php  $tagsinput_3 = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css');?>
+    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsinput_3 ?>.css" rel="stylesheet" type="text/css">
+    
+    <?php  $boostrapSwitch_3 = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css');?>
+    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $boostrapSwitch_3 ?>.css" rel="stylesheet" type="text/css">
+    
+    <?php  $daterangepicker_1 = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css');?>
+    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $git ?>.css" rel="stylesheet" type="text/css">
     <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
     <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
 
