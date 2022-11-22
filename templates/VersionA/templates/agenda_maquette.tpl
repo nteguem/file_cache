@@ -1,10 +1,17 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
 <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="js/liste_dispo.js?v={$numero_version_alaxione}"></script>
-<script type="text/javascript" src="js/js_planning_dispo.js?v={$numero_version_alaxione}"></script>
-<script type="text/javascript" src="js/jquery.contextmenu.js?v={$numero_version_alaxione}"></script>
-<script type="text/javascript" src='plugins/tagsInput/jquery.tagsinput.min.js'></script>
+<?php $listeDispo = filemtime(PATH_ASSETS . 'js/liste_dispo.js?v={$numero_version_alaxione}') ?>
+<script type="text/javascript" src="js/liste_dispo.<?php echo $listeDispo ?>.js?v={$numero_version_alaxione}"></script>
+
+<?php $planningDispo = filemtime(PATH_ASSETS . 'js/js_planning_dispo.js?v={$numero_version_alaxione}') ?>
+<script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo ?>.js?v={$numero_version_alaxione}"></script>
+
+<?php $contextMenu = filemtime(PATH_ASSETS . 'js/jquery.contextmenu.js?v={$numero_version_alaxione}') ?>
+<script type="text/javascript" src="js/jquery.contextmenu.<?php echo $contextMenu ?>.js?v={$numero_version_alaxione}"></script>
+
+<?php $tagsInput = filemtime(PATH_ASSETS . 'plugins/tagsInput/jquery.tagsinput.min.js') ?>
+<script type="text/javascript" src='plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInput ?>.js'></script>
 
 {literal}
 

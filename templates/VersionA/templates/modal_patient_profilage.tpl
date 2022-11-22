@@ -81,61 +81,88 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="../js/jquery.js"></script>
+    <?php $jQueryPatient filemtime(PATH_ASSETS.'../js/jquery.js') ?>
+    <script type="text/javascript" src="../js/jquery.<?php echo $jQueryPatient ?>.js"></script>
+
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <?php $bootstrapMinPatient filemtime(PATH_ASSETS.'../js/bootstrap.min.js') ?>
+    <script type="text/javascript" src="../js/bootstrap.min.<?php echo $bootstrapMinPatient ?>.js"></script>
+    <?php $jQcustomMinPatient filemtime(PATH_ASSETS.'../plugins/jquery-ui/jquery-ui.custom.min.js') ?>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.<?php echo $jQcustomMinPatient ?>.js'></script>
+    <?php $punchMinPatient filemtime(PATH_ASSETS.'../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $punchMinPatient ?>.js"></script>
 
-    <script type="text/javascript" src="../js/caroufredsel.js"></script>
-    <script type="text/javascript" src="../js/plugins.js"></script>
+    <?php $caroufredPatient filemtime(PATH_ASSETS.'../js/caroufredsel.js') ?>
+    <script type="text/javascript" src="../js/caroufredsel.<?php echo $caroufredPatient ?>.js"></script>
+    <?php $pluginsPatient filemtime(PATH_ASSETS.'../js/plugins.js') ?>
+    <script type="text/javascript" src="../js/plugins.<?php echo $pluginsPatient ?>.js"></script>
 
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.js"></script>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script>
+    <?php $pluginsBreakpointsBreakPatiPatient filemtime(PATH_ASSETS.'../plugins/breakpoints/breakpoints.js') ?>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.<?php echo $pluginsBreakpointsBreakPatiPatient ?>.js"></script>
+    <?php $jqueryDataTablesPatient filemtime(PATH_ASSETS.'../plugins/dataTables/jquery.dataTables.min.js') ?>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.<?php echo $jqueryDataTablesPatient ?>.js"></script>
+    <?php $pluginJqueryPrettyPatient filemtime(PATH_ASSETS.'../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $pluginJqueryPrettyPatient ?>.js"></script>
 
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.js"></script>
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.js"></script>
-
-    <script type="text/javascript" src="../js/theme.js"></script>
-    <script type="text/javascript" src="../custom/custom.js"></script>
-
+    <?php $ContctMinPatient filemtime(PATH_ASSETS.'../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $ContctMinPatient?>.js"></script>
+    <?php $tagsInputPatient filemtime(PATH_ASSETS.'../plugins/tagsInput/jquery.tagsinput.min.js') ?>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInputPatient ?>.js"></script>
+    <?php $bootstrapSwitchPatient filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootstrapSwitchPatient ?>.js"></script>
+    <?php $blockUIPatient filemtime(PATH_ASSETS.'../plugins/blockUI/jquery.blockUI.js') ?>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.<?php echo $blockUIPatient ?>.js"></script>
+    <?php $pNotifyPatient filemtime(PATH_ASSETS.'../plugins/pnotify/js/jquery.pnotify.min.js') ?>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.<?php echo $pNotifyPatient ?>.js"></script>
+  
+    <?php $themePatient filemtime(PATH_ASSETS.'../js/theme.js') ?>
+    <script type="text/javascript" src="../js/theme.<?php echo $themePatient ?>.js"></script>
+    <?php $customPatient filemtime(PATH_ASSETS.'../custom/custom.js') ?>
+    <script type="text/javascript" src="../custom/custom.<?php echo $customPatient ?>.js"></script>
     <!-- Specific Page Scripts Put Here -->
 
-    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'></script>
+    <?php $wizardMinPatient filemtime(PATH_ASSETS.'../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') ?>
+    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.<?php echo $wizardMinPatient ?>.js'></script>
 
-    <script type="text/javascript" src="../js/datepicker-fr.js"></script>
+    <?php $dataPickerPatient filemtime(PATH_ASSETS.'../js/datepicker-fr.js') ?>
+    <script type="text/javascript" src="../js/datepicker-fr.<?php echo $dataPickerPatient ?>.js"></script>
+
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../js/modernizr.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect.min.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.js"></script>
-    <script type="text/javascript" src="../js/jquery.maskedinput.min.js"></script>
+    <?php $modernzrPatient filemtime(PATH_ASSETS.'../js/modernizr.js') ?>
+    <script type="text/javascript" src="../js/modernizr.<?php echo $modernzrPatient ?>.js"></script>
+    <?php $mobileDetectPatient filemtime(PATH_ASSETS.'../js/mobile-detect.min.js') ?>
+    <script type="text/javascript" src="../js/mobile-detect.min.<?php echo $mobileDetectPatient ?>.js"></script>
+    <?php $mobileDetectModernPatient filemtime(PATH_ASSETS.'../js/mobile-detect-modernizr.js') ?>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.<?php echo $mobileDetectModernPatient ?>.js"></script>
+    <?php $jqueryMaskedinputPatient filemtime(PATH_ASSETS.'../js/jquery.maskedinput.min.js') ?>
+    <script type="text/javascript" src="../js/jquery.maskedinput.min.<?php echo $jqueryMaskedinputPatient ?>.js"></script>
+
+    <?php $autoCompletePatient filemtime(PATH_ASSETS.'../js/jquery.autocomplete.min.js') ?>
+    <script type="text/javascript" src='../js/jquery.autocomplete.min.<?php echo $autoCompletePatient ?>.js'></script>
+    <?php $principalPatient filemtime(PATH_ASSETS.'../js/principal.js') ?>
+    <script type="text/javascript" src='../js/principal.<?php echo $principalPatiPatient ?>.js'></script>
 
     <!-- Script pour l'auto-completion -->
-    <script type="text/javascript" src="../js/jquery.autocomplete.min.js"></script>
-    <script type="text/javascript" src="../js/principal.js"></script>
-
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/html5shiv.js"></script>
     <script type="text/javascript" src="../js/respond.min.js"></script>
     <![endif]-->
-
-    <script type="text/javascript" src="../js/intlTelInput.min.js"></script>
-
-    <script type="text/javascript" src="../js/maskchamps.js"></script>
-    <script type="text/javascript" src="../js/inputmask.js"></script>
-    <script type="text/javascript" src="../js/jquery.inputmask.js"></script>
+    <?php $intlTelInputPatient filemtime(PATH_ASSETS.'../js/intlTelInput.min.js') ?>
+    <script type="text/javascript" src='.../js/intlTelInput.min.<?php echo $intlTelInputPatient ?>.js'></script>
+    <?php $maskChampPatient filemtime(PATH_ASSETS.'../js/maskchamps.js') ?>
+    <script type="text/javascript" src='../js/maskchamps.<?php echo $maskChampPatient ?>.js'></script>
+    <?php $inputmaskPatient filemtime(PATH_ASSETS.'../js/inputmask.js') ?>
+    <script type="text/javascript" src='../js/inputmask.<?php echo $inputmaskPatient ?>.js'></script>
+    <?php $jQueryInputMaskPatient filemtime(PATH_ASSETS.'../js/jquery.inputmask.js') ?>
+    <script type="text/javascript" src='../js/jquery.inputmask.<?php echo $jQueryInputMaskPatient ?>.js'></script>
 
     {* Select 2 *}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <?php $selectMinPatient filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js') ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $selectMinPatient ?>.js"></script>
 
     {literal}
         <script type="text/javascript">
