@@ -1,4 +1,5 @@
-<script type="text/javascript" src="js/liste_dispo.js"></script>
+<?php $listeDispo = filemtime(PATH_ASSETS.'js/liste_dispo.js'); ?>
+<script type="text/javascript" src="js/liste_dispo.<?php echo $listeDispo ?>.js"></script>
 
 {literal}
 <style type="text/css">
@@ -35,7 +36,8 @@
 
 </style>
 
-  <script type="text/javascript" src="js/js_planning_dispo.js"></script>
+  <?php $jsPlanningDispo = filemtime(PATH_ASSETS.'js/js_planning_dispo.js'); ?>
+  <script type="text/javascript" src="js/js_planning_dispo.<?php echo $jsPlanningDispo ?>.js"></script>
 
 <!-- Calendar -->
 <script type="text/javascript">

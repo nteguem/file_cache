@@ -383,7 +383,11 @@
 					                        <div class="col-sm-6 controls">
 												{if isset($objForm.select2) and $objForm.select2 eq 'ok'}
 													<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-													<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+														<?php
+														$cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
+														?>
+													<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
 													<div class="col-sm-12 input-group" id="id_selectmotif">
 														<select
 														id="id_form_{$objForm.nom_variable}"
@@ -563,7 +567,12 @@
 											<hr style='margin:0 50px; border-color: #888888; margin-bottom: 15px;' >
 										{elseif isset($objForm.style) and $objForm.style eq 'consigne'}
 											<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-											<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+											<?php
+											$cdnjsCloudflare1 = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
+											?>
+
+											<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare1 ?>.js"></script>
 											<div id='bloc-consigne'>
 												
 											</div>
@@ -1010,7 +1019,12 @@
 
 													{if isset($objForm.select2) and $objForm.select2 eq 'ok'}
 														<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-														<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+														
+														<?php
+														$cdnjsCloudflare2 = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
+														?>
+
+														<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare2 ?>.js"></script>
 														<div class="col-sm-12 input-group" id="id_selectmotif">
 															<select name="{$objForm.nom_variable}[]" id="{$objForm.nom_variable}" class="js-example-basic-multiple"  multiple="multiple" style="width: 100%;">
 																{foreach from=$objForm.lesitem key=valeur_checkbox item=nom_checkbox}
