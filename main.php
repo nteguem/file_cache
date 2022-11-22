@@ -756,6 +756,12 @@ try {
     $objSmarty->assign("sMessageLieuxNotFound", $sMessageLieuxNotFound);
     
     $objSmarty->assign('datePickerFr',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('listeE7',filemtime('js/liste_e7.js'));
+    $objSmarty->assign('planningDispo',filemtime('js/js_planning_dispo.js'));
+    $objSmarty->assign('jquerryContextMenu',filemtime('js/jquery.contextmenu.js'));
+    $objSmarty->assign('boostrapTreeview ',filemtime('js/bootstrap-treeview.js'));
+    $objSmarty->assign('cdnjsCloudflare ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
+    $objSmarty->assign('cdnjsCloudflareCom ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
         
     //gestion des fichiers js
     $objSmarty->assign('main',filemtime('plugins/fullcalendar-v5/main.min.js'));
