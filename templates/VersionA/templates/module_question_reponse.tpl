@@ -24,9 +24,14 @@
     </style>
     <link href="css/jquery.flowchart.min.css" rel="stylesheet" type="text/css">
 
-    <script src="js/raphael-min.js"></script>
-    <script src="js/flowchart.min.js"></script>
-    <script src="js/jquery.flowchart.min.js"></script>
+    <?php $raphaelMin = filemtime(PATH_ASSETS.'js/raphael-min.js'); ?>
+    <script src="js/raphael-min.<?php echo $raphaelMin ?>.js"></script>
+
+    <?php $flowchartMin = filemtime(PATH_ASSETS.'js/flowchart.min.js'); ?>
+    <script src="js/flowchart.min.<?php echo $flowchartMin ?>.js"></script>
+
+    <?php $jQuerryFlowChartMin = filemtime(PATH_ASSETS.'js/jquery.flowchart.min.js'); ?>
+    <script src="js/jquery.flowchart.min.<?php echo $jQuerryFlowChartMin ?>.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {

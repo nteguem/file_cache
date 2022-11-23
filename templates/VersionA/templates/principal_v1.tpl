@@ -87,9 +87,13 @@
 
 {literal}
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="js/modernizr.js"></script> 
-    <script type="text/javascript" src="js/mobile-detect.min.js"></script> 
-    <script type="text/javascript" src="js/mobile-detect-modernizr.js"></script> 
+    <?php $modernizPrincipal_v1 = filemtime(PATH_ASSETS.'js/modernizr.js') ?>
+    <script type="text/javascript" src="js/modernizr.<?php echo $modernizPrincipal_v1 ?>.js"></script>
+        <?php $mobileDetectMiPrincipal_v1 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js') ?>
+        <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMiPrincipal_v1 ?>.js"></script>
+        <?php $mobileDetectMdernPrincipal_v1 = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdernPrincipal_v1 ?>.js"></script>
+ 
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -101,63 +105,102 @@
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
     <!-- <script src='plugins/fullcalendar-2.3.1/lib/jquery.min.js'></script> -->
-    <script src='plugins/fullcalendar-2.5.0/lib/jquery.min.js'></script>
+
+    <?php $fullCalendarPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.5.0/lib/jquery.min.js') ?>
+    <script src='plugins/fullcalendar-2.5.0/lib/jquery.min.<?php echo $fullCalendarPrincipal_v1 ?>.js'></script>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/excanvas.js"></script>      
     <![endif]-->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <?php $bootstrapPrincipal_v1 = filemtime(PATH_ASSETS.'js/bootstrap.min.js') ?>
+<script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrapPrincipal_v1 ?>.js"></script>
+    <?php $customPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
+<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customPrincipal_v1 ?>.js'></script>
+    <?php $touchPuncPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
+<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $touchPuncPrincipal_v1 ?>.js"></script>
 
-    <script type="text/javascript" src="js/caroufredsel.js"></script> 
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/framwork_js.js"></script>
+<?php $caroufPrincipalv1 = filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
+    <script type="text/javascript" src="js/caroufredsel.<?php echo $caroufPrincipalv1 ?>.js"></script>
+    <?php $pluginPrincipalv1 = filemtime(PATH_ASSETS.'js/plugins.js') ?>
+  <script type="text/javascript" src="js/plugins.<?php echo $pluginPrincipalv1 ?>.js"></script>
+
+  <?php $frameWorkPrincipal = filemtime(PATH_ASSETS.'js/framwork_js.js') ?>
+    <script type="text/javascript" src="js/framwork_js.<?php echo $frameWorkPrincipal ?>.js"></script>
 
     <!-- Script pour l'auto-completion -->
-    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
-
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.js"></script>
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script> 
-
-    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.js"></script>
-    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.js"></script>
+    <?php $autoCompletePrincipal_v1 = filemtime(PATH_ASSETS.'js/jquery.autocomplete.min.js') ?>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.<?php $autoCompletePrincipal_v1 ?>.js"></script>
 
 
+    <?php $breackPoinPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js') ?>
+<script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breackPoinPrincipal_v1 ?>.js"></script>
+    <?php $dataTablePrincipal_v1 = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
+<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $dataTablePrincipal_v1 ?>.js"></script>
+    <?php $prettyPhotPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
+<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $prettyPhotPrincipal_v1 ?>.js"></script>
+ 
 
-    <script type="text/javascript" src="js/theme.js"></script>
-    <script type="text/javascript" src="custom/custom.js"></script>
+<?php $contactPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
+<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $contactPrincipal_v1 ?>.js"></script>
+    <?php $tagsInPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js') ?>
+<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInPrincipal_v1 ?>.js"></script>
+    <?php $bootStPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
+<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootStPrincipal_v1 ?>.js"></script>
+    <?php $blocPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js') ?>
+<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.<?php echo $blocPrincipal_v1 ?>.js"></script>
+    <?php $pnotPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js') ?>
+<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $pnotPrincipal_v1 ?>.js"></script>
+
+
+<?php $themPrincipal_v1 = filemtime(PATH_ASSETS.'js/theme.js') ?>
+<script type="text/javascript" src="js/theme.<?php echo $themPrincipal_v1 ?>.js"></script>
+    <?php $customCustoPrincipal_v1 = filemtime(PATH_ASSETS.'custom/custom.js') ?>
+<script type="text/javascript" src="custom/custom.<?php echo $customCustoPrincipal_v1 ?>.js"></script>
+
      
     <!-- Specific Page Scripts Put Here -->
 
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.js"></script>
-    <script type="text/javascript" src="js/datepicker-fr.js"></script>
+   
+    <?php $dataTablePrincipal_v1 = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
+<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $dataTablePrincipal_v1 ?>.js"></script>
+   
+<?php $principalDataTable_v1 = filemtime(PATH_ASSETS.'plugins/dataTables/dataTables.bootstrap.js') ?>
+    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.<?php echo $principalDataTable_v1 ?>.js"></script>
 
-    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'></script>
-    <script type="text/javascript" src='plugins/daterangepicker/moment.min.js'></script>
-    <script type="text/javascript" src='plugins/daterangepicker/daterangepicker.js'></script>
-    <script type="text/javascript" src='plugins/colorpicker/colorpicker.js'></script>
+    <?php $datePickerPrincipal_v1 = filemtime(PATH_ASSETS.'js/datepicker-fr.js') ?>
+<script type="text/javascript" src="js/datepicker-fr.<?php $datePickerPrincipal_v1 ?>.js"></script>
+
+        <?php $timePickerPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.js') ?>
+<script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timePickerPrincipal_v1 ?>.js'></script>
+        <?php $momentPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/daterangepicker/moment.min.js') ?>
+<script type="text/javascript" src='plugins/daterangepicker/moment.min.<?php echo $momentPrincipal_v1 ?>.js'></script>
+        <?php $dataRangePrincipal_v1 = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker.') ?>
+<script type="text/javascript" src='plugins/daterangepicker/daterangepicker.<?php echo $dataRangePrincipal_v1 ?>.js'></script>
+        <?php $colorPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/colorpicker/colorpicker.js') ?>
+<script type="text/javascript" src='plugins/colorpicker/colorpicker.<?php echo $colorPrincipal_v1 ?>.js'></script>
 
 
     <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.js"></script>
+        <?php $imgaMinPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/load-image.min.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.<?php echo $imgaMinPrincipal_v1 ?>.js"></script>
     <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+        <?php $iframeTranportPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/load-image.min.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.<?php echo $iframeTranportPrincipal_v1 ?>.js"></script>
     <!-- The basic File Upload plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.js"></script>
+        <?php $fileUploadPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.<?php echo $fileUploadPrincipal_v1 ?>.js"></script>
     <!-- The File Upload processing plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.js"></script>
+        <?php $fileuploadProcess = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-process.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.<?php echo $fileuploadProcess ?>.js"></script>
     <!-- The File Upload image preview & resize plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.js"></script>
+        <?php $fileuploadImage = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-image.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.<?php echo $fileuploadImage ?>.js"></script>
     <!-- The File Upload audio preview plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.js"></script>
+        <?php $fileUploadAudio = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-audio.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.<?php echo $fileUploadAudio ?>.js"></script>
     <!-- The File Upload validation plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.js"></script>
+        <?php $validatesPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-validate.js') ?>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.<?php echo $validatesPrincipal_v1 ?>.js"></script>
 
 
 
@@ -166,21 +209,29 @@
     <!-- <script src='plugins/fullcalendar-2.3.1/lib/moment.min.js'></script>
     <script src='plugins/fullcalendar-2.3.1/fullcalendar.min.js'></script>
     <script src='plugins/fullcalendar-2.3.1/lang-all.js'></script> -->
+        <?php $momenMin = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.5.0/lib/moment.min.js') ?>
+<script src='plugins/fullcalendar-2.5.0/lib/moment.min.<?php echo $momenMin ?>.js'></script>
+        <?php $fulcalendarMin = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.5.0/fullcalendar.min.js') ?>
+<script src='plugins/fullcalendar-2.5.0/fullcalendar.min.<?php echo $fulcalendarMin ?>.js'></script>
+        <?php $langAll = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.5.0/lang-all.js') ?>
+<script src='plugins/fullcalendar-2.5.0/lang-all.<?php echo $langAll ?>.js'></script>
+        <?php $shedulerPrincipal_v1 = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.5.0/scheduler.js') ?>
+<script src='plugins/fullcalendar-2.5.0/scheduler.<?php echo $shedulerPrincipal_v1 ?>.js'></script>
 
-    <script src='plugins/fullcalendar-2.5.0/lib/moment.min.js'></script>
-    <script src='plugins/fullcalendar-2.5.0/fullcalendar.min.js'></script>
-    <script src='plugins/fullcalendar-2.5.0/lang-all.js'></script>
-    <script src='plugins/fullcalendar-2.5.0/scheduler.js'></script>
+        <?php $rigthClikPrincipal = filemtime(PATH_ASSETS.'js/fullcalendar-rightclick.js') ?>
+<script type="text/javascript" src="js/fullcalendar-rightclick.<?php echo $rigthClikPrincipal ?>.js"></script>
 
-    <script type="text/javascript" src="js/fullcalendar-rightclick.js"></script>
+        <?php $ckeditor = filemtime(PATH_ASSETS.'plugins/ckeditor/ckeditor.js') ?>
+<script type="text/javascript" src='plugins/ckeditor/ckeditor.<?php echo $ckeditor ?>.js'></script>
+        <?php $adapterJquery = filemtime(PATH_ASSETS.'plugins/ckeditor/adapters/jquery.js') ?>
+<script type="text/javascript" src='plugins/ckeditor/adapters/jquery.<?php echo $adapterJquery ?>.js'></script>
+        <?php $maskedInputPrincipal_v1 = filemtime(PATH_ASSETS.'js/jquery.maskedinput.min.js') ?>
+<script type="text/javascript" src="js/jquery.maskedinput.min.<?php echo $maskedInputPrincipal_v1 ?>.js"></script>
 
-    <script type="text/javascript" src='plugins/ckeditor/ckeditor.js'></script>
-    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.js'></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+        <?php $maskChampPrinciapl_v1 = filemtime(PATH_ASSETS.'js/maskchamps.js') ?>
+<script type="text/javascript" src="js/maskchamps.<?php echo $maskChampPrinciapl_v1 ?>.js"></script>
 
-    <script type="text/javascript" src="js/maskchamps.js"></script>
-
-    <script type="text/javascript">
+<script type="text/javascript">
 
         function getCookie(name) {
             var dc = document.cookie;
