@@ -23,18 +23,10 @@
 <script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo ?>.js"></script>
 
 <!-- Calendar -->
-<<<<<<< HEAD
-<?php $calVueTous = filemtime(PATH_ASSETS.'js/calendar.js') ?>
-<link rel="stylesheet" href="css/calendar.<?php echo $calVueTous ?>.css">
-<script type="text/javascript" src="js/calendar.js"></script>
-<?php $icommoonVuetous = filemtime(PATH_ASSETS.'css/font-icomoon.css') ?>
-<link href="css/font-icomoon.<?php echo $icommoonVuetous ?>.css" rel="stylesheet" type="text/css">
-=======
 <link rel="stylesheet" href="css/calendar.css">
 <?php $calendar = filemtime(PATH_ASSETS . 'js/calendar.js') ?>
 <script type="text/javascript" src="js/calendar.<?php echo $calendar ?>.js"></script>
 <link href="css/font-icomoon.css" rel="stylesheet" type="text/css">
->>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
 
 <div id="calendarVueTous" style="display:flex;">
     <div class="menuBar">

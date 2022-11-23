@@ -756,6 +756,7 @@ try {
     $objSmarty->assign("sMessageLieuxNotFound", $sMessageLieuxNotFound);
     
     $objSmarty->assign('datePickerFr',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('jquery',filemtime('js/jquery.js'));
         
     //gestion des fichiers js
     $objSmarty->assign('main',filemtime('plugins/fullcalendar-v5/main.min.js'));

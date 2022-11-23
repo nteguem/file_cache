@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <!--[if IE 8]>
 <html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>
@@ -81,13 +81,12 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php $jquery = filemtime(PATH_ASSETS . 'js/jquery.js') ?>
-    <script type="text/javascript" src="js/jquery.<?php echo $jquery?>.js"></script>
+    <script type="text/javascript" src="js/jquery.{jquery}.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="js/excanvas.js"></script>
     <![endif]-->
     <?php $bootstrap = filemtime(PATH_ASSETS . 'js/bootstrap.min.js') ?>
-    <script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrap ?>.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.{$bootstrap}.js"></script>
     <?php $jqueryUi = filemtime(PATH_ASSETS . 'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
     <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $jqueryUi ?>.js'></script>
     <?php $jqueryUiTouch = filemtime(PATH_ASSETS . 'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
