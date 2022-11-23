@@ -1,533 +1,1594 @@
 <!DOCTYPE html>
 <html lang="fr" class="fa-events-icons-ready">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Alaxione - Prise de rdv</title>
 
+<<<<<<< HEAD
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <?php $recapMailCss = filemtime(PATH_ASSETS.'https://dev.alaxione.fr/newwidget/css/stepmodal.css') ?>
     <link rel="stylesheet" href="https://dev.alaxione.fr/newwidget/css/stepmodal.<?php echo $recapMailCss ?>.css">
+=======
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://dev.alaxione.fr/newwidget/css/stepmodal.css"
+    />
+>>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
     <style type="text/css">
-        .stepmodal .breadcrumbs {
-            color: #fa9178;
+      .stepmodal .breadcrumbs {
+        color: #fa9178;
+      }
+
+      .stepmodal .color-font-main,
+      .stepmodal a.color-font-main,
+      .minimodal .color-font-main,
+      .minimodal a.color-font-main {
+        color: #0070c9;
+        text-decoration-color: #0070c9;
+      }
+
+      .stepmodal .color-font-secondary,
+      .stepmodal a.color-font-secondary,
+      .minimodal .color-font-secondary,
+      .minimodal a.color-font-secondary {
+        color: #fa9178;
+        text-decoration-color: #fa9178;
+      }
+
+      .stepmodal select:focus,
+      .stepmodal input:focus {
+        outline: none;
+      }
+
+      .stepmodal select {
+        color: #0070c9 !important;
+      }
+
+      .stepmodal .seleqt .option.selected {
+        background: #fa9178;
+      }
+
+      .stepmodal .color-background-main,
+      .stepmodal a.color-background-main,
+      .minimodal .color-background-main,
+      .minimodal a.color-background-main {
+        background: #0070c9;
+      }
+
+      .stepmodal .color-background-secondary,
+      .stepmodal a.color-background-secondary,
+      .minimodal .color-background-secondary,
+      .minimodal a.color-background-secondary {
+        background: #fa9178;
+      }
+
+      .minimodal input,
+      .minimodal select {
+        color: #fa9178;
+      }
+
+      .minimodal input:focus {
+        color: #fa9178;
+        border-color: #fa9178;
+      }
+
+      .stepmodal-footer button.stepmodal-prev,
+      .stepmodal-footer button.btn-print {
+        color: #fa9178;
+        background: none;
+        border: 1px solid #fa9178;
+      }
+
+      .stepmodal-footer button.stepmodal-next,
+      .stepmodal-footer button.stepmodal-finish {
+        background: #fa9178;
+        border: 1px solid #fa9178;
+      }
+
+      .btn-important {
+        background: #fa9178;
+        color: #fafafa;
+      }
+
+      .block-personne .edit,
+      .block-personne .remove {
+        background: #fa9178;
+      }
+
+      @media all and (max-width: 768px) {
+        .stepmodal .stepmodal-header {
+          background: #0070c9;
+          background: -moz-linear-gradient(top, #0070c9 0%, #20405b 100%);
+          background: -webkit-gradient(
+            left top,
+            left bottom,
+            color-stop(0%, #0070c9),
+            color-stop(100%, #20405b)
+          );
+          background: -webkit-linear-gradient(top, #0070c9 0%, #20405b 100%);
+          background: -o-linear-gradient(top, #0070c9 0%, #20405b 100%);
+          background: -ms-linear-gradient(top, #0070c9 0%, #20405b 100%);
+          background: linear-gradient(to bottom, #0070c9 0%, #20405b 100%);
         }
 
-        .stepmodal .color-font-main, .stepmodal a.color-font-main,
-        .minimodal .color-font-main, .minimodal a.color-font-main {
-            color: #0070c9;
-            text-decoration-color: #0070c9;
+        .stepmodal .color-font-main-md,
+        .stepmodal a.color-font-main-md,
+        .minimodal .color-font-main-md,
+        .minimodal a.color-font-main-md {
+          color: #0070c9;
+          text-decoration-color: #0070c9;
         }
-
-        .stepmodal .color-font-secondary, .stepmodal a.color-font-secondary,
-        .minimodal .color-font-secondary, .minimodal a.color-font-secondary {
-            color: #fa9178;
-            text-decoration-color: #fa9178;
-        }
-
-        .stepmodal select:focus, .stepmodal input:focus{
-            outline: none;
-        }
-
-        .stepmodal select {
-            color: #0070c9 !important;
-        }
-
-        .stepmodal .seleqt .option.selected {
-            background: #fa9178;
-        }
-
-        .stepmodal .color-background-main, .stepmodal a.color-background-main,
-        .minimodal .color-background-main, .minimodal a.color-background-main{
-            background: #0070c9;
-        }
-
-        .stepmodal .color-background-secondary, .stepmodal a.color-background-secondary,
-        .minimodal .color-background-secondary, .minimodal a.color-background-secondary {
-            background: #fa9178;
-        }
-
-        .minimodal input, .minimodal select {
-            color: #fa9178;
+        d .minimodal p {
+          color: #0070c9;
         }
 
         .minimodal input:focus {
-            color: #fa9178;
-            border-color: #fa9178;
+          border-color: #0070c9;
         }
 
-        .stepmodal-footer button.stepmodal-prev, .stepmodal-footer button.btn-print {
-            color: #fa9178;
-            background: none;
-            border: 1px solid #fa9178;
+        .minimodal select:focus {
+          color: #fa9178;
         }
 
-        .stepmodal-footer button.stepmodal-next,
-        .stepmodal-footer button.stepmodal-finish {
-            background: #fa9178;
-            border: 1px solid #fa9178;
+        .minimodal button.cancel {
+          border: 2px solid #fa9178;
+          color: #fa9178;
         }
 
-        .btn-important {
-            background: #fa9178;
-            color: #fafafa;
+        #minimodal-code-prioritaire .input-wrapper {
+          border: 2px solid #fa9178;
+          color: #fa9178;
+        }
+      }
+
+      @media all and (min-width: 768px) {
+        .stepmodal [type="checkbox"]:checked + label:after,
+        .minimodal [type="checkbox"]:checked + label:after {
+          color: #fa9178;
         }
 
-        .block-personne .edit, .block-personne .remove {
-            background: #fa9178;
+        .minimodal input[type="radio"]:checked + span:before,
+        .stepmodal input[type="radio"]:checked + span:before {
+          background: #fa9178;
         }
 
-        @media all and (max-width: 768px) {
-            .stepmodal .stepmodal-header {
-                background: #0070c9;
-                background: -moz-linear-gradient(top, #0070c9 0%, #20405b 100%);
-                background: -webkit-gradient(left top, left bottom, color-stop(0%, #0070c9), color-stop(100%, #20405b));
-                background: -webkit-linear-gradient(top, #0070c9 0%, #20405b 100%);
-                background: -o-linear-gradient(top, #0070c9 0%, #20405b 100%);
-                background: -ms-linear-gradient(top, #0070c9 0%, #20405b 100%);
-                background: linear-gradient(to bottom, #0070c9 0%, #20405b 100%);
-            }
-
-            .stepmodal .color-font-main-md, .stepmodal a.color-font-main-md,
-            .minimodal .color-font-main-md, .minimodal a.color-font-main-md{
-                color: #0070c9;
-                text-decoration-color: #0070c9;
-            }d
-
-            .minimodal p {
-                color: #0070c9;
-            }
-
-            .minimodal input:focus {
-                border-color: #0070c9;
-            }
-
-            .minimodal select:focus {
-                color: #fa9178;
-            }
-
-            .minimodal button.cancel {
-                border: 2px solid #fa9178;
-                color: #fa9178;
-            }
-
-            #minimodal-code-prioritaire .input-wrapper {
-                border: 2px solid #fa9178;
-                color: #fa9178;
-            }
+        .stepmodal .color-font-main-lg,
+        .stepmodal a.color-font-main-lg,
+        .minimodal .color-font-main-lg,
+        .minimodal a.color-font-main-lg {
+          color: #0070c9;
+          text-decoration-color: #0070c9;
         }
 
-        @media all and (min-width: 768px) {
-
-            .stepmodal [type="checkbox"]:checked + label:after,
-            .minimodal [type="checkbox"]:checked + label:after {
-                color: #fa9178;
-            }
-
-            .minimodal input[type="radio"]:checked + span:before,
-            .stepmodal input[type="radio"]:checked + span:before {
-                background: #fa9178;
-            }
-
-            .stepmodal .color-font-main-lg, .stepmodal a.color-font-main-lg,
-            .minimodal .color-font-main-lg, .minimodal a.color-font-main-lg{
-                color: #0070c9;
-                text-decoration-color: #0070c9;
-            }
-
-            .stepmodal .color-font-secondary-lg, .stepmodal a.color-font-secondary-lg,
-            .minimodal .color-font-secondary-lg, .minimodal a.color-font-secondary-lg{
-                color: #fa9178;
-                text-decoration-color: #fa9178;
-            }
-
-            .stepmodal .color-background-secondary-lg, .stepmodal a.color-background-secondary-lg,
-            .minimodal .color-background-secondary-lg, .minimodal a.color-background-secondary-lg{
-                background: #fa9178;
-            }
+        .stepmodal .color-font-secondary-lg,
+        .stepmodal a.color-font-secondary-lg,
+        .minimodal .color-font-secondary-lg,
+        .minimodal a.color-font-secondary-lg {
+          color: #fa9178;
+          text-decoration-color: #fa9178;
         }
 
+        .stepmodal .color-background-secondary-lg,
+        .stepmodal a.color-background-secondary-lg,
+        .minimodal .color-background-secondary-lg,
+        .minimodal a.color-background-secondary-lg {
+          background: #fa9178;
+        }
+      }
     </style>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/common.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/util.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/stats.js"></script>
-</head>
-<body>
-<div class="stepmodal-sub-step recap-sub-step stepmodal-sub-step--active" data-substep="recap" style="opacity: 1;">
-    <div class="sub-step-subtitle color-font-secondary ">
-        <span class="trad" data-trad="title">Votre RDV est confirmé pour le 25/06/2018, 08:00</span>
-    </div>
+    <?php $common = filemtime(PATH_ASSETS . 'https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/common.js') ?>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/common.<?php echo $common ?>.js"
+    ></script>
+    <?php $util = filemtime(PATH_ASSETS . 'https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/util.js') ?>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/util.<?php echo $util ?>.js"
+    ></script>
+    <?php $stats = filemtime(PATH_ASSETS . 'https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/stats.js')?>
+    <script
+      type="text/javascript"
+      charset="UTF-8"
+      src="https://maps.googleapis.com/maps-api-v3/api/js/32/12/intl/fr_ALL/stats.<?php echo $stats ?>.js"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="stepmodal-sub-step recap-sub-step stepmodal-sub-step--active"
+      data-substep="recap"
+      style="opacity: 1"
+    >
+      <div class="sub-step-subtitle color-font-secondary">
+        <span class="trad" data-trad="title"
+          >Votre RDV est confirmé pour le 25/06/2018, 08:00</span
+        >
+      </div>
 
-    <div class="recap-rdv">
+      <div class="recap-rdv">
         <div class="col-sm-6 recap-praticien">
-            <div class="block">
-                <img alt="Photo du praticien" class="avatar-praticien"
-                     src="http://dev.alaxione.fr/uploads/17072015120727_alaxione_user58.gif">
-                <p>
-                    <span class="trad color-font-main" data-trad="libelle-praticien"><strong>Dr MAZZER</strong></span>
-                    <br>
-                    <span class="trad" data-trad="libelle-profession">Ophtalmologiste</span>
-                </p>
-            </div>
+          <div class="block">
+            <img
+              alt="Photo du praticien"
+              class="avatar-praticien"
+              src="http://dev.alaxione.fr/uploads/17072015120727_alaxione_user58.gif"
+            />
+            <p>
+              <span class="trad color-font-main" data-trad="libelle-praticien"
+                ><strong>Dr MAZZER</strong></span
+              >
+              <br />
+              <span class="trad" data-trad="libelle-profession"
+                >Ophtalmologiste</span
+              >
+            </p>
+          </div>
         </div>
 
         <div class="col-sm-6 recap-patient">
-            <div class="block">
-                <p>
-                    Patients :
-                </p>
-                <ul class="liste-patients">
-                    <li class="patient"> Yannick VENDRELL</li>
-                </ul>
-                <p>
-                    Motif : <span class="trad"
-                                  data-trad="libelle-motif-rdv">Consultation - Patient entre 18 et 60 ans</span>
-                </p>
-            </div>
+          <div class="block">
+            <p>Patients :</p>
+            <ul class="liste-patients">
+              <li class="patient">Yannick VENDRELL</li>
+            </ul>
+            <p>
+              Motif :
+              <span class="trad" data-trad="libelle-motif-rdv"
+                >Consultation - Patient entre 18 et 60 ans</span
+              >
+            </p>
+          </div>
         </div>
+      </div>
 
-    </div>
-
-
-    <div class="block">
+      <div class="block">
         <div class="col-md-12">
-            <h3>
-                <img src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-consigne.png" class="title-icon">
-                <span class="trad" data-trad="titre_consignes_importantes">Consignes importantes</span>
-            </h3>
-            <div class="recap-consignes-importantes" style="">
-                <span class="trad"
-                      data-trad="consignes"><p><strong>N'oubliez pas de vous munir de votre carte vitale.</strong></p>
+          <h3>
+            <img
+              src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-consigne.png"
+              class="title-icon"
+            />
+            <span class="trad" data-trad="titre_consignes_importantes"
+              >Consignes importantes</span
+            >
+          </h3>
+          <div class="recap-consignes-importantes" style="">
+            <span class="trad" data-trad="consignes"
+              ><p>
+                <strong
+                  >N'oubliez pas de vous munir de votre carte vitale.</strong
+                >
+              </p>
 
-<p><strong>Pour les titulaires de la CMU, l'attestation papier est obligatoire.</strong></p>
-</span>
-            </div>
+              <p>
+                <strong
+                  >Pour les titulaires de la CMU, l'attestation papier est
+                  obligatoire.</strong
+                >
+              </p>
+            </span>
+          </div>
         </div>
 
         <div class="clearfix"></div>
-    </div>
+      </div>
 
-
-    <div class="block">
+      <div class="block">
         <div class="col-md-12">
-            <h3>
-                <img src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-marker.jpg" class="title-icon">
-                <span class="trad" data-trad="titre_lieu_moyen_acces">Lieu et moyens d'accès</span>
-            </h3>
+          <h3>
+            <img
+              src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-marker.jpg"
+              class="title-icon"
+            />
+            <span class="trad" data-trad="titre_lieu_moyen_acces"
+              >Lieu et moyens d'accès</span
+            >
+          </h3>
         </div>
 
         <div class="col-md-4">
-            <p>
-                <span class="trad" data-trad="libelle-lieu"><strong> Centre Ophtalmologique AXEVISION</strong></span>
-                <br>
-                <span class="trad" data-trad="adresse-lieu">4 rue Jean Rameau 40100 DAX</span>
-                <br>
-                <span class="trad" data-trad="telephone-lieu">Tel: 05 58 58 43 43</span>
-                <br>
-                <span class="trad" data-trad="site-lieu">Site: <a href="http://www.daxevision.fr">http://www.daxevision.fr</a></span>
-                <br>
-                <span class="trad" data-trad="ascenseur-lieu">Ascenseur: Oui</span>
-
-            </p>
+          <p>
+            <span class="trad" data-trad="libelle-lieu"
+              ><strong> Centre Ophtalmologique AXEVISION</strong></span
+            >
+            <br />
+            <span class="trad" data-trad="adresse-lieu"
+              >4 rue Jean Rameau 40100 DAX</span
+            >
+            <br />
+            <span class="trad" data-trad="telephone-lieu"
+              >Tel: 05 58 58 43 43</span
+            >
+            <br />
+            <span class="trad" data-trad="site-lieu"
+              >Site:
+              <a href="http://www.daxevision.fr"
+                >http://www.daxevision.fr</a
+              ></span
+            >
+            <br />
+            <span class="trad" data-trad="ascenseur-lieu">Ascenseur: Oui</span>
+          </p>
         </div>
 
         <div class="col-md-5">
-            <div class="trad" data-trad="transport-lieu"><p>Duplex ic (ligne 6)</p>
+          <div class="trad" data-trad="transport-lieu">
+            <p>Duplex ic (ligne 6)</p>
 
-                <p>RER C champ de mars</p>
+            <p>RER C champ de mars</p>
 
-                <p>parking&nbsp; public</p>
-            </div>
+            <p>parking&nbsp; public</p>
+          </div>
         </div>
 
         <div class="col-md-3 recap-map">
-            <div id="recap-lieu-map" style="position: relative; overflow: hidden;">
-                <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
-                    <div class="gm-style"
-                         style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
-                        <div tabindex="0"
-                             style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;">
-                            <div style="z-index: 1; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);">
-                                <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
-                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                                        <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -91, -215);">
-                                            <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
-                                                <div style="width: 256px; height: 256px;"></div>
-                                            </div>
-                                            <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
-                                                <div style="width: 256px; height: 256px;"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
-                                <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
-                                <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;">
-                                    <div style="position: absolute; left: 0px; top: 0px; z-index: -1;">
-                                        <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -91, -215);">
-                                            <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 256px;"></div>
-                                            <div style="width: 256px; height: 256px; overflow: hidden; position: absolute; left: 0px; top: 0px;"></div>
-                                        </div>
-                                    </div>
-                                    <div style="width: 27px; height: 43px; overflow: hidden; position: absolute; left: -14px; top: -43px; z-index: 0;">
-                                        <img alt=""
-                                             src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"
-                                             draggable="false"
-                                             style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                                    </div>
-                                </div>
-                                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                                    <div style="position: absolute; z-index: 1; transform: matrix(1, 0, 0, 1, -91, -215);">
-                                        <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
-                                            <img draggable="false" alt=""
-                                                 src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i32575!3i23904!4i256!2m3!1e0!2sm!3i419119805!3m9!2sfr-FR!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!23i1301875&amp;token=1783"
-                                                 style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                                        </div>
-                                        <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
-                                            <img draggable="false" alt=""
-                                                 src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i32575!3i23905!4i256!2m3!1e0!2sm!3i419119516!3m9!2sfr-FR!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!23i1301875&amp;token=130117"
-                                                 style="width: 256px; height: 256px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gm-style-pbc"
-                                 style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
-                                <p class="gm-style-pbt"></p></div>
-                            <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
-                                <div style="z-index: 1; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px;"></div>
-                                <div style="z-index: 4; position: absolute; left: 50%; top: 50%; transform: translate(0px, 0px);">
-                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
-                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
-                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;">
-                                        <div class="gmnoprint"
-                                             style="width: 27px; height: 43px; overflow: hidden; position: absolute; opacity: 0.01; left: -14px; top: -43px; z-index: 0;">
-                                            <img alt=""
-                                                 src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"
-                                                 draggable="false" usemap="#gmimap0"
-                                                 style="position: absolute; left: 0px; top: 0px; width: 27px; height: 43px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                                            <map name="gmimap0" id="gmimap0">
-                                                <area log="miw" coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75"
-                                                      shape="poly" title=""
-                                                      style="cursor: pointer; touch-action: none;">
-                                            </map>
-                                        </div>
-                                    </div>
-                                    <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
-                                </div>
-                            </div>
+          <div id="recap-lieu-map" style="position: relative; overflow: hidden">
+            <div
+              style="
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: rgb(229, 227, 223);
+              "
+            >
+              <div
+                class="gm-style"
+                style="
+                  position: absolute;
+                  z-index: 0;
+                  left: 0px;
+                  top: 0px;
+                  height: 100%;
+                  width: 100%;
+                  padding: 0px;
+                  border-width: 0px;
+                  margin: 0px;
+                "
+              >
+                <div
+                  tabindex="0"
+                  style="
+                    position: absolute;
+                    z-index: 0;
+                    left: 0px;
+                    top: 0px;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0px;
+                    border-width: 0px;
+                    margin: 0px;
+                    cursor: url('https://maps.gstatic.com/mapfiles/openhand_8_8.cur'),
+                      default;
+                    touch-action: none;
+                  "
+                >
+                  <div
+                    style="
+                      z-index: 1;
+                      position: absolute;
+                      left: 50%;
+                      top: 50%;
+                      transform: translate(0px, 0px);
+                    "
+                  >
+                    <div
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 100;
+                        width: 100%;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          z-index: 0;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            z-index: 1;
+                            transform: matrix(1, 0, 0, 1, -91, -215);
+                          "
+                        >
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 256px;
+                              width: 256px;
+                              height: 256px;
+                            "
+                          >
+                            <div style="width: 256px; height: 256px"></div>
+                          </div>
+                          <div
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              width: 256px;
+                              height: 256px;
+                            "
+                          >
+                            <div style="width: 256px; height: 256px"></div>
+                          </div>
                         </div>
-                        <iframe frameborder="0" src="about:blank"
-                                style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"></iframe>
-                        <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
-                            <a target="_blank"
-                               href="https://maps.google.com/maps?ll=43.704257,-1.058221&amp;z=16&amp;t=m&amp;hl=fr-FR&amp;gl=US&amp;mapclient=apiv3"
-                               title="Cliquez ici pour afficher cette zone sur Google&nbsp;Maps"
-                               style="position: static; overflow: visible; float: none; display: inline;">
-                                <div style="width: 66px; height: 26px; cursor: pointer;"><img alt=""
-                                                                                              src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"
-                                                                                              draggable="false"
-                                                                                              style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
-                                </div>
-                            </a></div>
-                        <div style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 114px; height: 108px; position: absolute; left: 5px; top: 5px;">
-                            <div style="padding: 0px 0px 10px; font-size: 16px;">Données cartographiques</div>
-                            <div style="font-size: 13px;">Données cartographiques ©2018 Google</div>
-                            <div style="width: 13px; height: 13px; overflow: hidden; position: absolute; opacity: 0.7; right: 12px; top: 12px; z-index: 10000; cursor: pointer;">
-                                <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"
-                                     draggable="false"
-                                     style="position: absolute; left: -2px; top: -336px; width: 59px; height: 492px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                            </div>
-                        </div>
-                        <div class="gmnoprint"
-                             style="z-index: 1000001; position: absolute; right: 113px; bottom: 0px; width: 126px;">
-                            <div draggable="false" class="gm-style-cc"
-                                 style="user-select: none; height: 14px; line-height: 14px;">
-                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                    <div style="width: 1px;"></div>
-                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                                </div>
-                                <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                                    <a style="text-decoration: none; cursor: pointer;">Données cartographiques</a><span
-                                        style="display: none;">Données cartographiques ©2018 Google</span></div>
-                            </div>
-                        </div>
-                        <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
-                            <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(68, 68, 68); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">
-                                Données cartographiques ©2018 Google
-                            </div>
-                        </div>
-                        <div class="gmnoprint gm-style-cc" draggable="false"
-                             style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
-                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                <div style="width: 1px;"></div>
-                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                            </div>
-                            <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                                <a href="https://www.google.com/intl/fr-FR_US/help/terms_maps.html" target="_blank"
-                                   style="text-decoration: none; cursor: pointer; color: rgb(68, 68, 68);">Conditions
-                                                                                                           d'utilisation</a>
-                            </div>
-                        </div>
-                        <button draggable="false" title="Passer en plein écran" aria-label="Passer en plein écran"
-                                type="button"
-                                style="background: none rgb(255, 255, 255); border: 0px; margin: 10px 14px; padding: 0px; position: absolute; cursor: pointer; user-select: none; width: 25px; height: 25px; overflow: hidden; top: 0px; right: 0px;">
-                            <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png" draggable="false"
-                                 class="gm-fullscreen-control"
-                                 style="position: absolute; left: -52px; top: -86px; width: 164px; height: 175px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
-                        </button>
-                        <div draggable="false" class="gm-style-cc"
-                             style="user-select: none; height: 14px; line-height: 14px; display: none; position: absolute; right: 0px; bottom: 0px;">
-                            <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                <div style="width: 1px;"></div>
-                                <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                            </div>
-                            <div style="position: relative; padding-right: 6px; padding-left: 6px; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                                <a target="_blank" rel="noopener"
-                                   title="Signaler à Google une erreur dans la carte routière ou les images"
-                                   href="https://www.google.com/maps/@43.7042574,-1.0582207,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
-                                   style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Signaler
-                                                                                                                                                                       une
-                                                                                                                                                                       erreur
-                                                                                                                                                                       cartographique</a>
-                            </div>
-                        </div>
-                        <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false"
-                             controlwidth="0" controlheight="0"
-                             style="margin: 10px; user-select: none; position: absolute; display: none; bottom: 14px; right: 0px;">
-                            <div class="gmnoprint" style="display: none; position: absolute;">
-                                <div draggable="false"
-                                     style="user-select: none; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; background-color: rgb(255, 255, 255);">
-                                    <button draggable="false" title="Zoom avant" aria-label="Zoom avant" type="button"
-                                            style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none;">
-                                        <div style="overflow: hidden; position: absolute;"><img alt=""
-                                                                                                src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png"
-                                                                                                draggable="false"
-                                                                                                style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
-                                        </div>
-                                    </button>
-                                    <div style="position: relative; overflow: hidden; width: 67%; height: 1px; left: 16%; background-color: rgb(230, 230, 230);"></div>
-                                    <button draggable="false" title="Zoom arrière" aria-label="Zoom arrière"
-                                            type="button"
-                                            style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; position: relative; cursor: pointer; user-select: none;">
-                                        <div style="overflow: hidden; position: absolute;"><img alt=""
-                                                                                                src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png"
-                                                                                                draggable="false"
-                                                                                                style="position: absolute; left: 0px; top: 0px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 120px; height: 54px;">
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="gm-svpc" controlwidth="28" controlheight="28"
-                                 style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; width: 28px; height: 28px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none; display: none; position: absolute;">
-                                <div style="position: absolute; left: 1px; top: 1px;"></div>
-                            </div>
-                            <div class="gmnoprint" controlwidth="28" controlheight="0"
-                                 style="display: none; position: absolute;">
-                                <div title="Faire pivoter le plan à 90°"
-                                     style="width: 28px; height: 28px; overflow: hidden; position: absolute; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; cursor: pointer; display: none;">
-                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png"
-                                         draggable="false"
-                                         style="position: absolute; left: -141px; top: 6px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                                </div>
-                                <div class="gm-tilt"
-                                     style="width: 0px; height: 0px; overflow: hidden; position: absolute; background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; border-radius: 2px; top: 0px; cursor: pointer;">
-                                    <img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png"
-                                         draggable="false"
-                                         style="position: absolute; left: 0px; top: 0px; width: 170px; height: 54px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gmnoprint"
-                             style="margin: 10px; z-index: 0; position: absolute; cursor: pointer; display: none; left: 0px; top: 0px;">
-                            <div class="gm-style-mtc" style="float: left; position: relative;">
-                                <div role="button" tabindex="0" title="Afficher un plan de ville"
-                                     aria-label="Afficher un plan de ville" aria-pressed="true" draggable="false"
-                                     style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-left-radius: 2px; border-top-left-radius: 2px; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 22px; font-weight: 500;">
-                                    Plan
-                                </div>
-                                <div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; left: 0px; top: 0px; text-align: left; display: none;">
-                                    <div draggable="false" title="Afficher le relief sur la carte"
-                                         style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;">
-                                        <span role="checkbox"
-                                              style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div
-                                                style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden; display: none;"><img
-                                                alt="" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png"
-                                                draggable="false"
-                                                style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label
-                                            style="vertical-align: middle; cursor: pointer;">Relief</label></div>
-                                </div>
-                            </div>
-                            <div class="gm-style-mtc" style="float: left; position: relative;">
-                                <div role="button" tabindex="0" title="Afficher les images satellite"
-                                     aria-label="Afficher les images satellite" aria-pressed="false" draggable="false"
-                                     style="direction: ltr; overflow: hidden; text-align: center; position: relative; color: rgb(86, 86, 86); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 8px; border-bottom-right-radius: 2px; border-top-right-radius: 2px; background-clip: padding-box; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; min-width: 39px; border-left: 0px;">
-                                    Satellite
-                                </div>
-                                <div style="background-color: white; z-index: -1; padding: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; position: absolute; right: 0px; top: 0px; text-align: left; display: none;">
-                                    <div draggable="false" title="Afficher les images satellite avec le nom des rues"
-                                         style="color: rgb(0, 0, 0); font-family: Roboto, Arial, sans-serif; user-select: none; font-size: 11px; background-color: rgb(255, 255, 255); padding: 6px 8px 6px 6px; direction: ltr; text-align: left; white-space: nowrap;">
-                                        <span role="checkbox"
-                                              style="box-sizing: border-box; position: relative; line-height: 0; font-size: 0px; margin: 0px 5px 0px 0px; display: inline-block; background-color: rgb(255, 255, 255); border: 1px solid rgb(198, 198, 198); border-radius: 1px; width: 13px; height: 13px; vertical-align: middle;"><div
-                                                style="position: absolute; left: 1px; top: -2px; width: 13px; height: 11px; overflow: hidden;"><img
-                                                alt="" src="https://maps.gstatic.com/mapfiles/mv/imgs8.png"
-                                                draggable="false"
-                                                style="position: absolute; left: -52px; top: -44px; user-select: none; border: 0px; padding: 0px; margin: 0px; max-width: none; width: 68px; height: 67px;"></div></span><label
-                                            style="vertical-align: middle; cursor: pointer;">Légendes</label></div>
-                                </div>
-                            </div>
-                        </div>
+                      </div>
                     </div>
+                    <div
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 101;
+                        width: 100%;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 102;
+                        width: 100%;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 103;
+                        width: 100%;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          z-index: -1;
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            z-index: 1;
+                            transform: matrix(1, 0, 0, 1, -91, -215);
+                          "
+                        >
+                          <div
+                            style="
+                              width: 256px;
+                              height: 256px;
+                              overflow: hidden;
+                              position: absolute;
+                              left: 0px;
+                              top: 256px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              width: 256px;
+                              height: 256px;
+                              overflow: hidden;
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                            "
+                          ></div>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          width: 27px;
+                          height: 43px;
+                          overflow: hidden;
+                          position: absolute;
+                          left: -14px;
+                          top: -43px;
+                          z-index: 0;
+                        "
+                      >
+                        <img
+                          alt=""
+                          src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"
+                          draggable="false"
+                          style="
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            width: 27px;
+                            height: 43px;
+                            user-select: none;
+                            border: 0px;
+                            padding: 0px;
+                            margin: 0px;
+                            max-width: none;
+                          "
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        z-index: 0;
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          z-index: 1;
+                          transform: matrix(1, 0, 0, 1, -91, -215);
+                        "
+                      >
+                        <div
+                          style="
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            width: 256px;
+                            height: 256px;
+                          "
+                        >
+                          <img
+                            draggable="false"
+                            alt=""
+                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i32575!3i23904!4i256!2m3!1e0!2sm!3i419119805!3m9!2sfr-FR!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!23i1301875&amp;token=1783"
+                            style="
+                              width: 256px;
+                              height: 256px;
+                              user-select: none;
+                              border: 0px;
+                              padding: 0px;
+                              margin: 0px;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                        <div
+                          style="
+                            position: absolute;
+                            left: 0px;
+                            top: 256px;
+                            width: 256px;
+                            height: 256px;
+                          "
+                        >
+                          <img
+                            draggable="false"
+                            alt=""
+                            src="https://maps.googleapis.com/maps/vt?pb=!1m5!1m4!1i16!2i32575!3i23905!4i256!2m3!1e0!2sm!3i419119516!3m9!2sfr-FR!3sUS!5e18!12m1!1e68!12m3!1e37!2m1!1ssmartmaps!4e0!23i1301875&amp;token=130117"
+                            style="
+                              width: 256px;
+                              height: 256px;
+                              user-select: none;
+                              border: 0px;
+                              padding: 0px;
+                              margin: 0px;
+                              max-width: none;
+                            "
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gm-style-pbc"
+                    style="
+                      z-index: 2;
+                      position: absolute;
+                      height: 100%;
+                      width: 100%;
+                      padding: 0px;
+                      border-width: 0px;
+                      margin: 0px;
+                      left: 0px;
+                      top: 0px;
+                      opacity: 0;
+                    "
+                  >
+                    <p class="gm-style-pbt"></p>
+                  </div>
+                  <div
+                    style="
+                      z-index: 3;
+                      position: absolute;
+                      height: 100%;
+                      width: 100%;
+                      padding: 0px;
+                      border-width: 0px;
+                      margin: 0px;
+                      left: 0px;
+                      top: 0px;
+                      touch-action: pan-x pan-y;
+                    "
+                  >
+                    <div
+                      style="
+                        z-index: 1;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0px;
+                        border-width: 0px;
+                        margin: 0px;
+                        left: 0px;
+                        top: 0px;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        z-index: 4;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(0px, 0px);
+                      "
+                    >
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          z-index: 104;
+                          width: 100%;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          z-index: 105;
+                          width: 100%;
+                        "
+                      ></div>
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          z-index: 106;
+                          width: 100%;
+                        "
+                      >
+                        <div
+                          class="gmnoprint"
+                          style="
+                            width: 27px;
+                            height: 43px;
+                            overflow: hidden;
+                            position: absolute;
+                            opacity: 0.01;
+                            left: -14px;
+                            top: -43px;
+                            z-index: 0;
+                          "
+                        >
+                          <img
+                            alt=""
+                            src="https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi2.png"
+                            draggable="false"
+                            usemap="#gmimap0"
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              width: 27px;
+                              height: 43px;
+                              user-select: none;
+                              border: 0px;
+                              padding: 0px;
+                              margin: 0px;
+                              max-width: none;
+                            "
+                          />
+                          <map name="gmimap0" id="gmimap0">
+                            <area
+                              log="miw"
+                              coords="13.5,0,4,3.75,0,13.5,13.5,43,27,13.5,23,3.75"
+                              shape="poly"
+                              title=""
+                              style="cursor: pointer; touch-action: none"
+                            />
+                          </map>
+                        </div>
+                      </div>
+                      <div
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          z-index: 107;
+                          width: 100%;
+                        "
+                      ></div>
+                    </div>
+                  </div>
                 </div>
+                <iframe
+                  frameborder="0"
+                  src="about:blank"
+                  style="
+                    z-index: -1;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0px;
+                    left: 0px;
+                    border: none;
+                  "
+                ></iframe>
+                <div
+                  style="
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    z-index: 1000000;
+                    position: absolute;
+                    left: 0px;
+                    bottom: 0px;
+                  "
+                >
+                  <a
+                    target="_blank"
+                    href="https://maps.google.com/maps?ll=43.704257,-1.058221&amp;z=16&amp;t=m&amp;hl=fr-FR&amp;gl=US&amp;mapclient=apiv3"
+                    title="Cliquez ici pour afficher cette zone sur Google&nbsp;Maps"
+                    style="
+                      position: static;
+                      overflow: visible;
+                      float: none;
+                      display: inline;
+                    "
+                  >
+                    <div style="width: 66px; height: 26px; cursor: pointer">
+                      <img
+                        alt=""
+                        src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"
+                        draggable="false"
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          width: 66px;
+                          height: 26px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                        "
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div
+                  style="
+                    background-color: white;
+                    padding: 15px 21px;
+                    border: 1px solid rgb(171, 171, 171);
+                    font-family: Roboto, Arial, sans-serif;
+                    color: rgb(34, 34, 34);
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px;
+                    z-index: 10000002;
+                    display: none;
+                    width: 114px;
+                    height: 108px;
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                  "
+                >
+                  <div style="padding: 0px 0px 10px; font-size: 16px">
+                    Données cartographiques
+                  </div>
+                  <div style="font-size: 13px">
+                    Données cartographiques ©2018 Google
+                  </div>
+                  <div
+                    style="
+                      width: 13px;
+                      height: 13px;
+                      overflow: hidden;
+                      position: absolute;
+                      opacity: 0.7;
+                      right: 12px;
+                      top: 12px;
+                      z-index: 10000;
+                      cursor: pointer;
+                    "
+                  >
+                    <img
+                      alt=""
+                      src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"
+                      draggable="false"
+                      style="
+                        position: absolute;
+                        left: -2px;
+                        top: -336px;
+                        width: 59px;
+                        height: 492px;
+                        user-select: none;
+                        border: 0px;
+                        padding: 0px;
+                        margin: 0px;
+                        max-width: none;
+                      "
+                    />
+                  </div>
+                </div>
+                <div
+                  class="gmnoprint"
+                  style="
+                    z-index: 1000001;
+                    position: absolute;
+                    right: 113px;
+                    bottom: 0px;
+                    width: 126px;
+                  "
+                >
+                  <div
+                    draggable="false"
+                    class="gm-style-cc"
+                    style="user-select: none; height: 14px; line-height: 14px"
+                  >
+                    <div
+                      style="
+                        opacity: 0.7;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                      "
+                    >
+                      <div style="width: 1px"></div>
+                      <div
+                        style="
+                          background-color: rgb(245, 245, 245);
+                          width: auto;
+                          height: 100%;
+                          margin-left: 1px;
+                        "
+                      ></div>
+                    </div>
+                    <div
+                      style="
+                        position: relative;
+                        padding-right: 6px;
+                        padding-left: 6px;
+                        font-family: Roboto, Arial, sans-serif;
+                        font-size: 10px;
+                        color: rgb(68, 68, 68);
+                        white-space: nowrap;
+                        direction: ltr;
+                        text-align: right;
+                        vertical-align: middle;
+                        display: inline-block;
+                      "
+                    >
+                      <a style="text-decoration: none; cursor: pointer"
+                        >Données cartographiques</a
+                      ><span style="display: none"
+                        >Données cartographiques ©2018 Google</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="gmnoscreen"
+                  style="position: absolute; right: 0px; bottom: 0px"
+                >
+                  <div
+                    style="
+                      font-family: Roboto, Arial, sans-serif;
+                      font-size: 11px;
+                      color: rgb(68, 68, 68);
+                      direction: ltr;
+                      text-align: right;
+                      background-color: rgb(245, 245, 245);
+                    "
+                  >
+                    Données cartographiques ©2018 Google
+                  </div>
+                </div>
+                <div
+                  class="gmnoprint gm-style-cc"
+                  draggable="false"
+                  style="
+                    z-index: 1000001;
+                    user-select: none;
+                    height: 14px;
+                    line-height: 14px;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                  "
+                >
+                  <div
+                    style="
+                      opacity: 0.7;
+                      width: 100%;
+                      height: 100%;
+                      position: absolute;
+                    "
+                  >
+                    <div style="width: 1px"></div>
+                    <div
+                      style="
+                        background-color: rgb(245, 245, 245);
+                        width: auto;
+                        height: 100%;
+                        margin-left: 1px;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      padding-right: 6px;
+                      padding-left: 6px;
+                      font-family: Roboto, Arial, sans-serif;
+                      font-size: 10px;
+                      color: rgb(68, 68, 68);
+                      white-space: nowrap;
+                      direction: ltr;
+                      text-align: right;
+                      vertical-align: middle;
+                      display: inline-block;
+                    "
+                  >
+                    <a
+                      href="https://www.google.com/intl/fr-FR_US/help/terms_maps.html"
+                      target="_blank"
+                      style="
+                        text-decoration: none;
+                        cursor: pointer;
+                        color: rgb(68, 68, 68);
+                      "
+                      >Conditions d'utilisation</a
+                    >
+                  </div>
+                </div>
+                <button
+                  draggable="false"
+                  title="Passer en plein écran"
+                  aria-label="Passer en plein écran"
+                  type="button"
+                  style="
+                    background: none rgb(255, 255, 255);
+                    border: 0px;
+                    margin: 10px 14px;
+                    padding: 0px;
+                    position: absolute;
+                    cursor: pointer;
+                    user-select: none;
+                    width: 25px;
+                    height: 25px;
+                    overflow: hidden;
+                    top: 0px;
+                    right: 0px;
+                  "
+                >
+                  <img
+                    alt=""
+                    src="https://maps.gstatic.com/mapfiles/api-3/images/sv9.png"
+                    draggable="false"
+                    class="gm-fullscreen-control"
+                    style="
+                      position: absolute;
+                      left: -52px;
+                      top: -86px;
+                      width: 164px;
+                      height: 175px;
+                      user-select: none;
+                      border: 0px;
+                      padding: 0px;
+                      margin: 0px;
+                    "
+                  />
+                </button>
+                <div
+                  draggable="false"
+                  class="gm-style-cc"
+                  style="
+                    user-select: none;
+                    height: 14px;
+                    line-height: 14px;
+                    display: none;
+                    position: absolute;
+                    right: 0px;
+                    bottom: 0px;
+                  "
+                >
+                  <div
+                    style="
+                      opacity: 0.7;
+                      width: 100%;
+                      height: 100%;
+                      position: absolute;
+                    "
+                  >
+                    <div style="width: 1px"></div>
+                    <div
+                      style="
+                        background-color: rgb(245, 245, 245);
+                        width: auto;
+                        height: 100%;
+                        margin-left: 1px;
+                      "
+                    ></div>
+                  </div>
+                  <div
+                    style="
+                      position: relative;
+                      padding-right: 6px;
+                      padding-left: 6px;
+                      font-family: Roboto, Arial, sans-serif;
+                      font-size: 10px;
+                      color: rgb(68, 68, 68);
+                      white-space: nowrap;
+                      direction: ltr;
+                      text-align: right;
+                      vertical-align: middle;
+                      display: inline-block;
+                    "
+                  >
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      title="Signaler à Google une erreur dans la carte routière ou les images"
+                      href="https://www.google.com/maps/@43.7042574,-1.0582207,16z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                      style="
+                        font-family: Roboto, Arial, sans-serif;
+                        font-size: 10px;
+                        color: rgb(68, 68, 68);
+                        text-decoration: none;
+                        position: relative;
+                      "
+                      >Signaler une erreur cartographique</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom"
+                  draggable="false"
+                  controlwidth="0"
+                  controlheight="0"
+                  style="
+                    margin: 10px;
+                    user-select: none;
+                    position: absolute;
+                    display: none;
+                    bottom: 14px;
+                    right: 0px;
+                  "
+                >
+                  <div
+                    class="gmnoprint"
+                    style="display: none; position: absolute"
+                  >
+                    <div
+                      draggable="false"
+                      style="
+                        user-select: none;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        background-color: rgb(255, 255, 255);
+                      "
+                    >
+                      <button
+                        draggable="false"
+                        title="Zoom avant"
+                        aria-label="Zoom avant"
+                        type="button"
+                        style="
+                          background: none;
+                          display: block;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          cursor: pointer;
+                          user-select: none;
+                        "
+                      >
+                        <div style="overflow: hidden; position: absolute">
+                          <img
+                            alt=""
+                            src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png"
+                            draggable="false"
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              user-select: none;
+                              border: 0px;
+                              padding: 0px;
+                              margin: 0px;
+                              max-width: none;
+                              width: 120px;
+                              height: 54px;
+                            "
+                          />
+                        </div>
+                      </button>
+                      <div
+                        style="
+                          position: relative;
+                          overflow: hidden;
+                          width: 67%;
+                          height: 1px;
+                          left: 16%;
+                          background-color: rgb(230, 230, 230);
+                        "
+                      ></div>
+                      <button
+                        draggable="false"
+                        title="Zoom arrière"
+                        aria-label="Zoom arrière"
+                        type="button"
+                        style="
+                          background: none;
+                          display: block;
+                          border: 0px;
+                          margin: 0px;
+                          padding: 0px;
+                          position: relative;
+                          cursor: pointer;
+                          user-select: none;
+                        "
+                      >
+                        <div style="overflow: hidden; position: absolute">
+                          <img
+                            alt=""
+                            src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl.png"
+                            draggable="false"
+                            style="
+                              position: absolute;
+                              left: 0px;
+                              top: 0px;
+                              user-select: none;
+                              border: 0px;
+                              padding: 0px;
+                              margin: 0px;
+                              max-width: none;
+                              width: 120px;
+                              height: 54px;
+                            "
+                          />
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="gm-svpc"
+                    controlwidth="28"
+                    controlheight="28"
+                    style="
+                      background-color: rgb(255, 255, 255);
+                      box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                      border-radius: 2px;
+                      width: 28px;
+                      height: 28px;
+                      cursor: url('https://maps.gstatic.com/mapfiles/openhand_8_8.cur'),
+                        default;
+                      touch-action: none;
+                      display: none;
+                      position: absolute;
+                    "
+                  >
+                    <div style="position: absolute; left: 1px; top: 1px"></div>
+                  </div>
+                  <div
+                    class="gmnoprint"
+                    controlwidth="28"
+                    controlheight="0"
+                    style="display: none; position: absolute"
+                  >
+                    <div
+                      title="Faire pivoter le plan à 90°"
+                      style="
+                        width: 28px;
+                        height: 28px;
+                        overflow: hidden;
+                        position: absolute;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        border-radius: 2px;
+                        cursor: pointer;
+                        display: none;
+                      "
+                    >
+                      <img
+                        alt=""
+                        src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png"
+                        draggable="false"
+                        style="
+                          position: absolute;
+                          left: -141px;
+                          top: 6px;
+                          width: 170px;
+                          height: 54px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        "
+                      />
+                    </div>
+                    <div
+                      class="gm-tilt"
+                      style="
+                        width: 0px;
+                        height: 0px;
+                        overflow: hidden;
+                        position: absolute;
+                        background-color: rgb(255, 255, 255);
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        border-radius: 2px;
+                        top: 0px;
+                        cursor: pointer;
+                      "
+                    >
+                      <img
+                        alt=""
+                        src="https://maps.gstatic.com/mapfiles/api-3/images/tmapctrl4.png"
+                        draggable="false"
+                        style="
+                          position: absolute;
+                          left: 0px;
+                          top: 0px;
+                          width: 170px;
+                          height: 54px;
+                          user-select: none;
+                          border: 0px;
+                          padding: 0px;
+                          margin: 0px;
+                          max-width: none;
+                        "
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="gmnoprint"
+                  style="
+                    margin: 10px;
+                    z-index: 0;
+                    position: absolute;
+                    cursor: pointer;
+                    display: none;
+                    left: 0px;
+                    top: 0px;
+                  "
+                >
+                  <div
+                    class="gm-style-mtc"
+                    style="float: left; position: relative"
+                  >
+                    <div
+                      role="button"
+                      tabindex="0"
+                      title="Afficher un plan de ville"
+                      aria-label="Afficher un plan de ville"
+                      aria-pressed="true"
+                      draggable="false"
+                      style="
+                        direction: ltr;
+                        overflow: hidden;
+                        text-align: center;
+                        position: relative;
+                        color: rgb(0, 0, 0);
+                        font-family: Roboto, Arial, sans-serif;
+                        user-select: none;
+                        font-size: 11px;
+                        background-color: rgb(255, 255, 255);
+                        padding: 8px;
+                        border-bottom-left-radius: 2px;
+                        border-top-left-radius: 2px;
+                        background-clip: padding-box;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        min-width: 22px;
+                        font-weight: 500;
+                      "
+                    >
+                      Plan
+                    </div>
+                    <div
+                      style="
+                        background-color: white;
+                        z-index: -1;
+                        padding: 2px;
+                        border-bottom-left-radius: 2px;
+                        border-bottom-right-radius: 2px;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        text-align: left;
+                        display: none;
+                      "
+                    >
+                      <div
+                        draggable="false"
+                        title="Afficher le relief sur la carte"
+                        style="
+                          color: rgb(0, 0, 0);
+                          font-family: Roboto, Arial, sans-serif;
+                          user-select: none;
+                          font-size: 11px;
+                          background-color: rgb(255, 255, 255);
+                          padding: 6px 8px 6px 6px;
+                          direction: ltr;
+                          text-align: left;
+                          white-space: nowrap;
+                        "
+                      >
+                        <span
+                          role="checkbox"
+                          style="
+                            box-sizing: border-box;
+                            position: relative;
+                            line-height: 0;
+                            font-size: 0px;
+                            margin: 0px 5px 0px 0px;
+                            display: inline-block;
+                            background-color: rgb(255, 255, 255);
+                            border: 1px solid rgb(198, 198, 198);
+                            border-radius: 1px;
+                            width: 13px;
+                            height: 13px;
+                            vertical-align: middle;
+                          "
+                          ><div
+                            style="
+                              position: absolute;
+                              left: 1px;
+                              top: -2px;
+                              width: 13px;
+                              height: 11px;
+                              overflow: hidden;
+                              display: none;
+                            "
+                          >
+                            <img
+                              alt=""
+                              src="https://maps.gstatic.com/mapfiles/mv/imgs8.png"
+                              draggable="false"
+                              style="
+                                position: absolute;
+                                left: -52px;
+                                top: -44px;
+                                user-select: none;
+                                border: 0px;
+                                padding: 0px;
+                                margin: 0px;
+                                max-width: none;
+                                width: 68px;
+                                height: 67px;
+                              "
+                            /></div></span
+                        ><label style="vertical-align: middle; cursor: pointer"
+                          >Relief</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="gm-style-mtc"
+                    style="float: left; position: relative"
+                  >
+                    <div
+                      role="button"
+                      tabindex="0"
+                      title="Afficher les images satellite"
+                      aria-label="Afficher les images satellite"
+                      aria-pressed="false"
+                      draggable="false"
+                      style="
+                        direction: ltr;
+                        overflow: hidden;
+                        text-align: center;
+                        position: relative;
+                        color: rgb(86, 86, 86);
+                        font-family: Roboto, Arial, sans-serif;
+                        user-select: none;
+                        font-size: 11px;
+                        background-color: rgb(255, 255, 255);
+                        padding: 8px;
+                        border-bottom-right-radius: 2px;
+                        border-top-right-radius: 2px;
+                        background-clip: padding-box;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        min-width: 39px;
+                        border-left: 0px;
+                      "
+                    >
+                      Satellite
+                    </div>
+                    <div
+                      style="
+                        background-color: white;
+                        z-index: -1;
+                        padding: 2px;
+                        border-bottom-left-radius: 2px;
+                        border-bottom-right-radius: 2px;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        text-align: left;
+                        display: none;
+                      "
+                    >
+                      <div
+                        draggable="false"
+                        title="Afficher les images satellite avec le nom des rues"
+                        style="
+                          color: rgb(0, 0, 0);
+                          font-family: Roboto, Arial, sans-serif;
+                          user-select: none;
+                          font-size: 11px;
+                          background-color: rgb(255, 255, 255);
+                          padding: 6px 8px 6px 6px;
+                          direction: ltr;
+                          text-align: left;
+                          white-space: nowrap;
+                        "
+                      >
+                        <span
+                          role="checkbox"
+                          style="
+                            box-sizing: border-box;
+                            position: relative;
+                            line-height: 0;
+                            font-size: 0px;
+                            margin: 0px 5px 0px 0px;
+                            display: inline-block;
+                            background-color: rgb(255, 255, 255);
+                            border: 1px solid rgb(198, 198, 198);
+                            border-radius: 1px;
+                            width: 13px;
+                            height: 13px;
+                            vertical-align: middle;
+                          "
+                          ><div
+                            style="
+                              position: absolute;
+                              left: 1px;
+                              top: -2px;
+                              width: 13px;
+                              height: 11px;
+                              overflow: hidden;
+                            "
+                          >
+                            <img
+                              alt=""
+                              src="https://maps.gstatic.com/mapfiles/mv/imgs8.png"
+                              draggable="false"
+                              style="
+                                position: absolute;
+                                left: -52px;
+                                top: -44px;
+                                user-select: none;
+                                border: 0px;
+                                padding: 0px;
+                                margin: 0px;
+                                max-width: none;
+                                width: 68px;
+                                height: 67px;
+                              "
+                            /></div></span
+                        ><label style="vertical-align: middle; cursor: pointer"
+                          >Légendes</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
         <div class="clearfix"></div>
-    </div>
+      </div>
 
-    <div class="block">
+      <div class="block">
         <div class="col-md-6">
-            <h3>
-                <img src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-eur.png" class="title-icon">
-                <span class="trad" data-trad="titre_tarif_et_remboursement">Tarif et remboursement</span>
-            </h3>
-            <p>
-                <span class="trad" data-trad="infos-tarif"></span>
-            </p>
+          <h3>
+            <img
+              src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-eur.png"
+              class="title-icon"
+            />
+            <span class="trad" data-trad="titre_tarif_et_remboursement"
+              >Tarif et remboursement</span
+            >
+          </h3>
+          <p>
+            <span class="trad" data-trad="infos-tarif"></span>
+          </p>
         </div>
 
         <div class="col-md-6 recap-moyen-paiement">
-            <h3>
-                <img src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-credit-card.png" class="title-icon">
-                <span class="trad" data-trad="titre_moyen_paiement">Moyens de paiement</span>
-            </h3>
-            <p>
-                <span class="trad" data-trad="moyens-paiement">Cheque, espece et carte bancaire <img
-                        src="http://dev.alaxione.fr/img/cheque2.jpg" width="100px" border="0">&nbsp;&nbsp;<img
-                        src="http://dev.alaxione.fr/img/especes.jpg" width="100px" border="0">&nbsp;&nbsp;<img
-                        src="http://dev.alaxione.fr/img/cb.jpg" width="100px" border="0">&nbsp;&nbsp;</span>
-            </p>
+          <h3>
+            <img
+              src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-credit-card.png"
+              class="title-icon"
+            />
+            <span class="trad" data-trad="titre_moyen_paiement"
+              >Moyens de paiement</span
+            >
+          </h3>
+          <p>
+            <span class="trad" data-trad="moyens-paiement"
+              >Cheque, espece et carte bancaire
+              <img
+                src="http://dev.alaxione.fr/img/cheque2.jpg"
+                width="100px"
+                border="0"
+              />&nbsp;&nbsp;<img
+                src="http://dev.alaxione.fr/img/especes.jpg"
+                width="100px"
+                border="0"
+              />&nbsp;&nbsp;<img
+                src="http://dev.alaxione.fr/img/cb.jpg"
+                width="100px"
+                border="0"
+              />&nbsp;&nbsp;</span
+            >
+          </p>
         </div>
 
         <div class="clearfix"></div>
-    </div>
+      </div>
 
-    <div class="block">
+      <div class="block">
         <div class="col-md-12">
-            <h3><img src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-info-legales.png" class="title-icon">
-                <span class="trad" data-trad="titre_info_legales">Infos légales</span>
-            </h3>
-            <div class="recap-infos-legales">
-                <span class="trad" data-trad="infos-legales"></span>
-            </div>
-
+          <h3>
+            <img
+              src="https://dev.alaxione.fr/newwidget/img/stepmodal/icone-info-legales.png"
+              class="title-icon"
+            />
+            <span class="trad" data-trad="titre_info_legales"
+              >Infos légales</span
+            >
+          </h3>
+          <div class="recap-infos-legales">
+            <span class="trad" data-trad="infos-legales"></span>
+          </div>
         </div>
 
         <div class="clearfix"></div>
+      </div>
     </div>
-
-</div>
-</body>
+  </body>
 </html>

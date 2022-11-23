@@ -587,7 +587,8 @@
 					                        </div>
 					                    </div>
 					                    {literal}
-											<script type="text/javascript" src="js/datepicker-fr.js"></script>
+										<?php $datepickerFr = filemtime(PATH_ASSETS.'js/datepicker-fr.js'); ?>
+											<script type="text/javascript" src="js/datepicker-fr.<?php echo $datepickerFr ?>.js"></script>
 					                    	<script type="text/javascript">
 												$(document).ready(function() {
 													$( "{/literal}#id_{$objForm.nom_variable}{literal}" ).datepicker(

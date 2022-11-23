@@ -1,29 +1,40 @@
 <!-- Fullcalendar v5 -->
-<?php $calMinVuetous = filemtime(PATH_ASSETS.'') ?>
-<link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.<?php echo $calMinVuetous ?>.css">
-<script src="plugins/fullcalendar-v5/main.min.js"></script>
-<script src="plugins/fullcalendar-v5/locales/fr.js"></script>
+<link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.css">
+<?php $main = filemtime(PATH_ASSETS . 'plugins/fullcalendar-v5/main.min.js') ?>
+<script src="plugins/fullcalendar-v5/main.min.<?php echo $main ?>.js"></script>
+
+<?php $localFR = filemtime(PATH_ASSETS . 'plugins/fullcalendar-v5/locales/fr.js') ?>
+<script src="plugins/fullcalendar-v5/locales/fr.<?php echo $localFR ?>.js"></script>
 
 <!-- jQuery contextmenu (rightclick) -->
-<?php $contxtVueTous = filemtime(PATH_ASSETS.'') ?>
-<link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.<?php echo $contxtVueTous ?>css">
-<script src="plugins/jquery-contextmenu/jquery.contextMenu.min.js"></script>
-<script src="plugins/jquery-contextmenu/jquery.ui.position.js"></script>
+<link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.css">
+<?php $contextMenu = filemtime(PATH_ASSETS . 'plugins/jquery-contextmenu/jquery.contextMenu.min.js') ?>
+<script src="plugins/jquery-contextmenu/jquery.contextMenu.min.<?php $contextMenu ?>.js"></script>
+<?php $position = filemtime(PATH_ASSETS . 'plugins/jquery-contextmenu/jquery.ui.position.js') ?>
+<script src="plugins/jquery-contextmenu/jquery.ui.position.<?php echo $position ?>.js"></script>
 
 <!-- Pikaday -->
-<?php $pikaday = filemtime(PATH_ASSETS.'') ?>
-<link href="plugins/pikaday1.8.2/pikaday.<?php echo $pikaday ?>css" rel="stylesheet">
-<script src="plugins/pikaday1.8.2/pikaday.min.js"></script>
+<link href="plugins/pikaday1.8.2/pikaday.css" rel="stylesheet">
+<?php $pikaday = filemtime(PATH_ASSETS . 'plugins/pikaday1.8.2/pikaday.min.js') ?>
+<script src="plugins/pikaday1.8.2/pikaday.min.<?php echo $pikaday ?>.js"></script>
 
 <!-- script chelou de Guy -->
-<script type="text/javascript" src="js/js_planning_dispo.js"></script>
+<?php $planningDispo = filemtime(PATH_ASSETS . 'js/js_planning_dispo.js') ?>
+<script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo ?>.js"></script>
 
 <!-- Calendar -->
+<<<<<<< HEAD
 <?php $calVueTous = filemtime(PATH_ASSETS.'js/calendar.js') ?>
 <link rel="stylesheet" href="css/calendar.<?php echo $calVueTous ?>.css">
 <script type="text/javascript" src="js/calendar.js"></script>
 <?php $icommoonVuetous = filemtime(PATH_ASSETS.'css/font-icomoon.css') ?>
 <link href="css/font-icomoon.<?php echo $icommoonVuetous ?>.css" rel="stylesheet" type="text/css">
+=======
+<link rel="stylesheet" href="css/calendar.css">
+<?php $calendar = filemtime(PATH_ASSETS . 'js/calendar.js') ?>
+<script type="text/javascript" src="js/calendar.<?php echo $calendar ?>.js"></script>
+<link href="css/font-icomoon.css" rel="stylesheet" type="text/css">
+>>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
 
 <div id="calendarVueTous" style="display:flex;">
     <div class="menuBar">

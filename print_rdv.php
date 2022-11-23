@@ -1,6 +1,6 @@
 <?php
-
-function getInfoRdv($idrdv){
+function getInfoRdv($idrdv)
+{
     $objClassGenerique = new class_alaxione('', '', '');
 
     $result = array();
@@ -64,7 +64,7 @@ function getInfoRdv($idrdv){
     $aVariableRequeteRdv['idrdv'] = $idrdv;
     $aTableauRetour = $objClassGenerique->renvoi_info_requete_new($rdvRequete, $aVariableRequeteRdv);
 
-    if(empty($aTableauRetour)){
+    if (empty($aTableauRetour)) {
         return null;
     }
     $elemFirst = $aTableauRetour[0];
@@ -74,10 +74,10 @@ function getInfoRdv($idrdv){
     $abreviation_praticien = $elemFirst["abr_praticien"];
     $id_praticien = $elemFirst["identifiant_praticien"];
     $nom_profession = $elemFirst["nom_profession"];
-    $heureRdv = DateTime::createFromFormat("H:i",$elemFirst["heurereel"]);
+    $heureRdv = DateTime::createFromFormat("H:i", $elemFirst["heurereel"]);
 
     // Si le rdv a des fils, recupère le praticien du rdv pere et l'heure la plus tôt
-    if($elemFirst["idgrouperecurrent_prise_rendez_vous"] != ""){
+    if ($elemFirst["idgrouperecurrent_prise_rendez_vous"] != "") {
         $requeteFils = "SELECT fils.iddocteur_user, fils.id_prise_rendez_vous,
         fils.date_prise_rendez_vous as daterdv,
         fils.heureaff_prise_rendez_vous as heureAff,
@@ -99,12 +99,12 @@ function getInfoRdv($idrdv){
         $paramReq = array();
         $paramReq["idgroupe"] = $elemFirst["idgrouperecurrent_prise_rendez_vous"];
         $rdvFils = $objClassGenerique->renvoi_info_requete_new($requeteFils, $paramReq);
-        foreach($rdvFils as $elem){
-            $heureElem = DateTime::createFromFormat("H:i:s",$elem["heureDeb"]);
-            if($heureElem < $heureRdv){
+        foreach ($rdvFils as $elem) {
+            $heureElem = DateTime::createFromFormat("H:i:s", $elem["heureDeb"]);
+            if ($heureElem < $heureRdv) {
                 $heureRdv = $heureElem;
             }
-            if($elem["princ"] == "1"){
+            if ($elem["princ"] == "1") {
                 $prenom_praticien = $elem["prenom_praticien"];
                 $nom_praticien = $elem["nom_praticien"];
                 $abreviation_praticien = $elem["abr_praticien"];
@@ -135,9 +135,9 @@ function getInfoRdv($idrdv){
         $nom_praticien_remplacant = $aTableauRemplacant[0]['nom_user'];
         $nom_affiche_profession_remplacant = $aTableauRemplacant[0]['nom_affiche_profession'];
 
-        $nomdocteur = $abreviation_civilite_remplacant . " ".$nom_praticien_remplacant. " remplaçant de ".$abreviation_praticien." ".$nom_praticien." (".$nom_profession.")";
-    }else{
-        $nomdocteur = $abreviation_praticien." ".$prenom_praticien." ".$nom_praticien." (".$nom_profession.")";
+        $nomdocteur = $abreviation_civilite_remplacant . " " . $nom_praticien_remplacant . " remplaçant de " . $abreviation_praticien . " " . $nom_praticien . " (" . $nom_profession . ")";
+    } else {
+        $nomdocteur = $abreviation_praticien . " " . $prenom_praticien . " " . $nom_praticien . " (" . $nom_profession . ")";
     }
 
     $dateFr = ucfirst(strftime("%A %d %B %Y", $dateRdv->getTimestamp()));
@@ -201,19 +201,19 @@ if ($idrdv == "") {
 $objClassGenerique = new class_alaxione('', '', '');
 $bDroit = $objClassGenerique->verificationConnexion(1, $sCookieAdv);
 
-$rdvs = explode(',',$idrdv);
+$rdvs = explode(',', $idrdv);
 
 $infoRdvs = array();
 $areAllValid = false;
-foreach($rdvs as $idrdv){
+foreach ($rdvs as $idrdv) {
     $infoRdv = getInfoRdv($idrdv);
-    if($infoRdv != null){
+    if ($infoRdv != null) {
         $infoRdv["idRdv"] = $idrdv;
         $infoRdvs[] = $infoRdv;
         $areAllValid = true;
     }
 }
-if(!$areAllValid){
+if (!$areAllValid) {
     echo "Aucuns des id de rendez-vous suivant ne sont valides !";
     echo json_encode($rdvs);
     exit();
@@ -222,11 +222,11 @@ if(!$areAllValid){
 $sContenuqrcode = "https://" . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 $html2pdf = new Html2Pdf('P', 'A4', 'fr');
 $html2pdf->setDefaultFont('Arial');
-$i=1;
+$i = 1;
 $idcentre = $infoRdvs[0][0]['id_centre'];
-$hasTemplate = $objClassGenerique->activ_variable_config($idcentre,"typeprintrcaprdv","ok");
-if($hasTemplate){
-    foreach ($infoRdvs as $infoRdv){
+$hasTemplate = $objClassGenerique->activ_variable_config($idcentre, "typeprintrcaprdv", "ok");
+if ($hasTemplate) {
+    foreach ($infoRdvs as $infoRdv) {
         $globalValues = $infoRdv[0];
 
         setlocale(LC_ALL, "fr_FR.utf8");
@@ -235,15 +235,15 @@ if($hasTemplate){
         $globalValues["dateNow"] = $date_rdv;
         $firstRdv = $infoRdv;
         $sNomref = $globalValues['ref'];
-        $globalValues['ref'] = "Ref : ".$sNomref;
+        $globalValues['ref'] = "Ref : " . $sNomref;
         $fileNameQr = $infoRdv["idRdv"] . "_" . md5($sContenuqrcode) . '.png';
         $qrPath = "./" . $fileNameQr;
-        QRcode::png($sContenuqrcode,$qrPath,QR_ECLEVEL_L);
+        QRcode::png($sContenuqrcode, $qrPath, QR_ECLEVEL_L);
         $logo = "https://hpeuropeen.alaxione.fr/config/img/logohp.png";
         $imgQrcode = $qrPath;
         $adresse = $globalValues["adresse_entite"] . ", " . $globalValues["code_postal_entite"] . " " . $globalValues["ville_entite"];
         $num_tel = $globalValues["tel_entite"];
-        $tel_rdv = "Tel : ".$globalValues["tel_entite"];
+        $tel_rdv = "Tel : " . $globalValues["tel_entite"];
         $site_web = $globalValues["urlsite_entite"];
 
         $nom_patient = $globalValues['abreviation_civilite'] . ' ' . $globalValues['prenom_user'] . ' ' . $globalValues['nom_user'];
@@ -286,9 +286,9 @@ if($hasTemplate){
         ";
         $sContent = str_replace("[dateheurerdv]", $firstRdv["dateFrRdv"] . " à " . $firstRdv["heureRdv"]->format("H:i"), $sContent);
         $sContent = str_replace("[civilitepatient]", trim($globalValues['nom_cvilite']) == "" ? "Monsieur/Madame" : $globalValues['nom_cvilite'], $sContent);
-        $sContent = str_replace("[motif]",$firstRdv["libelle_type_rdv"] , $sContent);
-        $sContent = str_replace("[unitefonctionnelle]", "(".$firstRdv['unitefonctionnelle'].")" , $sContent);
-        $sContent = str_replace("[nomdocteur]", $firstRdv['nomPraticien'] , $sContent);
+        $sContent = str_replace("[motif]", $firstRdv["libelle_type_rdv"], $sContent);
+        $sContent = str_replace("[unitefonctionnelle]", "(" . $firstRdv['unitefonctionnelle'] . ")", $sContent);
+        $sContent = str_replace("[nomdocteur]", $firstRdv['nomPraticien'], $sContent);
         $content = $sContent;
 
         try {
@@ -300,7 +300,7 @@ if($hasTemplate){
             $html2pdf->writeHTML($content);
             $html2pdf->PageOffset($i);
             $i++;
-        }catch (Html2PdfException $e) {
+        } catch (Html2PdfException $e) {
             $html2pdf->clean();
 
             $formatter = new ExceptionFormatter($e);
@@ -312,7 +312,7 @@ if($hasTemplate){
     $commentaireLog = 'Impression de la confirmation du RDV';
 
     $aTableauLog['ip'] = $_SERVER['REMOTE_ADDR'];
-    $aTableauLog['user'] =$objClassGenerique->id_user;
+    $aTableauLog['user'] = $objClassGenerique->id_user;
     $aTableauLog['user_name'] = $objClassGenerique->fct_nom_user_connecte();
     $aTableauLog['date'] = date('Y-m-d H:i:s');
     $aTableauLog['script'] = $_SERVER['SCRIPT_NAME'];
@@ -324,8 +324,8 @@ if($hasTemplate){
     $aTableauLog['navigateur'] = $_SERVER['HTTP_USER_AGENT'];
     $aTableauLog['type'] = 'fonctionnel';
     $aTableauLog['serveur'] = $objClassGenerique->sNomServeurDBB;
-    $aTableauLog['entite'] =$_COOKIE['AlaxioneAutreCentre'];
-    $aTableauLog['commentaire'] =$commentaireLog;
+    $aTableauLog['entite'] = $_COOKIE['AlaxioneAutreCentre'];
+    $aTableauLog['commentaire'] = $commentaireLog;
 
     $objClassGenerique->push_trace_objet($aTableauLog);
 
@@ -337,7 +337,9 @@ if($hasTemplate){
 <!DOCTYPE html>
 <!--[if IE 8]>          <html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>          <html class="ie ie9"> <![endif]-->
-<!--[if gt IE 9]><!-->  <html><!--<![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+<!--<![endif]-->
 
 <!-- Specific Page Data -->
 <!-- End of Data -->
@@ -374,6 +376,7 @@ if($hasTemplate){
     <link href="css/font-entypo.<?php $fontEntypoMinPrintRdv ?>.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
+<<<<<<< HEAD
     <?php $customMinPrintRdv = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
     <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMinPrintRdv ?>.css" rel="stylesheet" type="text/css">
 
@@ -389,6 +392,9 @@ if($hasTemplate){
 
     <?php $fontMinPrintRdv = filemtime(PATH_ASSETS.'css/fonts.css') ?>
     <link href="css/fonts.<?php echo $fontMinPrintRdv ?>.css"  rel="stylesheet" type="text/css">
+=======
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+>>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
 
     <!-- Plugin CSS -->
         
@@ -453,8 +459,10 @@ if($hasTemplate){
 
     <!-- Head SCRIPTS -->
     <script type="text/javascript" src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/mobile-detect.min.js"></script>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.js"></script>
+    <?php $mobileDetectMin = filemtime(PATH_ASSETS . 'js/mobile-detect.min'); ?>
+    <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin ?>.js"></script>
+    <?php $mobileDetectModernizr = filemtime(PATH_ASSETS . 'js/mobile-detect-modernizr'); ?>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectModernizr ?>.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -468,44 +476,61 @@ if($hasTemplate){
     <script src='plugins/fullcalendar-2.3.1/lib/jquery.min.js'></script>
 
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/excanvas.js"></script>
+    <?php $excanvas = filemtime(PATH_ASSETS . 'js/excanvas.js'); ?>
+    <script type="text/javascript" src="js/excanvas.<?php echo $excanvas ?>.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <?php $JquerryCustomMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui/jquery-ui.custom.min.js'); ?>
+    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $JquerryCustomMin ?>.js'></script>
+    <?php $jQuerryTouchPunchMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); ?>
+    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $jQuerryTouchPunchMin ?>.js"></script>
 
     <script type="text/javascript" src="js/caroufredsel.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/framwork_js.js"></script>
+    <?php $frameWorkJs = filemtime(PATH_ASSETS . 'js/framwork_js.js'); ?>
+    <script type="text/javascript" src="js/framwork_js.<?php echo $frameWorkJs ?>.js"></script>
 
     <!-- Script pour l auto-completion -->
-    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
-
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.js"></script>
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script>
-
-    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.js"></script>
-    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.js"></script>
+    <?php $jQuerryAutoCompleteMin = filemtime(PATH_ASSETS . 'js/jquery.autocomplete.min.js'); ?>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.<?php echo $jQuerryAutoCompleteMin ?>.js"></script>
+    <?php $breakPoint = filemtime(PATH_ASSETS . 'plugins/breakpoints/breakpoints.js'); ?>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breakPoint ?>.js"></script>
+    <?php $jQUerryDataTableMin = filemtime(PATH_ASSETS . 'plugins/dataTables/jquery.dataTables.min.js'); ?>
+    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jQUerryDataTableMin ?>.js"></script>
+    <?php $jQuerryPrettyPhoto = filemtime(PATH_ASSETS . 'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'); ?>
+    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $jQuerryPrettyPhoto ?>.js"></script>
+    <?php $jQuerryMCustomScrollBarConcatMin = filemtime(PATH_ASSETS . 'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'); ?>
+    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $jQuerryMCustomScrollBarConcatMin ?>.js"></script>
+    <?php $jQuerryTagsInput = filemtime(PATH_ASSETS . 'plugins/tagsInput/jquery.tagsinput.min.js'); ?>
+    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.<?php echo $jQuerryTagsInput ?>.js"></script>
+    <?php $bootstrapSwitchMin = filemtime(PATH_ASSETS . 'plugins/bootstrap-switch/bootstrap-switch.min.js'); ?>
+    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootstrapSwitchMin ?>.js"></script>
+    <?php $jQuerryBlockUI = filemtime(PATH_ASSETS . 'plugins/blockUI/jquery.blockUI.js'); ?>
+    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.<?php echo $jQuerryBlockUI ?>.js"></script>
+    <?php $jQuerryPnotifyMin = filemtime(PATH_ASSETS . 'plugins/pnotify/js/jquery.pnotify.min.js'); ?>
+    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $jQuerryPnotifyMin ?>.js"></script>
 
 
 
     <script type="text/javascript" src="js/theme.js"></script>
-    <script type="text/javascript" src="custom/custom.js"></script>
+    <?php $custom_ = filemtime(PATH_ASSETS . 'custom/custom.js'); ?>
+    <script type="text/javascript" src="custom/custom.<?php echo $custom_ ?>.js"></script>
 
     <!-- Specific Page Scripts Put Here -->
-
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.js"></script>
+    <?php $jQuerryDataTableMin1 = filemtime(PATH_ASSETS . 'plugins/dataTables/jquery.dataTables.min.js'); ?>
+    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jQuerryDataTableMin1 ?>.js"></script>
+    <?php $dataTablesBootstrap = filemtime(PATH_ASSETS . 'plugins/dataTables/dataTables.bootstrap.js'); ?>
+    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.<?php echo $dataTablesBootstrap ?>.js"></script>
     <script type="text/javascript" src="js/datepicker-fr.js"></script>
 
-    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'></script>
-    <script type="text/javascript" src='plugins/daterangepicker/moment.min.js'></script>
-    <script type="text/javascript" src='plugins/daterangepicker/daterangepicker.js'></script>
-    <script type="text/javascript" src='plugins/colorpicker/colorpicker.js'></script>
+    <?php $bootstrapTimePickerMin = filemtime(PATH_ASSETS . 'plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'); ?>
+    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $bootstrapTimePickerMin ?>.js'></script>
+    <?php $momentMin = filemtime(PATH_ASSETS . 'plugins/daterangepicker/moment.min.js'); ?>
+    <script type="text/javascript" src='plugins/daterangepicker/moment.min.<?php echo $momentMin ?>.js'></script>
+    <?php $dateRangePicker = filemtime(PATH_ASSETS . 'plugins/daterangepicker/daterangepicker.js'); ?>
+    <script type="text/javascript" src='plugins/daterangepicker/daterangepicker.<?php echo $dateRangePicker ?>.js'></script>
+    <?php $colorPicker = filemtime(PATH_ASSETS . 'plugins/colorpicker/colorpicker.js'); ?>
+    <script type="text/javascript" src='plugins/colorpicker/colorpicker.<?php echo $colorPicker ?>.js'></script>
 
 
     <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
@@ -513,35 +538,59 @@ if($hasTemplate){
     <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.js"></script>
     <!-- The basic File Upload plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.js"></script>
+    <?php $jQuerryFileUpload = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload.js'); ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.<?php echo $jQuerryFileUpload ?>.js"></script>
     <!-- The File Upload processing plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.js"></script>
+    <?php $jQuerryFileUploadProcess = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-process.js'); ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.<?php echo $jQuerryFileUploadProcess ?>.js"></script>
     <!-- The File Upload image preview & resize plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.js"></script>
+    <?php $jQuerryFileUploadImage = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-image.js'); ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.<?php echo $jQuerryFileUploadImage ?>.js"></script>
     <!-- The File Upload audio preview plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.js"></script>
+    <?php $jQuerryFileUploadAudio = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-audio.js'); ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.<?php echo $jQuerryFileUploadAudio ?>.js"></script>
     <!-- The File Upload validation plugin -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.js"></script>
+    <?php $jQuerryFileUploadValidate = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-validate.js'); ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.<?php echo $jQuerryFileUploadValidate ?>.js"></script>
 
 
 
     <!-- Specific Page Scripts END -->
-
-    <script src='plugins/fullcalendar-2.3.1/lib/moment.min.js'></script>
-
-    <script src='plugins/fullcalendar-2.3.1/fullcalendar.min.js'></script>
+    <?php $momentMin1 = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/lib/moment.min.js'); ?>
+    <script src='plugins/fullcalendar-2.3.1/lib/moment.min.<?php echo $momentMin1 ?>.js'></script>
+    <?php $fullCalendarMin = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/fullcalendar.min.js'); ?>
+    <script src='plugins/fullcalendar-2.3.1/fullcalendar.min.<?php echo $fullCalendarMin ?>.js'></script>
     <script src='plugins/fullcalendar-2.3.1/lang-all.js'></script>
-    <script type="text/javascript" src='plugins/ckeditor/ckeditor.js'></script>
-    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.js'></script>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+    <?php $ckeditor = filemtime(PATH_ASSETS . 'plugins/ckeditor/ckeditor.js'); ?>
+    <script type="text/javascript" src='plugins/ckeditor/ckeditor.<?php echo $ckeditor ?>.js'></script>
+    <?php $jQuerry1 = filemtime(PATH_ASSETS . 'plugins/ckeditor/adapters/jquery.js'); ?>
+    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.<?php echo $jQuerry1 ?>.js'></script>
+    <?php $maskedInputMin = filemtime(PATH_ASSETS . 'js/jquery.maskedinput.min.js'); ?>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.<?php echo $maskedInputMin ?>.js"></script>
 
     <script type="text/javascript" src="js/maskchamps.js"></script>
 
     <style type="text/css">
-        .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
-        .autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
-        .autocomplete-selected { background: #F0F0F0; }
-        .autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+        .autocomplete-suggestions {
+            border: 1px solid #999;
+            background: #FFF;
+            overflow: auto;
+        }
+
+        .autocomplete-suggestion {
+            padding: 2px 5px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .autocomplete-selected {
+            background: #F0F0F0;
+        }
+
+        .autocomplete-suggestions strong {
+            font-weight: normal;
+            color: #3399FF;
+        }
 
         .vd_menu-search .vd_menu-search-submit2 {
             position: absolute;
@@ -575,48 +624,47 @@ if($hasTemplate){
     <!-- End of Data -->
 </head>
 
-<body onload = " window.print()" id="tables" class="full-layout  nav-right-hide nav-right-start-hide  nav-top-fixed      responsive    clearfix" data-active="tables "  data-smooth-scrolling="1">
-<div style="margin: 0 auto;background-color: #FFFFFF;width: 800px;">
-    <?php
-    foreach ($infoRdvs as $infoRdv){
-        $globalValues = $infoRdv[0];
+<body onload=" window.print()" id="tables" class="full-layout  nav-right-hide nav-right-start-hide  nav-top-fixed      responsive    clearfix" data-active="tables " data-smooth-scrolling="1">
+    <div style="margin: 0 auto;background-color: #FFFFFF;width: 800px;">
+        <?php
+        foreach ($infoRdvs as $infoRdv) {
+            $globalValues = $infoRdv[0];
 
-        echo $objClassGenerique->mail_recap_html_rdv(
-            $globalValues['id_prise_rendez_vous'],
-            $globalValues['idpatient_user'],
-            "",
-            "",
-            true,
-            "",
-            "nomcal_praticien",
-            "backoffice",
-            $type
-        );
-        echo '<DIV STYLE="page-break-before:always"></DIV>';
+            echo $objClassGenerique->mail_recap_html_rdv(
+                $globalValues['id_prise_rendez_vous'],
+                $globalValues['idpatient_user'],
+                "",
+                "",
+                true,
+                "",
+                "nomcal_praticien",
+                "backoffice",
+                $type
+            );
+            echo '<DIV STYLE="page-break-before:always"></DIV>';
 
-        $aTableauLog = array();
-        $commentaireLog = 'Impression de la confirmation du RDV';
+            $aTableauLog = array();
+            $commentaireLog = 'Impression de la confirmation du RDV';
 
-        $aTableauLog['ip'] = $_SERVER['REMOTE_ADDR'];
-        $aTableauLog['user'] =$objClassGenerique->id_user;
-        $aTableauLog['user_name'] = $objClassGenerique->fct_nom_user_connecte();
-        $aTableauLog['date'] = date('Y-m-d H:i:s');
-        $aTableauLog['script'] = $_SERVER['SCRIPT_NAME'];
-        $aTableauLog['methode'] = 'DELETE';
-        $aTableauLog['objet'] = 'rdv';
-        $aTableauLog['ressource'] = $globalValues['id_prise_rendez_vous'];
-        $aTableauLog['status'] = 'nop';
-        $aTableauLog['os'] = $_SERVER['HTTP_USER_AGENT'];
-        $aTableauLog['navigateur'] = $_SERVER['HTTP_USER_AGENT'];
-        $aTableauLog['type'] = 'fonctionnel';
-        $aTableauLog['serveur'] = $objClassGenerique->sNomServeurDBB;
-        $aTableauLog['entite'] =$_COOKIE['AlaxioneAutreCentre'];
-        $aTableauLog['commentaire'] =$commentaireLog;
-        $logError = $objClassGenerique->push_trace_objet($aTableauLog);
-    }
+            $aTableauLog['ip'] = $_SERVER['REMOTE_ADDR'];
+            $aTableauLog['user'] = $objClassGenerique->id_user;
+            $aTableauLog['user_name'] = $objClassGenerique->fct_nom_user_connecte();
+            $aTableauLog['date'] = date('Y-m-d H:i:s');
+            $aTableauLog['script'] = $_SERVER['SCRIPT_NAME'];
+            $aTableauLog['methode'] = 'DELETE';
+            $aTableauLog['objet'] = 'rdv';
+            $aTableauLog['ressource'] = $globalValues['id_prise_rendez_vous'];
+            $aTableauLog['status'] = 'nop';
+            $aTableauLog['os'] = $_SERVER['HTTP_USER_AGENT'];
+            $aTableauLog['navigateur'] = $_SERVER['HTTP_USER_AGENT'];
+            $aTableauLog['type'] = 'fonctionnel';
+            $aTableauLog['serveur'] = $objClassGenerique->sNomServeurDBB;
+            $aTableauLog['entite'] = $_COOKIE['AlaxioneAutreCentre'];
+            $aTableauLog['commentaire'] = $commentaireLog;
+            $logError = $objClassGenerique->push_trace_objet($aTableauLog);
+        }
 
 
 
-    ?>
-</div>
-
+        ?>
+    </div>

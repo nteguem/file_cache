@@ -1,23 +1,50 @@
 <!-- agenda v4-->
-<?php $contextMenuCss = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextMenuCss ?>.css">
-  <?php $treeViewCss = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewCss ?>.css">
-  <?php $responsiveCss_1 = filemtime(PATH_ASSETS.'css/header_responsive.css') ?>
-  <link rel="stylesheet" href="css/header_responsive.<?php echo $responsiveCss_1 ?>.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
+  <link rel="stylesheet" href="css/header_responsive.css" type="text/css">
+  
 
-  <script type="text/javascript" src="js/datepicker-fr.js"></script>
+  <script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
 
-  <script type="text/javascript" src="js/liste_e7.js?{$stime}"></script>
-  <script type="text/javascript" src="js/js_planning_dispo.js?{$stime}"></script>
-  <script type="text/javascript" src="js/jquery.contextmenu.js"></script>
+  <?php
+  $listeE7 = filemtime(PATH_ASSETS.'js/liste_e7.js?{$stime}');
+   ?>
+
+  <script type="text/javascript" src="js/liste_e7.<?php echo $listeE7 ?>.js?{$stime}"></script>
+
+   <?php
+  $planningDispo = filemtime(PATH_ASSETS.'js/js_planning_dispo.js?{$stime}');
+   ?>
+  <script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo ?>.js?{$stime}"></script>
+  
+
+   <?php
+  $jquerryContextMenu = filemtime(PATH_ASSETS.'js/jquery.contextmenu.js');
+   ?>
+
+  <script type="text/javascript" src="js/jquery.contextmenu.<?php echo $jquerryContextMenu ?>.js"></script>
+
+  <?php
+  $boostrapTreeview = filemtime(PATH_ASSETS.'js/bootstrap-treeview.<?php echo $boostrapTreeview ?>.js');
+   ?>  
+  
   <script type="text/javascript" src="js/bootstrap-treeview.js"></script>
 
+<<<<<<< HEAD
   <?php $select1AgendaCss = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $select1AgendaCss ?>.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+=======
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+               <?php
+  $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js);
+?>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
+>>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
   {literal}
+ 
       <script type="text/javascript">
+
           $(document).ready(function() {
               $('.js-example-basic-single').select2();
           });
@@ -445,6 +472,9 @@ div.datepicker table td {
         <label class="control-label">Basculer sur une autre salle</label>
         <div class="controls" style="padding-bottom: 15px;">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+                        <?php
+  $cdnjsCloudflareCom = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflareCom ?>.js');
+?>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
             <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">
                 {foreach name="lstAgendaActif" from=$aTableauListepraticien item=objAgenda}
@@ -2753,6 +2783,7 @@ div.datepicker table td {
                                       $("#tel_mobile_patient_prendre_rdv_calendar").intlTelInput({
                                           preferredCountries:["fr", "be", "ch"],
                                           initialCountry: "{/literal}{$indicatif_structure}{literal}",
+
                                           utilsScript: "js/utils.js"
                                       });
                                       $("#tel_mobile_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
@@ -2780,6 +2811,7 @@ div.datepicker table td {
                             <input type="hidden" name="tel_fixe_patient_prendre_rdv_calendar_indicatif" id="tel_fixe_patient_prendre_rdv_calendar_indicatif" value="">
                             <input type="text" placeholder="Téléphone fixe" name="tel_fixe_patient_prendre_rdv_calendar" id="tel_fixe_patient_prendre_rdv_calendar" value="" class="input-widget" />
                               {literal}
+
                               <script type="text/javascript">
                                   $(document).ready(function () {
                                       $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput({

@@ -63,11 +63,11 @@
 
     <!-- Head SCRIPTS -->
     <?php $modernizr_1 = filemtime(PATH_ASSETS.'js/modernizr.js');?>
-    <script type="text/javascript" src="js/modernizr.<? php echo $modernizr_1 ?>.js"></script> 
+    <script type="text/javascript" src="js/modernizr.<?php echo $modernizr_1 ?>.js"></script> 
     <?php $mobileDtectMin_1 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js');?>
-    <script type="text/javascript" src="js/mobile-detect.min.<? php echo $mobileDtectMin_1 ?>.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDtectMin_1 ?>.js"></script> 
     <?php $mobileDtectModernizr_1 = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js');?>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.<? php echo $mobileDtectModernizr_1 ?>.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDtectModernizr_1 ?>.js"></script> 
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -101,7 +101,7 @@
                                 var alx_v = "1";
                             </script>
                             <?php $client_1 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js');?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<? php echo $client_1 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<?php echo $client_1 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                                 var alx_ort = "h";
                             </script>
                             <?php $client_2 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js');?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<? php echo $client_2 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<? php echo $client_2; ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
