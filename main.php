@@ -827,6 +827,47 @@ try {
 
     $objSmarty->assign('ckeditorAdaptersJquery_2',filemtime('plugins/ckeditor/adapters/jquery.js'));
 
+    //modal disponibilite supression box
+
+    $objSmarty->assign('jQuery_7',filemtime('js/jquery.js'));
+    $objSmarty->assign('bootstrapMin_07',filemtime('js/bootstrap.min.js'));
+    $objSmarty->assign('jQcustomMin_07',filemtime('plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punchMin_07',filemtime('plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+
+    $objSmarty->assign('caroufred_07',filemtime('js/caroufredsel.js'));
+
+    $objSmarty->assign('plugins_07',filemtime('js/plugins.js'));
+
+    $objSmarty->assign('breackPoint_07',filemtime('plugins/breakpoints/breakpoints.js'));
+
+    $objSmarty->assign('jqueryDataTablesMin_7',filemtime('plugins/dataTables/jquery.dataTables.min.js'));
+    
+    $objSmarty->assign('pluginJqueryPrettyPhoto_7',filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+
+    $objSmarty->assign('ContctMin_7',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+
+    $objSmarty->assign('tagsInput_7',filemtime('plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('bootstrapSwitchMin_7',filemtime('plugins/bootstrap-switch/bootstrap-switch.min.js'));
+
+    $objSmarty->assign('blockUI_7',filemtime('plugins/blockUI/jquery.blockUI.js'));
+
+    $objSmarty->assign('pNotify_7',filemtime('plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('theme_7',filemtime('js/theme.js'));
+
+    $objSmarty->assign('custom_7',filemtime('custom/custom.js'));
+    $objSmarty->assign('wizardMin_7',filemtime('plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+    $objSmarty->assign('dataPickerFr_7',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('modernzr_7',filemtime('js/modernizr.js'));
+    $objSmarty->assign('mobileDetectMin_7',filemtime('js/mobile-detect.min.js'));
+
+    $objSmarty->assign('mobileDetectModernizr_7',filemtime('js/mobile-detect-modernizr.js'));
+
+    $objSmarty->assign('jqueryMaskedinputMin_7',filemtime('js/jquery.maskedinput.min.js'));
+
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('ckeditorAdaptersJquery_7',filemtime('plugins/ckeditor/adapters/jquery.js'));
+
+
 
 
 
