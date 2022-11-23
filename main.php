@@ -755,6 +755,34 @@ try {
     $objSmarty->assign("locations", $locations);
     $objSmarty->assign("sMessageLieuxNotFound", $sMessageLieuxNotFound);
 
+    //liste_recommandations 
+    $objSmarty->assign('jsQuery',filemtime('js/jquery.js'));
+    $objSmarty->assign('bootstrapMin',filemtime('js/bootstrap.min.js'));
+    $objSmarty->assign('pluginsJquery',filemtime('plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('pluginsJqueryUiTouch',filemtime('plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('couroufredsel',filemtime('js/caroufredsel.js'));
+    $objSmarty->assign('jsPlugins',filemtime('js/plugins.js'));
+    $objSmarty->assign('pluginsBreakpoints',filemtime('plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('pluginsDatables',filemtime('plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('pluginsPrettyPhoto',filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('pluginsMyCustomScrollbar',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('pluginsTagInput',filemtime('plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('pluginsBoostrap',filemtime('plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('pluginsBlockUi',filemtime('plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pluginsPNotify',filemtime('plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('theme',filemtime('js/theme.js'));
+    $objSmarty->assign('custom',filemtime('custom/custom.js'));
+    $objSmarty->assign('pluginsBootstrapWizard',filemtime('plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+    $objSmarty->assign('datePicker',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('modernizr22',filemtime('js/modernizr.js'));
+    $objSmarty->assign('mobileDetect',filemtime('js/mobile-detect.min.js'));
+    $objSmarty->assign('mobileDetectModernizr',filemtime('js/mobile-detect-modernizr.js'));
+    $objSmarty->assign('jquerryMaskedInput',filemtime('js/jquery.maskedinput.min.js'));
+    $objSmarty->assign('compteWidget',filemtime('js/compte_widget.js'));
+    $objSmarty->assign('custom',filemtime('custom/custom.js'));
+
+
+
     include $sPageDirection;
 
     if ($pagesimple == "ok") {
