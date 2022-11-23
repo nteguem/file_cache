@@ -784,7 +784,50 @@ try {
     $objSmarty->assign('mobileDetectModernizr',filemtime('js/mobile-detect-modernizr.js'));
     $objSmarty->assign('jquerryMaskedInput',filemtime('js/jquery.maskedinput.min.js'));
     $objSmarty->assign('compteWidget',filemtime('js/compte_widget.js'));
-    $objSmarty->assign('custom',filemtime('custom/custom.js'));
+
+    //modal degue
+    $objSmarty->assign('jsRechercherCodePostal',filemtime('js/rechercher_code_postal.js'));
+
+    //modal_disponilibite_duplication
+    $objSmarty->assign('jQuery_2',filemtime('js/jquery.js'));
+    $objSmarty->assign('bootstrapMin_02',filemtime('js/bootstrap.min.js'));
+    $objSmarty->assign('jQcustomMin_02',filemtime('plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punchMin_02',filemtime('plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('caroufred_03',filemtime('js/caroufredsel.js'));
+    $objSmarty->assign('plugins_03',filemtime('js/plugins.js'));
+    $objSmarty->assign('breackPoint_02',filemtime('plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('jqueryDataTablesMin_2',filemtime('plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('pluginJqueryPrettyPhoto_2',filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+
+    $objSmarty->assign('ContctMin_3',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('tagsInput_3',filemtime('plugins/tagsInput/jquery.tagsinput.min.js'));
+
+    $objSmarty->assign('bootstrapSwitchMin_2',filemtime('plugins/bootstrap-switch/bootstrap-switch.min.js'));
+
+    $objSmarty->assign('blockUI_3',filemtime('plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pNotify_3',filemtime('plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('theme_3',filemtime('js/theme.js'));
+
+    $objSmarty->assign('custom_3',filemtime('custom/custom.js'));
+
+    $objSmarty->assign('wizardMin_3',filemtime('plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+
+    $objSmarty->assign('dataPickerFr_2',filemtime('js/js/datepicker-fr.js.js'));
+
+
+    $objSmarty->assign('modernzr_2',filemtime('js/modernizr.js'));
+
+    $objSmarty->assign('mobileDetectMin_2',filemtime('js/mobile-detect.min.js'));
+
+    $objSmarty->assign('mobileDetectModernizr_2',filemtime('js/mobile-detect-modernizr.js'));
+
+    $objSmarty->assign('jqueryMaskedinputMin_2',filemtime('js/jquery.maskedinput.min.js'));
+
+    $objSmarty->assign('pluginsCkeditorCkeditor_2',filemtime('plugins/ckeditor/ckeditor.js'));
+
+    $objSmarty->assign('ckeditorAdaptersJquery_2',filemtime('plugins/ckeditor/adapters/jquery.js'));
+
+
 
 
 
