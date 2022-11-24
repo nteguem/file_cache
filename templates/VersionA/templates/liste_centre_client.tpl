@@ -81,9 +81,9 @@
 
 {literal}
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../js/modernizr.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect.min.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.js"></script>
+    <script type="text/javascript" src="../js/modernizr.{modrnCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect.min.{detectMinCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.{detectModernizClient}.js"></script>
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -94,36 +94,36 @@
     
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-    <script src='../plugins/fullcalendar-2.3.1/lib/jquery.min.js'></script>
+    <script src='../plugins/fullcalendar-2.3.1/lib/jquery.min.{plugInCentreClient}.js'></script>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.{bootstapCentreClient}.js"></script>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{customCentreClient}.js'></script>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{punchCentreClient}.js"></script>
 
-    <script type="text/javascript" src="../js/caroufredsel.js"></script>
-    <script type="text/javascript" src="../js/plugins.js"></script>
-    <script type="text/javascript" src="../js/framwork_js.js"></script>
+    <script type="text/javascript" src="../js/caroufredsel.{caroufRedCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/plugins.{pluginsCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/framwork_js.{frameCentreClient}.js"></script>
 
     <!-- Script pour l'auto-completion -->
-    <script type="text/javascript" src="../js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.autocomplete.min.{autoCentreClient}.js"></script>
 
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.js"></script>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{breakinPointCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{dataTablesCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{prettyPhotoCentreClient}.js"></script>
 
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.js"></script>
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.js"></script>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{contactMinCnetreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{tagsInputCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{switchCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{blocKUiCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{pnofyCentreClient}.js"></script>
 
 
 
-    <script type="text/javascript" src="../js/theme.js"></script>
-    <script type="text/javascript" src="../custom/custom.js"></script>
+    <script type="text/javascript" src="../js/theme.{themeCentreClient}.js"></script>
+    <script type="text/javascript" src="../custom/custom.{custCustomCentreClient}.js"></script>
      
 
     <style type="text/css">

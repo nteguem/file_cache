@@ -85,46 +85,47 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.{jQueryDisPoModif}.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.js'></script>
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.{bootstrapDispoModif}.js"></script>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{customDispoModf}.js'></script>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{punhDispoModf}.js"></script>
 
-    <script type="text/javascript" src="../js/caroufredsel.js"></script>
-    <script type="text/javascript" src="../js/plugins.js"></script>
+    <script type="text/javascript" src="../js/caroufredsel.{caroufDispoModf}.js"></script>
+    <script type="text/javascript" src="../js/plugins.{plugDispoModf}.js"></script>
 
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.js"></script>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{breakDispoModif}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{dataDispoModif}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{prettyDispoModif}.js"></script>
 
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.js"></script>
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.js"></script>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{contactDispoModif}.js"></script>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{tagsDispoModif}.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{switchDispoModif}.js"></script>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{blockdispoModif}.js"></script>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{pnotifyDispoModif}.js"></script>
 
-    <script type="text/javascript" src="../js/theme.js"></script>
-    <script type="text/javascript" src="../custom/custom.js"></script>
+    <script type="text/javascript" src="../js/theme.{pnotifyDispoModif}.js"></script>
+    <script type="text/javascript" src="../custom/custom.{pnotifyDispoModif}.js"></script>
 
     <!-- Specific Page Scripts Put Here -->
-    <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'></script>
-    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'></script>
+    <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{timePickDispoModif}.js'></script>
+    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{wizarDispoModif}.js'></script>
 
-    <script type="text/javascript" src="../js/datepicker.js"></script>
-    <script type="text/javascript" src="../js/datepicker-fr.js"></script>
-    <script type="text/javascript" src="../js/jquery-clockpicker.min.js"></script>
+    <script type="text/javascript" src="../js/datepicker.{datePiDispoModif}.js"></script>
+    <script type="text/javascript" src="../js/datepicker-fr.{frDispoMofi}.js"></script>
+    <script type="text/javascript" src="../js/jquery-clockpicker.min.{clokDispoModif}.js"></script>
 
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../js/modernizr.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect.min.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.js"></script>
-    <script type="text/javascript" src="../js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="../js/modernizr.{modrnCentreDispoModif}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect.min.{detectMinCentreDispoModif}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.{detectModernizDispoModif}.js"></script>
 
-    <script type="text/javascript" src='../plugins/ckeditor/ckeditor.js'></script>
-    <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.js'></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.min.{maskDispoModif}.js"></script>
+
+    <script type="text/javascript" src='../plugins/ckeditor/ckeditor.{ckDispoModif}.js'></script>
+    <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.{adapDispoModif}.js'></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -605,7 +606,7 @@
                                                         {/if}
 
                                                         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{selec1DispoModif}.js"></script>
                                                         <div class="row">
                                                             <div class="form-group  col-sm-4" id="divlieux">
                                                                 <div class="col-sm-12 controls">

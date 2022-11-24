@@ -327,11 +327,11 @@ try {
     $valeur_cgu = $objUser->verification_cgu($objClassGenerique->identifiantuser);
     $objBackoffice = new class_backoffice();
     $tabListeCivilite = $objBackoffice->liste_civilite();
-    $tabListePatientType = $objBackoffice->liste_type_patient($objClassGenerique->identifiant_entite);
-    $idPatientTypeDefaut = $objBackoffice->getIdDefautTypePatient($objClassGenerique->identifiant_entite);
+    $tabListeInterpolType = $objBackoffice->liste_type_patient($objClassGenerique->identifiant_entite);
+    $idInterpolTypeDefaut = $objBackoffice->getIdDefautTypeInterpol($objClassGenerique->identifiant_entite);
 
-    $sRequeteGetRaisonsAppelPatient = "SELECT * FROM alc_raison_appel_patient WHERE type_appel = 'patient' and supplogique_raison = 'N' and identifiant_entite = '" . $objClassGenerique->identifiant_entite . "'";
-    $aTableauRaisonsAppelPatient = $DB->execute($sRequeteGetRaisonsAppelPatient);
+    $sRequeteGetRaisonsAppelInterpol = "SELECT * FROM alc_raison_appel_patient WHERE type_appel = 'patient' and supplogique_raison = 'N' and identifiant_entite = '" . $objClassGenerique->identifiant_entite . "'";
+    $aTableauRaisonsAppelInterpol = $DB->execute($sRequeteGetRaisonsAppelInterpol);
 
     $sRequeteGetRaisonsAppelCentre = "SELECT * FROM alc_raison_appel_patient WHERE type_appel = 'centre' and supplogique_raison = 'N' and identifiant_entite = '" . $objClassGenerique->identifiant_entite . "'";
     $aTableauRaisonsAppelCentre = $DB->execute($sRequeteGetRaisonsAppelCentre);
@@ -679,9 +679,9 @@ try {
     $objSmarty->assign('bIsIntepro', $bIsIntepro);
     $objSmarty->assign('bfom2', false);
     $objSmarty->assign('tabListeCivilite', $tabListeCivilite);
-    $objSmarty->assign('tabListePatientType', $tabListePatientType);
-    $objSmarty->assign('idPatientTypeDefaut', $idPatientTypeDefaut);
-    $objSmarty->assign('tabListeRaisonsAppelPatient', $aTableauRaisonsAppelPatient);
+    $objSmarty->assign('tabListeInterpolType', $tabListeInterpolType);
+    $objSmarty->assign('idInterpolTypeDefaut', $idInterpolTypeDefaut);
+    $objSmarty->assign('tabListeRaisonsAppelInterpol', $aTableauRaisonsAppelInterpol);
     $objSmarty->assign('tabListeRaisonsAppelCentre', $aTableauRaisonsAppelCentre);
     $objSmarty->assign('tabListeParent', $tabListeParent);
     $objSmarty->assign('bActiModif', $objClassGenerique->active_modif_rdv($objClassGenerique->identifiant_entite, $typemodule));
@@ -754,6 +754,128 @@ try {
     $objSmarty->assign("id_lieux", $id_lieux);
     $objSmarty->assign("locations", $locations);
     $objSmarty->assign("sMessageLieuxNotFound", $sMessageLieuxNotFound);
+
+    $objSmarty->assign('modernizr_1', filemtime('js/modernizr.js'));
+    $objSmarty->assign('slectConsign', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
+    $objSmarty->assign('slect1MinConsign', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'))
+    $objSmarty->assign('modrnCentreClient', filemtime('../js/modernizr.js'));
+    $objSmarty->assign('detectMinCentreClient', filemtime('../js/mobile-detect.min.js'));
+    $objSmarty->assign('detectModernizClient', filemtime('../js/mobile-detect-modernizr.js'));
+
+    $objSmarty->assign('plugInCentreClient', filemtime('../plugins/fullcalendar-2.3.1/lib/jquery.min.js'));
+    $objSmarty->assign('bootstapCentreClient', filemtime('../js/bootstrap.min.js'));
+    $objSmarty->assign('customCentreClient', filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punchCentreClient', filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('caroufRedCentreClient', filemtime('../js/caroufredsel.js'));
+    $objSmarty->assign('pluginsCentreClient', filemtime('../js/plugins.js'));
+    $objSmarty->assign('frameCentreClient', filemtime('../js/framwork_js.js'));
+    $objSmarty->assign('autoCentreClient', filemtime('../js/jquery.autocomplete.min.js'));
+    $objSmarty->assign('breakinPointCentreClient', filemtime('../plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('dataTablesCentreClient', filemtime('../plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('prettyPhotoCentreClient', filemtime('../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('contactMinCnetreClient', filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('tagsInputCentreClient', filemtime('./plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('switchCentreClient', filemtime('../plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('blocKUiCentreClient', filemtime('../plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pnofyCentreClient', filemtime('../plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('themeCentreClient', filemtime('../js/theme.js'));
+    $objSmarty->assign('custCustomCentreClient', filemtime('../custom/custom.js'));
+
+    $objSmarty->assign('modrnCentreDispoModif', filemtime('../js/modernizr.js'));
+    $objSmarty->assign('detectMinCentreDispoModif', filemtime('../js/mobile-detect.min.js'));
+    $objSmarty->assign('detectModernizDispoModif', filemtime('../js/mobile-detect-modernizr.js'));
+    $objSmarty->assign('jQueryDisPoModif', filemtime('../js/jquery.js'));
+    $objSmarty->assign('bootstrapDispoModif', filemtime('../js/bootstrap.min.js'));
+    
+    $objSmarty->assign('customDispoModf', filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punhDispoModf', filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('caroufDispoModf', filemtime('../js/caroufredsel.js'));
+    $objSmarty->assign('plugDispoModf', filemtime('../js/plugins.js'));
+    $objSmarty->assign('breakDispoModif', filemtime('../plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('dataDispoModif', filemtime('../plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('prettyDispoModif', filemtime('../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.'));
+    $objSmarty->assign('contactDispoModif', filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('tagsDispoModif', filemtime('../plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('blockdispoModif', filemtime('../plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pnotifyDispoModif', filemtime('../plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('pnotifyDispoModif', filemtime('../js/theme.js'));
+    $objSmarty->assign('pnotifyDispoModif', filemtime('../custom/custom.js'));
+
+
+    $objSmarty->assign('timePickDispoModif', filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'));
+    $objSmarty->assign('wizarDispoModif', filemtime('../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min..js'));
+    $objSmarty->assign('datePiDispoModif', filemtime('../js/datepicker.js'));
+    $objSmarty->assign('frDispoMofi', filemtime('../js/datepicker-fr.js'));
+    $objSmarty->assign('clokDispoModif', filemtime('../js/jquery-clockpicker.min.js'));
+    $objSmarty->assign('maskDispoModif', filemtime('../js/jquery.maskedinput.min.js'));
+    $objSmarty->assign('ckDispoModif', filemtime('../plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('adapDispoModif', filemtime('../plugins/ckeditor/adapters/jquery.js'));
+    $objSmarty->assign('selec1DispoModif', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
+    $objSmarty->assign('jQuery_v1', filemtime('../js/jquery.js'));
+    $objSmarty->assign('bootstrapDis', filemtime('../js/bootstrap.min.js'));
+    $objSmarty->assign('jqueryCustomMinDis', filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punhDis', filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('carouDis', filemtime('../js/caroufredsel.js'));
+    $objSmarty->assign('plugDis', filemtime('../js/plugins.js'));
+    $objSmarty->assign('breakpointsDis', filemtime('../plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('dataTablesDis', filemtime('../plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('preDis', filemtime('../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('mContDis', filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('tagsDis', filemtime('../plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('switchDis', filemtime('../plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('blockDis', filemtime('../plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pnoDis', filemtime('../plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('themDis', filemtime('../js/theme.js'));
+    $objSmarty->assign('cusDis', filemtime('../custom/custom.js'));
+    $objSmarty->assign('btimDis', filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'));
+    $objSmarty->assign('wizDis', filemtime('../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+    $objSmarty->assign('pickDis', filemtime('../js/datepicker.js'));
+    $objSmarty->assign('frDis', filemtime('../js/datepicker-fr.js'));
+    $objSmarty->assign('clocDis', filemtime('../js/jquery-clockpicker.min.js'));
+    $objSmarty->assign('zrDis', filemtime('../js/modernizr.js'));
+    $objSmarty->assign('mobildetecDis', filemtime('../js/mobile-detect.min.js'));
+    $objSmarty->assign('moderDis', filemtime('../js/mobile-detect-modernizr.js'));
+    $objSmarty->assign('maskDis', filemtime('../js/jquery.maskedinput.min.js'));
+    $objSmarty->assign('inMaskDis', filemtime('../js/jquery.inputmask.js'));
+    $objSmarty->assign('ckDis', filemtime('../plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('adDis', filemtime('../plugins/ckeditor/adapters/jquery.js'));
+    $objSmarty->assign('sl1Dis', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
+    
+    $objSmarty->assign('jqInterpol', filemtime('js/jquery.js'));
+    $objSmarty->assign('minInterpol', filemtime('js/bootstrap.min.js'));
+    $objSmarty->assign('cMinInterpol', filemtime('plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punchInterpol', filemtime('plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('crInterpol', filemtime('js/caroufredsel.js'));
+    $objSmarty->assign('plgInterpol', filemtime('js/plugins.js'));
+    $objSmarty->assign('breackInterpol', filemtime('plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('jqDtInterpol', filemtime('plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('prtInterpol', filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('mCInterpol', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('mnInterpol', filemtime('plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('smInterpol', filemtime('plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('blInterpol', filemtime('plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pnInterpol', filemtime('plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('thInterpol', filemtime('js/theme.js'));
+    $objSmarty->assign('ccInterpol', filemtime('custom/custom.js'));
+    $objSmarty->assign('wiz_rdv_patient', filemtime('plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+    $objSmarty->assign('dpInterpol', filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('zrInterpol', filemtime('js/modernizr.js'));
+    $objSmarty->assign('minInterpol', filemtime('js/mobile-detect.min.js'));
+    $objSmarty->assign('mzrInterpol', filemtime('js/mobile-detect-modernizr.js'));
+    $objSmarty->assign('mskInterpol', filemtime('js/jquery.maskedinput.min.js'));
+    $objSmarty->assign('wdInterpol', filemtime('js/compte_widget.js'));
+    $objSmarty->assign('autoInterpol', filemtime('js/jquery.autocomplete.min.js'));
+    $objSmarty->assign('cnInterpol', filemtime('js/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('mouseInterpol', filemtime('js/jquery.mousewheel.min.js'));
+    $objSmarty->assign('e6Interpol', filemtime('js/liste_e6.js'));
+    $objSmarty->assign('prInterpol', filemtime('https://unpkg.com/react@16.0.0/umd/react.production.min.js'));
+    $objSmarty->assign('slimInterpol', filemtime('https://code.jquery.com/jquery-3.2.1.slim.min.js'));
+
+
+
+
+
+
 
     include $sPageDirection;
 
