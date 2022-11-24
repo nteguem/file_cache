@@ -134,7 +134,7 @@
                                 {/if}
                                     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
                                     <?php  $select2Min = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');?>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $select2Min ?>.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{$select2Min}.js"></script>
                                     {literal}
                                         <script type="text/javascript">
                                             $(document).ready(function() {
@@ -374,7 +374,7 @@
                                     {literal}
 
                                     <?php  $datepicker3 = filemtime(PATH_ASSETS.'js/datepicker-fr.js');?>
-                                        <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker3 ?>.js"></script>
+                                        <script type="text/javascript" src="js/datepicker-fr.{$datepicker3}.js"></script>
                                         <script type="text/javascript">
                                             $(document).ready(function() {
                                                 var curdate = new Date();

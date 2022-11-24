@@ -168,7 +168,7 @@
                                                     <?php
                                                     $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
                                                     ?>
-                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{$cdnjsCloudflare}.js"></script>
                                                     <div class="col-sm-12 input-group" id="id_selectmotif">
                                                         <select
                                                         id="id_form_{$objRech.nom_variable}"
@@ -359,7 +359,7 @@
                                                <?php
                                                 $datepicker = filemtime(PATH_ASSETS.'js/datepicker-fr.js');
                                                 ?>
-                                                <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker ?>.js"></script>
+                                                <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
                                                 <script type="text/javascript">
                                                     $(document).ready(function() {
                                                         var curdate = new Date();
@@ -422,7 +422,7 @@
                                                 <?php
                                                 $datepicker1 = filemtime(PATH_ASSETS.'js/datepicker-fr.js');
                                                 ?>
-                                                <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker ?>.js"></script>
+                                                <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
                                                 <script type="text/javascript">
                                                     $(document).ready(function() {
                                                         $( "{/literal}#id_{$objRech.nom_variable}{literal}" ).datepicker(
