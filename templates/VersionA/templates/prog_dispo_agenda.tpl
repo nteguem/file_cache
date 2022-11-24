@@ -1,6 +1,4 @@
-<?php $listeDispo = filemtime(PATH_ASSETS . 'js/liste_dispo.js')?>
-<script type="text/javascript" src="js/liste_dispo.<?php echo $listeDispo ?>.js"></script>
-
+<script type="text/javascript" src="js/liste_dispo.{$listeDispo}.js"></script>
 
 <div class="vd_title-section clearfix">
   <div class="vd_panel-header no-menu">

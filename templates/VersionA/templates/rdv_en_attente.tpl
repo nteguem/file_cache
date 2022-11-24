@@ -253,8 +253,7 @@
                                                 </div>
                                             </div>
                                             {literal}
-                                            <?php $datepicker = filemtime(PATH_ASSETS . 'js/datepicker-fr.js') ?>
-                                            <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker ?>.js"></script>
+                                            <script type="text/javascript" src="js/datepicker-fr.{$datepicker3}.js"></script>
                                             <script type="text/javascript">
                                                 $(document).ready(function() {
                                                     var curdate = new Date();
@@ -314,8 +313,7 @@
                                                 </div>
                                             </div>
                                             {literal}
-                                            <?php $datepicker2 = filemtime(PATH_ASSETS . 'js/datepicker-fr.js') ?>
-                                            <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker2 ?>.js"></script>
+                                            <script type="text/javascript" src="js/datepicker-fr.{$datepicker2}.js"></script>
                                             <script type="text/javascript">
                                                 $(document).ready(function() {
                                                     $( "{/literal}#id_{$objRech.nom_variable}{literal}" ).datepicker(
