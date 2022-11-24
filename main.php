@@ -1331,32 +1331,7 @@ try {
     $pnotify->assign ('main',filemtime('plugins/pnotify/js/jquery.pnotify.min.js'));
     $theme->assign ('main',filemtime('js/theme.js'));
     $custom->assign ('main',filemtime('custom/custom.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-    $listeE1->assign ('main',filemtime('js/liste_e1.js'));
-
+    
 
 
 
