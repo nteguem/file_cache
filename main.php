@@ -969,6 +969,27 @@ try {
      $objSmarty->assign('jQuerryMaskedInputMin',filemtime('js/jquery.maskedinput.min.js'));
      $objSmarty->assign('ckeditor',filemtime('plugins/ckeditor/ckeditor.js'));
      $objSmarty->assign('jquery2',filemtime('plugins/ckeditor/adapters/jquery.js'));
+     $objSmarty->assign('moderVertical',filemtime('js/modernizr.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('mobileDetecVertical',filemtime('js/mobile-detect.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('mobileDetectMdVertical',filemtime('js/mobile-detect-modernizr.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('literalFullCalender',filemtime('plugins/fullcalendar-3.5.0/lib/jquery.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('excanvas',filemtime('js/excanvas.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('bootstrapVertical',filemtime('js/bootstrap.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('customVertical',filemtime('plugins/jquery-ui/jquery-ui.custom.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('touchPuncVertical',filemtime('plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('caroufVertical',filemtime('js/caroufredsel.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('pluginVertical',filemtime('js/plugins.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('frameworkVertical',filemtime('js/framwork_js.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('autoVertical',filemtime('js/jquery.autocomplete.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('breackPoinVertical',filemtime('plugins/breakpoints/breakpoints.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('dataTableVertical',filemtime('plugins/dataTables/jquery.dataTables.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('prettyPhotVertical',filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('contactMinVertical',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('tagsInputVertical',filemtime('plugins/tagsInput/jquery.tagsinput.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('bootStrapVertical',filemtime('plugins/bootstrap-switch/bootstrap-switch.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('blockUiVertical',filemtime('plugins/blockUI/jquery.blockUI.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('pnotify_1',filemtime('plugins/pnotify/js/jquery.pnotify.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('themeVertical',filemtime('js/theme.js?v={/literal}{$numero_version_alaxione}{literal}'));
 
 
     
