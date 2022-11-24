@@ -1,31 +1,24 @@
 <!-- Fullcalendar v5 -->
 <link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.css">
-<?php $main = filemtime(PATH_ASSETS . 'plugins/fullcalendar-v5/main.min.js') ?>
-<script src="plugins/fullcalendar-v5/main.min.<?php echo $main ?>.js"></script>
+<script src="plugins/fullcalendar-v5/main.min.{main}.js"></script>
 
-<?php $localFR = filemtime(PATH_ASSETS . 'plugins/fullcalendar-v5/locales/fr.js') ?>
-<script src="plugins/fullcalendar-v5/locales/fr.<?php echo $localFR ?>.js"></script>
+<script src="plugins/fullcalendar-v5/locales/fr.{fullCalendar}.js"></script>
 
 <!-- jQuery contextmenu (rightclick) -->
 <link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.css">
-<?php $contextMenu = filemtime(PATH_ASSETS . 'plugins/jquery-contextmenu/jquery.contextMenu.min.js') ?>
-<script src="plugins/jquery-contextmenu/jquery.contextMenu.min.<?php $contextMenu ?>.js"></script>
-<?php $position = filemtime(PATH_ASSETS . 'plugins/jquery-contextmenu/jquery.ui.position.js') ?>
-<script src="plugins/jquery-contextmenu/jquery.ui.position.<?php echo $position ?>.js"></script>
+<script src="plugins/jquery-contextmenu/jquery.contextMenu.min.{pluginContextMenu}.js"></script>
+<script src="plugins/jquery-contextmenu/jquery.ui.position.{pluginContextMenuPosition}.js"></script>
 
 <!-- Pikaday -->
 <link href="plugins/pikaday1.8.2/pikaday.css" rel="stylesheet">
-<?php $pikaday = filemtime(PATH_ASSETS . 'plugins/pikaday1.8.2/pikaday.min.js') ?>
-<script src="plugins/pikaday1.8.2/pikaday.min.<?php echo $pikaday ?>.js"></script>
+<script src="plugins/pikaday1.8.2/pikaday.min.{pikaday}.js"></script>
 
 <!-- script chelou de Guy -->
-<?php $planningDispo = filemtime(PATH_ASSETS . 'js/js_planning_dispo.js') ?>
-<script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo ?>.js"></script>
+<script type="text/javascript" src="js/js_planning_dispo.{planningDispo}.js"></script>
 
 <!-- Calendar -->
 <link rel="stylesheet" href="css/calendar.css">
-<?php $calendar = filemtime(PATH_ASSETS . 'js/calendar.js') ?>
-<script type="text/javascript" src="js/calendar.<?php echo $calendar ?>.js"></script>
+<script type="text/javascript" src="js/calendar.{calendar}.js"></script>
 <link href="css/font-icomoon.css" rel="stylesheet" type="text/css">
 
 <div id="calendarVueTous" style="display:flex;">

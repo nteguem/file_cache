@@ -1,8 +1,6 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-<?php
-  $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
-?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{cloudFare}.js"></script>
 {literal}
     <script type="text/javascript">
         $(document).ready(function() {
@@ -237,10 +235,7 @@
                                             </div>
                                         </div>
                                         {literal}
-                                            <?php
-  $datepicker = filemtime(PATH_ASSETS.'js/datepicker-fr.js');
-?>
-                                            <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker ?>.js"></script>
+                                            <script type="text/javascript" src="js/datepicker-fr.{datePickerFr}.js"></script>
                                             <script type="text/javascript">
                                                 $(document).ready(function() {
                                                     $( "{/literal}#id_{$objRech.nom_variable}{literal}" ).datepicker({ dateFormat: 'dd/mm/yy',changeMonth: true,changeYear: true});
