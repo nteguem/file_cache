@@ -758,6 +758,44 @@ try {
 
     // gestion fichiers    
     $objSmarty->assign('datePickerFr',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('jquery',filemtime('../js/jquery.js'));
+    $objSmarty->assign('bootstrap',filemtime('../js/bootstrap.min.js'));
+    $objSmarty->assign('jqueryUi',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('jqueryUi',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('jqueryUiTouch',filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('caroufredsel',filemtime('../js/caroufredsel.js'));
+    $objSmarty->assign('plugin',filemtime('../js/plugins.js'));
+    $objSmarty->assign('breakpoints',filemtime('../plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('dataTables',filemtime('../plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('prettyPhoto',filemtime('../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('mCustomScrollbar',filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('tagsInput',filemtime('../plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('switch',filemtime('../plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('blockUI',filemtime('../plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pnotify',filemtime('../plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('theme',filemtime('../js/theme.js'));
+    $objSmarty->assign('custom',filemtime('../custom/custom.js'));
+    $objSmarty->assign('wizard',filemtime('../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+    $objSmarty->assign('datepicker',filemtime('../js/datepicker-fr.js'));
+    $objSmarty->assign('modernizr',filemtime('../js/modernizr.js'));
+    $objSmarty->assign('mobileDetect',filemtime('../js/mobile-detect.min.js'));
+    $objSmarty->assign('mobileDetectModernizr',filemtime('../js/mobile-detect-modernizr.js'));
+    $objSmarty->assign('maskedinput',filemtime('../js/jquery.maskedinput.min.js'));
+    $objSmarty->assign('ckeditor',filemtime('../plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('jquery2',filemtime('../plugins/ckeditor/adapters/jquery.js'));
+    $objSmarty->assign('listeDispo',filemtime('js/liste_dispo.js'));
+    $objSmarty->assign('datepicker2',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('datepicker3',filemtime('js/datepicker-fr.js'));
+    $objSmarty->assign('flot',filemtime('plugins/flot/jquery.flot.min.js'));
+    $objSmarty->assign('resize',filemtime('plugins/flot/jquery.flot.resize.js'));
+    $objSmarty->assign('pie',filemtime('plugins/flot/jquery.flot.pie.min.js'));
+    $objSmarty->assign('categories',filemtime('plugins/flot/jquery.flot.categories.min.js'));
+    $objSmarty->assign('time',filemtime('plugins/flot/jquery.flot.time.min.js'));
+    $objSmarty->assign('animator',filemtime('plugins/flot/jquery.flot.animator.min.js'));
+    $objSmarty->assign('Vector',filemtime('plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'));
+    $objSmarty->assign('world',filemtime('plugins/jvectormap/jquery-jvectormap-world-mill-en.js'));
+    $objSmarty->assign('skycons',filemtime('plugins/skycons/skycons.js'));
+    $objSmarty->assign('select2',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
     $objSmarty->assign('jquerryContextMenu',filemtime('js/jquery.contextmenu.js'));
     $objSmarty->assign('boostrapTreeview ',filemtime('js/bootstrap-treeview.js'));
 
