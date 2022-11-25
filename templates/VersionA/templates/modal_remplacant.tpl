@@ -360,7 +360,7 @@
                           <div class="vd_input-wrapper-modal">
                               <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
                               <?php  $select2Min = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');?>
-                              <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{$select2Min}.js"></script>
+                              <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
                             <select class="js-example-basic-multiple" name="idremplacant" id="idremplacant" required class="required">
                               <option value=""></option>

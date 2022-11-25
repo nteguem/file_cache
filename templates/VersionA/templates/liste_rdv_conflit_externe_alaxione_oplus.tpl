@@ -524,7 +524,7 @@
                         <div class="controls input-group" id="id_entite"">
                             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
                             <?php  $selectMin = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');?>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{$selectMin}.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                         <select id="id_form_entite" class="js-example-basic-multiple" name="entite">
                             <option></option>
                             {foreach from=$aTabEntite item=entite}
@@ -541,7 +541,7 @@
                     <div class="controls input-group" id="id_entite"">
                     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
                     <?php  $libs_2 = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');?>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{$libs_2}js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                     <select id="id_form_provenance" class="js-example-basic-multiple" name="provenance">
                         <option></option>
                         {foreach from=$aTabprovenance item=provenance}

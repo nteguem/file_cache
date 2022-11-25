@@ -168,7 +168,7 @@
                                                     <?php
                                                     $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
                                                     ?>
-                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{$cdnjsCloudflare}.js"></script>
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                                                     <div class="col-sm-12 input-group" id="id_selectmotif">
                                                         <select
                                                         id="id_form_{$objRech.nom_variable}"
