@@ -29,7 +29,7 @@
     <link rel="apple-touch-icon-precomposed" href="../img/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../img/ico/favicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{cloudFare}.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
     <!-- CSS -->
 
@@ -85,49 +85,49 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="../js/jquery.{jquery2}.js"></script>
+    <script type="text/javascript" src="../js/jquery.{$jquery2}.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="../js/excanvas.js"></script>
+    <script type="text/javascript" src="../js/excanvas.{$exCanva}.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../js/bootstrap.min.{bootstrap2}.js"></script>
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{jqueryCustom2}.js'></script>
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{jqueryTouch2}.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.{$bootstrap2}.js"></script>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$jqueryCustom2}.js'></script>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jqueryTouch2}.js"></script>
 
-    <script type="text/javascript" src="../js/caroufredsel.{caroufredsel2}.js"></script>
-    <script type="text/javascript" src="../js/plugins.{plugin2}.js"></script>
+    <script type="text/javascript" src="../js/caroufredsel.{$caroufredsel2}.js"></script>
+    <script type="text/javascript" src="../js/plugins.{$plugin2}.js"></script>
 
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{breakpoints2}.js"></script>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{dataTables2}.js"></script>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{prettyPhoto2}.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$breakpoints2}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$dataTables2}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto2}.js"></script>
 
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{mCustomScrollbar2}.js"></script>
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{tagsInput2}.js"></script>
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{bootstrapSwitch2}.js"></script>
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{blockUI2}.js"></script>
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{pnotify2}.js"></script>
-    <script type="text/javascript" src="../js/theme.{theme2}.js"></script>
-    <script type="text/javascript" src="../custom/custom.{custom2}.js"></script>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCustomScrollbar2}.js"></script>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsInput2}.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitch2}.js"></script>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blockUi2}.js"></script>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pnotify2}.js"></script>
+    <script type="text/javascript" src="../js/theme.{$theme2}.js"></script>
+    <script type="text/javascript" src="../custom/custom.{$custom2}.js"></script>
 
     <!-- Specific Page Scripts Put Here -->
-    <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{timepicker}.js'></script>
-    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.bootstrapWizard.js'></script>
-    <script type="text/javascript" src="../js/datepicker.{datepicker3}.js"></script>
-    <script type="text/javascript" src="../js/datepicker-fr.{datepicker2}.js"></script>
-    <script type="text/javascript" src="../js/jquery-clockpicker.min.{clockPicker}.js"></script>
+    <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timepicker}.js'></script>
+    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.bootstrapWizard.{bootstrapWizard}.js'></script>
+    <script type="text/javascript" src="../js/datepicker.{$datepicker3}.js"></script>
+    <script type="text/javascript" src="../js/datepicker-fr.{$datepicker2}.js"></script>
+    <script type="text/javascript" src="../js/jquery-clockpicker.min.{$clockPicker}.js"></script>
 
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../js/modernizr.{modernizr2}.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect.min.{mobileDetect2}.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.{mobileDetectModernizr2}.js"></script>
-    <script type="text/javascript" src="../js/jquery.maskedinput.min.{maskedInput}.js"></script>
+    <script type="text/javascript" src="../js/modernizr.{$modernizr2}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect.min.{$mobileDetect2}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.{$mobileDetectModernizr2}.js"></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.min.{$maskedInput}.js"></script>
 
-    <script type="text/javascript" src='../plugins/ckeditor/ckeditor.{ckeditor}.js'></script>
-    <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.{ckeditorQuery}.js'></script>
+    <script type="text/javascript" src='../plugins/ckeditor/ckeditor.{$ckeditor}.js'></script>
+    <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.{$ckeditorQuery}.js'></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="../js/html5shiv.js"></script>
-    <script type="text/javascript" src="../js/respond.min.js"></script>
+    <script type="text/javascript" src="../js/html5shiv.{$html5shiv}.js"></script>
+    <script type="text/javascript" src="../js/respond.min.{respondMin}.js"></script>
     <![endif]-->
 
     {literal}
