@@ -83,69 +83,69 @@
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
   
-    <script type="text/javascript" src="js/jquery.{jQuerry}.js"></script> 
+    <script type="text/javascript" src="js/jquery.{$jQuerry}.js"></script> 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/excanvas.js"></script>      
     <![endif]-->
 
-    <script type="text/javascript" src="js/bootstrap.min.{bootstrapMin}.js"></script> 
+    <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin}.js"></script> 
 
-    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{jQuerryUICustomMin}.js'></script>
+    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$jQuerryUICustomMin}.js'></script>
 
-    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{jQuerryUITouchPunchMin}.js"></script>
+    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jQuerryUITouchPunchMin}.js"></script>
 
-    <script type="text/javascript" src="js/caroufredsel.{caroufredsel}.js"></script> 
+    <script type="text/javascript" src="js/caroufredsel.{$caroufredsel}.js"></script> 
 
-    <script type="text/javascript" src="js/plugins.{plugins}.js"></script>
+    <script type="text/javascript" src="js/plugins.{$plugins}.js"></script>
 
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.{breakpoints}.js"></script>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
 
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{jQuerryDataTablesMin}.js"></script>
+    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jQuerryDataTablesMin}.js"></script>
 
-    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{jQuerryPrettyPhoto}.js"></script> 
+    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$jQuerryPrettyPhoto}.js"></script> 
     
-    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{jQuerrymCustomScrollBarConcatMin}.js"></script>
+    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$jQuerrymCustomScrollBarConcatMin}.js"></script>
 
-    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{jQuerryTagsInputMin}.js"></script>
+    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$jQuerryTagsInputMin}.js"></script>
 
-    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{bootstrapSwitchMin}.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchMin}.js"></script>
 
-    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{jQuerryBlockUI}.js"></script>
+    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$jQuerryBlockUI}.js"></script>
 
-    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{jQuerryPnotifyMin}.js"></script>
+    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$jQuerryPnotifyMin}.js"></script>
 
 
-    <script type="text/javascript" src="js/theme.{theme}.js"></script>
+    <script type="text/javascript" src="js/theme.{$theme}.js"></script>
 
-    <script type="text/javascript" src="custom/custom.{custom}.js"></script>
+    <script type="text/javascript" src="custom/custom.{$custom}.js"></script>
 
      
     <!-- Specific Page Scripts Put Here -->
 
-    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.{bootstrapTimePickerMin}.js'></script>
+    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$bootstrapTimePickerMin}.js'></script>
 
-    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{jQuerryBootstrapWizardMin}.js'></script>
+    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$jQuerryBootstrapWizardMin}.js'></script>
 
-    <script type="text/javascript" src="js/datepicker.{datepicker}.js"></script>
+    <script type="text/javascript" src="js/datepicker.{$datepicker}.js"></script>
 
-    <script type="text/javascript" src="js/datepicker-fr.{datepickerFr}.js"></script>
+    <script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 
-    <script type="text/javascript" src="js/jquery-clockpicker.min.{jQuerryClockPickerMin}.js"></script>
+    <script type="text/javascript" src="js/jquery-clockpicker.min.{$jQuerryClockPickerMin}.js"></script>
 
 
     <!-- Head SCRIPTS -->
  
-    <script type="text/javascript" src="js/modernizr.{modernizr}.js"></script> 
+    <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script> 
 
-    <script type="text/javascript" src="js/mobile-detect.min.{mobileDetectMin}.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetectMin}.js"></script> 
 
     <script type="text/javascript" src="js/mobile-detect-modernizr.mobileDetectModernizr.js"></script> 
 
-    <script type="text/javascript" src="js/jquery.maskedinput.min.{jQuerryMaskedInputMin}.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.{$jQuerryMaskedInputMin}.js"></script>
 
-    <script type="text/javascript" src='plugins/ckeditor/ckeditor.{ckeditor}.js'></script>
+    <script type="text/javascript" src='plugins/ckeditor/ckeditor.{$ckeditor}.js'></script>
 
-    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.{jquery2}.js'></script>
+    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.{$jquery2}.js'></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

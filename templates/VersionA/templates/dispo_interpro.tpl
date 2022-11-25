@@ -24,7 +24,7 @@ function enreg_planning(daterdv,heurerdv,heurefin,nomdocteur,iddocteur,idlieu,id
 </div>
 {/if}
   
-<script type="text/javascript" src="js/liste_e6.{listeE6}.js"></script>
+<script type="text/javascript" src="js/liste_e6.{$listeE6}.js"></script>
 
 {if $berror}
 <div class="alert alert-danger">

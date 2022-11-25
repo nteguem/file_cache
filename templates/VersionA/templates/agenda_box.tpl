@@ -8,15 +8,15 @@
 
   <script type="text/javascript" src="js/liste_e7.{$listeE7}.js?{$stime}"></script>
 
-  <script type="text/javascript" src="js/js_planning_dispo.{planningDispo}.js?{$stime}"></script>
+  <script type="text/javascript" src="js/js_planning_dispo.{$planningDispo}.js?{$stime}"></script>
   
-  <script type="text/javascript" src="js/jquery.contextmenu.{jquerryContextMenu}.js"></script>
+  <script type="text/javascript" src="js/jquery.contextmenu.{$jquerryContextMenu}.js"></script>
   
-  <script type="text/javascript" src="js/bootstrap-treeview.{boostrapTreeview}.js"></script>
+  <script type="text/javascript" src="js/bootstrap-treeview.{$boostrapTreeview}.js"></script>
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
            
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{cdnjsCloudflare}.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   {literal}
  
       <script type="text/javascript">
@@ -449,7 +449,7 @@ div.datepicker table td {
         <div class="controls" style="padding-bottom: 15px;">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
                      
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{cdnjsCloudflareCom}.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
             <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">
                 {foreach name="lstAgendaActif" from=$aTableauListepraticien item=objAgenda}
                 <option></option>

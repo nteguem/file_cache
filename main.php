@@ -760,7 +760,6 @@ try {
     $objSmarty->assign('planningDispo',filemtime('js/js_planning_dispo.js'));
     $objSmarty->assign('jquerryContextMenu',filemtime('js/jquery.contextmenu.js'));
     $objSmarty->assign('boostrapTreeview ',filemtime('js/bootstrap-treeview.js'));
-    $objSmarty->assign('cdnjsCloudflare ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
     $objSmarty->assign('cdnjsCloudflareCom ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
 
     $objSmarty->assign('datePicker_1 ',filemtime('js/datepicker-fr.js'));
@@ -774,12 +773,7 @@ try {
     $objSmarty->assign('mobileDetect ',filemtime('js/mobile-detect.min.js'));
     $objSmarty->assign('mobileDetectModernizr ',filemtime('js/mobile-detect-modernizr.js'));
 
-    $objSmarty->assign('cdnjsCloudflare2 ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
     $objSmarty->assign('datePicker ',filemtime('js/datepicker-fr.js'));
-
-    $objSmarty->assign('select2 ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
-
-    $objSmarty->assign('select2 ',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
 
      $objSmarty->assign('listeDispo ',filemtime('js/liste_dispo.js'));
      $objSmarty->assign('planningDispo ',filemtime('js/js_planning_dispo.js'));
@@ -990,7 +984,40 @@ try {
      $objSmarty->assign('blockUiVertical',filemtime('plugins/blockUI/jquery.blockUI.js?v={/literal}{$numero_version_alaxione}{literal}'));
      $objSmarty->assign('pnotify_1',filemtime('plugins/pnotify/js/jquery.pnotify.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
      $objSmarty->assign('themeVertical',filemtime('js/theme.js?v={/literal}{$numero_version_alaxione}{literal}'));
-
+     $objSmarty->assign('customCustomVertical',filemtime('custom/custom.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('pickerDateVertical',filemtime('js/datepicker.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('datePickerVertical',filemtime('js/datepicker-fr.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('wizardVertical',filemtime('plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('dataTablesVertical',filemtime('plugins/dataTables/jquery.dataTables.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('principalDataTableVertical',filemtime('plugins/dataTables/dataTables.bootstrap.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('timePickerVertical',filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('momentVertical',filemtime('js/moment.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('dateRange',filemtime('js/daterangepicker.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('coloPickerVertical',filemtime('plugins/colorpicker/colorpicker.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('loadImageVertical',filemtime('plugins/jquery-file-upload/js/load-image.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('iframeTransVertical',filemtime('plugins/jquery-file-upload/js/jquery.iframe-transport.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('fileUploadVertical',filemtime('plugins/jquery-file-upload/js/jquery.fileupload.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('fileploadPrcessVertical',filemtime('plugins/jquery-file-upload/js/jquery.fileupload-process.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('fileUploadAudioVertical',filemtime('plugins/jquery-file-upload/js/jquery.fileupload-audio.js?v={/literal}{$numero_version_alaxione}{literal}"'));
+     $objSmarty->assign('fileUploadValidateVertical',filemtime('plugins/jquery-file-upload/js/jquery.fileupload-validate.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('jQueryMinVertical',filemtime('plugins/fullcalendar-3.5.0/lib/jquery-ui.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('momentMinVertical',filemtime('plugins/fullcalendar-3.5.0/lib/moment.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('ckeditorVertical',filemtime('plugins/ckeditor/ckeditor.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('aVerticla',filemtime('plugins/ckeditor/adapters/jquery.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('maskedInputVerticla',filemtime('js/jquery.maskedinput.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('maskChampVerticla',filemtime('js/maskchamps.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('bootstrapClockVertical',filemtime('js/bootstrap-clockpicker.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('jClockVertical',filemtime('js/jquery-clockpicker.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('isotopVertical',filemtime('js/isotope.pkgd.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('inputVertical',filemtime('js/inputmask.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('inputMaskVertical',filemtime('js/jquery.inputmask.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('intlTelVertical',filemtime('js/intlTelInput.min.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('pincipalVertical',filemtime('js/principal.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('mdpVertical',filemtime('js/mdp.js?v={/literal}{$numero_version_alaxione}{literal}'));
+     $objSmarty->assign('fonctionVertical',filemtime('js/fonction_adv.js?v={/literal}{$numero_version_alaxione}{literal}'));
+    
+   
+     
 
     
     

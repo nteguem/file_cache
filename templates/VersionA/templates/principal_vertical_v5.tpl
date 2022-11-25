@@ -70,11 +70,11 @@
 {literal}
     <!-- JS -->
 
-    <script type="text/javascript" src="js/modernizr.{moderVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/modernizr.{$moderVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-        <script type="text/javascript" src="js/mobile-detect.min.{mobileDetecVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+        <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetecVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-    <script type="text/javascript" src="js/mobile-detect-modernizr.{mobileDetectMdVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectMdVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
     
     
     <!--[if lt IE 9]>
@@ -82,113 +82,113 @@
       <script type="text/javascript" src="js/respond.min.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
     <![endif]-->
  
-     <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery.min.{literalFullCalender}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+     <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery.min.{$literalFullCalender}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 [if lt IE 9]>
 
-    <script type="text/javascript" src="js/excanvas.{excanvas}.js?v={/literal}{$numero_version_alaxione}{literal}"></script><![endif]
+    <script type="text/javascript" src="js/excanvas.{$excanvas}.js?v={/literal}{$numero_version_alaxione}{literal}"></script><![endif]
 
-<script type="text/javascript" src="js/bootstrap.min.{bootstrapVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/bootstrap.min.{$bootstrapVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{customVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$customVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{touchPuncVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$touchPuncVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-    <script type="text/javascript" src="js/caroufredsel.{caroufVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/caroufredsel.{$caroufVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-  <script type="text/javascript" src="js/plugins.{pluginVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+  <script type="text/javascript" src="js/plugins.{$pluginVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-    <script type="text/javascript" src="js/framwork_js.{frameworkVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/framwork_js.{$frameworkVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-    <script type="text/javascript" src="js/jquery.autocomplete.min.{autoVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.{$autoVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
     
-<script type="text/javascript" src="plugins/breakpoints/breakpoints.{breackPoinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breackPoinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{dataTableVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTableVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{prettyPhotVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhotVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{contactMinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$contactMinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{tagsInputVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$tagsInputVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{bootStrapVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$bootStrapVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{blockUiVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$blockUiVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{pnotify_1}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pnotify_1}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/theme.{themeVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/theme.{$themeVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="custom/custom.{customCustomVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="custom/custom.{$customCustomVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-    <script type="text/javascript" src="../js/datepicker.{pickerDateVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="../js/datepicker.{$pickerDateVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/datepicker-fr.{datePickerVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/datepicker-fr.{$datePickerVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
- <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{wizardVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+ <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wizardVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{dataTablesVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTablesVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.{principalDataTableVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.{$principalDataTableVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.{timePickerVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+<script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timePickerVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-    <script type="text/javascript" src='js/moment.min.{momentVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='js/moment.min.{$momentVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src='js/daterangepicker.{dateRange}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+<script type="text/javascript" src='js/daterangepicker.{$dateRange}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src='plugins/colorpicker/colorpicker.{coloPickerVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+<script type="text/javascript" src='plugins/colorpicker/colorpicker.{$coloPickerVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.{loadImageVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.{$loadImageVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.{iframeTransVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.{$iframeTransVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.{fileUploadVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.{$fileUploadVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.{fileploadPrcessVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.{$fileploadPrcessVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.{fileUploadImageVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.{$fileUploadImageVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
 <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.fileUploadAudioVertical.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.{fileUploadValidateVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.{$fileUploadValidateVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery-ui.min.{jQueryMinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+<script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery-ui.min.{$jQueryMinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
 <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/moment.min.{momentMinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
    <!-- <script type="text/javascript" src='plugins/fullcalendar-3.5.0/fullcalendar.min.js?v={/literal}{$numero_version_alaxione}{literal}'></script>-->
     <script type="text/javascript" src='plugins/fullcalendar-3.5.0/locale/fr.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
     <script type="text/javascript" src='plugins/fullcalendar-3.5.0/scheduler.min.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src='plugins/ckeditor/ckeditor.{ckeditorVertical}.js'></script>
+<script type="text/javascript" src='plugins/ckeditor/ckeditor.{$ckeditorVertical}.js'></script>
 
-<script type="text/javascript" src='plugins/ckeditor/adapters/jquery.{aVerticla}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+<script type="text/javascript" src='plugins/ckeditor/adapters/jquery.{$aVerticla}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
-<script type="text/javascript" src="js/jquery.maskedinput.min.{maskedInputVerticla}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.{$maskedInputVerticla}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/maskchamps.{maskChampVerticla}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/maskchamps.{$maskChampVerticla}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/bootstrap-clockpicker.min.{bootstrapClockVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/bootstrap-clockpicker.min.{$bootstrapClockVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/jquery-clockpicker.min.{jClockVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/jquery-clockpicker.min.{$jClockVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/isotope.pkgd.min.{isotopVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.{$isotopVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/inputmask.{inputVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/inputmask.{$inputVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/jquery.inputmask.{inputMaskVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/jquery.inputmask.{$inputMaskVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/intlTelInput.min.{intlTelVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/intlTelInput.min.{$intlTelVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/principal.{pincipalVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/principal.{$pincipalVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/mdp.{mdpVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/mdp.{$mdpVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="js/fonction_adv.{fonctionVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="js/fonction_adv.{$fonctionVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.{socketVertical}.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.{minMinVertical}.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
 
   
     <script type="text/javascript">

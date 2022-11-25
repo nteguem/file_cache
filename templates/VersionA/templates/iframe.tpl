@@ -6,7 +6,7 @@
 
 {literal}
   
-    <script type="text/javascript" src="js/jquery.contextmenu.{jQuerryContextMenu}.js"></script>
+    <script type="text/javascript" src="js/jquery.contextmenu.{$jQuerryContextMenu}.js"></script>
     <script type="text/javascript">
 
         function launch_getSalleAttente(){
