@@ -867,6 +867,28 @@ try {
     $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('ckeditorAdaptersJquery_7',filemtime('plugins/ckeditor/adapters/jquery.js'));
 
+    //liste fiches patients 
+
+    $objSmarty->assign('customCarousel_1',filemtime('js/customCarousel.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+
+    //liste Patient profilage 
+
+    $objSmarty->assign('jQueryPatient',filemtime('../js/jquery.js'));
+    $objSmarty->assign('bootstrapMinPatient',filemtime('../js/bootstrap.min.js'));
+    $objSmarty->assign('jQcustomMinPatient',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
+    $objSmarty->assign('punchMinPatient',filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+    $objSmarty->assign('caroufredPatient',filemtime('../js/caroufredsel.js'));
+    $objSmarty->assign('pluginsPatient',filemtime('../js/plugins.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+
+
+
+    
+
+
 
 
 
