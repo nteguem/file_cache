@@ -1,4 +1,4 @@
-<script type="text/javascript" src="js/dasboard.{dashboard}.js"></script>
+<script type="text/javascript" src="js/dasboard.{$dashboard}.js"></script>
 
 
 <div class="vd_title-section clearfix">
@@ -250,26 +250,26 @@
 <!-- Specific Page Scripts Put Here -->
 <!-- Flot Chart  -->
 
-<script type="text/javascript" src="plugins/flot/jquery.flot.min.{jqueryFlot}.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.min.{$jqueryFlot}.js"></script>
 
-<script type="text/javascript" src="plugins/flot/jquery.flot.resize.{jqueryFlotResize}.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.resize.{$jqueryFlotResize}.js"></script>
 
-<script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.{jQuerryFlotPieMin}.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.pie.min.{$jQuerryFlotPieMin}.js"></script>
 
-<script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.{jqueryFlotCategories}.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.categories.min.{$jqueryFlotCategories}.js"></script>
 
-<script type="text/javascript" src="plugins/flot/jquery.flot.time.min.{jqueryFlotTime}.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.time.min.{$jqueryFlotTime}.js"></script>
 
-<script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.{jqueryFlotAnimator}.js"></script>
+<script type="text/javascript" src="plugins/flot/jquery.flot.animator.min.{$jqueryFlotAnimator}.js"></script>
 
 <!-- Vector Map -->
-<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.{VectorMap}.js"></script>
+<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.{$VectorMap}.js"></script>
 
-<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.{VectorMapMill}.js"></script>
+<script type="text/javascript" src="plugins/jvectormap/jquery-jvectormap-world-mill-en.{$VectorMapMill}.js"></script>
 
 <!-- Sky Icons -->
 
-<script type="text/javascript" src='plugins/skycons/skycons.{skycons}.js'></script>
+<script type="text/javascript" src='plugins/skycons/skycons.{$skycons}.js'></script>
 
 
 <script type="text/javascript">

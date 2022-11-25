@@ -24,11 +24,11 @@
     </style>
     <link href="css/jquery.flowchart.min.css" rel="stylesheet" type="text/css">
 
-    <script src="js/raphael-min.{raphaelMin}.js"></script>
+    <script src="js/raphael-min.{$raphaelMin}.js"></script>
 
-    <script src="js/flowchart.min.{flowChart}.js"></script>
+    <script src="js/flowchart.min.{$flowChart}.js"></script>
 
-    <script src="js/jquery.flowchart.min.{queryFlowChart}.js"></script>
+    <script src="js/jquery.flowchart.min.{$queryFlowChart}.js"></script>
 
     <script type="text/javascript">
         $(document).ready(function() {

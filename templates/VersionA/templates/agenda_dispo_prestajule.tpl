@@ -2,15 +2,15 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
 
-  <script type="text/javascript" src="js/datepicker-fr.{datepicker}.js"></script>
+  <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
 
-  <script type="text/javascript" src="js/liste_e7.{listeE7}.js?{$stime}"></script>
+  <script type="text/javascript" src="js/liste_e7.{$listeE7}.js?{$stime}"></script>
 
-  <script type="text/javascript" src="js/js_planning_dispo.{planningDispo}.js?{$stime}"></script>
+  <script type="text/javascript" src="js/js_planning_dispo.{$planningDispo}.js?{$stime}"></script>
 
-  <script type="text/javascript" src="js/jquery.contextmenu.{contextMenu}.js"></script>
+  <script type="text/javascript" src="js/jquery.contextmenu.{$contextMenu}.js"></script>
 
-  <script type="text/javascript" src="js/bootstrap-treeview.{treeview}.js"></script>
+  <script type="text/javascript" src="js/bootstrap-treeview.{$treeview}.js"></script>
 
 {literal}
 <!--

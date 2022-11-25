@@ -1,13 +1,13 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
 <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="js/liste_dispo.{listeDispo}.js?v={$numero_version_alaxione}"></script>
+<script type="text/javascript" src="js/liste_dispo.{$listeDispo}.js?v={$numero_version_alaxione}"></script>
 
-<script type="text/javascript" src="js/js_planning_dispo.{planningDispo2}</script>
+<script type="text/javascript" src="js/js_planning_dispo.{$planningDispo2}</script>
 
-<script type="text/javascript" src="js/jquery.contextmenu.{contextMenu2}.js?v={$numero_version_alaxione}"></script>
+<script type="text/javascript" src="js/jquery.contextmenu.{$contextMenu2}.js?v={$numero_version_alaxione}"></script>
 
-<script type="text/javascript" src='plugins/tagsInput/jquery.tagsinput.min.{tagsInput}.js'></script>
+<script type="text/javascript" src='plugins/tagsInput/jquery.tagsinput.min.{$tagsInput}.js'></script>
 
 {literal}
 

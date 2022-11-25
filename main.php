@@ -759,7 +759,6 @@ try {
     // gestion fichiers    
     $objSmarty->assign('main', filemtime('plugins/fullcalendar-v5/main.min.js'));
     $objSmarty->assign('datePickerFr', filemtime('js/datepicker-fr.js'));
-    $objSmarty->assign('datepicker', filemtime('js/datepicker-fr.js'));
     $objSmarty->assign('listeE7', filemtime('js/liste_e7.js?{$stime}'));
     $objSmarty->assign('planningDispo', filemtime('js/js_planning_dispo.js?{$stime}'));
     $objSmarty->assign('contextMenu', filemtime('js/jquery.contextmenu.js'));
@@ -772,7 +771,6 @@ try {
     $objSmarty->assign('tagsInput', filemtime('plugins/tagsInput/jquery.tagsinput.min.js'));
     $objSmarty->assign('listeE1', filemtime('js/liste_e1.js'));
     $objSmarty->assign('listeDispo2', filemtime('js/liste_dispo.js'));
-    $objSmarty->assign('cloudFare', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
     $objSmarty->assign('fullCalendar', filemtime('plugins/fullcalendar-v5/locales/fr.js'));
     $objSmarty->assign('pluginContextMenu', filemtime('plugins/jquery-contextmenu/jquery.contextMenu.min.js'));
     $objSmarty->assign('pluginContextMenuPosition', filemtime('plugins/jquery-contextmenu/jquery.ui.position.js'));

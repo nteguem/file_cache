@@ -2,17 +2,17 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
 
-<script type="text/javascript" src="js/datepicker-fr.{datepickerFr}.js"></script>
+<script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 
-<script type="text/javascript" src="js/liste_e7.{listeE7}.js?{$stime}"></script>
+<script type="text/javascript" src="js/liste_e7.{$listeE7}.js?{$stime}"></script>
 
-<script type="text/javascript" src="js/js_planning_dispo.{planningDispo}.js?{$stime}"></script>
+<script type="text/javascript" src="js/js_planning_dispo.{$planningDispo}.js?{$stime}"></script>
 
-<script type="text/javascript" src="js/jquery.contextmenu.{contextMenu}.js"></script>
+<script type="text/javascript" src="js/jquery.contextmenu.{$contextMenu}.js"></script>
 
-<script type="text/javascript" src="js/bootstrap-treeview.{treeview}.js"></script>
+<script type="text/javascript" src="js/bootstrap-treeview.{$treeview}.js"></script>
 
-<script type="text/javascript" src="js/rechercher_code_postal.{codePostal}.js"></script>
+<script type="text/javascript" src="js/rechercher_code_postal.{$codePostal}.js"></script>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 

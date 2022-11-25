@@ -1,6 +1,6 @@
-<script type="text/javascript" src="js/datepicker-fr.{datepickerFr}.js"></script>
+<script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 
-<script type="text/javascript" src="js/liste_e5.js"></script>
+<script type="text/javascript" src="js/liste_e5.{$listeE5}.js"></script>
 
 
 {literal}

@@ -1,4 +1,4 @@
-<script type="text/javascript" src="js/datepicker-fr.{datepickerFr}.js"></script>
+<script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 
 
 {literal}
