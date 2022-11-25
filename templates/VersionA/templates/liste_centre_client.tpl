@@ -81,21 +81,9 @@
 
 {literal}
     <!-- Head SCRIPTS -->
-<?php
-  $modernizr = filemtime(PATH_ASSETS.'../js/modernizr.js');
-?>
-    <script type="text/javascript" src="../js/modernizr.<?php echo $modernizr ?>.js"></script>
-
-<?php
-  $mobileDetectMin = filemtime(PATH_ASSETS.'../js/mobile-detect.min.js');
-?>
-    <script type="text/javascript" src="../js/mobile-detect.min.<?php echo $mobileDetectMin ?>.js"></script>
-
-<?php
-  $mobileDetectModernizr = filemtime(PATH_ASSETS.'../js/mobile-detect-modernizr.js');
-?>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.<?php echo $mobileDetectMin ?>.js"></script>
-
+    <script type="text/javascript" src="../js/modernizr.{$modrnCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect.min.{$detectMinCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.{$detectModernizClient}.js"></script>
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -106,98 +94,31 @@
     
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-
-<?php
-  $pluginsFullCalender = filemtime(PATH_ASSETS.'../plugins/fullcalendar-2.3.1/lib/jquery.min.js');
-?>
-    <script src='../plugins/fullcalendar-2.3.1/lib/jquery.min.<?php echo $pluginsFullCalender ?>.js'></script>
+    <script src='../plugins/fullcalendar-2.3.1/lib/jquery.min.{$plugInCentreClient}.js'></script>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-<?php
-  $bootstrapMin = filemtime(PATH_ASSETS.'../js/bootstrap.min.js');
-?>
-    <script type="text/javascript" src="../js/bootstrap.min.<?php echo $bootstrapMin ?>.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.{$$bootstapCentreClient}.js"></script>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$customCentreClient}.js'></script>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchCentreClient}.js"></script>
 
-<?php
-  $pluginsJquery = filemtime(PATH_ASSETS.'../plugins/jquery-ui/jquery-ui.custom.min.js');
-?> 
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.<?php echo $pluginsJquery ?>.js'></script>
-
-<?php
-  $pluginsJqueryUiTouch = filemtime(PATH_ASSETS.'../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js');
-?>     
-
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $pluginsJqueryUiTouch ?>.js"></script>
-
-<?php
-  $caroufredsel = filemtime(PATH_ASSETS.'../js/caroufredsel.js');
-?>   
-
-    <script type="text/javascript" src="../js/caroufredsel.<?php echo $caroufredsel ?>.js"></script>
-
-<?php
-  $jsPlugins = filemtime(PATH_ASSETS.'../js/plugins.js');
-?>      
-
-    <script type="text/javascript" src="../js/plugins.<?php echo $jsPlugins ?>.js"></script>
-
-<?php
-  $framworkJs = filemtime(PATH_ASSETS.'../js/framwork_js.js');
-?>   
-    <script type="text/javascript" src="../js/framwork_js.<?php echo $framworkJs ?>.js"></script>
+    <script type="text/javascript" src="../js/caroufredsel.{$caroufRedCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/plugins.{$pluginsCentreClient}.js"></script>
+    <script type="text/javascript" src="../js/framwork_js.{$frameCentreClient}.js"></script>
 
     <!-- Script pour l'auto-completion -->
+    <script type="text/javascript" src="../js/jquery.autocomplete.min.{$autoCentreClient}.js"></script>
 
-<?php
-  $autocomplete = filemtime(PATH_ASSETS.'../js/jquery.autocomplete.min.js');
-?> 
-    <script type="text/javascript" src="../js/jquery.autocomplete.min.<?php echo $autocomplete ?>.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$breakinPointCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$dataTablesCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhotoCentreClient}.js"></script>
 
-<?php
-  $pluginsBreakpoints = filemtime(PATH_ASSETS.'../plugins/breakpoints/breakpoints.js');
-?> 
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.<?php echo $pluginsBreakpoints ?>.js"></script>
-
-<?php
-  $pluginsDatatables = filemtime(PATH_ASSETS.'../plugins/dataTables/jquery.dataTables.min.js');
-?> 
-
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.<?php echo $pluginsDatatables ?>.js"></script>
-
-<?php
-  $pluginsPrettyPhoto = filemtime(PATH_ASSETS.'../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js');
-?>   
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $pluginsPrettyPhoto ?>.js"></script>
-
-<?php
-  $pluginsMCustomScrollbar = filemtime(PATH_ASSETS.'../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js');
-?> 
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $pluginsMCustomScrollbar ?>.js"></script>
-
-<?php
-  $pluginsTagsInput = filemtime(PATH_ASSETS.'../plugins/tagsInput/jquery.tagsinput.min.js');
-?> 
-
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.<?php echo $pluginsTagsInput ?>.js"></script>
-
-<?php
-  $pluginsBootstrap = filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js');
-?> 
-
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $pluginsTagsInput ?>.js"></script>
-
-<?php
-  $pluginsBlockUi = filemtime(PATH_ASSETS.'../plugins/blockUI/jquery.blockUI.js');
-?> 
-
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.<?php echo $pluginsBlockUi ?>.js"></script>
-
-<?php
-  $pluginsPnotify = filemtime(PATH_ASSETS.'../plugins/pnotify/js/jquery.pnotify.min.js');
-?>  
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.<?php echo $pluginsPnotify ?>.js"></script>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$contactMinCnetreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsInputCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{$switchCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blocKUiCentreClient}.js"></script>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pnofyCentreClient}.js"></script>
 
 
 <?php
@@ -205,10 +126,8 @@
 ?> 
     <script type="text/javascript" src="../js/theme.<?php echo $theme ?>.js"></script>
 
-<?php
-  $custom = filemtime(PATH_ASSETS.'../custom/custom.js');
-?>   
-    <script type="text/javascript" src="../custom/custom.<?php echo $custom ?>.js"></script>
+    <script type="text/javascript" src="../js/theme.{$themeCentreClient}.js"></script>
+    <script type="text/javascript" src="../custom/custom.{$custCustomCentreClient}.js"></script>
      
 
     <style type="text/css">
