@@ -81,38 +81,38 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="../js/jquery.{jQueryPatient}.js"></script>
+
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="../js/bootstrap.min.{bootstrapMinPatient}.js"></script>
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{jQcustomMinPatient}.js'></script>
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{punchMinPatient}.js"></script>
-    <script type="text/javascript" src="../js/caroufredsel.{caroufredPatient}.js"></script>
-    <script type="text/javascript" src="../js/plugins.{pluginsPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{pluginsBreakpointsBreakPatiPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{jqueryDataTablesPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{pluginJqueryPrettyPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{ContctMinPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{tagsInputPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{bootstrapSwitchPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{blockUIPatient}.js"></script>
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{pNotifyPatient}.js"></script>
-    <script type="text/javascript" src="../js/theme.{themePatient}.js"></script>
-    <script type="text/javascript" src="../custom/custom.{customPatient}.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.{$bootstrapMinPatient}.js"></script>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$jQcustomMinPatient}.js'></script>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchMinPatient}.js"></script>
+    <script type="text/javascript" src="../js/caroufredsel.{$caroufredPatient}.js"></script>
+    <script type="text/javascript" src="../js/plugins.{$pluginsPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$pluginsBreakpointsBreakPatiPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$jqueryDataTablesPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$pluginJqueryPrettyPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$ContctMinPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsInputPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blockUIPatient}.js"></script>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pNotifyPatient}.js"></script>
+    <script type="text/javascript" src="../js/theme.{$themePatient}.js"></script>
+    <script type="text/javascript" src="../custom/custom.{$customPatient}.js"></script>
     <!-- Specific Page Scripts Put Here -->
 
-    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{wizardMinPatient}.js'></script>
+    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wizardMinPatient}.js'></script>
     <script type="text/javascript" src="../js/datepicker-fr.{ $dataPickerPatient }.js"></script>
 
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="../js/modernizr.{modernzrPatient}.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect.min.{mobileDetectPatient}.js"></script>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.{mobileDetectModernPatient}.js"></script>
-    <script type="text/javascript" src="../js/jquery.maskedinput.min.{jqueryMaskedinputPatient}.js"></script>
-    <script type="text/javascript" src='../js/jquery.autocomplete.min.{autoCompletePatient}.js'></script>
-    <script type="text/javascript" src='../js/principal.{principalPatient}.js'></script>
+    <script type="text/javascript" src="../js/modernizr.{$modernzrPatient}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect.min.{$mobileDetectPatient}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.{$mobileDetectModernPatient}.js"></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.min.{$jqueryMaskedinputPatient}.js"></script>
+    <script type="text/javascript" src='../js/jquery.autocomplete.min.{$autoCompletePatient}.js'></script>
+    <script type="text/javascript" src='../js/principal.{$principalPatient}.js'></script>
 
     <!-- Script pour l'auto-completion -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -120,10 +120,10 @@
     <script type="text/javascript" src="../js/html5shiv.js"></script>
     <script type="text/javascript" src="../js/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src='.../js/intlTelInput.min.{intlTelInputPatient}.js'></script>
-    <script type="text/javascript" src='../js/maskchamps.{maskChampPatient}.js'></script>
-    <script type="text/javascript" src='../js/inputmask.{inputmaskPatient}.js'></script>
-    <script type="text/javascript" src='../js/jquery.inputmask.{jQueryInputMaskPatient}.js'></script>
+    <script type="text/javascript" src='.../js/intlTelInput.min.{$intlTelInputPatient}.js'></script>
+    <script type="text/javascript" src='../js/maskchamps.{$maskChampPatient}.js'></script>
+    <script type="text/javascript" src='../js/inputmask.{$inputmaskPatient}.js'></script>
+    <script type="text/javascript" src='../js/jquery.inputmask.{$jQueryInputMaskPatient}.js'></script>
 
     {* Select 2 *}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />

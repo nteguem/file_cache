@@ -3,7 +3,7 @@
      z-index: 9999 !important;
 }
 </style>
-<script src="js/customCarousel.{customCarousel_1}.js"></script>
+<script src="js/customCarousel.{$customCarousel_1}.js"></script>
 <link rel="stylesheet" href="css/customCarousel.css">
 <link rel="stylesheet" href="css/modal-ts.css">
 

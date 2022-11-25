@@ -1,6 +1,6 @@
 <!-- [DEBUT] Modal enregistrer un rendez-vous  -->
 
-<script type="text/javascript" src="js/rechercher_code_postal.{jsRechercherCodePostal}.js"></script>
+<script type="text/javascript" src="js/rechercher_code_postal.{$jsRechercherCodePostal}.js"></script>
 
 <div style="overflow-x: hidden;overflow-y: auto;" class="modal fade in" id="modalEnregistrerRendezVous" tabindex="-1" role="dialog" aria-labelledby="LabelmodalEnregistrerRendezVous" aria-hidden="false" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog" >

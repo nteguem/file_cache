@@ -867,12 +867,12 @@ try {
     $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('ckeditorAdaptersJquery_7',filemtime('plugins/ckeditor/adapters/jquery.js'));
 
-    //liste fiches patients 
+    //modal liste fiches patients 
 
     $objSmarty->assign('customCarousel_1',filemtime('js/customCarousel.js'));
     $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
 
-    //liste Patient profilage 
+    //modal Patient profilage 
 
     $objSmarty->assign('jQueryPatient',filemtime('../js/jquery.js'));
     $objSmarty->assign('bootstrapMinPatient',filemtime('../js/bootstrap.min.js'));
@@ -903,16 +903,8 @@ try {
     $objSmarty->assign('maskChampPatient',filemtime('../js/maskchamps.js'));
     $objSmarty->assign('inputmaskPatient',filemtime('../js/inputmask.js'));
     $objSmarty->assign('jQueryInputMaskPatient',filemtime('../js/jquery.inputmask.js'));
-    $objSmarty->assign('selectMinPatient',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
-    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+   
+
 
 
 
