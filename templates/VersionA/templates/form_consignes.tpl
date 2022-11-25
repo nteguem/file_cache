@@ -1,10 +1,8 @@
 <link rel="stylesheet" href="css/liste_consignes.css">
 <link rel="stylesheet" href="css/calendar.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-  <?php
-  $cdnjsCloudflare2 = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
-?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare2 ?>.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 {foreach from=$aForm item='i'}
     {if $i.nom_variable === 'name'}
         {assign var='libelle' value=$i}
@@ -535,10 +533,8 @@
                 </div>
             </div>
         </div>
-           <?php
-  $datePicker = filemtime(PATH_ASSETS.'js/datepicker-fr.js');
-?>
-        <script type="text/javascript" src="js/datepicker-fr.<?php echo $datePicker ?>.js"></script>
+        
+        <script type="text/javascript" src="js/datepicker-fr.{$datePicker}.js"></script>
         <script>
             function showInfoConfigModal(title,message,onSuccess){
 

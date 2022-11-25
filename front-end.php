@@ -168,28 +168,42 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <?php $styleSheet = filemtime(PATH_ASSETS.'../../css/bootstrap.min.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../css/bootstrap.min.<?php echo $styleSheet ?>.css" rel="stylesheet" type="text/css">
+    <?php $styleSheet_1 = filemtime(PATH_ASSETS.'../../css/font-awesome.min.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../css/font-awesome.min.<?php echo $styleSheet_1 ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="../../css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <?php $styleSheet_2 = filemtime(PATH_ASSETS.'../../css/font-entypo.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../css/font-entypo.<?php echo $styleSheet_2 ?>.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-    <link href="../../css/fonts.css"  rel="stylesheet" type="text/css">
+    <?php $styleSheet_3 = filemtime(PATH_ASSETS.'../../css/fonts.css"  rel="stylesheet" type="text/css'); ?>
+	<link href="../../css/fonts.<?php echo $styleSheet_3 ?>.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="../../plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="../../plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="../../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
+    <?php $customMin_2 = filemtime(PATH_ASSETS.'../../plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMin_2 ?>.css" rel="stylesheet" type="text/css">    
+    <?php $prettyPhoto = filemtime(PATH_ASSETS.'../../plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhoto ?>.css" rel="stylesheet" type="text/css">
+    <?php $steelSheet_2 = filemtime(PATH_ASSETS.'../../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../plugins/isotope/css/isotope.<?php echo $steelSheet_2 ?>.css" rel="stylesheet" type="text/css">
     <link href="../../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-	<link href="../../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
+	<?php $pnotify_3 = filemtime(PATH_ASSETS.'../../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet'); ?>
+	<link href="../../plugins/google-code-prettify/prettify.<?php echo $pnotify_3 ?>.css" rel="stylesheet" type="text/css"> 
    
          
-    <link href="../../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="../../plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="../../plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="../../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="../../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../../plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <?php $mScrollarbar_2 = filemtime(PATH_ASSETS.'../../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'); ?>
+	<link href="../../plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mScrollarbar_2 ?>.css" rel="stylesheet" type="text/css">
+    <?php $tagsInput_2 = filemtime(PATH_ASSETS.'../../plugins/tagsInput/jquery.tagsinput.css'); ?>
+	<link href="../../plugins/tagsInput/jquery.tagsinput.<?php echo $tagsInput_2 ?>.css" rel="stylesheet" type="text/css">
+    <?php $bootstrap_3 = filemtime(PATH_ASSETS.'../../plugins/bootstrap-switch/bootstrap-switch.css'); ?>
+	<link href="../../plugins/bootstrap-switch/bootstrap-switch.<?php echo $bootstrap_3 ?>.css" rel="stylesheet" type="text/css">    
+    <?php $daterange = filemtime(PATH_ASSETS.'../../plugins/daterangepicker/daterangepicker-bs3.css'); ?>
+	<link href="../../plugins/daterangepicker/daterangepicker-bs3.<?php echo $daterange ?>.css" rel="stylesheet" type="text/css">    
+    <?php $timepicker_2 = filemtime(PATH_ASSETS.'../../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'); ?>
+	<link href="../../plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timepicker_2 ?>.css" rel="stylesheet" type="text/css">
+    <?php $colorPicker_3 = filemtime(PATH_ASSETS.'../../plugins/colorpicker/css/colorpicker.css'); ?>
+	<link href="../../plugins/colorpicker/css/colorpicker.<?php echo $colorPicker_3 ?>.css" rel="stylesheet" type="text/css">            
 
 	<!-- Specific CSS -->
 	<?php if (isset($specific_css)) {
@@ -201,18 +215,22 @@
     
      
     <!-- Theme CSS -->
-    <link href="../../css/theme.min.css" rel="stylesheet" type="text/css">
+    <?php $syleSheet_4 = filemtime(PATH_ASSETS.'../../css/theme.min.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../css/theme.min.<?php echo $syleSheet_4 ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="../../css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <?php $syleSheet_5 = filemtime(PATH_ASSETS.'../../css/chrome.css" rel="stylesheet" type="text/chrome'); ?>
+	<link href="../../css/chrome.<?php echo $syleSheet_5 ?>.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
 
         
     <!-- Responsive CSS -->
     <?php if ($responsive) {?>
-    	<link href="../../css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+    	<?php $syleSheet_6 = filemtime(PATH_ASSETS.'../../css/theme-responsive.min.css" rel="stylesheet'); ?>
+		<link href="../../css/theme-responsive.min.<?php echo $syleSheet_6 ?>.css" rel="stylesheet" type="text/css"> 
 
 	<?php } else { ?>
-    	<link href="../../css/non-responsive.css" rel="stylesheet" type="text/css">  
+    	<?php $responsive_1 = filemtime(PATH_ASSETS.'../../css/non-responsive.css'); ?>
+		<link href="../../css/non-responsive.<?php echo $responsive_1 ?>.css" rel="stylesheet" type="text/css">  
         <style>
 		.middle-layout .container, .boxed-layout .container{
 			width: <?php echo $width_non_responsive.'px'?> !important;
@@ -237,7 +255,8 @@
 	<?php }?>    
     
     <!-- Custom CSS -->
-    <link href="../../custom/custom.css" rel="stylesheet" type="text/css">
+    <?php $custom_3 = filemtime(PATH_ASSETS.'../../custom/custom.css'); ?>
+	<link href="../../custom/custom.<?php echo $custom_3 ?>.css" rel="stylesheet" type="text/css">
 
     <style type="text/css">
 

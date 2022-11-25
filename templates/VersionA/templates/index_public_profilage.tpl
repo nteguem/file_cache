@@ -29,8 +29,9 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
+    <?php $bootstrapMin = filemtime(PATH_ASSETS.'css/bootstrap.min.css'); ?>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.<?php echo $bootstrapMin ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
     <link href="css/font-entypo.css" rel="stylesheet" type="text/css">

@@ -2,16 +2,15 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
   
-  <?php $datePicker_1 = filemtime(PATH_ASSETS.'js/datepicker-fr.js'); ?>
-  <script type="text/javascript" src="js/datepicker-fr.<?php echo $datePicker_1 ?>.js"></script>
-  <?php $listeStime_1 = filemtime(PATH_ASSETS.'js/liste_e7.js?{$stime}'); ?>
-  <script type="text/javascript" src="js/liste_e7.<?php echo $listeStime_1 ?>.js?{$stime}"></script>
-  <?php $listeStime_2 = filemtime(PATH_ASSETS.'js/js_planning_dispo.js?{$stime}'); ?>
-  <script type="text/javascript" src="js/js_planning_dispo.<?php echo $listeStime_2 ?>.js?{$stime}"></script>
-  <?php $jqContextMenu = filemtime(PATH_ASSETS.'js/jquery.contextmenu.js'); ?>
-  <script type="text/javascript" src="js/jquery.contextmenu.<?php echo $jqContextMenu ?>.js"></script>
-  <?php $bootstrapTreeView = filemtime(PATH_ASSETS.'js/bootstrap-treeview.js'); ?>
-  <script type="text/javascript" src="js/bootstrap-treeview.<?php echo $bootstrapTreeView ?>.js"></script>
+  <script type="text/javascript" src="js/datepicker-fr.{$datePicker_1}.js"></script>
+
+  <script type="text/javascript" src="js/liste_e7.{$listeStime_1}.js?{$stime}"></script>
+
+  <script type="text/javascript" src="js/js_planning_dispo.{$listeStime_2}.js?{$stime}"></script>
+
+  <script type="text/javascript" src="js/jquery.contextmenu.{$jqContextMenu}.js"></script>
+
+  <script type="text/javascript" src="js/bootstrap-treeview.{$bootstrapTreeView}.js"></script>
 
 {literal}
 <!--
