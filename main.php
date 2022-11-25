@@ -880,9 +880,40 @@ try {
     $objSmarty->assign('punchMinPatient',filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
     $objSmarty->assign('caroufredPatient',filemtime('../js/caroufredsel.js'));
     $objSmarty->assign('pluginsPatient',filemtime('../js/plugins.js'));
+    $objSmarty->assign('pluginsBreakpointsBreakPatiPatient',filemtime('../plugins/breakpoints/breakpoints.js'));
+    $objSmarty->assign('jqueryDataTablesPatient',filemtime('../plugins/dataTables/jquery.dataTables.min.js'));
+    $objSmarty->assign('pluginJqueryPrettyPatient',filemtime('../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('ContctMinPatient',filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'));
+    $objSmarty->assign('tagsInputPatient',filemtime('../plugins/tagsInput/jquery.tagsinput.min.js'));
+    $objSmarty->assign('bootstrapSwitchPatient',filemtime('../plugins/bootstrap-switch/bootstrap-switch.min.js'));
+    $objSmarty->assign('blockUIPatient',filemtime('../plugins/blockUI/jquery.blockUI.js'));
+    $objSmarty->assign('pNotifyPatient',filemtime('../plugins/pnotify/js/jquery.pnotify.min.js'));
+    $objSmarty->assign('themePatient',filemtime('../js/theme.js'));
+    $objSmarty->assign('customPatient',filemtime('../custom/custom.js'));
+    $objSmarty->assign('wizardMinPatient',filemtime('../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'));
+    $objSmarty->assign('dataPickerPatient',filemtime('../js/datepicker-fr.js'));
+    $objSmarty->assign('modernzrPatient',filemtime('../js/modernizr.js'));
+    $objSmarty->assign('mobileDetectPatient',filemtime('../js/mobile-detect.min.js'));
+    $objSmarty->assign('mobileDetectModernPatient',filemtime('../js/mobile-detect-modernizr.js'));
+    $objSmarty->assign('jqueryMaskedinputPatient',filemtime('../js/jquery.maskedinput.min.js'));
+    $objSmarty->assign('autoCompletePatient',filemtime('../js/jquery.autocomplete.min.js'));
+    $objSmarty->assign('principalPatient',filemtime('../js/principal.js'));
+
+    $objSmarty->assign('intlTelInputPatient',filemtime('../js/intlTelInput.min.js'));
+    $objSmarty->assign('maskChampPatient',filemtime('../js/maskchamps.js'));
+    $objSmarty->assign('inputmaskPatient',filemtime('../js/inputmask.js'));
+    $objSmarty->assign('jQueryInputMaskPatient',filemtime('../js/jquery.inputmask.js'));
+    $objSmarty->assign('selectMinPatient',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
     $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+    $objSmarty->assign('pluginsCkeditorCkeditor_7',filemtime('plugins/ckeditor/ckeditor.js'));
+
 
 
 
