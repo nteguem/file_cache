@@ -583,8 +583,7 @@
         		<div class="col-md-12">
 		          	<h1 class="text-center vd_blue"> Prendre un rendez-vous en ligne ? </h1>
 					<script type="text/javascript">var idc = "<?php echo $tabInfo[0]['identifiant_entite']; ?>";</script>
-					<?php $client_7 = filemtime(PATH_ASSETS.'http://prod.alaxione.fr/js/client.js'); ?>
-					<script type="text/javascript" src="http://prod.alaxione.fr/js/client.<?php echo $client_7 ?>.js"></script> 
+					<script type="text/javascript" src="http://prod.alaxione.fr/js/client.js"></script> 
       			</div>
     		</div>
   		</div>
