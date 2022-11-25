@@ -756,8 +756,6 @@ try {
     $objSmarty->assign("sMessageLieuxNotFound", $sMessageLieuxNotFound);
 
     $objSmarty->assign('modernizr_1', filemtime('js/modernizr.js'));
-    $objSmarty->assign('slectConsign', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
-    $objSmarty->assign('slect1MinConsign', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'))
     $objSmarty->assign('modrnCentreClient', filemtime('../js/modernizr.js'));
     $objSmarty->assign('detectMinCentreClient', filemtime('../js/mobile-detect.min.js'));
     $objSmarty->assign('detectModernizClient', filemtime('../js/mobile-detect-modernizr.js'));
@@ -786,7 +784,6 @@ try {
     $objSmarty->assign('detectModernizDispoModif', filemtime('../js/mobile-detect-modernizr.js'));
     $objSmarty->assign('jQueryDisPoModif', filemtime('../js/jquery.js'));
     $objSmarty->assign('bootstrapDispoModif', filemtime('../js/bootstrap.min.js'));
-    
     $objSmarty->assign('customDispoModf', filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
     $objSmarty->assign('punhDispoModf', filemtime('../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
     $objSmarty->assign('caroufDispoModf', filemtime('../js/caroufredsel.js'));
@@ -800,8 +797,6 @@ try {
     $objSmarty->assign('pnotifyDispoModif', filemtime('../plugins/pnotify/js/jquery.pnotify.min.js'));
     $objSmarty->assign('pnotifyDispoModif', filemtime('../js/theme.js'));
     $objSmarty->assign('pnotifyDispoModif', filemtime('../custom/custom.js'));
-
-
     $objSmarty->assign('timePickDispoModif', filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'));
     $objSmarty->assign('wizarDispoModif', filemtime('../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min..js'));
     $objSmarty->assign('datePiDispoModif', filemtime('../js/datepicker.js'));
@@ -810,7 +805,7 @@ try {
     $objSmarty->assign('maskDispoModif', filemtime('../js/jquery.maskedinput.min.js'));
     $objSmarty->assign('ckDispoModif', filemtime('../plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('adapDispoModif', filemtime('../plugins/ckeditor/adapters/jquery.js'));
-    $objSmarty->assign('selec1DispoModif', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
+        
     $objSmarty->assign('jQuery_v1', filemtime('../js/jquery.js'));
     $objSmarty->assign('bootstrapDis', filemtime('../js/bootstrap.min.js'));
     $objSmarty->assign('jqueryCustomMinDis', filemtime('../plugins/jquery-ui/jquery-ui.custom.min.js'));
@@ -839,7 +834,6 @@ try {
     $objSmarty->assign('inMaskDis', filemtime('../js/jquery.inputmask.js'));
     $objSmarty->assign('ckDis', filemtime('../plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('adDis', filemtime('../plugins/ckeditor/adapters/jquery.js'));
-    $objSmarty->assign('sl1Dis', filemtime('https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'));
     
     $objSmarty->assign('jqInterpol', filemtime('js/jquery.js'));
     $objSmarty->assign('minInterpol', filemtime('js/bootstrap.min.js'));
@@ -868,8 +862,7 @@ try {
     $objSmarty->assign('cnInterpol', filemtime('js/jquery.mCustomScrollbar.concat.min.js'));
     $objSmarty->assign('mouseInterpol', filemtime('js/jquery.mousewheel.min.js'));
     $objSmarty->assign('e6Interpol', filemtime('js/liste_e6.js'));
-    $objSmarty->assign('prInterpol', filemtime('https://unpkg.com/react@16.0.0/umd/react.production.min.js'));
-    $objSmarty->assign('slimInterpol', filemtime('https://code.jquery.com/jquery-3.2.1.slim.min.js'));
+    $objSmarty->assign('autoInterpol', filemtime('js/jquery.autocomplete.min.js'));
 
 
 

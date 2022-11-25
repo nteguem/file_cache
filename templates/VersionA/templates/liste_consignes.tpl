@@ -1,5 +1,5 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{slectConsign}.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <link rel="stylesheet" href="css/liste_consignes.css">
 {if $bDebugRequete}
     <p class="no-print">
@@ -167,7 +167,7 @@
                                             <div class="controls">
                                                 {if isset($objRech.select2) and $objRech.select2 eq 'ok'}
                                                     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{slect1MinConsign}.js"></script>
+                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                                                     <div class="input-group" style="width:100%" id="id_selectmotif">
                                                         <select
                                                         id="id_form_{$objRech.nom_variable}"
