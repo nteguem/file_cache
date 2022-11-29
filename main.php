@@ -1097,6 +1097,29 @@ try {
      $objSmarty->assign('cssListeConsignes',filemtime('../../../css/liste_consignes.css'));
 
      $objSmarty->assign('cssModalAlertInformationCss67',filemtime('css/modal_alert_information.css'));
+
+     $objSmarty->assign('cssBootstrapMin892',filemtime('../css/bootstrap.min.css'));
+     $objSmarty->assign('cssFontAwesomeMin342',filemtime('../css/font-awesome.min.css'));
+     $objSmarty->assign('cssFontAwesomei732',filemtime('../css/font-awesome-ie7.min.css'));
+     $objSmarty->assign('cssFontEntypo',filemtime('../css/font-entypo.css'));
+     $objSmarty->assign('cssFont7',filemtime('../css/fonts.css'));
+     $objSmarty->assign('pluginsJquery765',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.css'));
+     $objSmarty->assign('pluginsPrettyPhoto876',filemtime('../plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+     $objSmarty->assign('pluginsIsotope90',filemtime('../plugins/isotope/css/isotope.css'));
+     $objSmarty->assign('pluginspnotify45',filemtime('../plugins/pnotify/css/jquery.pnotify.css'));
+     $objSmarty->assign('pluginsGoogleCodePrettify',filemtime('../plugins/google-code-prettify/prettify.css'));
+     $objSmarty->assign('pluginsMcustomScrollbar23',filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+     $objSmarty->assign('pluginsTagsInput5',filemtime('../plugins/tagsInput/jquery.tagsinput.css'));
+     $objSmarty->assign('pluginsBootstrapSwitch12',filemtime('../plugins/bootstrap-switch/bootstrap-switch.css'));
+     $objSmarty->assign('pluginsDaterange34',filemtime('../plugins/daterangepicker/daterangepicker-bs3.css'));
+     $objSmarty->assign('pluginsBoottsrap67',filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+     $objSmarty->assign('pluginscolorpicker90',filemtime('../plugins/colorpicker/css/colorpicker.css'));
+     $objSmarty->assign('cssTheme54',filemtime('../css/theme.min.css'));
+     $objSmarty->assign('cssIe0',filemtime('../css/ie.css'));
+     $objSmarty->assign('cssChrome23',filemtime('../css/chrome.css'));
+     $objSmarty->assign('cssThemeResponsive9',filemtime('../css/theme-responsive.min.css'));
+     $objSmarty->assign('custom53',filemtime('../custom/custom.css'));
+     $objSmarty->assign('cssJqueryClocpicker12',filemtime('../css/jquery-clockpicker.min.css'));
     
 
 
