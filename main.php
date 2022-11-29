@@ -1072,6 +1072,29 @@ try {
      $objSmarty->assign('custom3',filemtime('custom/custom.css'));
      $objSmarty->assign('cssListeConsigne',filemtime('css/liste_consignes.css'));
 
+     $objSmarty->assign('cssBootstrap4',filemtime('css/bootstrap.min.css'));
+     $objSmarty->assign('cssFontAwesomeMin0',filemtime('css/font-awesome.min.css'));
+     $objSmarty->assign('cssFontAwesomeMinIe79',filemtime('css/font-awesome-ie7.min.css'));
+     $objSmarty->assign('cssFontEntypo8',filemtime('css/font-entypo.css'));
+     $objSmarty->assign('cssFont7',filemtime('css/fonts.css'));
+     $objSmarty->assign('pluginsJqueryUiCustom6',filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+     $objSmarty->assign('pluginsPrettyPhoto5',filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+     $objSmarty->assign('pluginsIsotope4',filemtime('plugins/isotope/css/isotope.css'));
+     $objSmarty->assign('pluginsPnotify3',filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+     $objSmarty->assign('pluginsGoogleCodePrettify2',filemtime('plugins/google-code-prettify/prettify.css'));
+     $objSmarty->assign('pluginsMcustomScrollbar1',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+     $objSmarty->assign('pluginsTagsInput11',filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+     $objSmarty->assign('pluginsBootstrap',filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+     $objSmarty->assign('daterangepicker',filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+     $objSmarty->assign('pluginsBootstrap22',filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+     $objSmarty->assign('pluginscolorpicker',filemtime('plugins/colorpicker/css/colorpicker.css'));
+     $objSmarty->assign('cssTheme23',filemtime('css/theme.min.css" rel="stylesheet'));
+     $objSmarty->assign('cssIe56',filemtime('css/ie.css'));
+     $objSmarty->assign('cssChrome67',filemtime('css/chrome.css'));
+     $objSmarty->assign('theme678',filemtime('css/theme-responsive.min.css'));
+     $objSmarty->assign('customcss89',filemtime('custom/custom.css'));
+    
+
 
     
     
