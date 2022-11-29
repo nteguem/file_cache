@@ -33,55 +33,55 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.{$cssBootstrapmin97}.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.min.{$cssFontAwesome30}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
-    <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="../css/font-entypo.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.{$cssFontAwesome87}.css"><![endif]-->
+    <link href="../css/font-entypo.{$cssFontEntypo}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
-    <link href="../css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.{$cssFonts109}.css" rel="stylesheet" type="text/css">
+    <link href="../css/datepicker.{$cssDatapicker345}.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="../plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJqueryUi78}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhoto91}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/isotope/css/isotope.{$pluginsIsotope134}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/pnotify/css/jquery.pnotify.{$pluginsPnotifyJquery057}.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../plugins/google-code-prettify/prettify.{$pluginsGoogleCode894}.css" rel="stylesheet" type="text/css">
    <?php $jsMomentMin = filemtime(PATH_ASSETS.'../js/moment.min.js'); ?>
     <script src='../js/moment.min.<?php echo $jsMomentMin ?>.js'></script>
 
-    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/jquery-clockpicker.min.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMcustomScrollbar360}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInputJquery348}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-switch/bootstrap-switch.{$pluginsBootstrap548}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/daterangepicker/daterangepicker-bs3.{$pluginsDaterangePicker378}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstrapTimePicker367}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/colorpicker/css/colorpicker.{$pluginsColorPicker564}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstarpTimePicker234}.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery-clockpicker.min.{$CssJqueryClockpicker674}.css" rel="stylesheet" type="text/css">
     <?php $jsMomentMin_2 = filemtime(PATH_ASSETS.'../js/moment.min.js'); ?>
     <script src='../js/moment.min.<?php echo $jsMomentMin_2 ?>.js'></script>
 
     <!-- Theme CSS -->
-    <link href="../css/theme.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme.{$CssTheme985}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
-    <link href="../css/ie.css" rel="stylesheet"> <![endif]-->
-    <link href="../css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+    <link href="../css/ie.{$CssIe026}.css" rel="stylesheet"> <![endif]-->
+    <link href="../css/chrome.{$CssChrome584}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
     <!-- Responsive CSS -->
-    <link href="../css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme-responsive.min.{$CssThemeResponsiveMin867}.css" rel="stylesheet" type="text/css">
 
 
     <!-- for specific page in style css -->
-    <link href="../css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery-ui.structure.min.{$CssJqueryUiStructure845}.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery-ui.theme.min.{$CssJqueryUiTheme243}.css" rel="stylesheet" type="text/css">
     <!-- for specific page responsive in style css -->
 
 
     <!-- Custom CSS -->
-    <link href="../custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="../custom/custom.{$Custom245}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== -->

@@ -1120,6 +1120,33 @@ try {
      $objSmarty->assign('cssThemeResponsive9',filemtime('../css/theme-responsive.min.css'));
      $objSmarty->assign('custom53',filemtime('../custom/custom.css'));
      $objSmarty->assign('cssJqueryClocpicker12',filemtime('../css/jquery-clockpicker.min.css'));
+
+     $objSmarty->assign('cssBootstrapmin97',filemtime('../css/bootstrap.min.css'));
+     $objSmarty->assign('cssFontAwesome30',filemtime('../css/font-awesome.min.css'));
+     $objSmarty->assign('cssFontAwesome87',filemtime('../css/font-awesome-ie7.min.css'));
+     $objSmarty->assign('cssFontEntypo',filemtime('../css/font-entypo.css'));
+     $objSmarty->assign('cssFonts109',filemtime('../css/fonts.css'));
+     $objSmarty->assign('cssDatapicker345',filemtime('../css/datepicker.css'));
+     $objSmarty->assign('pluginsJqueryUi78',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.css'));
+     $objSmarty->assign('pluginsPrettyPhoto91',filemtime('../plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+     $objSmarty->assign('pluginsIsotope134',filemtime('../plugins/isotope/css/isotope.css'));
+     $objSmarty->assign('pluginsPnotifyJquery057',filemtime('../plugins/pnotify/css/jquery.pnotify.css'));
+     $objSmarty->assign('pluginsGoogleCode894',filemtime('../plugins/google-code-prettify/prettify.css'));
+     $objSmarty->assign('pluginsMcustomScrollbar360',filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+     $objSmarty->assign('pluginsTagsInputJquery348',filemtime('../plugins/tagsInput/jquery.tagsinput.css'));
+     $objSmarty->assign('pluginsBootstrap548',filemtime('../plugins/bootstrap-switch/bootstrap-switch.css'));
+     $objSmarty->assign('pluginsDaterangePicker378',filemtime('../plugins/daterangepicker/daterangepicker-bs3.css'));
+     $objSmarty->assign('pluginsBootstrapTimePicker367',filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+     $objSmarty->assign('pluginsColorPicker564',filemtime('../plugins/colorpicker/css/colorpicker.css'));
+     $objSmarty->assign('pluginsBootstarpTimePicker234',filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+     $objSmarty->assign('CssJqueryClockpicker674',filemtime('../css/jquery-clockpicker.min.css'));
+     $objSmarty->assign('CssTheme985',filemtime('../css/theme.css'));
+     $objSmarty->assign('CssIe026',filemtime('../css/ie.css'));
+     $objSmarty->assign('CssChrome584',filemtime('../css/chrome.css'));
+     $objSmarty->assign('CssThemeResponsiveMin867',filemtime('../css/theme-responsive.min.css'));
+     $objSmarty->assign('CssJqueryUiStructure845',filemtime('../css/jquery-ui.structure.min.css" rel="stylesheet'));
+     $objSmarty->assign('CssJqueryUiTheme243',filemtime('../css/jquery-ui.theme.min.css'));
+     $objSmarty->assign('Custom245',filemtime('../custom/custom.css'));
     
 
 
