@@ -1016,8 +1016,40 @@ try {
      $objSmarty->assign('mdpVertical',filemtime('js/mdp.js?v={/literal}{$numero_version_alaxione}{literal}'));
      $objSmarty->assign('fonctionVertical',filemtime('js/fonction_adv.js?v={/literal}{$numero_version_alaxione}{literal}'));
     
-   
-     
+   // deuxieme fichier Issa colon
+     $objSmarty->assign('jquery',filemtime('js/jquery.js'));
+     $objSmarty->assign('bootstrap',filemtime('js/bootstrap.min.js'));
+     $objSmarty->assign('jqueryUi',filemtime('plugins/jquery-ui/jquery-ui.custom.min.js'));
+     $objSmarty->assign('jqueryUiTouch',filemtime('plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'));
+     $objSmarty->assign('caroufredsel',filemtime('js/caroufredsel.js'));
+     $objSmarty->assign('plugin',filemtime('js/plugins.js'));
+     $objSmarty->assign('breakpoints',filemtime('lugins/breakpoints/breakpoints.js'));
+     $objSmarty->assign('dataTables',filemtime('plugins/dataTables/jquery.dataTables.min.js'));
+     $objSmarty->assign('prettyPhoto',filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+     $objSmarty->assign('bootstrapMin',filemtime('css/bootstrap.min.css'));
+     $objSmarty->assign('fontawesome',filemtime('css/font-awesome.min.css'));
+     $objSmarty->assign('fontawesomemin',filemtime('css/font-awesome-ie7.min.css'));
+     $objSmarty->assign('cssFontEntypo',filemtime('css/font-entypo.css'));
+     $objSmarty->assign('cssFontCss',filemtime('css/fonts.css'));
+     $objSmarty->assign('pluginsJqueryUi',filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+     $objSmarty->assign('pluginsPrettyPhotoCss',filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+     $objSmarty->assign('pluginsIsotope',filemtime('plugins/isotope/css/isotope.css'));
+     $objSmarty->assign('pluginsPnotify',filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+     $objSmarty->assign('pluginsGoogle',filemtime('plugins/google-code-prettify/prettify.css'));
+     $objSmarty->assign('pluginsMscrollbar',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+     $objSmarty->assign('pluginsBootstrapSwitch',filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+     $objSmarty->assign('pluginsDaterangePicker',filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+     $objSmarty->assign('pluginsBootstrapTimepicker',filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+     $objSmarty->assign('pluginsColorpicker',filemtime('plugins/colorpicker/css/colorpicker.css'));
+     $objSmarty->assign('pluginsDataTablesBootstrap',filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+     $objSmarty->assign('themeMin',filemtime('css/theme.min.css'));
+     $objSmarty->assign('cssIe',filemtime('css/ie.css'));
+     $objSmarty->assign('cssChrome',filemtime('css/chrome.css'));
+     $objSmarty->assign('cssThemeResponsive',filemtime('css/theme-responsive.min.css'));
+     $objSmarty->assign('mCustomScrollbar',filemtime('css/jquery.mCustomScrollbar.min.css'));
+     $objSmarty->assign('intelInput',filemtime('css/intlTelInput.css'));
+     $objSmarty->assign('customWidget',filemtime('custom/custom_widget.css'));
+
 
     
     
