@@ -85,7 +85,7 @@
 
     <script type="text/javascript" src="js/jquery.{$jQuerry}.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/excanvas.js"></script>
+    <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>
     <![endif]-->
 
     <script type="text/javascript" src="js/bootstrap.min.{bootstrapMin }.js"></script>
@@ -98,7 +98,7 @@
 
     <script type="text/javascript" src="js/plugins.{$plugins}.js"></script>
 
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.breakpoints.js"></script>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.breakpoints.{$breakpoints}.js"></script>
 
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jQuerryDataTablesMin}.js"></script>
 
@@ -120,7 +120,7 @@
 
     <script type="text/javascript" src="js/theme.{$theme}.js?1454423157"></script>
 
-    <script type="text/javascript" src="custom/custom.custom.js?1454423157"></script>
+    <script type="text/javascript" src="custom/custom.custom.{$custom}.js?1454423157"></script>
 
     <!-- Specific Page Scripts Put Here -->
 
@@ -141,8 +141,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/html5shiv.js"></script>
-    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+    <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>
     <![endif]-->
 
 

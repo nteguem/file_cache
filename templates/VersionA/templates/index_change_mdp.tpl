@@ -54,11 +54,8 @@
     <!-- Custom CSS -->
     <link href="custom/custom.css" rel="stylesheet" type="text/css">
     <!-- Head SCRIPTS -->
-    <?php $modernizr_1 = filemtime(PATH_ASSETS.'js/modernizr.js'); ?>
     <script type="text/javascript" src="js/modernizr.{$modernizr_1}.js"></script>
-    <?php $mobileDetectMin_1 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js'); ?>
     <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetectMin_1}.js"></script>
-    <?php $mobileDetectModernizr_1 = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
     <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr_1}.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -165,42 +162,25 @@
 
 <!-- Javascript =============================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<?php $jQuery_1 = filemtime(PATH_ASSETS.'js/jquery.js') ?>
 <script type="text/javascript" src="js/jquery.{$jQuery_1}.js"></script>
 <!--[if lt IE 9]>
-<script type="text/javascript" src="js/excanvas.js"></script>
+<script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>
 <![endif]-->
-<?php $bootstapMin_1 = filemtime(PATH_ASSETS.'js/bootstrap.min.js') ?>
 <script type="text/javascript" src="js/bootstrap.min.{$bootstapMin_1}.js"></script>
-<?php $pluginJqCustomMin = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
 <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$pluginJqCustomMin}.js'></script>
-<?php $punchJqueryUiTouchPunchMin = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
 <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchJqueryUiTouchPunchMin}.js"></script>
-<?php $caroufRedSel_1 = filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
 <script type="text/javascript" src="js/caroufredsel.{$caroufRedSel_1}.js"></script>
-<?php $plugins_1 = filemtime(PATH_ASSETS.'js/plugins.js') ?>
 <script type="text/javascript" src="js/plugins.{$plugins_1}.js"></script>
-<?php $pluginsBreackPoints_1 = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js') ?>
 <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$pluginsBreackPoints_1}.js"></script>
-<?php $pluginsDataTableMin_1 = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
 <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$pluginsDataTableMin_1}.js"></script>
-<?php $pluginsPrettyPhoto = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
 <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$pluginsPrettyPhoto}.js"></script>
-<?php $pluginsContactMain = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
 <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$pluginsContactMain}.js"></script>
-<?php $tagsInputMin = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js') ?>
 <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$tagsInputMin}.js"></script>
-<?php $bootstrapSwitchMin = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
 <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchMin}.js"></script>
-<?php $pluginsBlockUi  = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js') ?>
 <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$pluginsBlockUi}.js"></script>
-<?php $pluginsPnotify = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js') ?>
 <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pluginsPnotify}.js"></script>
-<?php $theme_1 = filemtime(PATH_ASSETS.'js/theme.js') ?>
 <script type="text/javascript" src="js/theme.{$theme_1}.js"></script>
-<?php $custumCustom = filemtime(PATH_ASSETS.'custom/custom.js') ?>
 <script type="text/javascript" src="custom/custom.{$custumCustom}.js"></script>
-<?php $mdp = filemtime(PATH_ASSETS.'js/mdp.js') ?>
 <script type="text/javascript" src="js/mdp.{$mdp}.js"></script>
 
 </body>
