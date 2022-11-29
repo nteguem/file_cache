@@ -30,7 +30,8 @@
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
     <link href="css/bootstrap.min.{$cssBoostrapMinCss}.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.{$cssFontAwesomeMinCss}.css" rel="stylesheet" type="text/css">
-    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
     <link href="css/font-entypo.{$cssFontEntypoCss}.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
