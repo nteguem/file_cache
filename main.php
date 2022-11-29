@@ -1070,6 +1070,7 @@ try {
      $objSmarty->assign('cssChrome2',filemtime('css/chrome.css'));
      $objSmarty->assign('cssThemeResponsive2',filemtime('css/theme-responsive.min.css'));
      $objSmarty->assign('custom3',filemtime('custom/custom.css'));
+     $objSmarty->assign('cssListeConsigne',filemtime('css/liste_consignes.css'));
 
 
     
