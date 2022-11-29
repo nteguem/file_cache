@@ -1093,6 +1093,10 @@ try {
      $objSmarty->assign('cssChrome67',filemtime('css/chrome.css'));
      $objSmarty->assign('theme678',filemtime('css/theme-responsive.min.css'));
      $objSmarty->assign('customcss89',filemtime('custom/custom.css'));
+
+     $objSmarty->assign('cssListeConsignes',filemtime('../../../css/liste_consignes.css'));
+
+     $objSmarty->assign('cssModalAlertInformationCss67',filemtime('css/modal_alert_information.css'));
     
 
 
