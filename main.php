@@ -1048,7 +1048,28 @@ try {
      $objSmarty->assign('cssThemeResponsive',filemtime('css/theme-responsive.min.css'));
      $objSmarty->assign('mCustomScrollbar',filemtime('css/jquery.mCustomScrollbar.min.css'));
      $objSmarty->assign('intelInput',filemtime('css/intlTelInput.css'));
-     $objSmarty->assign('customWidget',filemtime('custom/custom_widget.css'));
+     
+     $objSmarty->assign('cssBootstrap',filemtime('css/bootstrap.min.css'));
+     $objSmarty->assign('cssFontAwesome',filemtime('css/font-awesome.min.css'));
+     $objSmarty->assign('cssFontAwesomeIe7',filemtime('css/font-awesome-ie7.min.css'));
+     $objSmarty->assign('cssFontEntypo',filemtime('css/font-entypo.css'));
+     $objSmarty->assign('cssFont',filemtime('css/fonts.css'));
+     $objSmarty->assign('pluginsJqueryUiCustom',filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+     $objSmarty->assign('pluginsPrettyPhoto',filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+     $objSmarty->assign('pluginsIsotope',filemtime('plugins/isotope/css/isotope.css'));
+     $objSmarty->assign('pluginsPnotify',filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+     $objSmarty->assign('pluginsgoogleCode',filemtime('plugins/google-code-prettify/prettify.css'));
+     $objSmarty->assign('pluginsmCustomScrollbar',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+     $objSmarty->assign('pluginsTagsInput',filemtime('plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet'));
+     $objSmarty->assign('pluginsBootstrapSwitch',filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+     $objSmarty->assign('pluginsDaterangePicker',filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+     $objSmarty->assign('pluginsBootstrapTimepicker',filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+     $objSmarty->assign('pluginsColorPicker',filemtime('plugins/colorpicker/css/colorpicker.css'));
+     $objSmarty->assign('cssThemeMin',filemtime('css/theme.min.css'));
+     $objSmarty->assign('cssIeCss',filemtime('css/ie.css'));
+     $objSmarty->assign('cssChrome2',filemtime('css/chrome.css'));
+     $objSmarty->assign('cssThemeResponsive2',filemtime('css/theme-responsive.min.css'));
+     $objSmarty->assign('custom3',filemtime('custom/custom.css'));
 
 
     
