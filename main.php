@@ -1000,6 +1000,35 @@ try {
     $objSmarty->assign('cssChromeCss',filemtime('css/chrome.css'));
     $objSmarty->assign('cssThemeResponsiveMinCss',filemtime('css/theme-responsive.min.css'));
     $objSmarty->assign('cssCustomCss',filemtime('custom/custom.css'));
+
+    // liste_centre_client.tpl
+
+    $objSmarty->assign('cssBootstrapMinCss',filemtime('../css/bootstrap.min.css'));
+    $objSmarty->assign('cssFontAwesomeCss',filemtime('../css/font-awesome.min.css'));
+    $objSmarty->assign('cssFontEntypoCss',filemtime('../css/font-entypo.css'));
+    $objSmarty->assign('cssFontCss',filemtime('../css/fonts.css'));
+    $objSmarty->assign('pluginsJqueryUiJqueryUiCss',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.css'));
+    $objSmarty->assign('pluginsPrettyPhotoPluginCss',filemtime('../plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+    $objSmarty->assign('pluginsIsotopeCss',filemtime('../plugins/isotope/css/isotope.css'));
+    $objSmarty->assign('pluginsPnotifyCss',filemtime('../plugins/pnotify/css/jquery.pnotify.css'));
+    $objSmarty->assign('pluginsGoofleCodeCss',filemtime('../plugins/google-code-prettify/prettify.css'));
+    $objSmarty->assign('pluginsMCustomScrollbarCss',filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+    $objSmarty->assign('pluginsTagsInputCss',filemtime('../plugins/tagsInput/jquery.tagsinput.css'));
+    $objSmarty->assign('pluginsBootstrapSwitchCss',filemtime('../plugins/bootstrap-switch/bootstrap-switch.css'));
+    $objSmarty->assign('pluginsDaterangePickerCss',filemtime('../plugins/daterangepicker/daterangepicker-bs3.css'));
+    $objSmarty->assign('pluginsBootstrapTimepickerCss',filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+    $objSmarty->assign('pluginsColorpickerCss',filemtime('../plugins/colorpicker/css/colorpicker.css'));
+    $objSmarty->assign('pluginsDatatablesCss',filemtime('../plugins/dataTables/css/jquery.dataTables.min.css'));
+    $objSmarty->assign('pluginsDataTablesBootstrapCss',filemtime('../plugins/dataTables/css/dataTables.bootstrap.css'));
+    $objSmarty->assign('pluginsJqueryFileUploadCss',filemtime('../plugins/jquery-file-upload/css/jquery.fileupload.css'));
+    $objSmarty->assign('pluginsJqueryFileUploadUiCss',filemtime('../plugins/jquery-file-upload/css/jquery.fileupload-ui.css'));
+    $objSmarty->assign('pluginsBootstrapWusiwygCss',filemtime('../plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css'));
+    $objSmarty->assign('pluginsFullCalendar231',filemtime('../plugins/fullcalendar-2.3.1/fullcalendar.css'));
+    $objSmarty->assign('pluginsFullcalendar231Print',filemtime('../plugins/fullcalendar-2.3.1/fullcalendar.print.css'));
+    $objSmarty->assign('cssThemeCss',filemtime('../css/theme.css'));
+    $objSmarty->assign('cssChromeCss',filemtime('../css/chrome.css'));
+    $objSmarty->assign('cssThemeResponsiveCss',filemtime('../css/theme-responsive.min.css'));
+    
    
 
 
