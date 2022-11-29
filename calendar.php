@@ -35,53 +35,6 @@
     <?php $awesomeMinCss = filemtime(PATH_ASSETS.'css/font-awesome.min.css') ?>
     <link href="css/font-awesome.min.<?php echo $awesomeMinCss ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-<<<<<<< HEAD
-    <?php $fontEntypoMinCss = filemtime(PATH_ASSETS.'css/font-entypo.css') ?>
-    <link href="css/font-entypo.<?php $fontEntypoMinCss ?>.css" rel="stylesheet" type="text/css">    
-
-    <!-- Fonts CSS -->
-    <?php $fontMinCss = filemtime(PATH_ASSETS.'css/fonts.css') ?>
-    <link href="css/fonts.<?php echo $fontMinCss ?>.css"  rel="stylesheet" type="text/css">
-               
-    <!-- Plugin CSS -->
-    <?php $customMinCss = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMinCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $prettyPhotoMinCss = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css') ?>
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhotoMinCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $isotopeCss = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css') ?>
-    <link href="plugins/isotope/css/isotope.<?php echo $isotopeCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $pnotifyCss = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css') ?>
-    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnotifyCss ?>.css" media="screen" rel="stylesheet" type="text/css">    
-    <?php $prettyPrettyCss = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css') ?>
-    <link href="plugins/google-code-prettify/prettify.<?php $prettyPrettyCss ?>.css" rel="stylesheet" type="text/css"> 
-   
-         
-    <?php $mCustomScrollbarCss = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css') ?>
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mCustomScrollbarCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $tagsInputCss = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
-    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsInputCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $bootstrapSwitch = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css') ?>
-    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $bootstrapSwitch ?>.css" rel="stylesheet" type="text/css">    
-    <?php $dateAngePickerCss = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css') ?>
-    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $dateAngePickerCss ?>.css" rel="stylesheet" type="text/css">    
-    <?php $timpickerCss = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css') ?>
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timpickerCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $colorPickerCss = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css') ?>
-    <link href="plugins/colorpicker/css/colorpicker.<?php echo $colorPickerCss ?>.css" rel="stylesheet" type="text/css">            
-    <!-- Specific CSS -->
-    <?php $dataTablesCss = filemtime(PATH_ASSETS.'plugins/dataTables/css/jquery.dataTables.min.css') ?>
-    <link href="plugins/dataTables/css/jquery.dataTables.min.<?php echo $dataTablesCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $bootstrapDataTablesCss = filemtime(PATH_ASSETS.'plugins/dataTables/css/dataTables.bootstrap.css') ?>
-    <link href="plugins/dataTables/css/dataTables.bootstrap.<?php echo $bootstrapDataTablesCss ?>.css" rel="stylesheet" type="text/css">    
-    
-    <?php $fileUploadCss = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/css/jquery.fileupload.css') ?>
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload.<?php echo $fileUploadCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $fileUploadUiCss = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/css/jquery.fileupload-ui.css') ?>
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.<?php echo $fileUploadUiCss ?>.css" rel="stylesheet" type="text/css">
-    <?php $wysihtlmCss = filemtime(PATH_ASSETS.'plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css') ?>
-    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.<?php echo $wysihtlmCss ?>.css" rel="stylesheet" type="text/css">  
-    
-=======
     <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
@@ -109,21 +62,14 @@
     <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">
     <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">
 
->>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
     <!-- Theme CSS -->
     <?php $themeMinCss = filemtime(PATH_ASSETS.'css/theme.min.css') ?>
     <link href="css/theme.min.<?php echo $themeMinCss ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-<<<<<<< HEAD
     <?php $chromeCss = filemtime(PATH_ASSETS.'css/chrome.css') ?>
     <link href="css/chrome.<?php echo $chromeCss ?>.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
-=======
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
-
->>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
 
     <!-- Responsive CSS -->
-<<<<<<< HEAD
     <?php $responsiveCss = filemtime(PATH_ASSETS.'css/theme-responsive.min.css') ?>
     <link href="css/theme-responsive.min.<?php echo $responsiveCss ?>.css" rel="stylesheet" type="text/css"> 
 
@@ -132,12 +78,6 @@
 	
     <?php $fullCalenderPrintCss = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.3.1/fullcalendar.print.css') ?>
     <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.<?php echo $fullCalenderPrintCss ?>.css' rel='stylesheet' media='print' />
-=======
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
-
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print' />
->>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
 
     <!-- for specific page in style css -->
 

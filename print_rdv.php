@@ -376,7 +376,6 @@ if ($hasTemplate) {
     <link href="css/font-entypo.<?php $fontEntypoMinPrintRdv ?>.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-<<<<<<< HEAD
     <?php $customMinPrintRdv = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
     <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMinPrintRdv ?>.css" rel="stylesheet" type="text/css">
 
@@ -392,9 +391,6 @@ if ($hasTemplate) {
 
     <?php $fontMinPrintRdv = filemtime(PATH_ASSETS.'css/fonts.css') ?>
     <link href="css/fonts.<?php echo $fontMinPrintRdv ?>.css"  rel="stylesheet" type="text/css">
-=======
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
->>>>>>> fec53b45cd9fcb91ac979890c6813090fd33edae
 
     <!-- Plugin CSS -->
         
