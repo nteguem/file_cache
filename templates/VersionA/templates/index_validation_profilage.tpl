@@ -54,16 +54,13 @@
     <!-- Custom CSS -->
     <link href="custom/custom.css" rel="stylesheet" type="text/css">
     <!-- Head SCRIPTS -->
-    <?php $modernizr_1 = filemtime(PATH_ASSETS.'js/modernizr.js') ?>
-    <script type="text/javascript" src="js/modernizr.<?php echo $modernizr_1 ?>.js"></script>
-        <?php $mobileDetectMin_1 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js') ?>
-        <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin_1 ?>.js"></script>
-        <?php $mobileDetectMdernizr = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdernizr ?>.js"></script>
+    <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script>
+        <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetect}.js"></script>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr}.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/html5shiv.js"></script>
-    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+    <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>
     <![endif]-->
 
     <script type="text/javascript">
@@ -179,41 +176,25 @@
 
 <!-- Javascript =============================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-    <?php $jQuery_1 = filemtime(PATH_ASSETS.'js/jquery.js') ?>
-<script type="text/javascript" src="js/jquery.<?php echo $jQuery_1 ?>.js"></script>
+<script type="text/javascript" src="js/jquery.{$jquery}.js"></script>
 <!--[if lt IE 9]>
-<script type="text/javascript" src="js/excanvas.js"></script>
+<script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>
 <![endif]-->
-    <?php $bootstrapMin = filemtime(PATH_ASSETS.'js/bootstrap.min.js') ?>
-<script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrapMin ?>.js"></script>
-    <?php $customMin = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
-<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMin ?>.js'></script>
-    <?php $touchPunch_1 = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
-<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $touchPunch_1 ?>.js"></script>
-    <?php $caroufRed = filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
-<script type="text/javascript" src="js/caroufredsel.<?php echo $caroufRed ?>.js"></script>
-    <?php $plugins_1 = filemtime(PATH_ASSETS.'js/plugins.js') ?>
-<script type="text/javascript" src="js/plugins.<?php echo $plugins_1 ?>.js"></script>
-    <?php $breackPoint_1 = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js') ?>
-<script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breackPoint_1 ?>.js"></script>
-    <?php $dataTables_1 = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
-<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $dataTables_1 ?>.js"></script>
-    <?php $prettyPhoto_1 = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
-<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $prettyPhoto_1 ?>.js"></script>
-    <?php $contactMin_1 = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
-<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $contactMin_1 ?>.js"></script>
-    <?php $tagsInput_1 = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js') ?>
-<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInput_1 ?>.js"></script>
-    <?php $bootStrap_1 = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
-<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootStrap_1 ?>.js"></script>
-    <?php $blockUi_1 = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js') ?>
-<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.<?php echo $blockUi_1 ?>.js"></script>
-    <?php $pnotify_1 = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js') ?>
-<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $pnotify_1 ?>.js"></script>
-    <?php $theme_1 = filemtime(PATH_ASSETS.'js/theme.js') ?>
-<script type="text/javascript" src="js/theme.<?php echo $theme_1 ?>.js"></script>
-    <?php $customCustom_1 = filemtime(PATH_ASSETS.'custom/custom.js') ?>
-<script type="text/javascript" src="custom/custom.<?php echo $customCustom_1 ?>.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.{$bootstrap}.js"></script>
+<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$jqueryCustom}.js'></script>
+<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jqueryTouch}.js"></script>
+<script type="text/javascript" src="js/caroufredsel.{$caroufredsel}.js"></script>
+<script type="text/javascript" src="js/plugins.{$plugin}.js"></script>
+<script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
+<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTables}.js"></script>
+<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto}.js"></script>
+<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCustomScrollbar}.js"></script>
+<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$tagsInput}.js"></script>
+<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.{$bootstrapSwitch}.js"></script>
+<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$blockUi}.js"></script>
+<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pnotify}.js"></script>
+<script type="text/javascript" src="js/theme.{$theme}.js"></script>
+<script type="text/javascript" src="custom/custom.custom.{$custom}.js"></script>
 
 </body>
 </html>

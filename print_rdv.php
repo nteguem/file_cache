@@ -475,14 +475,16 @@ if ($hasTemplate) {
     <?php $excanvas = filemtime(PATH_ASSETS . 'js/excanvas.js'); ?>
     <script type="text/javascript" src="js/excanvas.<?php echo $excanvas ?>.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <?php $bootstrap = filemtime(PATH_ASSETS . 'js/bootstrap.min.js'); ?>
+    <script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrap ?>.js"></script>
     <?php $JquerryCustomMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui/jquery-ui.custom.min.js'); ?>
     <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $JquerryCustomMin ?>.js'></script>
     <?php $jQuerryTouchPunchMin = filemtime(PATH_ASSETS . 'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); ?>
     <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $jQuerryTouchPunchMin ?>.js"></script>
-
-    <script type="text/javascript" src="js/caroufredsel.js"></script>
-    <script type="text/javascript" src="js/plugins.js"></script>
+    <?php $caroufred = filemtime(PATH_ASSETS . 'js/caroufredsel.js'); ?>
+    <script type="text/javascript" src="js/caroufredsel.<?php echo $caroufred ?>.js"></script>
+    <?php $plugin = filemtime(PATH_ASSETS . 'js/plugins.js'); ?>
+    <script type="text/javascript" src="js/plugins.<?php echo $plugin ?>.js"></script>
     <?php $frameWorkJs = filemtime(PATH_ASSETS . 'js/framwork_js.js'); ?>
     <script type="text/javascript" src="js/framwork_js.<?php echo $frameWorkJs ?>.js"></script>
 
@@ -507,8 +509,8 @@ if ($hasTemplate) {
     <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $jQuerryPnotifyMin ?>.js"></script>
 
 
-
-    <script type="text/javascript" src="js/theme.js"></script>
+    <?php $theme = filemtime(PATH_ASSETS . 'js/theme.js'); ?>
+    <script type="text/javascript" src="js/theme.<?php echo $theme ?>.js"></script>
     <?php $custom_ = filemtime(PATH_ASSETS . 'custom/custom.js'); ?>
     <script type="text/javascript" src="custom/custom.<?php echo $custom_ ?>.js"></script>
 
@@ -517,7 +519,8 @@ if ($hasTemplate) {
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jQuerryDataTableMin1 ?>.js"></script>
     <?php $dataTablesBootstrap = filemtime(PATH_ASSETS . 'plugins/dataTables/dataTables.bootstrap.js'); ?>
     <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.<?php echo $dataTablesBootstrap ?>.js"></script>
-    <script type="text/javascript" src="js/datepicker-fr.js"></script>
+    <?php $datepicker = filemtime(PATH_ASSETS . 'js/datepicker-fr.js'); ?>
+    <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker?>.js"></script>
 
     <?php $bootstrapTimePickerMin = filemtime(PATH_ASSETS . 'plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'); ?>
     <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $bootstrapTimePickerMin ?>.js'></script>

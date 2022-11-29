@@ -95,16 +95,11 @@
     <?php $customCustomErreur = filemtime(PATH_ASSETS.'custom/custom.css') ?>
     <link href="custom/custom.<?php echo $customCustomErreur ?>.css" rel="stylesheet" type="text/css">
 
+    <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script>
 
-    <!-- Head SCRIPTS -->
-    <?php $modernizr = filemtime(PATH_ASSETS . 'js/modernizr.js') ?>
-    <script type="text/javascript" src="js/modernizr.<?php echo $modernizr ?>.js"></script>
-
-    <?php $mobileDetect = filemtime(PATH_ASSETS . 'js/mobile-detect.min.js') ?>
-    <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetect ?>.js"></script>
+    <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetect}.js"></script>
     
-    <?php $mobileDetectModernizr = filemtime(PATH_ASSETS . 'js/mobile-detect-modernizr.js') ?>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectModernizr ?>.js"></script>
+    <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr}.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

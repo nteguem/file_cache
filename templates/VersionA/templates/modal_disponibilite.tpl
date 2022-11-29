@@ -86,75 +86,48 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php $jquery_2 = filemtime(PATH_ASSETS.'../js/jquery.js'); ?>
-    <script type="text/javascript" src="../js/jquery.<?php echo $jquery_2 ?>.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.{$jQuery_v1}.js"></script>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <?php $bootstrap_2 = filemtime(PATH_ASSETS.'../js/bootstrap.min.js'); ?>
-    <script type="text/javascript" src="../js/bootstrap.min.<?php echo $bootstrap_2 ?>.js"></script>
-    <?php $jqueryUiCustom = filemtime(PATH_ASSETS.'../plugins/jquery-ui/jquery-ui.custom.min.js'); ?>
-    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.<?php echo $jqueryUiCustom ?>.js'></script>
-    <?php $jqueryUiTouchPunchMin = filemtime(PATH_ASSETS.'../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); ?>
-    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $jqueryUiTouchPunchMin ?>.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.{$bootstrapDis}.js"></script>
+    <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$jqueryCustomMinDis}.js'></script>
+    <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punhDis}.js"></script>
 
-    <?php $caroufredsel_2 = filemtime(PATH_ASSETS.'../js/caroufredsel.js'); ?>
-    <script type="text/javascript" src="../js/caroufredsel.<?php echo $caroufredsel_2 ?>.js"></script>
-    <?php $plugins_2 = filemtime(PATH_ASSETS.'../js/plugins.js'); ?>
-    <script type="text/javascript" src="../js/plugins.<?php echo $plugins_2 ?>.js"></script>
+    <script type="text/javascript" src="../js/caroufredsel.{$carouDis}.js"></script>
+    <script type="text/javascript" src="../js/plugins.{$plugDis}.js"></script>
 
-    <?php $breakpoints_2 = filemtime(PATH_ASSETS.'../plugins/breakpoints/breakpoints.js'); ?>
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.<?php echo $breakpoints_2 ?>.js"></script>
-    <?php $jqueryDataTablesMin = filemtime(PATH_ASSETS.'../plugins/dataTables/jquery.dataTables.min.js'); ?>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.<?php echo $jqueryDataTablesMin ?>.js"></script>
-     <?php $jqueryPrettyPhoto = filemtime(PATH_ASSETS.'../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'); ?>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $jqueryPrettyPhoto ?>.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$breakpointsDis}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$dataTablesDis}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$preDis}.js"></script>
 
-    <?php $jqueryMcustomScrollbar = filemtime(PATH_ASSETS.'../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'); ?>
-    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $jqueryMcustomScrollbar ?>.js"></script>
-    <?php $jqueryTagsInputMin = filemtime(PATH_ASSETS.'../plugins/tagsInput/jquery.tagsinput.min.js'); ?> 
-    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.<?php echo $jqueryTagsInputMin ?>.js"></script>
-    <?php $bootstrapSwitchMin = filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js'); ?>
-    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.<?php eho $bootstrapSwitchMin ?>.js"></script>
-    <?php $jqueryBlockUi = filemtime(PATH_ASSETS.'../plugins/blockUI/jquery.blockUI.js'); ?>
-    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.<?php echo $jqueryBlockUi ?>.js"></script>
-    <?php $jqueryPnotifyMin = filemtime(PATH_ASSETS.'../plugins/pnotify/js/jquery.pnotify.min.js'); ?>
-    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.<?php echo $jqueryPnotifyMin ?>.js"></script>
+    <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mContDis}.js"></script>
+    <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsDis}.js"></script>
+    <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{$switchDis}.js"></script>
+    <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blockDis}.js"></script>
+    <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pnoDis}.js"></script>
 
-    <?php $theme_2 = filemtime(PATH_ASSETS.'../js/theme.js'); ?>
-    <script type="text/javascript" src="../js/theme.<?php echo $theme_2  ?>.js"></script>
-    <?php $custum = filemtime(PATH_ASSETS.'../custom/custom.js'); ?>
-    <script type="text/javascript" src="../custom/custom.<?php echo $custum ?>.js"></script>
+    <script type="text/javascript" src="../js/theme.{$themDis}.js"></script>
+    <script type="text/javascript" src="../custom/custom.{$cusDis}.js"></script>
 
     <!-- Specific Page Scripts Put Here -->
-    <?php $bootstrapTimePicker = filemtime(PATH_ASSETS.'../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js'); ?>
-    <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $bootstrapTimePicker ?>.js'></script>
-    <?php $bootstrapWizardMin = filemtime(PATH_ASSETS.'../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'); ?>
-    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.<?php echo $bootstrapWizardMin ?>.js'></script>
+    <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$btimDis}.js'></script>
+    <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wizDis}.js'></script>
 
-    <?php $datapicker_2 = filemtime(PATH_ASSETS.'../js/datepicker.js'); ?>
-    <script type="text/javascript" src="../js/datepicker.<?php echo $datapicker_2 ?>.js"></script>
-    <?php $datapicker_3 = filemtime(PATH_ASSETS.'../js/datepicker-fr.js'); ?>
-    <script type="text/javascript" src="../js/datepicker-fr.<?php echo $datapicker_3 ?>.js"></script>
-    <?php $jqueryClockPickerMin = filemtime(PATH_ASSETS.'../js/jquery-clockpicker.min.js'); ?>
-    <script type="text/javascript" src="../js/jquery-clockpicker.min.<?php echo $jqueryClockPickerMin ?>.js"></script>
+    <script type="text/javascript" src="../js/datepicker.{$pickDis}.js"></script>
+    <script type="text/javascript" src="../js/datepicker-fr.{$frDis}.js"></script>
+    <script type="text/javascript" src="../js/jquery-clockpicker.min.{$clocDis}.js"></script>
 
     <!-- Head SCRIPTS -->
-    <?php $modernizr_2 = filemtime(PATH_ASSETS.'../js/modernizr.js'); ?>
-    <script type="text/javascript" src="../js/modernizr.<?php echo $modernizr_2 ?>.js"></script>
-    <?php $MobileDetectMin = filemtime(PATH_ASSETS.'../js/mobile-detect.min.js'); ?>
-    <script type="text/javascript" src="../js/mobile-detect.min.<?php echo $MobileDetectMin ?>.js"></script>
-    <?php $modernizr_3 = filemtime(PATH_ASSETS.'../js/mobile-detect-modernizr.js'); ?>
-    <script type="text/javascript" src="../js/mobile-detect-modernizr.<?php echo $modernizr_3 ?>.js"></script>
-    <?php $maskedInput_2 = filemtime(PATH_ASSETS.'../js/jquery.maskedinput.min.js'); ?>
-    <script type="text/javascript" src="../js/jquery.maskedinput.min.<?php echo $maskedInput_2 ?>.js"></script>
-    <?php $jqueryInputMasq = filemtime(PATH_ASSETS.'../js/jquery.inputmask.js'); ?>
-    <script type="text/javascript" src="../js/jquery.inputmask.<?php echo $jqueryInputMasq ?>.js"></script>
+    <script type="text/javascript" src="../js/modernizr.{$zrDis}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect.min.{$mobildetecDis}.js"></script>
+    <script type="text/javascript" src="../js/mobile-detect-modernizr.{$moderDis}.js"></script>
+    <script type="text/javascript" src="../js/jquery.maskedinput.min.{$maskDis}.js"></script>
+    <script type="text/javascript" src="../js/jquery.inputmask.{$inMaskDis}.js"></script>
 
-    <?php $pluginsCkEditor = filemtime(PATH_ASSETS.'../plugins/ckeditor/ckeditor.js'); ?>
-    <script type="text/javascript" src='../plugins/ckeditor/ckeditor.<?php echo $pluginsCkEditor ?>.js'></script>
-    <?php $jqueryAdapters = filemtime(PATH_ASSETS.'../plugins/ckeditor/adapters/jquery.js'); ?>
-    <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.<?php echo $jqueryAdapters ?>.js'></script>
+    <script type="text/javascript" src='../plugins/ckeditor/ckeditor.{$ckDis}.js'></script>
+    <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.{$adDis}.js'></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

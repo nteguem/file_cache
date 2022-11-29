@@ -6,32 +6,16 @@
 
   <script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
 
-  <?php
-  $listeE7 = filemtime(PATH_ASSETS.'js/liste_e7.js?{$stime}');
-   ?>
+  <script type="text/javascript" src="js/liste_e7.{$listeE7}.js?{$stime}"></script>
 
-  <script type="text/javascript" src="js/liste_e7.<?php echo $listeE7 ?>.js?{$stime}"></script>
-
-   <?php
-  $planningDispo = filemtime(PATH_ASSETS.'js/js_planning_dispo.js?{$stime}');
-   ?>
-  <script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo ?>.js?{$stime}"></script>
+  <script type="text/javascript" src="js/js_planning_dispo.{$planningDispo}.js?{$stime}"></script>
   
-
-   <?php
-  $jquerryContextMenu = filemtime(PATH_ASSETS.'js/jquery.contextmenu.js');
-   ?>
-
-  <script type="text/javascript" src="js/jquery.contextmenu.<?php echo $jquerryContextMenu ?>.js"></script>
-
-  <?php
-  $boostrapTreeview = filemtime(PATH_ASSETS.'js/bootstrap-treeview.<?php echo $boostrapTreeview ?>.js');
-   ?>  
+  <script type="text/javascript" src="js/jquery.contextmenu.{$jquerryContextMenu}.js"></script>
   
-  <script type="text/javascript" src="js/bootstrap-treeview.js"></script>
+  <script type="text/javascript" src="js/bootstrap-treeview.{$boostrapTreeview}.js"></script>
 
-  <?php $select1AgendaCss = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $select1AgendaCss ?>.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+           
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   {literal}
  
@@ -464,9 +448,7 @@ div.datepicker table td {
         <label class="control-label">Basculer sur une autre salle</label>
         <div class="controls" style="padding-bottom: 15px;">
             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                        <?php
-  $cdnjsCloudflareCom = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflareCom ?>.js');
-?>
+                     
             <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
             <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">
                 {foreach name="lstAgendaActif" from=$aTableauListepraticien item=objAgenda}

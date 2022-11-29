@@ -4,29 +4,13 @@
 <?php $tagsTranchesCss = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
 <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsTranchesCss ?>.css" rel="stylesheet" type="text/css">
 
-   <?php
-  $listeDispo = filemtime(PATH_ASSETS.'js/liste_dispo.js?v={$numero_version_alaxione}');
-?>
-<script type="text/javascript" src="js/liste_dispo.<?php echo $listeDispo ?>.js?v={$numero_version_alaxione}"></script>
+<script type="text/javascript" src="js/liste_dispo.{$listeDispo}.js?v={$numero_version_alaxione}"></script>
 
-   <?php
-  $planningDispo1 = filemtime(PATH_ASSETS.'js/js_planning_dispo.js?v={$numero_version_alaxione}');
-?>
+<script type="text/javascript" src="js/js_planning_dispo.{$listeDispo2}.js?v={$numero_version_alaxione}"></script>
 
-<script type="text/javascript" src="js/js_planning_dispo.<?php echo $planningDispo1 ?>.js?v={$numero_version_alaxione}"></script>
+<script type="text/javascript" src="js/jquery.contextmenu.{$contextMenu2}.js?v={$numero_version_alaxione}"></script>
 
-   <?php
-  $contextMenu1 = filemtime(PATH_ASSETS.'js/jquery.contextmenu.js?v={$numero_version_alaxione}');
-?>
-
-<script type="text/javascript" src="js/jquery.contextmenu.<?php echo $contextMenu1 ?>.js?v={$numero_version_alaxione}"></script>
-
-
-
-   <?php
-  $pluginsTagsInput = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js');
-?>
-<script type="text/javascript" src='plugins/tagsInput/jquery.tagsinput.min.<?php echo $pluginsTagsInput ?>.js'></script>
+<script type="text/javascript" src='plugins/tagsInput/jquery.tagsinput.min.{$tagsInput}.js'></script>
 
 {literal}
 
@@ -960,10 +944,7 @@
                             <?php $slectDispoTranche = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
                             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $slectDispoTranche ?>.css"
                                 rel="stylesheet" />
-                                   <?php
-  $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
-?>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.{cloudFlare}.js"></script>
                             <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">
 
 

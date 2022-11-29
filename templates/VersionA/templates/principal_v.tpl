@@ -79,162 +79,162 @@
       <script type="text/javascript" src="js/respond.min.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
     <![endif]-->
     <?php $jQuerryMin = filemtime(PATH_ASSETS.'plugins/fullcalendar-3.5.0/lib/jquery.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery.min.<?php echo $jQuerryMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery.min.{$jQuerryMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
 
     <!--[if lt IE 9]><script type="text/javascript" src="js/excanvas.js?v={/literal}{$numero_version_alaxione}{literal}"></script><![endif]-->
     <?php $bootstrapMin = filemtime(PATH_ASSETS.'js/bootstrap.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrapMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryCustomMin = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $jQuerryCustomMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$jQuerryCustomMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $jQuerryUITouchPunchMin = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $jQuerryUITouchPunchMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jQuerryUITouchPunchMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $caroufredsel = filemtime(PATH_ASSETS.'js/caroufredsel.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/caroufredsel.<?php echo $caroufredsel ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/caroufredsel.{$caroufredsel}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $plugins = filemtime(PATH_ASSETS.'js/plugins.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/plugins.<?php echo $plugins ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/plugins.{$plugins}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $framwork_js = filemtime(PATH_ASSETS.'js/framwork_js.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/framwork_js.<?php echo $framwork_js ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/framwork_js.{$framwork_js}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryAutoCompleteMin = filemtime(PATH_ASSETS.'js/jquery.autocomplete.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/jquery.autocomplete.min.<?php echo $jQuerryAutoCompleteMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.{$jQuerryAutoCompleteMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $breakpoints = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breakpoints ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breakpoints}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryDataTablesMin = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jQuerryDataTablesMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jQuerryDataTablesMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryPrettyPhoto = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $jQuerryPrettyPhoto ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$jQuerryPrettyPhoto}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerrymCustomScrollBarConcatMin = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $jQuerrymCustomScrollBarConcatMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$jQuerrymCustomScrollBarConcatMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryTagsInputMin = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.<?php echo $jQuerryTagsInputMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$jQuerryTagsInputMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $bootstrapSwitchMin = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootstrapSwitchMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryBlockUI = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.<?php echo $jQuerryBlockUI ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$jQuerryBlockUI}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryPnotifyMin = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>    
-    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $jQuerryPnotifyMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$jQuerryPnotifyMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $datepicker = filemtime(PATH_ASSETS.'js/datepicker.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/datepicker.<?php echo $datepicker ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/datepicker.{$datepicker}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $datepickerFr = filemtime(PATH_ASSETS.'js/datepicker-fr.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepickerFr ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $theme = filemtime(PATH_ASSETS.'js/theme.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/theme.<?php echo $theme ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/theme.{$theme}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $custom = filemtime(PATH_ASSETS.'custom/custom.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>    
-    <script type="text/javascript" src="custom/custom.<?php echo $custom ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="custom/custom.{$custom}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryBootstrapWizardMin = filemtime(PATH_ASSETS.'plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.<?php echo $jQuerryBootstrapWizardMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$jQuerryBootstrapWizardMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $jQuerryDataTablesMin = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $jQuerryDataTablesMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jQuerryDataTablesMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $dataTablebootstrap = filemtime(PATH_ASSETS.'plugins/dataTables/dataTables.bootstrap.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>    
-    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.<?php echo $dataTablebootstrap ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.{$dataTablebootstrap}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $bootstrapTimePickerMin = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $bootstrapTimePickerMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$bootstrapTimePickerMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $momentMin = filemtime(PATH_ASSETS.'js/moment.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='js/moment.min.<?php echo $momentMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='js/moment.min.{$momentMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $daterangepicker = filemtime(PATH_ASSETS.'js/daterangepicker.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='js/daterangepicker.<?php echo $daterangepicker ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='js/daterangepicker.{$daterangepicker}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $colorpicker = filemtime(PATH_ASSETS.'plugins/colorpicker/colorpicker.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/colorpicker/colorpicker.<?php echo $colorpicker ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/colorpicker/colorpicker.{$colorpicker}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $loadImagMin = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/load-image.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>    
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.<?php echo $loadImagMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.{$loadImagMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryIframeTransport = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.iframe-transport.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>    
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.<?php echo $jQuerryIframeTransport ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.{$jQuerryIframeTransport}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryFileUpload = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.<?php echo $jQuerryFileUpload ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.{$jQuerryFileUpload}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryFileUploadProcess = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-process.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.<?php echo $jQuerryFileUploadProcess ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.{$jQuerryFileUploadProcess}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryFileUploadImage = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-image.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.<?php echo $jQuerryFileUploadImage ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.{$jQuerryFileUploadImage}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryFileUploadAudio = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-audio.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.<?php echo $jQuerryFileUploadAudio ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.{$jQuerryFileUploadAudio}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryFileUploadValidate = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/js/jquery.fileupload-validate.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.<?php echo $jQuerryFileUploadValidate ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.{$jQuerryFileUploadValidate}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryUiMin = filemtime(PATH_ASSETS.'plugins/fullcalendar-3.5.0/lib/jquery-ui.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery-ui.min.<?php echo $jQuerryUiMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery-ui.min.{$jQuerryUiMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $momentMin2 = filemtime(PATH_ASSETS.'plugins/fullcalendar-3.5.0/lib/moment.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/moment.min.<?php echo $momentMin2 ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/moment.min.{$momentMin2}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $fullCalendarMin = filemtime(PATH_ASSETS.'plugins/fullcalendar-3.5.0/fullcalendar.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/fullcalendar.min.<?php echo $fullCalendarMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/fullcalendar.min.{$fullCalendarMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $fr = filemtime(PATH_ASSETS.'plugins/fullcalendar-3.5.0/locale/fr.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/locale/fr.<?php echo $fr ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/locale/fr.{$fr}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $schedulerMin = filemtime(PATH_ASSETS.'plugins/fullcalendar-3.5.0/scheduler.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/scheduler.min.<?php echo $schedulerMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/scheduler.min.{$schedulerMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $ckeditor = filemtime(PATH_ASSETS.'plugins/ckeditor/ckeditor.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/ckeditor/ckeditor.<?php echo $ckeditor ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/ckeditor/ckeditor.{$ckeditor}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $jquery3 = filemtime(PATH_ASSETS.'plugins/ckeditor/adapters/jquery.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.<?php echo $jquery3 ?>.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.{$jquery3}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
     <?php $jqueryMaskedInputMin = filemtime(PATH_ASSETS.'js/jquery.maskedinput.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.<?php echo $jqueryMaskedInputMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput.min.{$jqueryMaskedInputMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $maskchamps = filemtime(PATH_ASSETS.'js/maskchamps.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/maskchamps.<?php echo $maskchamps ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/maskchamps.{$maskchamps}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $bootstrapClockPickerMin = filemtime(PATH_ASSETS.'js/bootstrap-clockpicker.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/bootstrap-clockpicker.min.<?php echo $bootstrapClockPickerMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/bootstrap-clockpicker.min.{$bootstrapClockPickerMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryClockPickerMin = filemtime(PATH_ASSETS.'js/jquery-clockpicker.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/jquery-clockpicker.min.<?php echo $jQuerryClockPickerMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/jquery-clockpicker.min.{$jQuerryClockPickerMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $isotopKgdMin = filemtime(PATH_ASSETS.'js/isotope.pkgd.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/isotope.pkgd.min.<?php echo $isotopKgdMin ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/isotope.pkgd.min.{$isotopKgdMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $inputMask = filemtime(PATH_ASSETS.'js/inputmask.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/inputmask.<?php echo $inputMask ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/inputmask.{$inputMask}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $jQuerryInputMask = filemtime(PATH_ASSETS.'js/jquery.inputmask.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/jquery.inputmask.<?php echo $jQuerryInputMask ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.{$jQuerryInputMask}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $intlTelInput = filemtime(PATH_ASSETS.'js/intlTelInput.min.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/intlTelInput.min.<?php echo $intlTelInput ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/intlTelInput.min.{$intlTelInput}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $principal = filemtime(PATH_ASSETS.'js/principal.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/principal.<?php echo $principal ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/principal.{$principal}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $mdp = filemtime(PATH_ASSETS.'js/mdp.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>    
-    <script type="text/javascript" src="js/mdp.<?php echo $mdp ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/mdp.{$mdp}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
     <?php $fonctionAdv = filemtime(PATH_ASSETS.'js/fonction_adv.js?v={/literal}{$numero_version_alaxione}{literal}'); ?>
-    <script type="text/javascript" src="js/fonction_adv.<?php echo $fonctionAdv ?>.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+    <script type="text/javascript" src="js/fonction_adv.{$fonctionAdv}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
     <script type="text/javascript">
 
         if (!!window.EventSource) {

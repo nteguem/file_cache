@@ -7,19 +7,19 @@
 
 
   <?php $datepicker = filemtime(PATH_ASSETS . 'js/datepicker-fr.js') ?>
-  <script type="text/javascript" src="js/datepicker-fr.<?php echo $datepicker ?>.js"></script>
+  <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
   
   <?php $time = filemtime(PATH_ASSETS . 'js/liste_e7.js?{$stime}') ?>
-  <script type="text/javascript" src="js/liste_e7.<?php echo $time ?>.js?{$stime}"></script>
+  <script type="text/javascript" src="js/liste_e7.{$time}.js?{$stime}"></script>
 
   <?php $planning = filemtime(PATH_ASSETS . 'js/js_planning_dispo.js?{$stime}') ?>
-  <script type="text/javascript" src="js/js_planning_dispo.<?php echo $planning ?>.js?{$stime}"></script>
+  <script type="text/javascript" src="js/js_planning_dispo.{$planning}.js?{$stime}"></script>
 
   <?php $contextMenu = filemtime(PATH_ASSETS . 'js/jquery.contextmenu.js') ?>
-  <script type="text/javascript" src="js/jquery.contextmenu.<?php echo $contextMenu ?>.js"></script>
+  <script type="text/javascript" src="js/jquery.contextmenu.{$contextMenu}.js"></script>
 
   <?php $treeview = filemtime(PATH_ASSETS . 'js/bootstrap-treeview.js') ?>
-  <script type="text/javascript" src="js/bootstrap-treeview.<?php echo $treeview ?>.js"></script>
+  <script type="text/javascript" src="js/bootstrap-treeview.{$treeview}.js"></script>
 
 {literal}
 <!--

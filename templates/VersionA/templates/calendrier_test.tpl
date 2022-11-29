@@ -1,5 +1,4 @@
-<?php $canlendrierTest = filemtime(PATH_ASSETS.'js/calendrier_test.js'); ?>
-<script type="text/javascript" src="js/calendrier_test.<?php echo $canlendrierTest ?>.js"></script>
+<script type="text/javascript" src="js/calendrier_test.{$calendrierTest}.js"></script>
 
 <div class="vd_title-section clearfix">
   <div class="vd_panel-header no-menu">

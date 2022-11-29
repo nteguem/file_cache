@@ -82,85 +82,56 @@
 
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-    <?php $jQueryWidget = filemtime(PATH_ASSETS.'js/jquery.js') ?>
-    <script type="text/javascript" src="js/jquery.<?php echo $jQueryWidget ?>.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script> 
+    <script type="text/javascript" src="js/jquery.{$jqInterpol}.js"></script> 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/excanvas.js"></script>      
     <![endif]-->
+    <script type="text/javascript" src="js/bootstrap.min.{$minInterpol}.js"></script> 
+    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$cMinInterpol}.js'></script>
+    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchInterpol}.js"></script>
 
-    <?php $bootstrapIterpro = filemtime(PATH_ASSETS.'js/bootstrap.min.js') ?>
-<script type="text/javascript" src="js/bootstrap.min.<?php echo $bootstrapIterpro ?>.js"></script>
-    <?php $customIterpro = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
-<script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customIterpro ?>.js'></script>
-    <?php $touchPuncIterpro = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
-<script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.<?php echo $touchPuncIterpro ?>.js"></script>
+    <script type="text/javascript" src="js/caroufredsel.{$crInterpol}.js"></script> 
+    <script type="text/javascript" src="js/plugins.{$plgInterpol}.js"></script>
 
-    <?php $caroufIterpro = filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
-    <script type="text/javascript" src="js/caroufredsel.<?php echo $caroufIterpro ?>.js"></script>
-    <?php $pluginIterpro = filemtime(PATH_ASSETS.'js/plugins.js') ?>
-  <script type="text/javascript" src="js/plugins.<?php echo $pluginIterpro ?>.js"></script>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breackInterpol}.js"></script>
+    <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jqDtInterpol}.js"></script>
+    <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prtInterpol}.js"></script> 
 
-    <?php $breackPoinIterpro = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js') ?>
-<script type="text/javascript" src="plugins/breakpoints/breakpoints.<?php echo $breackPoinIterpro ?>.js"></script>
-    <?php $dataTableIterpro = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
-<script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.<?php echo $dataTableIterpro ?>.js"></script>
-    <?php $prettyPhotIterpro = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
-<script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $prettyPhotIterpro ?>.js"></script>
+    <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCInterpol}.js"></script>
+    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{mnInterpol}.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$smInterpol}.js"></script>
+    <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$blInterpol}.js"></script>
+    <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pnInterpol}.js"></script>
 
-    <?php $contactMiIterpro = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
-<script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.<?php echo $contactMiIterpro ?>.js"></script>
-    <?php $tagsInpuIterpro = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js') ?>
-<script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.<?php echo $tagsInpuIterpro ?>.js"></script>
-    <?php $bootStraIterpro = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
-<script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.<?php echo $bootStraIterpro ?>.js"></script>
-    <?php $blockUIterpro = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js') ?>
-<script type="text/javascript" src="plugins/blockUI/jquery.blockUI.<?php echo $blockUIterpro ?>.js"></script>
-    <?php $pnotifIterpro = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js') ?>
-<script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.<?php echo $pnotifIterpro ?>.js"></script>
-
-    <?php $themIterpro = filemtime(PATH_ASSETS.'js/theme.js?{$stime}') ?>
-<script type="text/javascript" src="js/theme.<?php echo $themIterpro ?>.js?{$stime}"></script>
-    <?php $customCustoIterpro = filemtime(PATH_ASSETS.'custom/custom.js?{$stime}') ?>
-<script type="text/javascript" src="custom/custom.<?php echo $customCustoIterpro ?>.js?{$stime}"></script>
-
-
-
-<?php $contactIterpro = filemtime(PATH_ASSETS.'js/jquery.mCustomScrollbar.concat.min.js') ?>
-    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.<?php echo $caroufIterpro ?>.js"></script>
-    <?php $mousewheelMinIterpro = filemtime(PATH_ASSETS.'js/jquery.mousewheel.min.js') ?>
-<script type="text/javascript" src="js/jquery.mousewheel.min.<?php echo $mousewheelMinIterpro ?>.js"></script>
+    <script type="text/javascript" src="js/theme.{$thInterpol}.js?{$stime}"></script>
+    <script type="text/javascript" src="custom/custom.{$ccInterpol}.js?{$stime}"></script>
      
+
+
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.{$cnInterpol}.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.min.{$mouseInterpol}.js"></script>
+
     <!-- Specific Page Scripts Put Here -->
+    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wiz_rdv_Interpol}.js'></script>
 
-    <?php $wizardInterpro = filemtime(PATH_ASSETS.'plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') ?>
- <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.<?php echo $wizardInterpro ?>.js'></script>
-
- <?php $datePickerInterpro = filemtime(PATH_ASSETS.'js/datepicker-fr.js') ?>
-<script type="text/javascript" src="js/datepicker-fr.<?php $datePickerInterpro?>.js"></script>
+    <script type="text/javascript" src="js/datepicker-fr.{$dpInterpol}.js"></script>
 
     <!-- Head SCRIPTS -->
-    <?php $modernizInterpro = filemtime(PATH_ASSETS.'js/modernizr.js') ?>
-    <script type="text/javascript" src="js/modernizr.<?php echo $modernizInterpro ?>.js"></script>
-        <?php $mobileDetectMiInterpro = filemtime(PATH_ASSETS.'js/mobile-detect.min.js') ?>
-        <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMiInterpro ?>.js"></script>
-        <?php $mobileDetectMdernInterpro = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $mobileDetectMdernInterpro ?>.js"></script>
-
-    <?php $maskedinputMinInterpro = filemtime(PATH_ASSETS.'js/jquery.maskedinput.min.js') ?>
-    <script type="text/javascript" src="js/jquery.maskedinput.min.<?php echo $maskedinputMinInterpro ?>.js"></script> 
-   
+    <script type="text/javascript" src="js/modernizr.{$zrInterpol}.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect.min.{$minInterpol}.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect-modernizr.{$mzrInterpol}.js"></script> 
+    <script type="text/javascript" src="js/jquery.maskedinput.min.{$mskInterpol}.js"></script> 
+       
    <!-- Script pour l'auto-completion -->
-   <?php $autoCompleteInterpro = filemtime(PATH_ASSETS.'js/jquery.autocomplete.min.js') ?>
-    <script type="text/javascript" src="js/jquery.autocomplete.min.<?php $autoCompleteInterpro ?>.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.min.{$autoInterpol}.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/html5shiv.js"></script>
       <script type="text/javascript" src="js/respond.min.js"></script>     
     <![endif]-->
-    <?php $sTimeInterpro = filemtime(PATH_ASSETS.'js/liste_e6.js?{$stime}') ?>
-    <script type="text/javascript" src="js/liste_e6.<?php echo $sTimeInterpro ?>.js?{$stime}"></script>
+
+    <script type="text/javascript" src="js/liste_e6.{e6Interpol}.js?{$stime}"></script>
 
     {literal}
 

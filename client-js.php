@@ -27,39 +27,57 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapMin_2 = filemtime(PATH_ASSETS.'css/bootstrap.min.css'); ?>
+    <link href="css/bootstrap.min.<?php echo $bootstrapMin_2 ?>.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <?php $styleSheet = filemtime(PATH_ASSETS.'css/font-entypo.css" rel="stylesheet'); ?>
+    <link href="css/font-entypo.<?php echo $styleSheet ?>.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <?php $styleSheet_3 = filemtime(PATH_ASSETS.'css/fonts.css"  rel="stylesheet'); ?>
+    <link href="css/fonts.<?php echo $styleSheet_3 ?>.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-	<link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <?php $customMin_3 = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css'); ?>
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMin_3 ?>.css" rel="stylesheet" type="text/css">    
+    <?php $prettyPhoto_3 = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css'); ?>
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhoto_3 ?>.css" rel="stylesheet" type="text/css">
+    <?php $isotopeCss_3 = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css'); ?>
+    <link href="plugins/isotope/css/isotope.<?php echo $isotopeCss_3 ?>.css" rel="stylesheet" type="text/css">
+    <?php $pnotifyCss_3 = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css'); ?>
+    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnotifyCss_3 ?>.css" media="screen" rel="stylesheet" type="text/css">    
+	<?php $prettify = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css'); ?>
+    <link href="plugins/google-code-prettify/prettify.<?php echo $prettify ?>.css" rel="stylesheet" type="text/css"> 
+    <?php $mCustomScrollbar_3 = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'); ?>
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mCustomScrollbar_3 ?>.css" rel="stylesheet" type="text/css">
+    <?php $tagsInput_3 = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css'); ?>
+    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsInput_3 ?>.css" rel="stylesheet" type="text/css">
+    <?php $Switch = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css'); ?>
+    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $Switch ?>.css" rel="stylesheet" type="text/css">    
+    <?php $daterangePicker_3 = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css'); ?>
+    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $daterangePicker_3 ?>.css" rel="stylesheet" type="text/css">    
+    <?php $timePicker = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'); ?>
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timePicker ?>.css" rel="stylesheet" type="text/css">
+    <?php $colorpicker_3 = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css'); ?>
+    <link href="plugins/colorpicker/css/colorpicker.<?php echo $colorpicker_3 ?>.css" rel="stylesheet" type="text/css">            
 
 	<!-- Specific CSS -->
 	    
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <?php $styleSheet_4 = filemtime(PATH_ASSETS.'css/theme.min.css" rel="stylesheet'); ?>
+    <link href="css/theme.min.<?php echo $styleSheet_4 ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <?php $styleSheet_5 = filemtime(PATH_ASSETS.'css/chrome.css" rel="stylesheet" type="text/chrome'); ?>
+    <link href="css/chrome.<?php echo $styleSheet_5 ?>.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+    <?php $styleSheet_6 = filemtime(PATH_ASSETS.'css/theme-responsive.min.css" rel="stylesheet" type="text/css'); ?>
+    <link href="css/theme-responsive.min.<?php echo $styleSheet_6 ?>.css" rel="stylesheet" type="text/css"> 
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <?php $styleSheet_8 = filemtime(PATH_ASSETS.'custom/custom.css" rel="stylesheet'); ?>
+    <link href="custom/custom.<?php echo $styleSheet_8 ?>.css" rel="stylesheet" type="text/css">
 
     <!-- Head SCRIPTS -->
     <?php $modernizr_1 = filemtime(PATH_ASSETS.'js/modernizr.js');?>
@@ -91,8 +109,7 @@
                                     var idc = "identifiant_structure";
                                     var alx_v = "1";
                                     </script>'); ?><br/>
-                                <?php $client_8 = filemtime(PATH_ASSETS.'https://'.$_SERVER["SERVER_NAME"].'/js/client.js');?>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client'.$client_8.'.js"></script> '); ?><br/>
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -100,8 +117,7 @@
                                 var idc = "identifiant_structure";
                                 var alx_v = "1";
                             </script>
-                            <?php $client_1 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js');?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<?php echo $client_1 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -123,8 +139,7 @@
                                     var alx_v = "2";
                                     var alx_ort = "h";
                                     </script>'); ?><br/>
-                                <?php $client_9 = filemtime(PATH_ASSETS.'https://'.$_SERVER["SERVER_NAME"].'/js/client.js');?>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.'.$client_9.'.js"></script> '); ?><br/>
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -133,8 +148,7 @@
                                 var alx_v = "2";
                                 var alx_ort = "h";
                             </script>
-                            <?php $client_2 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js');?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<? php echo $client_2; ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -156,8 +170,7 @@
                                     var alx_v = "2";
                                     var alx_ort = "v";
                                     </script>'); ?><br/>
-                                <?php $client_10 = filemtime(PATH_ASSETS.'https://'.$_SERVER["SERVER_NAME"].'/js/client.js'); ?>    
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client'.$client_10.'.js"></script> '); ?><br/>
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -166,8 +179,7 @@
                                 var alx_v = "2";
                                 var alx_ort = "v";
                             </script>
-                            <?php $client_3 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js');?>');?
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<? php echo $client_3 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -189,9 +201,8 @@
                                     var idp = "identifiant_praticien";
                                     var alx_v = "2";
                                     var alx_ort = "h";
-                                    </script>'); ?><br/>
-                                <?php $client_11 = filemtime(PATH_ASSETS.'https://'.$_SERVER["SERVER_NAME"].'/js/client.js'); ?>    
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client'.$client_11.'.js"></script> '); ?><br/>
+                                    </script>'); ?><br/>   
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -201,8 +212,7 @@
                                 var alx_v = "2";
                                 var alx_ort = "h";
                             </script>
-                            <? php $client_4 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js'); ?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<?php echo $client_4 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -224,8 +234,7 @@
                                     var alx_v = "3";
                                     var alx_ort = "h";
                                     </script>'); ?><br/>
-                                <?php $client_12 = filemtime(PATH_ASSETS.'https://'.$_SERVER["SERVER_NAME"].'/js/client.js') ?>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client'.$client_12.'.js"></script> '); ?><br/>
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -234,8 +243,7 @@
                                 var alx_v = "3";
                                 var alx_ort = "h";
                             </script>
-                            <?php $client_5 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js'); ?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<?php echo $client_5 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -257,8 +265,7 @@
                                     var alx_v = "3";
                                     var alx_ort = "v";
                                     </script>'); ?><br/>
-                                <?php $client_13 = filemtime(PATH_ASSETS.'https://'.$_SERVER["SERVER_NAME"].'/js/client.js')
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client'.$client_13.'.js"></script> '); ?><br/>
+                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -267,8 +274,7 @@
                                 var alx_v = "3";
                                 var alx_ort = "v";
                             </script>
-                            <?php $client_6 = filemtime(PATH_ASSETS.'https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js'); ?>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.<?php echo $client_6 ?>.js"></script>
+                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>

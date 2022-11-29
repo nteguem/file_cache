@@ -1,5 +1,4 @@
-<?php $listeEl = filemtime(PATH_ASSETS . 'js/liste_e1.js') ?>
-<script type="text/javascript" src="js/liste_e1.<?php echo $listeEl ?>.js"></script>
+<script type="text/javascript" src="js/liste_e1.{$listeEl}.js"></script>
 
 <div class="vd_title-section clearfix">
   <div class="vd_panel-header no-menu">

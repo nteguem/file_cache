@@ -6,8 +6,8 @@
 <br/><br/><br/>
 
 {literal}
-    <?php $jQuerryContextMenu = filemtime(PATH_ASSETS.'js/jquery.contextmenu.js'); ?>
-    <script type="text/javascript" src="js/jquery.contextmenu.<?php echo $jQuerryContextMenu ?>.js"></script>
+  
+    <script type="text/javascript" src="js/jquery.contextmenu.{$jQuerryContextMenu}.js"></script>
     <script type="text/javascript">
 
         function launch_getSalleAttente(){
