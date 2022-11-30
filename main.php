@@ -1046,6 +1046,7 @@ try {
      $objSmarty->assign('pincipalVertical',filemtime('js/principal.js?v={/literal}{$numero_version_alaxione}{literal}'));
      $objSmarty->assign('mdpVertical',filemtime('js/mdp.js?v={/literal}{$numero_version_alaxione}{literal}'));
      $objSmarty->assign('fonctionVertical',filemtime('js/fonction_adv.js?v={/literal}{$numero_version_alaxione}{literal}'));
+
     $objSmarty->assign('main', filemtime('plugins/fullcalendar-v5/main.min.js'));
     $objSmarty->assign('datePickerFr', filemtime('js/datepicker-fr.js'));
     $objSmarty->assign('listeE7', filemtime('js/liste_e7.js?{$stime}'));
@@ -1139,9 +1140,12 @@ try {
     $objSmarty->assign('html5shiv', filemtime('js/html5shiv.js'));
     $objSmarty->assign('respondMin', filemtime('js/respond.min.js'));
     $objSmarty->assign('moment', filemtime('js/moment.min.js'));
+    $objSmarty->assign('moment2', filemtime('../js/moment.min.js'));
     $objSmarty->assign('daterangepicker', filemtime('js/daterangepicker.js'));
     $objSmarty->assign('chunk', filemtime('ReactCalendar/static/js/2.d219a3c2.chunk.js'));
     $objSmarty->assign('chunk2', filemtime('ReactCalendar/static/js/main.490dd087.chunk.js'));
+    $objSmarty->assign('manifest', filemtime('ReactCalendar/manifest.json'));
+    $objSmarty->assign('dataJson', filemtime('data.json'));
     $objSmarty->assign('fullCalendar', filemtime('plugins/fullcalendar-2.3.1/lib/jquery.min.js'));
     $objSmarty->assign('framWork', filemtime('js/framwork_js.js'));
     $objSmarty->assign('bootDataTable', filemtime('plugins/dataTables/dataTables.bootstrap.js'));

@@ -77,7 +77,6 @@ function ajout_all_rdv() {
                                         <input type="hidden" id="identifiant_praticien_fiche_rendez_vous" name="identifiant_praticien_fiche_rendez_vous" value="">
                                         <input type="hidden" id="id_lieu_fiche_rendez_vous" name="id_lieu_fiche_rendez_vous" value="">
                                         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                                        <?php $selectMin_01 = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js') ?>
                                         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
 

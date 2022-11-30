@@ -3,7 +3,6 @@
      z-index: 9999 !important;
 }
 </style>
-<?php $customCarousel_1 = filemtime(PATH_ASSETS.'js/customCarousel.js') ?>
 <script src="js/customCarousel.{$customCarousel_1}.js"></script>
 <link rel="stylesheet" href="css/customCarousel.css">
 <link rel="stylesheet" href="css/modal-ts.css">

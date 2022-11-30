@@ -606,8 +606,7 @@
                                                         {/if}
 
                                                         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                                                        <?php $select_4 filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js') ?>
-                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $select_4 js"></script>
+                                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                                                         <div class="row">
                                                             <div class="form-group  col-sm-4" id="divlieux">
                                                                 <div class="col-sm-12 controls">

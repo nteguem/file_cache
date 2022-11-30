@@ -49,8 +49,7 @@
     <link href="../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
     <link href="../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
     <link href="../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
-   <?php $jsMomentMin = filemtime(PATH_ASSETS.'../js/moment.min.js'); ?>
-    <script src='../js/moment.min.<?php echo $jsMomentMin ?>.js'></script>
+    <script src='../js/moment.min.{moment2}.js'></script>
 
     <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
     <link href="../plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
@@ -60,8 +59,8 @@
     <link href="../plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
     <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
     <link href="../css/jquery-clockpicker.min.css" rel="stylesheet" type="text/css">
-    <?php $jsMomentMin_2 = filemtime(PATH_ASSETS.'../js/moment.min.js'); ?>
-    <script src='../js/moment.min.<?php echo $jsMomentMin_2 ?>.js'></script>
+
+    <script src='../js/moment.min.{moment2}.js'></script>
 
     <!-- Theme CSS -->
     <link href="../css/theme.css" rel="stylesheet" type="text/css">
@@ -468,8 +467,7 @@
                                                                                         </div>
                                                                                     {/if}
                                                                                     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                                                                                    <?php $cloudFlareSelect = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js'); ?>
-                                                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cloudFlareSelect ?>.js"></script>
+                                                                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                                                                                     <div class="row">
                                                                                         <div class="form-group col-sm-4" id="divlieux">
                                                                                             <div class="col-sm-12 controls">
