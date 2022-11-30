@@ -1180,6 +1180,28 @@ try {
     $objSmarty->assign('cssJqueryClockpickerminCss',filemtime('css/jquery-clockpicker.min.css'));
     $objSmarty->assign('cssCustomCss',filemtime('custom/custom.css'));
 
+    //modal type planning 
+    $objSmarty->assign('cssBootstrapMinCss',filemtime('../css/bootstrap.min.css'));
+    $objSmarty->assign('cssFontAwesomeCss',filemtime('../css/font-awesome.min.css'));
+    $objSmarty->assign('cssFontEntypoCss',filemtime('../css/font-entypo.css'));
+    $objSmarty->assign('cssFontCss',filemtime('../css/fonts.css'));
+    $objSmarty->assign('cssDatepickercss',filemtime('../css/datepicker.css'));
+    $objSmarty->assign('pluginsJqueryUiJqueryUiCss',filemtime('../plugins/jquery-ui/jquery-ui.custom.min.css'));
+    $objSmarty->assign('pluginsPrettyPhotoPluginCss',filemtime('../plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+    $objSmarty->assign('pluginsIsotopeCss',filemtime('../plugins/isotope/css/isotope.css'));
+    $objSmarty->assign('pluginsPnotifyCss',filemtime('../plugins/pnotify/css/jquery.pnotify.css'));
+    $objSmarty->assign('pluginsGoofleCodeCss',filemtime('../plugins/google-code-prettify/prettify.css'));
+    $objSmarty->assign('pluginsMCustomScrollbarCss',filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+    $objSmarty->assign('pluginsTagsInputCss',filemtime('../plugins/tagsInput/jquery.tagsinput.css'));
+    $objSmarty->assign('pluginsBootstrapSwitchCss',filemtime('../plugins/bootstrap-switch/bootstrap-switch.css'));
+    $objSmarty->assign('pluginsDaterangePickerCss',filemtime('../plugins/daterangepicker/daterangepicker-bs3.css'));
+    $objSmarty->assign('pluginsBootstrapTimepickerCss',filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+    $objSmarty->assign('pluginsColorpickerCss',filemtime('../plugins/colorpicker/css/colorpicker.css'));
+
+    $objSmarty->assign('pluginsBootstrapTimepickerCss',filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+    $objSmarty->assign('jqueryClockpickerCss',filemtime('../css/jquery-clockpicker.min.css'));
+    $objSmarty->assign('cssTheme',filemtime('../css/theme.css'));
+
 
     
 
