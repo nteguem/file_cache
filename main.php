@@ -1239,7 +1239,46 @@ try {
      $objSmarty->assign('custom255',filemtime('custom/custom.css?v={$numero_version_alaxione}'));
      $objSmarty->assign('customPrint476',filemtime('custom/custom.print.css?v={$numero_version_alaxione}'));
      $objSmarty->assign('cssHeader977',filemtime('css/header_responsive.css'));
-    
+
+     $objSmarty->assign('cssbootstrap887',filemtime('css/bootstrap.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssFontAwesome447',filemtime('css/font-awesome.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssFontAwesomeie23',filemtime('css/font-awesome-ie7.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssFontEntypo775',filemtime('css/font-entypo.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssFontIcomon096',filemtime('css/font-icomoon.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssFontCss867',filemtime('css/fonts.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssDatapicker078',filemtime('css/datepicker.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsJquery978',filemtime('plugins/jquery-ui/jquery-ui.custom.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsPrettyPhoto169',filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsIsotope967',filemtime('plugins/isotope/css/isotope.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsPnotify755',filemtime('plugins/pnotify/css/jquery.pnotify.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsGoogle182',filemtime('plugins/google-code-prettify/prettify.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsMCustomScrollbar084',filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsTagsInput567',filemtime('plugins/tagsInput/jquery.tagsinput.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsBootstrap700',filemtime('plugins/bootstrap-switch/bootstrap-switch.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsDaterangepicker779',filemtime('plugins/daterangepicker/daterangepicker-bs3.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsBootstrap778',filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsColorpicker330',filemtime('plugins/colorpicker/css/colorpicker.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsDataTables975',filemtime('plugins/dataTables/css/jquery.dataTables.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsDataTables884',filemtime('plugins/dataTables/css/dataTables.bootstrap.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsJquery956',filemtime('plugins/jquery-file-upload/css/jquery.fileupload.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsJquery953',filemtime('plugins/jquery-file-upload/css/jquery.fileupload-ui.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsBootstrap845',filemtime('plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsFullcalendar445',filemtime('plugins/fullcalendar-3.5.0/fullcalendar.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsFullcalendar783',filemtime('plugins/fullcalendar-3.5.0/fullcalendar.print.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('PluginsFullcalendar244',filemtime('plugins/fullcalendar-3.5.0/scheduler.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssTheme881',filemtime('css/theme.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssI843',filemtime('css/ie.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssChrome756',filemtime('css/chrome.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssTheme934',filemtime('css/theme-responsive.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('jquery900',filemtime('css/jquery-ui.structure.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssJquery845',filemtime('css/jquery-ui.theme.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssBootstrap770',filemtime('css/bootstrap-clockpicker.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssJquery665',filemtime('css/jquery-clockpicker.min.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssIntelInput229',filemtime('css/intlTelInput.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('custom633',filemtime('custom/custom.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('customPrint593',filemtime('custom/custom.print.css?v={$numero_version_alaxione}'));
+     $objSmarty->assign('cssHeaderResponsive720',filemtime('css/header_responsive.css'));
+     
 
 
     
