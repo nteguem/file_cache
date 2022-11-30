@@ -1073,6 +1073,9 @@ try {
     $objSmarty->assign('cssChromeCss',filemtime('css/chrome.css'));
     $objSmarty->assign('cssThemeResponsiveMinCss',filemtime('css/theme-responsive.min.css'));
     $objSmarty->assign('cssCustomCss',filemtime('custom/custom.css'));
+
+    //modal filtre dispo
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
     
    
 
