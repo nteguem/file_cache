@@ -76,7 +76,7 @@
         
     
     <!-- Custom CSS -->
-    <link href="../custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="../custom/custom.{$cssCustomCss}.css" rel="stylesheet" type="text/css">
 
 
 {literal}
