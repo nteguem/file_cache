@@ -83,80 +83,52 @@
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php $jQueryPlanning filemtime(PATH_ASSETS.'../js/jquery.js') ?>
     <script type="text/javascript" src="../js/jquery.{$jQueryPlanning}.js"></script>
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <?php $bootstrapMiPlanning filemtime(PATH_ASSETS.'../js/bootstrap.min.js') ?>
     <script type="text/javascript" src="../js/bootstrap.min.{$bootstrapMiPlanning}.js"></script>
-    <?php $jQcustomMiPlanning filemtime(PATH_ASSETS.'../plugins/jquery-ui/jquery-ui.custom.min.js') ?>
     <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$jQcustomMiPlanning}.js'></script>
-    <?php $punchMinPlanning filemtime(PATH_ASSETS.'../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
     <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchMinPlanning}.js"></script>
 
-    <?php $caroufredPlanning filemtime(PATH_ASSETS.'../js/caroufredsel.js') ?>
     <script type="text/javascript" src="../js/caroufredsel.{$caroufredPlanning}.js"></script>
-    <?php $pluginsPlanning filemtime(PATH_ASSETS.'../js/plugins.js') ?>
     <script type="text/javascript" src="../js/plugins.{$pluginsPlanning}.js"></script>
 
-    <?php $pluginsBreakpointsBreakpoiPlanning filemtime(PATH_ASSETS.'../plugins/breakpoints/breakpoints.js') ?>
     <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$pluginsBreakpointsBreakpoiPlanning}.js"></script>
-    <?php $jqueryDataTablesPlanning filemtime(PATH_ASSETS.'../plugins/dataTables/jquery.dataTables.min.js') ?>
     <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$jqueryDataTablesPlanning}.js"></script>
-    <?php $pluginJqueryPrettyPhPlanning filemtime(PATH_ASSETS.'../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
     <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$pluginJqueryPrettyPhPlanning}.js"></script>
 
-    <?php $ContctMinPlanning filemtime(PATH_ASSETS.'../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
     <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$ContctMinPlanning}.js"></script>
-    <?php $tagsInputPlanning filemtime(PATH_ASSETS.'../plugins/tagsInput/jquery.tagsinput.min.js') ?>
     <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsInputPlanning}.js"></script>
-    <?php $bootstrapSwitchPlanning filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
     <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchPlanning}.js"></script>
-    <?php $blockUIPlanning filemtime(PATH_ASSETS.'../plugins/blockUI/jquery.blockUI.js') ?>
     <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blockUIPlanning}.js"></script>
-    <?php $pNotifyPlanning filemtime(PATH_ASSETS.'../plugins/pnotify/js/jquery.pnotify.min.js') ?>
     <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pNotifyPlanning}.js"></script>
   
 
-    <?php $themePlanning filemtime(PATH_ASSETS.'../js/theme.js') ?>
     <script type="text/javascript" src="../js/theme.{$themePlanning}.js"></script>
-    <?php $customPlanning filemtime(PATH_ASSETS.'../custom/custom.js') ?>
     <script type="text/javascript" src="../custom/custom.{$customPlanning}.js"></script>
      
     <!-- Specific Page Scripts Put Here -->
-    <?php $wizardMinPlanning filemtime(PATH_ASSETS.'../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') ?>
     <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wizardMinPlanning}.js'></script>
 
-    <?php $dataPickerPlanning filemtime(PATH_ASSETS.'../js/datepicker-fr.js') ?>
     <script type="text/javascript" src="../js/datepicker-fr.{$dataPickerPlanning}.js"></script>
 
-    <?php $timePickerPlanning filemtime(PATH_ASSETS.'../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js') ?>
     <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timePickerPlanning}.js'></script>
 
-    <?php $pickerDatePlanning filemtime(PATH_ASSETS.'../js/datepicker.js') ?>
     <script type="text/javascript" src="../js/datepicker.{$pickerDatePlanning}.js"></script>
 
-    <?php $clockPickerPlanning filemtime(PATH_ASSETS.'../js/jquery-clockpicker.min.js') ?>
     <script type="text/javascript" src="../js/jquery-clockpicker.min.{$clockPickerPlanning}.js"></script>
 
     <!-- Head SCRIPTS -->
-    <?php $modernzrPlanning filemtime(PATH_ASSETS.'../js/modernizr.js') ?>
     <script type="text/javascript" src="../js/modernizr.{$modernzrPlanning}.js"></script>
-    <?php $mobileDetectPlanning filemtime(PATH_ASSETS.'../js/mobile-detect.min.js') ?>
     <script type="text/javascript" src="../js/mobile-detect.min.{$mobileDetectPlanning}.js"></script>
-    <?php $mobileDetectModernPlanning filemtime(PATH_ASSETS.'../js/mobile-detect-modernizr.js') ?>
     <script type="text/javascript" src="../js/mobile-detect-modernizr.{$mobileDetectModernPlanning}.js"></script>
-    <?php $jqueryMaskedinputPlanning filemtime(PATH_ASSETS.'../js/jquery.maskedinput.min.js') ?>
     <script type="text/javascript" src="../js/jquery.maskedinput.min.{$jqueryMaskedinputPlanning}.js"></script>
 
-    <?php $pluginsCkeditorCkPlanning filemtime(PATH_ASSETS.'../plugins/ckeditor/ckeditor.js') ?>
     <script type="text/javascript" src='../plugins/ckeditor/ckeditor.{$pluginsCkeditorCkPlanning}.js'></script>
-    <?php $ckeditorAdaptersPlanning filemtime(PATH_ASSETS.'../plugins/ckeditor/adapters/jquery.js') ?>
     <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.{$ckeditorAdaptersPlanning}.js'></script>
 
-    <?php $jQryInputMaskPlanning filemtime(PATH_ASSETS.'../js/jquery.inputmask.js') ?>
     <script type="text/javascript" src="../js/jquery.inputmask.{$jQryInputMaskPlanning}.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

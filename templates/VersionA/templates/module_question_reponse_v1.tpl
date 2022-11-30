@@ -22,7 +22,7 @@
             margin-bottom: 10px;
         }
     </style>
-    <link href="css/jquery.flowchart.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.flowchart.min.{$flowchartMin2}.css" rel="stylesheet" type="text/css">
 
     <?php $raphaelMin = filemtime(PATH_ASSETS.'js/raphael-min.js'); ?>
     <script src="js/raphael-min.<?php echo $raphaelMin ?>.js"></script>
