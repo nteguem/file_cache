@@ -30,39 +30,40 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS --> 
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.{$booTModalRdvPat}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$aWModalRdvPat}.css" rel="stylesheet" type="text/css">
+
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="css/font-entypo.{$entModalRdvPat}.css" rel="stylesheet" type="text/css">
+
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="css/fonts.{$ftModalRdvPat}.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
-   
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$cmModalRdvPat}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$preModalRdvPat}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$icIModalRdvPat}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pnModalRdvPat}.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="plugins/google-code-prettify/prettify.{$pretModalRdvPat}.css" rel="stylesheet" type="text/css"> 
+
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mCModalRdvPat}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$tagsModalRdvPat}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$sWModalRdvPat}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$bs3ModalRdvPat}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$tmModalRdvPat}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$clorModalRdvPat}.css" rel="stylesheet" type="text/css">            
          
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
-
-
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.min.{$thModalRdvPat}.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/chrome.{$chrModalRdvPat}.css" rel="stylesheet" type="text/chrome">
+   <!-- chrome only css -->    
 
 
         
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="css/theme-responsive.min.{$respModalRdvPat}.css" rel="stylesheet" type="text/css">
 
     
  
@@ -73,8 +74,7 @@
         
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
-
+    <link href="custom/custom.{$ccModalRdvPat}.css" rel="stylesheet" type="text/css">
 
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 

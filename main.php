@@ -864,6 +864,361 @@ try {
     $objSmarty->assign('e6Interpol', filemtime('js/liste_e6.js'));
     $objSmarty->assign('autoInterpol', filemtime('js/jquery.autocomplete.min.js'));
 
+// agenda_box.tpl
+$objSmarty->assign('menuAgenda', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgendaBox', filemtime('css/bootstrap-treeview.css'));
+$objSmarty->assign('respAgandaBox', filemtime('css/header_responsive.css'));
+
+// aganda_consult.tpl
+$objSmarty->assign('tNuAgendaConsult', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgandaConsult', filemtime('css/bootstrap-treeview.css'));
+
+//aganda_dispo_box.tpl
+$objSmarty->assign('jConAgandaDispoBox', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgandaDispoBox', filemtime('css/bootstrap-treeview.css'));
+
+//aganda_dispo_prestajule.tpl
+$objSmarty->assign('xtAgandadispoPrestajule', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgandaDispoPrestajule', filemtime('css/bootstrap-treeview.css'));
+
+//aganda_dispo_v3.tpl
+$objSmarty->assign('xtAgandaDispoV3', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgandaDispoV3', filemtime('ss/bootstrap-treeview.css'));
+
+//aganda_dispo_v4.tpl
+$objSmarty->assign('xtAgandaDispoV4', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgandaDispoV4', filemtime('css/bootstrap-treeview.css'));
+
+//agenda_dispo_vertical.tpl
+$objSmarty->assign('xtAgandaDispoVertical', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('treeAgenDispoVertical', filemtime('css/bootstrap-treeview.css'));
+
+//agenda_maquette.tpl
+$objSmarty->assign('xtAgandaMaquette', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('tagsAgandaMaquette', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+
+//agenda_tranche_dispo.tpl
+$objSmarty->assign('xtAgandaTrancheDispo', filemtime('css/jquery.contextmenu.css'));
+$objSmarty->assign('tagsAgandaTrancheDispo', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+
+//agenda_vue_tous.tpl 
+$objSmarty->assign('calAgandaVueTous', filemtime('css/calendar.css'));
+$objSmarty->assign('iComoonAgandaVueTous', filemtime('css/font-icomoon.css'));
+$objSmarty->assign('fullMinAgandaVueTous', filemtime('plugins/fullcalendar-v5/main.min.css'));
+$objSmarty->assign('xtAgandaVueTous', filemtime('plugins/jquery-contextmenu/jquery.contextMenu.min.css'));
+$objSmarty->assign('pikaAgandaVueTous', filemtime('plugins/pikaday1.8.2/pikaday.css'));
+
+//erreur_droit.tpl
+$objSmarty->assign('minErreurDroit', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('awErreurDroit', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('entErreurDroit', filemtime('css/font-entypo.css'));
+$objSmarty->assign('fntErreurDroit', filemtime('css/fonts.css'));
+$objSmarty->assign('mcjErreurDroit', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('prErreurDroit', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('iciErreurDroit', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('pnErreurDroit', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('ErreurDroit', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('mcErreurDroit', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('tagsErreurDroit', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('swErreurDroit', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('bs3ErreurDroit', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('minpikErreurDroit', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('clorErreurDroit', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('thErreurDroit', filemtime('css/theme.min.css'));
+$objSmarty->assign('chrErreurDroit', filemtime('css/chrome.css'));
+$objSmarty->assign('respErreurDroit', filemtime('css/theme-responsive.min.css'));
+$objSmarty->assign('ccErreurDroit', filemtime('custom/custom.css'));
+
+//form_consignes.tpl
+$objSmarty->assign('listeConsign', filemtime('css/liste_consignes.css'));
+$objSmarty->assign('clFormConsign', filemtime('css/calendar.css'));
+
+//iframe
+$objSmarty->assign('xtIframe', filemtime('css/jquery.contextmenu.css'));
+
+//index_borne.tpl
+$objSmarty->assign('bootIndexBorn', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('awIndexBorn', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('entIndexBorn', filemtime('css/font-entypo.css'));
+$objSmarty->assign('ftIndexBorn', filemtime('css/fonts.css'));
+$objSmarty->assign('cmIndexBorn', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('pretIndexBorn', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('iciIndexBorn', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('pnIndexBorn', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('prIndexBorn', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('mcIndexBorn', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('tagsIndexBorn', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('swIndexBorn', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('dateIndexBorn', filemtime('plugins/daterangepicker/daterangepicker-bs3.css"'));
+$objSmarty->assign('tmIndexBorn', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('clorIndexBorn', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('wigIndexBorn', filemtime('custom/custom_widget.css'));
+$objSmarty->assign('mcMinIndexBorn', filemtime('css/jquery.mCustomScrollbar.min.css'));
+$objSmarty->assign('respIndexBorn', filemtime('css/theme-responsive.min.css'));
+$objSmarty->assign('chrIndexBorn', filemtime('css/chrome.css'));
+$objSmarty->assign('thIndexBorn', filemtime('css/theme.min.css'));
+$objSmarty->assign('btdIndexBorn', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+
+//index_change_mdp.tpl
+$objSmarty->assign('bootIndexChange', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('awIndexChange', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('IentndexChange', filemtime('css/font-entypo.css'));
+$objSmarty->assign('ftIndexChange', filemtime('css/fonts.css'));
+$objSmarty->assign('cmIndexChange', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('prIndexChange', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('iciIndexChange', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('pnIndexChange', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('pretIndexChange', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('mcIndexChange', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('tagsIndexChange', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('swIndexChange', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('bs3IndexChange', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('mntIndexChange', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('clorIndexChange', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('thIndexChange', filemtime('css/theme.min.css'));
+$objSmarty->assign('chrIndexChange', filemtime('css/chrome.css'));
+$objSmarty->assign('repsIndexChange', filemtime('css/theme-responsive.min.css'));
+$objSmarty->assign('ccIndexChange', filemtime('custom/custom.css'));
+
+//index_public2.tpl
+$objSmarty->assign('btpindexPub', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+$objSmarty->assign('DateindexPub', filemtime('plugins/dataTables/css/jquery.dataTables.css'));
+$objSmarty->assign('clorindexPub', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmindexPub', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3indexPub', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWindexPub', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsindexPub', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCindexPub', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretindexPub', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnindexPub', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIindexPub', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preindexPub', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmindexPub', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftindexPub', filemtime('css/fonts.css'));
+$objSmarty->assign('entIndexPub', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWindexPub', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTindexPub', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccIndexPub', filemtime('custom/custom.css'));
+$objSmarty->assign('respIndexPub', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrIndexPub', filemtime('css/chrome.css'));
+$objSmarty->assign('thIndexPub', filemtime('css/theme.min.css'));
+
+//modal_patient_traite.tpl
+$objSmarty->assign('clorModalPatTraite', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmModalPatTraite', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3ModalPatTraite', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWModalPatTraite', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsModalPatTraite', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCModalPatTraite', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretModalPatTraite', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnModalPatTraite', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIModalPatTraite', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preModalPatTraite', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmModalPatTraite', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftModalPatTraite', filemtime('css/fonts.css'));
+$objSmarty->assign('entModalPatTraite', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWModalPatTraite', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTModalPatTraite', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccModalPatTraite', filemtime('custom/custom.css'));
+$objSmarty->assign('respModalPatTraite', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrModalPatTraite', filemtime('css/chrome.css'));
+$objSmarty->assign('thModalPatTraite', filemtime('css/theme.min.css'));
+
+//modal_rdv_patient
+$objSmarty->assign('clorModalRemplacant', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmModalRemplacant', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3ModalRemplacant', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWModalRdvPat', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsModalRdvPat', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCModalRdvPat', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretModalRdvPat', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnModalRdvPat', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIModalRdvPat', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preModalRdvPat', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmModalRdvPat', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftModalRdvPat', filemtime('css/fonts.css'));
+$objSmarty->assign('entModalRdvPat', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWModalRdvPat', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTModalRdvPat', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccModalRdvPat', filemtime('custom/custom.css'));
+$objSmarty->assign('respModalRdvPat', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrModalRdvPat', filemtime('css/chrome.css'));
+$objSmarty->assign('thModalRdvPat', filemtime('css/theme.min.css'));
+
+//modal_remplacant.tpl
+$objSmarty->assign('clorModalRemplacant', filemtime('../plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmModalRemplacant', filemtime('../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3ModalRemplacant', filemtime('../plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWModalRemplacant', filemtime('../plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsModalRemplacant', filemtime('../plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCModalRemplacant', filemtime('../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretModalRemplacant', filemtime('../plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnModalRemplacant', filemtime('../plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIModalRemplacant', filemtime('../plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preModalRemplacant', filemtime('../plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmModalRemplacant', filemtime('../plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftModalRemplacant', filemtime('css/fonts.css'));
+$objSmarty->assign('entModalRemplacant', filemtime('../css/font-entypo.css'));
+$objSmarty->assign('aWModalRemplacant', filemtime('../css/font-awesome.min.css'));
+$objSmarty->assign('booTModalRemplacant', filemtime('../css/bootstrap.min.css'));
+$objSmarty->assign('ccModalRemplacant', filemtime('../custom/custom.css'));
+$objSmarty->assign('respModalRemplacant', filemtime('../css/theme-responsive.min.css'));
+$objSmarty->assign('chrModalRemplacant', filemtime('css/chrome.css'));
+$objSmarty->assign('thModalRemplacant', filemtime('../css/theme.min.css'));
+$objSmarty->assign('clokModalRemplacant', filemtime('../css/jquery-clockpicker.min.css'));
+
+//modal_widget_backoffice.tpl
+$objSmarty->assign('clorModalWidgBack', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmModalWidgBack', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3ModalWidgBack', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWModalWidgBack', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsModalWidgBack', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCModalWidgBack', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretModalWidgBack', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnModalWidgBack', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIModalWidgBack', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preModalWidgBack', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmModalWidgBack', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftModalWidgBack', filemtime('css/fonts.css'));
+$objSmarty->assign('entModalWidgBack', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWModalWidgBack', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTModalWidgBack', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccModalWidgBack', filemtime('custom/custom_widget.css'));
+$objSmarty->assign('respModalWidgBack', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrModalWidgBack', filemtime('css/chrome.css'));
+$objSmarty->assign('thModalWidgBack', filemtime('css/theme.min.css'));
+$objSmarty->assign('minMcModalWidgBack', filemtime('css/jquery.mCustomScrollbar.min.css'));
+$objSmarty->assign('bddModalWidgBack', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+
+//modal_widget_interpro.tpl
+$objSmarty->assign('clorModalWidgetInterPro', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmModalWidgetInterPro', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3ModalWidgetInterPro', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWModalWidgetInterPro', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsModalWidgetInterPro', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCModalWidgetInterPro', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretModalWidgetInterPro', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnModalWidgetInterPro', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIModalWidgetInterPro', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preModalWidgetInterPro', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmModalWidgetInterPro', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftModalWidgetInterPro', filemtime('css/fonts.css'));
+$objSmarty->assign('entModalWidgetInterPro', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWModalWidgetInterPro', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTModalWidgetInterPro', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccModalWidgetInterPro', filemtime('custom/custom_widget.css'));
+$objSmarty->assign('respModalWidgetInterPro', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrModalWidgetInterPro', filemtime('css/chrome.css'));
+$objSmarty->assign('thModalWidgetInterPro', filemtime('css/theme.min.css'));
+$objSmarty->assign('minMcModalWidgetInterPro', filemtime('css/jquery.mCustomScrollbar.min.css'));
+$objSmarty->assign('bddModalWidgetInterPro', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+
+//principal_itr.tpl
+$objSmarty->assign('clorPrincipalItr', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmPrincipalItr', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3PrincipalItr', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWPrincipalItr', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsPrincipalItr', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCPrincipalItr', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretPrincipalItr', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnPrincipalItr', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIPrincipalItr', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('prePrincipalItr', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmPrincipalItr', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftPrincipalItr', filemtime('css/fonts.css'));
+$objSmarty->assign('entPrincipalItr', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWPrincipalItr', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTPrincipalItr', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccPrincipalItr', filemtime('custom/custom.css'));
+$objSmarty->assign('respPrincipalItr', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrPrincipalItr', filemtime('css/chrome.css'));
+$objSmarty->assign('thPrincipalItr', filemtime('css/theme.css'));
+$objSmarty->assign('bddPrincipalItr', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+$objSmarty->assign('dmdPrincipalItr', filemtime('plugins/dataTables/css/jquery.dataTables.min.css'));
+$objSmarty->assign('fileUpPrincipalItr', filemtime('plugins/jquery-file-upload/css/jquery.fileupload.css'));
+$objSmarty->assign('fileUiPrincipalItr', filemtime('plugins/jquery-file-upload/css/jquery.fileupload-ui.{}.css'));
+$objSmarty->assign('wyPrincipalItr', filemtime('plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css'));
+$objSmarty->assign('fllPrincipalItr', filemtime('plugins/fullcalendar-2.3.1/fullcalendar.css'));
+$objSmarty->assign('fllPrintPrincipalItr', filemtime('plugins/fullcalendar-2.3.1/fullcalendar.print.css'));
+
+//principal_simple.tpl
+$objSmarty->assign('clorPrincipalSimple', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmPrincipalSimple', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3PrincipalSimple', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWPrincipalSimple', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsPrincipalSimple', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCPrincipalSimple', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretPrincipalSimple', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnPrincipalSimple', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIPrincipalSimple', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('prePrincipalSimple', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmPrincipalSimple', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftPrincipalSimple', filemtime('css/fonts.css'));
+$objSmarty->assign('entPrincipalSimple', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWPrincipalSimple', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTPrincipalSimple', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccPrincipalSimple', filemtime('custom/custom.css'));
+$objSmarty->assign('respPrincipalSimple', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrPrincipalSimple', filemtime('css/chrome.css'));
+$objSmarty->assign('thPrincipalSimple', filemtime('css/theme.css'));
+$objSmarty->assign('bddPrincipalSimple', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+$objSmarty->assign('dmdPrincipalSimple', filemtime('plugins/dataTables/css/jquery.dataTables.min.css'));
+$objSmarty->assign('fileUpPrincipalSimple', filemtime('plugins/jquery-file-upload/css/jquery.fileupload.css'));
+$objSmarty->assign('fileUiPrincipalSimple', filemtime('plugins/jquery-file-upload/css/jquery.fileupload-ui.{}.css'));
+$objSmarty->assign('wyPrincipalSimple', filemtime('plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css'));
+$objSmarty->assign('fllPrincipalSimple', filemtime('plugins/fullcalendar-2.3.1/fullcalendar.css'));
+$objSmarty->assign('fllPrintPrincipalSimple', filemtime('plugins/fullcalendar-2.3.1/fullcalendar.print.css'));
+
+//principal_v1.tpl
+$objSmarty->assign('clorPrincipalV1', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmPrincipalV1', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3PrincipalV1', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWPrincipalV1', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsPrincipalV1', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCPrincipalV1', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretPrincipalV1', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnPrincipalV1', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIPrincipalV1', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('prePrincipalV1', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmPrincipalV1', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftPrincipalV1', filemtime('css/fonts.css'));
+$objSmarty->assign('entPrincipalV1', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWPrincipalV1', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTPrincipalV1', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccPrincipalV1', filemtime('custom/custom.css'));
+$objSmarty->assign('respPrincipalV1', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrPrincipalV1', filemtime('css/chrome.css'));
+$objSmarty->assign('thPrincipalV1', filemtime('css/theme.css'));
+$objSmarty->assign('bddPrincipalV1', filemtime('plugins/dataTables/css/dataTables.bootstrap.css'));
+$objSmarty->assign('dmdPrincipalV1', filemtime('plugins/dataTables/css/jquery.dataTables.min.css'));
+$objSmarty->assign('fileUpPrincipalV1', filemtime('plugins/jquery-file-upload/css/jquery.fileupload.css'));
+$objSmarty->assign('fileUiPrincipalV1', filemtime('plugins/jquery-file-upload/css/jquery.fileupload-ui.{}.css'));
+$objSmarty->assign('wyPrincipalV1', filemtime('plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css'));
+$objSmarty->assign('fllPrincipalV1', filemtime('plugins/fullcalendar-2.5.0/fullcalendar.css'));
+$objSmarty->assign('fllPrintPrincipalV1', filemtime('plugins/fullcalendar-2.5.0/fullcalendar.print.css'));
+$objSmarty->assign('schPrincipalV1', filemtime('plugins/fullcalendar-2.5.0/scheduler.css'));
+
+//restriction_fonctionnalite.tpl
+$objSmarty->assign('clorRestrictFonction', filemtime('plugins/colorpicker/css/colorpicker.css'));
+$objSmarty->assign('tmRestrictFonction', filemtime('plugins/bootstrap-timepicker/bootstrap-timepicker.min.css'));
+$objSmarty->assign('bs3RestrictFonction', filemtime('plugins/daterangepicker/daterangepicker-bs3.css'));
+$objSmarty->assign('sWRestrictFonction', filemtime('plugins/bootstrap-switch/bootstrap-switch.css'));
+$objSmarty->assign('tagsRestrictFonction', filemtime('plugins/tagsInput/jquery.tagsinput.css'));
+$objSmarty->assign('mCRestrictFonction', filemtime('plugins/mCustomScrollbar/jquery.mCustomScrollbar.css'));
+$objSmarty->assign('pretRestrictFonction', filemtime('plugins/google-code-prettify/prettify.css'));
+$objSmarty->assign('pnRestrictFonction', filemtime('plugins/pnotify/css/jquery.pnotify.css'));
+$objSmarty->assign('icIRestrictFonction', filemtime('plugins/isotope/css/isotope.css'));
+$objSmarty->assign('preRestrictFonction', filemtime('plugins/prettyPhoto-plugin/css/prettyPhoto.css'));
+$objSmarty->assign('cmRestrictFonction', filemtime('plugins/jquery-ui/jquery-ui.custom.min.css'));
+$objSmarty->assign('ftRestrictFonction', filemtime('css/fonts.css'));
+$objSmarty->assign('entRestrictFonction', filemtime('css/font-entypo.css'));
+$objSmarty->assign('aWRestrictFonction', filemtime('css/font-awesome.min.css'));
+$objSmarty->assign('booTRestrictFonction', filemtime('css/bootstrap.min.css'));
+$objSmarty->assign('ccRestrictFonction', filemtime('custom/custom_widget.css'));
+$objSmarty->assign('respRestrictFonction', filemtime('ss/theme-responsive.min.css'));
+$objSmarty->assign('chrRestrictFonction', filemtime('css/chrome.css'));
+$objSmarty->assign('thRestrictFonction', filemtime('css/theme.min.css'));
+
 
 
 

@@ -1,7 +1,7 @@
 <!-- agenda v4-->
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
-  <link rel="stylesheet" href="css/header_responsive.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$menuAgenda}.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.{$treeAgendaBox}.css">
+  <link rel="stylesheet" href="css/header_responsive.{$respAgandaBox}.css" type="text/css">
 
   <script type="text/javascript" src="js/datepicker-fr.js"></script>
 

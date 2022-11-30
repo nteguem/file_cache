@@ -28,50 +28,53 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.{$booTPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$aWPrincipalV1}.css" rel="stylesheet" type="text/css">
+    
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
-
+    <link href="css/font-entypo.{$entPrincipalV1}.css" rel="stylesheet" type="text/css">
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="css/fonts.{$ftPrincipalV1}.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$cmPrincipalV1}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$prePrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$icIPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pnPrincipalV1}.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="plugins/google-code-prettify/prettify.{$pretPrincipalV1}.css" rel="stylesheet" type="text/css"> 
+
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mCPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$tagsPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$sWPrincipalV1}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$bs3PrincipalV1}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$tmPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$clorPrincipalV1}.css" rel="stylesheet" type="text/css">   
    
-         
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    
     <!-- Specific CSS -->
-    <link href="plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">      
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">  
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$bddPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/jquery.dataTables.min.{$dmdPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload.{$fileUpPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.{$fileUiPrincipalV1}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.{$wyPrincipalV1}.css" rel="stylesheet" type="text/css">  
+    <link href='plugins/fullcalendar-2.5.0/fullcalendar.{$fllPrincipalV1}.css' rel='stylesheet' />
+    <link href='plugins/fullcalendar-2.5.0/fullcalendar.print.{$fllPrintPrincipalV1}.css' rel='stylesheet' media='print' /> 
 
     <!-- <link href='plugins/fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet' />
     <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print' />  -->
 
-    <link href='plugins/fullcalendar-2.5.0/fullcalendar.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar-2.5.0/scheduler.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar-2.5.0/fullcalendar.print.css' rel='stylesheet' media='print' />  
+    <link href='plugins/fullcalendar-2.5.0/scheduler.{schPrincipalV1}.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.{$thPrincipalV1}.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/chrome.{$chrPrincipalV1}.css" rel="stylesheet" type="text/chrome">
+     <!-- chrome only css -->    
 
   
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+    <link href="css/theme-responsive.min.{$respPrincipalV1}.css" rel="stylesheet" type="text/css">
+   
 
 	
  
@@ -82,7 +85,7 @@
         
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom.{$ccPrincipalV1}.css" rel="stylesheet" type="text/css">
 
 
 {literal}

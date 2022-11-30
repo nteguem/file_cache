@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="css/liste_consignes.css">
-<link rel="stylesheet" href="css/calendar.css">
+<link rel="stylesheet" href="css/liste_consignes.{$listeConsign}.css">
+<link rel="stylesheet" href="css/calendar.{$clFormConsign}.css">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 {foreach from=$aForm item='i'}
