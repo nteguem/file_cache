@@ -1077,6 +1077,20 @@ try {
     //modal filtre dispo
     $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
     
+    //modal liste fiches patients
+
+    $objSmarty->assign('cssCustomCarouselCss',filemtime('css/customCarousel.css'));
+    $objSmarty->assign('cssModalTsCss',filemtime('css/modal-ts.css'));
+
+    //
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+    $objSmarty->assign('cssModalFiltreCss',filemtime('css/modal_filtre_dispo.css'));
+
    
 
 
