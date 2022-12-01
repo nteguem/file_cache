@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/modal_filtre_dispo.css">
+<link rel="stylesheet" href="css/modal_filtre_dispo.{$cssModalFiltreCss}.css">
 
 <div class="modal fade in" id="modalFilterFirstDispo" tabindex="-1" role="dialog" aria-labelledby="modalFilterFirstDispo" aria-hidden="true" data-keyboard="false" data-backdrop="static">
     <div class="modal-dialog">

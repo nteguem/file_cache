@@ -29,46 +29,47 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.{$cssBoostrapMinCss}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$cssFontAwesomeMinCss}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
+    <link href="css/font-entypo.{$cssFontEntypoCss}.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.{cssFontCss}.css"  rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJqueryUiJquery}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhotoCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$pluginsIsotopeCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$plugingsPnotifyCss}.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="plugins/google-code-prettify/prettify.{$pluginsGoogleCodeCss}.css" rel="stylesheet" type="text/css"> 
 
 
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMCustomScrollbarCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInputCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$pluginsBoostrapSwitchCss}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$pluginsDaterangepickerCss}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBoostrapTimepickerCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$pluginsColorpickerCss}.css" rel="stylesheet" type="text/css">        
     <!-- Specific CSS -->
-    <link href="plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet'/>
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print'/>
+    <link href="plugins/dataTables/css/jquery.dataTables.min.{$pluginsDatatablesCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$pluginsDatatablesBootstrapCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload.{$pluginsFileUploadCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.{$pluginsJqueryFileUploadCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.pluginsBootstrapWYSIWYGCss.css" rel="stylesheet" type="text/css">
+    <link href='plugins/fullcalendar-2.3.1/fullcalendar.{$pluginsFullcalendarCss}.css' rel='stylesheet'/>
+    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.{$pluginsFullCalendarPrintCss}.css' rel='stylesheet' media='print'/>
     <!-- Theme CSS -->
-    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.{$cssThemeCss}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <link href="css/ie.css" rel="stylesheet"> <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+     <link href="css/chrome.{$cssChromeCss}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
 
+        
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+          <link href="css/theme-responsive.min.{$cssThemeResponsiveMinCss}.css" rel="stylesheet" type="text/css"> 
 
 
     <!-- for specific page in style css -->
@@ -77,7 +78,7 @@
 
 
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom.{$cssCustomCss}.css" rel="stylesheet" type="text/css">
 
     {literal}
         <style type="text/css">
