@@ -1,5 +1,5 @@
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-<link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtAgandaMaquette}.css">
+<link href="plugins/tagsInput/jquery.tagsinput.{$tagsAgandaMaquette}.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="js/liste_dispo.{$listeDispo}.js?v={$numero_version_alaxione}"></script>
 

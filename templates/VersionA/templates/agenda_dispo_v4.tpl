@@ -1,6 +1,6 @@
 <!-- agenda v4-->
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtAgandaDispoV4}.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.{$treeAgandaDispoV4}.css">
 
   <script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 
