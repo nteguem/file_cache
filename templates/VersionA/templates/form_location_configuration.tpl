@@ -915,7 +915,7 @@
 					                        </div>
 					                    </div>
 					                    {literal}
-											<script type="text/javascript" src="js/datepicker-fr.js"></script>
+											<script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
 					                    	<script type="text/javascript">
 												$(document).ready(function() {
 													$( "{/literal}#id_{$objForm.nom_variable}{literal}" ).datepicker(

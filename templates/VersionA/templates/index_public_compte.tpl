@@ -83,7 +83,7 @@
     <!-- Placed at the end of the document so the pages load faster --> 
     <script type="text/javascript" src="js/jquery.{$jquery_1}.js"></script> 
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/excanvas.js"></script>      
+      <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>      
     <![endif]-->
     
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin}.js"></script> 
@@ -144,8 +144,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/html5shiv.js"></script>
-      <script type="text/javascript" src="js/respond.min.js"></script>
+      <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+      <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>
     <![endif]-->
 
    
