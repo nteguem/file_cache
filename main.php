@@ -1170,6 +1170,7 @@ try {
     $objSmarty->assign('calendarRightClick', filemtime('js/fullcalendar-rightclick.js'));
     $objSmarty->assign('maskChamps', filemtime('js/maskchamps.js'));
     $objSmarty->assign('clientJs', filemtime('/js/client.js'));
+    $objSmarty->assign('utilsJs', filemtime('js/utils.js'));
 
 
     $objSmarty->assign('modernizr_1', filemtime('js/modernizr.js'));
