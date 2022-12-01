@@ -353,7 +353,7 @@
                                                 </div>
                                             </div>
                                             {literal}
-                                                <script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
+                                                <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
                                                 <script type="text/javascript">
                                                     $(document).ready(function() {
                                                         var curdate = new Date();
@@ -413,7 +413,8 @@
                                                 </div>
                                             </div>
                                             {literal}
-                                                <script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
+                                                
+                                                <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
                                                 <script type="text/javascript">
                                                     $(document).ready(function() {
                                                         $( "{/literal}#id_{$objRech.nom_variable}{literal}" ).datepicker(

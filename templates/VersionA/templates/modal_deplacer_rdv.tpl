@@ -81,9 +81,9 @@
     
     <script type="text/javascript" src="js/bootstrap.min.{$boostrapMin_2}.js"></script> 
    
-    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$jqueryCustom}.js'></script>
+    <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$customMin_2}.js'></script>
     
-    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jqueryTouch}.js"></script>
+    <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchMin_2}.js"></script>
 
     <script type="text/javascript" src="js/caroufredsel.{$caroufredselMin}.js"></script> 
     

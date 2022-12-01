@@ -33,40 +33,40 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.{$boostrapL}.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.min.{$awesomeL}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="../css/font-entypo.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-entypo.{$entypoL}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.{$fontL}.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="../plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/jquery-ui/jquery-ui.custom.min.{$customL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.{$prettyphotoL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/isotope/css/isotope.{$isoctopeL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/pnotify/css/jquery.pnotify.{$pnotifyL}.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../plugins/google-code-prettify/prettify.{$prettifyL}.css" rel="stylesheet" type="text/css">
 
 
-    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$customcrollbarrL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/tagsInput/jquery.tagsinput.{$tagsinputL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-switch/bootstrap-switch.{$boostrapLL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/daterangepicker/daterangepicker-bs3.{$daterangepickerL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timepickerL}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/colorpicker/css/colorpicker.{$colorpickerL}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Theme CSS -->
-    <link href="../css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme.min.{$themeL}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <link href="../css/ie.css" rel="stylesheet"> <![endif]-->
-    <link href="../css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+    <link href="../css/chrome.{$chromeL}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
     <!-- Responsive CSS -->
-    <link href="../css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme-responsive.min.{$responsiveL}.css" rel="stylesheet" type="text/css">
 
 
     <!-- for specific page in style css -->
@@ -75,7 +75,7 @@
 
 
     <!-- Custom CSS -->
-    <link href="../custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="../custom/custom.{$customL}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== -->

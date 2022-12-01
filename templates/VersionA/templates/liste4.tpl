@@ -289,6 +289,7 @@
                                                 </div>
                                             </div>
                                             {literal}
+                                           
                                             <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
                                             <script type="text/javascript">
                                                 $(document).ready(function() {
@@ -349,6 +350,7 @@
                                                 </div>
                                             </div>
                                             {literal}
+                                 
                                             <script type="text/javascript" src="js/datepicker-fr.{$datepicker1}.js"></script>
                                             <script type="text/javascript">
                                                 $(document).ready(function() {
