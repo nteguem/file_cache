@@ -84,7 +84,7 @@
  
     <script type="text/javascript" src="js/jquery.{$jquery}.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/excanvas.js"></script>
+    <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>
     <![endif]-->
  
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrap}.js"></script>

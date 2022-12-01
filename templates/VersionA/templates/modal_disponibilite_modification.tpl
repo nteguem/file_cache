@@ -33,8 +33,8 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.{$booTModalRemplacant}.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.min.{$aWModalRemplacant}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.{$CssFontAwesome453}.css"><![endif]-->
     <link href="../css/font-entypo.{$CssFontEntypo2276}.css" rel="stylesheet" type="text/css">
