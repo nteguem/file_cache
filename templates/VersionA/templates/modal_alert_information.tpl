@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/modal_alert_information.css">
+<link rel="stylesheet" href="css/modal_alert_information.{$cssModalAlertInformationCss67}.css">
 
 <div class="modal fade in modalInformation" id="modalInformation" aria-hidden="true">
     <div class="modal-dialog modalInformationDialog" >

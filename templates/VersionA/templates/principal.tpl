@@ -25,44 +25,44 @@
         <link rel="shortcut icon" href="img/ico/favicon.png">
 
         <!-- CSS -->
-        <link href="css/bootstrap.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/font-awesome.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <!--[if IE 7]><link href="css/font-awesome-ie7.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css"><![endif]-->
-        <link href="css/font-entypo.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/font-icomoon.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/fonts.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/datepicker.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/jquery-ui/jquery-ui.custom.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/isotope/css/isotope.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/pnotify/css/jquery.pnotify.css?v={$numero_version_alaxione}" media="screen" rel="stylesheet" type="text/css">
-        <link href="plugins/google-code-prettify/prettify.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/tagsInput/jquery.tagsinput.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/bootstrap-switch/bootstrap-switch.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/daterangepicker/daterangepicker-bs3.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/colorpicker/css/colorpicker.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/dataTables/css/jquery.dataTables.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/dataTables/css/dataTables.bootstrap.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/jquery-file-upload/css/jquery.fileupload.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href='plugins/fullcalendar-3.5.0/fullcalendar.min.css?v={$numero_version_alaxione}' rel='stylesheet' />
-        <link href='plugins/fullcalendar-3.5.0/fullcalendar.print.min.css?v={$numero_version_alaxione}' rel='stylesheet' media='print' />
-        <link href='plugins/fullcalendar-3.5.0/scheduler.min.css?v={$numero_version_alaxione}' rel='stylesheet' />
-        <link href="css/theme.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <!--[if IE]> <link href="css/ie.css?v={$numero_version_alaxione}" rel="stylesheet" > <![endif]-->
-        <link href="css/chrome.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
-        <link href="css/theme-responsive.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/jquery-ui.structure.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/jquery-ui.theme.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap-clockpicker.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="css/jquery-clockpicker.min.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/intlTelInput.css?v={$numero_version_alaxione}">
-        <link href="custom/custom.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
-        <link href="custom/custom.print.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css"  media='print'>
-        <link rel="stylesheet" href="css/header_responsive.css" type="text/css">
+        <link href="css/bootstrap.min.{$cssBootstrap106}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.min.{$cssFontAwesome609}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <!--[if IE 7]><link href="css/font-awesome-ie7.min.{$cssFontAwesome967}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css"><![endif]-->
+        <link href="css/font-entypo.{$fontEntypo011}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/font-icomoon.{$cssIcomoon126}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/fonts.{$cssFonts275}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/datepicker.{$cssDatapicker656}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJquery906}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhoto367}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/isotope/css/isotope.{$pluginsIsotope275}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/pnotify/css/jquery.pnotify.{$pluginsPnotify198}.css?v={$numero_version_alaxione}" media="screen" rel="stylesheet" type="text/css">
+        <link href="plugins/google-code-prettify/prettify.{$pluginsPrettify197}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMScroolbar984}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInput098}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/bootstrap-switch/bootstrap-switch.{$pluginsBootstrap364}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/daterangepicker/daterangepicker-bs3.{$pluginsDaterangePicker266}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootsatrap343}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/colorpicker/css/colorpicker.{$pluginsColor543}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/dataTables/css/jquery.dataTables.min.{$pluginsDataTables075}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/dataTables/css/dataTables.bootstrap.{$pluginsDataTables326}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/jquery-file-upload/css/jquery.fileupload.{$pluginsJquery076}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.{$pluginsJqueryFile478}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.{$pluginsBootstrap894}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href='plugins/fullcalendar-3.5.0/fullcalendar.min.{$pluginsFullCalendar753}.css?v={$numero_version_alaxione}' rel='stylesheet' />
+        <link href='plugins/fullcalendar-3.5.0/fullcalendar.print.min.{$pluginsFullCalendar093}.css?v={$numero_version_alaxione}' rel='stylesheet' media='print' />
+        <link href='plugins/fullcalendar-3.5.0/scheduler.min.{$pluginsFullCalendar824}.css?v={$numero_version_alaxione}' rel='stylesheet' />
+        <link href="css/theme.{$cssTheme845}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <!--[if IE]> <link href="css/ie.{$cssIe289}.css?v={$numero_version_alaxione}" rel="stylesheet" > <![endif]-->
+        <link href="css/chrome.{$cssChrome935}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+        <link href="css/theme-responsive.min.{$cssThemeResponsive275}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/jquery-ui.structure.min.{$cssJquery907}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/jquery-ui.theme.min.{$cssJqueryUi212}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap-clockpicker.min.{$cssBootstrap989}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="css/jquery-clockpicker.min.{$cssJquery674}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/intlTelInput.{$cssIntelInput300}.css?v={$numero_version_alaxione}">
+        <link href="custom/custom.{$custom255}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css">
+        <link href="custom/custom.print.{$customPrint476}.css?v={$numero_version_alaxione}" rel="stylesheet" type="text/css"  media='print'>
+        <link rel="stylesheet" href="css/header_responsive.{$cssHeader977}.css" type="text/css">
 
         {literal}
             <!-- JS -->

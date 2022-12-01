@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../../../css/liste_consignes.css">
+<link rel="stylesheet" href="../../../css/liste_consignes.{$cssListeConsignes}.css">
 <div class="modal fade modalConsign" style="top:25%;z-index:2500;" data-backdrop='false' id="modalAlertConsigns" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div id='fadeAlertConsign' class="fadeAlertConsign">
     </div>

@@ -1,7 +1,10 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-<link rel="stylesheet" href="css/liste_consignes.css">
+<?php
+  $cdnjsCloudflare = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js');
+?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $cdnjsCloudflare ?>.js"></script>
+<link rel="stylesheet" href="css/liste_consignes.{$cssListeConsigne}.css">
 {if $bDebugRequete}
     <p class="no-print">
         Requete Select : <br><br>
