@@ -2606,7 +2606,7 @@ $objSmarty->assign('thRestrictFonction', filemtime('css/theme.min.css'));
     $objSmarty->assign('custom633',filemtime('custom/custom.css?v={$numero_version_alaxione}'));
     $objSmarty->assign('customPrint593',filemtime('custom/custom.print.css?v={$numero_version_alaxione}'));
     $objSmarty->assign('cssHeaderResponsive720',filemtime('css/header_responsive.css'));
-
+    
 
 
 
