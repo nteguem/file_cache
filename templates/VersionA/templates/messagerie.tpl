@@ -372,7 +372,6 @@
                                     </div>
                                     {literal}
 
-                                    <?php  $datepicker3 = filemtime(PATH_ASSETS.'js/datepicker-fr.js');?>
                                         <script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
                                         <script type="text/javascript">
                                             $(document).ready(function() {
