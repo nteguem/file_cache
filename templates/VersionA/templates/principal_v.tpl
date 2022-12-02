@@ -1317,7 +1317,7 @@
                                                             $("#tel_mobile_fiche_patient").intlTelInput({
                                                                 preferredCountries:["fr", "be", "ch"],
                                                                 initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                utilsScript: "js/utils.js"
+                                                                utilsScript: "js/utils.{$utilsJs}.js"
                                                             });
                                                             if($("#tel_mobile_fiche_patient_indicatif").val() === "41"){
                                                                 $("#tel_mobile_fiche_patient").inputmask("999 999 99 99");
@@ -1352,7 +1352,7 @@
                                                         $("#tel_fixe_fiche_patient").intlTelInput({
                                                             preferredCountries:["fr", "be", "ch"],
                                                             initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                            utilsScript: "js/utils.js"
+                                                            utilsScript: "js/utils.{$utilsJs}.js"
                                                         });
                                                         if($("#tel_fixe_fiche_patient_indicatif").val() === "41"){
                                                             $("#tel_fixe_fiche_patient").inputmask("999 999 99 99");
@@ -2658,7 +2658,7 @@
                                                                 $("#tel_mobile_patient_prendre_rdv_unique").intlTelInput({
                                                                     preferredCountries:["fr", "be", "ch"],
                                                                     initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                    utilsScript: "js/utils.js"
+                                                                    utilsScript: "js/utils.{$utilsJs}.js"
                                                                 });
 
                                                                 if($("#tel_mobile_patient_prendre_rdv_unique_indicatif").val() === "41"){
@@ -2694,7 +2694,7 @@
                                                                 $("#tel_fixe_patient_prendre_rdv_unique").intlTelInput({
                                                                     preferredCountries:["fr", "be", "ch"],
                                                                     initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                    utilsScript: "js/utils.js"
+                                                                    utilsScript: "js/utils.{$utilsJs}.js"
                                                                 });
 
                                                                 if($("#tel_fixe_patient_prendre_rdv_unique_indicatif").val() === "41"){
@@ -3351,7 +3351,7 @@
                                                             $("#tel_mobile_patient_prendre_rdv_anesthesiste").intlTelInput({
                                                                 preferredCountries:["fr", "be", "ch"],
                                                                 initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                utilsScript: "js/utils.js"
+                                                                utilsScript: "js/utils.{$utilsJs}.js"
                                                             });
 
                                                             if($("#tel_mobile_patient_prendre_rdv_anesthesiste_indicatif").val() === "41"){
@@ -3387,7 +3387,7 @@
                                                             $("#tel_fixe_patient_prendre_rdv_anesthesiste").intlTelInput({
                                                                 preferredCountries:["fr", "be", "ch"],
                                                                 initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                utilsScript: "js/utils.js"
+                                                                utilsScript: "js/utils.{$utilsJs}.js"
                                                             });
 
                                                             if($("#tel_fixe_patient_prendre_rdv_anesthesiste_indicatif").val() === "41"){
@@ -3768,7 +3768,7 @@
                                                 $("#telport_fiche_rendez_vous").intlTelInput({
                                                     preferredCountries:["fr", "be", "ch"],
                                                     initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                    utilsScript: "js/utils.js"
+                                                    utilsScript: "js/utils.{$utilsJs}.js"
                                                 });
 
                                                 if($("#telport_fiche_rendez_vous_indicatif").val() === "41"){
@@ -3806,7 +3806,7 @@
                                                 $("#telfixe_fiche_rendez_vous").intlTelInput({
                                                     preferredCountries:["fr", "be", "ch"],
                                                     initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                    utilsScript: "js/utils.js"
+                                                    utilsScript: "js/utils.{$utilsJs}.js"
                                                 });
 
                                                 if($("#telfixe_fiche_rendez_vous_indicatif").val() === "41"){
@@ -6196,7 +6196,7 @@
                                             $("#check_sms_demande").intlTelInput({
                                                 preferredCountries:["fr", "be", "ch"],
                                                 initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                utilsScript: "js/utils.js"
+                                                utilsScript: "js/utils.{$utilsJs}.js"
                                             });
                                             if($("#check_sms_demande_indicatif").val() === "41"){
                                                 $("#check_sms_demande").inputmask("999 999 99 99");
