@@ -417,7 +417,7 @@
                         <label class="control-label font-size">Structure :</label>
                         <div class="controls input-group" id="id_entite"">
                             <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.<?php echo $select_1 ?>.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                         <select id="id_form_entite" class="js-example-basic-multiple" name="entite">
                             <option></option>
                             {foreach from=$aTabEntite item=entite}
