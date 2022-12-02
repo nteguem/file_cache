@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <!--[if IE 8]>
 <html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>

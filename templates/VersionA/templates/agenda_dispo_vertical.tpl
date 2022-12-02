@@ -18,7 +18,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css">
+<?php $uiCsspoVertical = filemtime(PATH_ASSETS.'https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.css') ?>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.7.3/themes/base/jquery-ui.<?php echo $uiCsspoVertical ?>.css">
 
 {literal}
 <script type="text/javascript">

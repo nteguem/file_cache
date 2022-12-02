@@ -9,39 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Alaxione - Prise de rdv</title>
 
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://dev.alaxione.fr/newwidget/css/stepmodal.css"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <?php $recapMailCss = filemtime(PATH_ASSETS.'https://dev.alaxione.fr/newwidget/css/stepmodal.css') ?>
+    <link rel="stylesheet" href="https://dev.alaxione.fr/newwidget/css/stepmodal.<?php echo $recapMailCss ?>.css">
     <style type="text/css">
-      .stepmodal .breadcrumbs {
-        color: #fa9178;
-      }
-
-      .stepmodal .color-font-main,
-      .stepmodal a.color-font-main,
-      .minimodal .color-font-main,
-      .minimodal a.color-font-main {
-        color: #0070c9;
-        text-decoration-color: #0070c9;
-      }
-
-      .stepmodal .color-font-secondary,
-      .stepmodal a.color-font-secondary,
-      .minimodal .color-font-secondary,
-      .minimodal a.color-font-secondary {
-        color: #fa9178;
         text-decoration-color: #fa9178;
       }
 

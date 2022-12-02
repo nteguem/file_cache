@@ -1279,7 +1279,8 @@ document.getElementById("iframerdv").src = "modal/modal_disponibilite_suppressio
 
                                         <div class="col-sm-3">
                                             <div class="controls">
-                                                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css"
+                                            <?php $agendaMauette = filemtime(PATH_ASSETS.'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css') ?>
+                                                <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.<?php echo $agendaMauette ?>.css"
                                                     rel="stylesheet" />
                                                 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                                                 <select name="lstAgendaActif" class="js-example-basic-multiple" id="basculer_agenda">

@@ -47,6 +47,18 @@
     <link href="plugins/pnotify/css/jquery.pnotify.{$pnIndexBorn}.css" media="screen" rel="stylesheet" type="text/css">
     <link href="plugins/google-code-prettify/prettify.{$prIndexBorn}.css" rel="stylesheet" type="text/css">
 
+    <?php $mCustomScrollIndexBorn = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css') ?>
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mCustomScrollIndexBorn ?>.css" rel="stylesheet" type="text/css">
+    <?php $tagsInIndexBorn = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
+    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsInIndexBorn ?>.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapIndexBorn = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css') ?>
+    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $bootstrapIndexBorn ?>.css" rel="stylesheet" type="text/css">    
+    <?php $dateAngePicIndexBorn = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css') ?>
+    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $dateAngePicIndexBorn ?>.css" rel="stylesheet" type="text/css">    
+    <?php $timpicIndexBorn = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css') ?>
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $timpicIndexBorn ?>.css" rel="stylesheet" type="text/css">
+    <?php $colorPicIndexBorn = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css') ?>
+    <link href="plugins/colorpicker/css/colorpicker.<?php echo $colorPicIndexBorn ?>.css" rel="stylesheet" type="text/css">   
 
     <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mcIndexBorn}.css" rel="stylesheet" type="text/css">
     <link href="plugins/tagsInput/jquery.tagsinput.{$tagsIndexBorn}.css" rel="stylesheet" type="text/css">

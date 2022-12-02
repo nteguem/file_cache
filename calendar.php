@@ -29,8 +29,11 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <?php $bootstrapMinCss = filemtime(PATH_ASSETS.'css/bootstrap.min.css') ?>
+    <link href="css/bootstrap.min.<?php echo $bootstrapMinCss ?>.css" rel="stylesheet" type="text/css">
+
+    <?php $awesomeMinCss = filemtime(PATH_ASSETS.'css/font-awesome.min.css') ?>
+    <link href="css/font-awesome.min.<?php echo $awesomeMinCss ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
     <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
 
@@ -60,16 +63,21 @@
     <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <?php $themeMinCss = filemtime(PATH_ASSETS.'css/theme.min.css') ?>
+    <link href="css/theme.min.<?php echo $themeMinCss ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
-
+    <?php $chromeCss = filemtime(PATH_ASSETS.'css/chrome.css') ?>
+    <link href="css/chrome.<?php echo $chromeCss ?>.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <?php $responsiveCss = filemtime(PATH_ASSETS.'css/theme-responsive.min.css') ?>
+    <link href="css/theme-responsive.min.<?php echo $responsiveCss ?>.css" rel="stylesheet" type="text/css"> 
 
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <?php $fullCalendarCss = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.3.1/fullcalendar.css') ?>
+	<link href='plugins/fullcalendar-2.3.1/fullcalendar.<?php echo $fullCalendarCss ?>.css' rel='stylesheet' />
+	
+    <?php $fullCalenderPrintCss = filemtime(PATH_ASSETS.'plugins/fullcalendar-2.3.1/fullcalendar.print.css') ?>
+    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.<?php echo $fullCalenderPrintCss ?>.css' rel='stylesheet' media='print' />
 
     <!-- for specific page in style css -->
 
@@ -77,7 +85,8 @@
 
 
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <?php $customCustomCss = filemtime(PATH_ASSETS.'custom/custom.css') ?>
+    <link href="custom/custom.<?php echo $customCustomCss ?>.css" rel="stylesheet" type="text/css">
 
 
 

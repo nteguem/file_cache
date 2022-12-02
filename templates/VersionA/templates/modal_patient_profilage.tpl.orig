@@ -126,6 +126,23 @@
     <![endif]-->
 
     {literal}
+    <script type="text/javascript">
+        function set_status_rdv(idrdv, idstatus) {
+            $.ajax({
+                url: 'ajax/set_status_rdv.php',
+                data: 'idrdv=' + idrdv + '&idstatus=' + idstatus,
+                dataType: 'json',
+                success: function (json) {
+                }
+            });
+            return false;
+        }
+
+        $(document).ready(function () {
+            set_status_rdv({/literal}{$idrdv}{literal}, 'patienttraite');
+        });
+
+    </script>
 
     <style type="text/css">
         @media (min-width: 768px) {
@@ -204,7 +221,7 @@
 
 
 <div id="blocktotal">
-    <h2 style="margin: 20px 20px!important;">{$stitre}</h2>
+    <h2>{$stitre}</h2>
     <div class="col-sm-12" style="padding-top:10px;">
         {if $berror}
             <div class="alert alert-danger">
@@ -215,77 +232,16 @@
             </div>
         {/if}
 
-
-
         {if $bsucess}
         {literal}
             <script type="text/javascript">
-                alert('Enregistement réussi');
                 parent.close_modal_principal('', '', '');
             </script>
         {/literal}
         {/if}
-        {if $bProfilexiste}
-        {if $aTabPRofilage[0]['identifiant_rdv_pris']==''}
-            <form action="" method="POST" class="form-horizontal">
-            <input type="hidden" name="identifiant_rdv" value="{$identifiant_rdv}">
-            <input type="hidden" name="identifiant_entite" value="{$identifiant_entite}">
-            <input type="hidden" name="identifiant_patient" value="{$identifiant_patient}">
-            <input type="hidden" name="guid_profilage_rdv" value="{$aTabPRofilage[0]['guid_profilage_rdv']}">
-            <input type="hidden" name="validation" value="supp">
-                {/if}
-            <div class="form-group col-sm-12"><h3 align="center" style="color: #90111A">Il existe déja un profilage sur ce rdv</h3></div>
-            <div class="form-group col-sm-12">
-                <div class="row">
-                    <div class="col-sm-3 ">
-                        Motif du RDv<br>
-                        <label class="control-label">{$aTabPRofilage[0]['libelle_type_rdv']}</label>
-                    </div>
-                    <div class="col-sm-3 ">
-                        Lieu<br>
-                        <label class="control-label">{$aTabPRofilage[0]['nom_lieux']}</label>
-                    </div>
-                    <div class="col-sm-3 ">
-                        Avec le praticien<br>
-                        <label class="control-label">{$aTabPRofilage[0]['abr_proffession']} {$aTabPRofilage[0]['nom_user']}</label>
-                    </div>
-                    <div class="col-sm-3 ">
-                        A partie de<br>
-                        <label class="control-label">{$aTabPRofilage[0]['ladate']}</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3 ">
-                        URL<br>
-                        <label class="control-label"><a href='{$aTabPRofilage[0]['urlcourt_profilage_rdv']}' target="_blank">{$aTabPRofilage[0]['urlcourt_profilage_rdv']}</a></label>
-                    </div>
 
-                    <div class="col-sm-3 ">
-                        Status<br>
-                        <label class="control-label">{if $aTabPRofilage[0]['identifiant_rdv_pris']==''}En attente {else}Rdv pris{/if}</label>
-                    </div>
-                </div>
-            </div>
-            {if $aTabPRofilage[0]['identifiant_rdv_pris']==''}
-            <div class="form-group">
-                <div class="col-sm-12 controls" align="center">
-                    <button type="button" name="updateButton" id="updateButton" onclick="bconf=confirm('Voulez vous supprimer ce profilage');if(bconf)submit();" class="btn vd_btn" style="background-color: #00D3C8;
-                -webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px;
-                -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; -moz-box-shadow: 2px 2px 2px 0px silver;
-                -webkit-box-shadow: 2px 2px 2px 0px silver;-o-box-shadow: 2px 2px 2px 0px silver;box-shadow: 2px 2px 2px 0px silver;">
-                        <span class="menu-icon"></span> Supprimer
-                    </button>
-                </div>
-            </div>
-
-        </form>
-        {/if}
-
-        {else}
         <form action="" method="POST" class="form-horizontal">
-            <input type="hidden" name="identifiant_rdv" value="{$identifiant_rdv}">
-            <input type="hidden" name="identifiant_entite" value="{$identifiant_entite}">
-            <input type="hidden" name="identifiant_patient" value="{$identifiant_patient}">
+            <input type="hidden" name="identification_rdv" value="{$identification_rdv}">
             <input type="hidden" name="validation" value="ok">
             <div class="form-group col-sm-12">
                 <div class="row">
