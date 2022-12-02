@@ -1196,7 +1196,7 @@
                                                                                 $("#tel_up").intlTelInput({
                                                                                     onlyCountries:["fr", "be", "ch", "re", "es", "mq", "lu"],
                                                                                     initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                                    utilsScript: "js/utils.js"
+                                                                                    utilsScript: "js/utils.{$utilsJs}.js"
                                                                                 });
                                                                                 var codepays = "{/literal}{$indicatif_structure}{literal}";
                                                                                 codepays = codepays.toLowerCase();
@@ -1810,7 +1810,7 @@
                                                                                     $("#tel_reg").intlTelInput({
                                                                                         onlyCountries:["fr", "be", "ch", "re", "es", "mq", "lu"],
                                                                                         initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                                        utilsScript: "js/utils.js"
+                                                                                        utilsScript: "js/utils.{$utilsJs}.js"
                                                                                     });
                                                                                     var codepays = "{/literal}{$indicatif_structure}{literal}";
                                                                                     codepays = codepays.toLowerCase();

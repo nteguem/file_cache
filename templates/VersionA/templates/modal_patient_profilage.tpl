@@ -648,7 +648,7 @@
                         $("#check_sms_demande").intlTelInput({
                             preferredCountries:["fr", "be", "ch"],
                             initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                            utilsScript: "../js/utils.js"
+                            utilsScript: "../js/utils.{$utilsJs2}.js"
                         });
                         if($("#check_sms_demande_indicatif").val() === "41"){
                             $("#check_sms_demande").inputmask("999 999 99 99");

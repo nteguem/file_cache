@@ -151,7 +151,7 @@
 
 <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.{$fileUploadImageVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
-<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.fileUploadAudioVertical.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+<script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.fileUploadAudioVertical.{$fileUploadAudio}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
 <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.{$fileUploadValidateVertical}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
@@ -159,7 +159,7 @@
 
 <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/moment.min.{momentMinVertical}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
    <!-- <script type="text/javascript" src='plugins/fullcalendar-3.5.0/fullcalendar.min.js?v={/literal}{$numero_version_alaxione}{literal}'></script>-->
-    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/locale/fr.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
+    <script type="text/javascript" src='plugins/fullcalendar-3.5.0/locale/fr.{$fr}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
     <script type="text/javascript" src='plugins/fullcalendar-3.5.0/scheduler.min.js?v={/literal}{$numero_version_alaxione}{literal}'></script>
 
 <script type="text/javascript" src='plugins/ckeditor/ckeditor.{$ckeditorVertical}.js'></script>

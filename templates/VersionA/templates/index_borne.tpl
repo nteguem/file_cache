@@ -62,7 +62,7 @@
     <!-- Theme CSS -->
     <link href="css/theme.min.{$thIndexBorn}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
-    <link href="css/ie.css" rel="stylesheet"> <![endif]-->
+    <link href="css/ie.{$cssIe}.css" rel="stylesheet"> <![endif]-->
     <link href="css/chrome.{$chrIndexBorn}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 

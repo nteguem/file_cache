@@ -1171,6 +1171,7 @@ try {
     $objSmarty->assign('maskChamps', filemtime('js/maskchamps.js'));
     $objSmarty->assign('clientJs', filemtime('/js/client.js'));
     $objSmarty->assign('utilsJs', filemtime('js/utils.js'));
+    $objSmarty->assign('utilsJs2', filemtime('../js/utils.js'));
 
 
     $objSmarty->assign('modernizr_1', filemtime('js/modernizr.js'));
@@ -1223,6 +1224,9 @@ try {
     $objSmarty->assign('maskDispoModif', filemtime('../js/jquery.maskedinput.min.js'));
     $objSmarty->assign('ckDispoModif', filemtime('../plugins/ckeditor/ckeditor.js'));
     $objSmarty->assign('adapDispoModif', filemtime('../plugins/ckeditor/adapters/jquery.js'));
+    $objSmarty->assign('html5shiv2', filemtime('../js/html5shiv.js'));
+    $objSmarty->assign('respondMin2', filemtime('../js/respond.min.js'));
+    $objSmarty->assign('fileUploadAudio', filemtime('plugins/jquery-file-upload/js/jquery.fileupload-audio.fileUploadAudioVertical.js'));
         
     $objSmarty->assign('jQuery_v1', filemtime('../js/jquery.js'));
     $objSmarty->assign('bootstrapDis', filemtime('../js/bootstrap.min.js'));
@@ -1462,6 +1466,7 @@ $objSmarty->assign('ccModalRdvPat', filemtime('custom/custom.css'));
 $objSmarty->assign('respModalRdvPat', filemtime('ss/theme-responsive.min.css'));
 $objSmarty->assign('chrModalRdvPat', filemtime('css/chrome.css'));
 $objSmarty->assign('thModalRdvPat', filemtime('css/theme.min.css'));
+$objSmarty->assign('gestionListeRdv', filemtime('css/impression/gestion_liste_rdv_jour_print.css'));
 
 //modal_remplacant.tpl
 $objSmarty->assign('clorModalRemplacant', filemtime('../plugins/colorpicker/css/colorpicker.css'));
@@ -2355,6 +2360,10 @@ $objSmarty->assign('thRestrictFonction', filemtime('css/theme.min.css'));
     $objSmarty->assign('breakpoints',filemtime('lugins/breakpoints/breakpoints.js'));
     $objSmarty->assign('dataTables',filemtime('plugins/dataTables/jquery.dataTables.min.js'));
     $objSmarty->assign('prettyPhoto',filemtime('plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'));
+    $objSmarty->assign('mobileDetectModernizrr', filemtime('js/mobile-detect-modernizr.mobileDetectModernizr.js'));
+    $objSmarty->assign('exCanva2', filemtime('../js/excanvas.js'));
+
+
     $objSmarty->assign('bootstrapMin',filemtime('css/bootstrap.min.css'));
     $objSmarty->assign('fontawesome',filemtime('css/font-awesome.min.css'));
     $objSmarty->assign('fontawesomemin',filemtime('css/font-awesome-ie7.min.css'));

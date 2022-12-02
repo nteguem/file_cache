@@ -59,7 +59,7 @@
     <link href="../plugins/colorpicker/css/colorpicker.{$pluginsColorPicker738}.css" rel="stylesheet" type="text/css">
     <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstraptimePicker563}.css" rel="stylesheet" type="text/css">
     <link href="../css/jquery-clockpicker.min.{$cssJqueryclockpicker354}.css" rel="stylesheet" type="text/css">
-    <script src='../js/moment.min.js'></script>
+    <script src='../js/moment.min.{$moment2}.js'></script>
 
     <!-- Theme CSS -->
     <link href="../css/theme.{$cssTheme249}.css" rel="stylesheet" type="text/css">
@@ -87,7 +87,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="../js/jquery.{$jQueryDisPoModif}.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="../js/excanvas.js"></script>
+    <script type="text/javascript" src="../js/excanvas.{$exCanva}.js"></script>
     <![endif]-->
     <script type="text/javascript" src="../js/bootstrap.min.{$bootstrapDispoModif}.js"></script>
     <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$customDispoModf}.js'></script>
@@ -129,8 +129,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="../js/html5shiv.js"></script>
-    <script type="text/javascript" src="../js/respond.min.js"></script>
+    <script type="text/javascript" src="../js/html5shiv.{$html5shiv}.js"></script>
+    <script type="text/javascript" src="../js/respond.min.{$respondMin}.js"></script>
     <![endif]-->
 
     {literal}

@@ -74,8 +74,8 @@
             <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
 
             <!--[if lt IE 9]>
-              <script type="text/javascript" src="js/html5shiv.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
-              <script type="text/javascript" src="js/respond.min.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+              <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
+              <script type="text/javascript" src="js/respond.min.{$respondMin}.js?v={/literal}{$numero_version_alaxione}{literal}"></script>
             <![endif]-->
 
             <script type="text/javascript" src='plugins/fullcalendar-3.5.0/lib/jquery.min.{$jQuerryMin}.js?v={/literal}{$numero_version_alaxione}{literal}'></script>

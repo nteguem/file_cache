@@ -90,12 +90,9 @@
     <script type="text/javascript" src="../js/caroufredsel.{$caroufredsel2}.js"></script>
     <script type="text/javascript" src="../js/plugins.{$plugin2}.js"></script>
 
-    <?php $pluginsBreakpointsBreakpoints filemtime(PATH_ASSETS.'../plugins/breakpoints/breakpoints.js') ?>
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.<?php echo $pluginsBreakpointsBreakpoints ?>.js"></script>
-    <?php $jqueryDataTablesMin filemtime(PATH_ASSETS.'../plugins/dataTables/jquery.dataTables.min.js') ?>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.<?php echo $jqueryDataTablesMin ?>.js"></script>
-    <?php $pluginJqueryPrettyPhoto filemtime(PATH_ASSETS.'../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.<?php echo $pluginJqueryPrettyPhoto ?>.js"></script>
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$dataTables}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto}.js"></script>
   <link href="../css/jquery-clockpicker.min.{$cssJqueryClocpicker12}.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCustomScrollbar2}.js"></script>

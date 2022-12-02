@@ -46,8 +46,7 @@
     <link href="plugins/isotope/css/isotope.{$pluginsIsotopeCss}.css" rel="stylesheet" type="text/css">
     <link href="plugins/pnotify/css/jquery.pnotify.{$plugingsPnotifyCss}.css" media="screen" rel="stylesheet" type="text/css">    
     <link href="plugins/google-code-prettify/prettify.{$pluginsGoogleCodeCss}.css" rel="stylesheet" type="text/css"> 
-   
-   
+  
          
     <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMCustomScrollbarCss}.css" rel="stylesheet" type="text/css">
     <link href="plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInputCss}.css" rel="stylesheet" type="text/css">
@@ -61,13 +60,13 @@
 
     <!-- Theme CSS -->
     <link href="css/theme.{$cssThemeCss}.css" rel="stylesheet" type="text/css">
-    <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
+    <!--[if IE]> <link href="css/ie.{$cssIe}.css" rel="stylesheet" > <![endif]-->
     <link href="css/chrome.{$cssChromeCss}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->     
 
 
         
     <!-- Responsive CSS -->
-          <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+          <link href="css/theme-responsive.min.{$CssThemeResponsiveMin279}.css" rel="stylesheet" type="text/css"> 
 
     
  
@@ -88,7 +87,7 @@
   
     <script type="text/javascript" src="js/jquery.{$jQuerry}.js"></script> 
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/excanvas.js"></script>      
+      <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>      
     <![endif]-->
 
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin}.js"></script> 
@@ -142,7 +141,7 @@
 
     <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetectMin}.js"></script> 
 
-    <script type="text/javascript" src="js/mobile-detect-modernizr.mobileDetectModernizr.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect-modernizr.mobileDetectModernizr.{$mobileDetectModernizrr}.js"></script> 
 
     <script type="text/javascript" src="js/jquery.maskedinput.min.{$jQuerryMaskedInputMin}.js"></script>
 
@@ -152,8 +151,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/html5shiv.js"></script>
-      <script type="text/javascript" src="js/respond.min.js"></script>     
+      <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+      <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>     
     <![endif]-->
 
 {literal}

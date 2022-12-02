@@ -2808,7 +2808,7 @@ div.datepicker table td {
                                       $("#tel_mobile_patient_prendre_rdv_calendar").intlTelInput({
                                           preferredCountries:["fr", "be", "ch"],
                                           initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                          utilsScript: "js/utils.js"
+                                          utilsScript: "js/utils.{$utilsJs}.js"
                                       });
                                       $("#tel_mobile_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
                                       var countryDataInit = $("#tel_mobile_patient_prendre_rdv_calendar_indicatif").intlTelInput("getSelectedCountryData");
@@ -2840,7 +2840,7 @@ div.datepicker table td {
                                       $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput({
                                           preferredCountries:["fr", "be", "ch"],
                                           initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                          utilsScript: "js/utils.js"
+                                          utilsScript: "js/utils.{$utilsJs}.js"
                                       });
                                       $("#tel_fixe_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
                                       var countryDataInit = $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput("getSelectedCountryData");

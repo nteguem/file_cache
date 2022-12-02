@@ -2,7 +2,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="css/impression/gestion_liste_rdv_jour_print.css" media="print">
+<link rel="stylesheet" type="text/css" href="css/impression/gestion_liste_rdv_jour_print.{$gestionListeRdv}.css" media="print">
 
 {literal}
     <script type="text/javascript">

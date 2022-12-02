@@ -49,8 +49,7 @@
     <link href="../plugins/isotope/css/isotope.{$pluginsIsotope134}.css" rel="stylesheet" type="text/css">
     <link href="../plugins/pnotify/css/jquery.pnotify.{$pluginsPnotifyJquery057}.css" media="screen" rel="stylesheet" type="text/css">
     <link href="../plugins/google-code-prettify/prettify.{$pluginsGoogleCode894}.css" rel="stylesheet" type="text/css">
-   <?php $jsMomentMin = filemtime(PATH_ASSETS.'../js/moment.min.js'); ?>
-    <script src='../js/moment.min.<?php echo $jsMomentMin ?>.js'></script>
+    <script src='../js/moment.min.{$moment2}.js'></script>
 
     <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMcustomScrollbar360}.css" rel="stylesheet" type="text/css">
     <link href="../plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInputJquery348}.css" rel="stylesheet" type="text/css">
@@ -60,8 +59,7 @@
     <link href="../plugins/colorpicker/css/colorpicker.{$pluginsColorPicker564}.css" rel="stylesheet" type="text/css">
     <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstarpTimePicker234}.css" rel="stylesheet" type="text/css">
     <link href="../css/jquery-clockpicker.min.{$CssJqueryClockpicker674}.css" rel="stylesheet" type="text/css">
-    <?php $jsMomentMin_2 = filemtime(PATH_ASSETS.'../js/moment.min.js'); ?>
-    <script src='../js/moment.min.<?php echo $jsMomentMin_2 ?>.js'></script>
+    <script src='../js/moment.min.{{$moment2}}.js'></script>
 
     <!-- Theme CSS -->
     <link href="../css/theme.{$CssTheme985}.css" rel="stylesheet" type="text/css">
