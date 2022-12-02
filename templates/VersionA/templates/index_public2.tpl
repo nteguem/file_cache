@@ -28,42 +28,42 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.{$booTindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$aWindexPub}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="css/font-entypo.{$entIndexPub}.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="css/fonts.{$ftindexPub}.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-  <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$cmindexPub}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$preindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$icIindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pnindexPub}.css" media="screen" rel="stylesheet" type="text/css">    
+  <link href="plugins/google-code-prettify/prettify.{$pretindexPub}.css" rel="stylesheet" type="text/css"> 
    
          
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mCindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$tagsindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$sWindexPub}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$bs3indexPub}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$tmindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$clorindexPub}.css" rel="stylesheet" type="text/css">            
 
   <!-- Specific CSS -->
-    <link href="plugins/dataTables/css/jquery.dataTables.css" rel="stylesheet" type="text/css">
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/jquery.dataTables.{$DateindexPub}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$btpindexPub}.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.min.{$thIndexPub}.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/chrome.{$chrIndexPub}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
 
         
     <!-- Responsive CSS -->
-          <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+          <link href="css/theme-responsive.min.{$respIndexPub}.css" rel="stylesheet" type="text/css"> 
 
     
  
@@ -74,92 +74,67 @@
         
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom.{$ccIndexPub}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster -->
 
-    <?php $jQuerry = filemtime(PATH_ASSETS.'js/jquery.js'); ?> 
     <script type="text/javascript" src="js/jquery.{$jQuerry}.js"></script> 
     
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/excanvas.js"></script>      
     <![endif]-->
-    <?php $bootstrapMin = filemtime(PATH_ASSETS.'js/bootstrap.min.js'); ?>
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin}.js"></script> 
 
-    <?php $jQuerUiCustom = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js'); ?>
     <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$jQuerUiCustom}.js'></script>
 
-    <?php $jQuerryUITouchPunchMin = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js'); ?>
     <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jQuerryUITouchPunchMin}.js"></script>
 
-    <?php $caroufredsel = filemtime(PATH_ASSETS.'js/caroufredsel.js'); ?>
     <script type="text/javascript" src="js/caroufredsel.{$caroufredsel}.js"></script> 
 
-    <?php $plugins = filemtime(PATH_ASSETS.'js/plugins.js'); ?>
     <script type="text/javascript" src="js/plugins.{$plugins}.js"></script>
 
-    <?php $breakpoints = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js'); ?>
     <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
 
-    <?php $jQuerryDataTablesMin = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js'); ?>
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jQuerryDataTablesMin}.js"></script>
 
-    <?php $jQuerryPrettyPhoto = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js'); ?>
     <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$jQuerryPrettyPhoto}.js"></script> 
 
-    <?php $jQuerrymCustomScrollBarConcatMin = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'); ?>
     <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$jQuerrymCustomScrollBarConcatMin}.js"></script>
 
-    <?php $jQuerryTagsInputMin = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js'); ?>
     <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$jQuerryTagsInputMin}.js"></script>
 
-    <?php $bootstrapSwitchMin = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js'); ?>
     <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchMin}.js"></script>
 
-    <?php $jQuerryBlockUI = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js'); ?>
     <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$jQuerryBlockUI}.js"></script>
 
-    <?php $jQuerryPnotifyMin = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js'); ?>
     <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$jQuerryPnotifyMin}.js"></script>
 
 
-    <?php $theme = filemtime(PATH_ASSETS.'js/theme.js'); ?>
     <script type="text/javascript" src="js/theme.{$theme}.js"></script>
 
-    <?php $raphaelMin = filemtime(PATH_ASSETS.'custom/custom.js'); ?>
     <script type="text/javascript" src="custom/custom.{$raphaelMin}.js"></script>
      
     <!-- Specific Page Scripts Put Here -->
-    <?php $jQuerryBootstrapWizardMin = filemtime(PATH_ASSETS.'plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js'); ?>
     <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$jQuerryBootstrapWizardMin}.js'></script>
 
 
     <!-- Head SCRIPTS -->
-    <?php $modernizr = filemtime(PATH_ASSETS.'js/modernizr.js'); ?>
     <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script> 
 
-    <?php $mobileDetectMin = filemtime(PATH_ASSETS.'js/mobile-detect.min.js'); ?>
     <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetectMin}.js"></script> 
 
-    <?php $mobileDetectModernizr = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js'); ?>
     <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr}.js"></script> 
     
-    <?php $listeE1 = filemtime(PATH_ASSETS.'js/liste_e1.js'); ?>
     <script type="text/javascript" src="js/liste_e1.{$listeE1}.js"></script>
 
-    <?php $listeE2 = filemtime(PATH_ASSETS.'js/liste_e2.js'); ?>    
     <script type="text/javascript" src="js/liste_e2.{$listeE2}.js"></script>
 
-    <?php $listeE3 = filemtime(PATH_ASSETS.'js/liste_e3.js'); ?>
     <script type="text/javascript" src="js/liste_e3.{$listeE3}.js"></script>
 
-    <?php $listeE4 = filemtime(PATH_ASSETS.'js/liste_e4.js'); ?>
     <script type="text/javascript" src="js/liste_e4.{$listeE4}.js"></script>
 
-    <?php $compteWidget = filemtime(PATH_ASSETS.'js/compte_widget.js'); ?>
     <script type="text/javascript" src="js/compte_widget.{$compteWidget}.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

@@ -33,130 +33,103 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <link href="../css/bootstrap.min.{$cssBootstrapMinCss}.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.min.{$cssFontAwesomeCss}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
-    <link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="../css/font-entypo.css" rel="stylesheet" type="text/css">
-
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+    <link href="../css/font-entypo.{$cssFontEntypoCss}.css" rel="stylesheet" type="text/css">
     <!-- Fonts CSS -->
-    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
-    <link href="../css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.{$cssFontCss}.css"  rel="stylesheet" type="text/css">
+
+    <link href="../css/datepicker.{$cssDatepickercss}.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="../plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+ <link href="../plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJqueryUiJqueryUiCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhotoPluginCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/isotope/css/isotope.{$pluginsIsotopeCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/pnotify/css/jquery.pnotify.{$pluginsPnotifyCss}.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../plugins/google-code-prettify/prettify.{$pluginsGoofleCodeCss}.css" rel="stylesheet" type="text/css">
+   
+         
+    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMCustomScrollbarCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInputCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-switch/bootstrap-switch.{$pluginsBootstrapSwitchCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/daterangepicker/daterangepicker-bs3.{$pluginsDaterangePickerCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstrapTimepickerCss}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/colorpicker/css/colorpicker.{$pluginsColorpickerCss}.css" rel="stylesheet" type="text/css">
 
-
-    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/jquery-clockpicker.min.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstrapTimepickerCss}.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery-clockpicker.min.{$jqueryClockpickerCss}.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="../css/theme.css" rel="stylesheet" type="text/css">
+    <link href="../css/theme.{$cssTheme}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
     <link href="../css/ie.css" rel="stylesheet"> <![endif]-->
-    <link href="../css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+    <link href="../css/chrome.{$cssChromeCss}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
     <!-- Responsive CSS -->
-    <link href="../css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+     <link href="../css/theme-responsive.min.{$cssThemeResponsiveCss}.css" rel="stylesheet" type="text/css">
 
 
     <!-- for specific page in style css -->
-    <link href="../css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery-ui.structure.min.{$jqueryUiStructure}.css" rel="stylesheet" type="text/css">
+    <link href="../css/jquery-ui.theme.min.{$jqueryUiThemeCss}.css" rel="stylesheet" type="text/css">
     <!-- for specific page responsive in style css -->
 
 
     <!-- Custom CSS -->
-    <link href="../custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="../custom/custom.{$cssCustomCss}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <?php $jQueryPlanning filemtime(PATH_ASSETS.'../js/jquery.js') ?>
     <script type="text/javascript" src="../js/jquery.{$jQueryPlanning}.js"></script>
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="../js/excanvas.js"></script>
     <![endif]-->
-    <?php $bootstrapMiPlanning filemtime(PATH_ASSETS.'../js/bootstrap.min.js') ?>
     <script type="text/javascript" src="../js/bootstrap.min.{$bootstrapMiPlanning}.js"></script>
-    <?php $jQcustomMiPlanning filemtime(PATH_ASSETS.'../plugins/jquery-ui/jquery-ui.custom.min.js') ?>
     <script type="text/javascript" src='../plugins/jquery-ui/jquery-ui.custom.min.{$jQcustomMiPlanning}.js'></script>
-    <?php $punchMinPlanning filemtime(PATH_ASSETS.'../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
     <script type="text/javascript" src="../plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$punchMinPlanning}.js"></script>
 
-    <?php $caroufredPlanning filemtime(PATH_ASSETS.'../js/caroufredsel.js') ?>
     <script type="text/javascript" src="../js/caroufredsel.{$caroufredPlanning}.js"></script>
-    <?php $pluginsPlanning filemtime(PATH_ASSETS.'../js/plugins.js') ?>
     <script type="text/javascript" src="../js/plugins.{$pluginsPlanning}.js"></script>
 
-    <?php $pluginsBreakpointsBreakpoiPlanning filemtime(PATH_ASSETS.'../plugins/breakpoints/breakpoints.js') ?>
     <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$pluginsBreakpointsBreakpoiPlanning}.js"></script>
-    <?php $jqueryDataTablesPlanning filemtime(PATH_ASSETS.'../plugins/dataTables/jquery.dataTables.min.js') ?>
     <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$jqueryDataTablesPlanning}.js"></script>
-    <?php $pluginJqueryPrettyPhPlanning filemtime(PATH_ASSETS.'../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
     <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$pluginJqueryPrettyPhPlanning}.js"></script>
 
-    <?php $ContctMinPlanning filemtime(PATH_ASSETS.'../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
     <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$ContctMinPlanning}.js"></script>
-    <?php $tagsInputPlanning filemtime(PATH_ASSETS.'../plugins/tagsInput/jquery.tagsinput.min.js') ?>
     <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsInputPlanning}.js"></script>
-    <?php $bootstrapSwitchPlanning filemtime(PATH_ASSETS.'../plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
     <script type="text/javascript" src="../plugins/bootstrap-switch/bootstrap-switch.min.{$bootstrapSwitchPlanning}.js"></script>
-    <?php $blockUIPlanning filemtime(PATH_ASSETS.'../plugins/blockUI/jquery.blockUI.js') ?>
     <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blockUIPlanning}.js"></script>
-    <?php $pNotifyPlanning filemtime(PATH_ASSETS.'../plugins/pnotify/js/jquery.pnotify.min.js') ?>
     <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pNotifyPlanning}.js"></script>
   
 
-    <?php $themePlanning filemtime(PATH_ASSETS.'../js/theme.js') ?>
     <script type="text/javascript" src="../js/theme.{$themePlanning}.js"></script>
-    <?php $customPlanning filemtime(PATH_ASSETS.'../custom/custom.js') ?>
     <script type="text/javascript" src="../custom/custom.{$customPlanning}.js"></script>
      
     <!-- Specific Page Scripts Put Here -->
-    <?php $wizardMinPlanning filemtime(PATH_ASSETS.'../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') ?>
     <script type="text/javascript" src='../plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wizardMinPlanning}.js'></script>
 
-    <?php $dataPickerPlanning filemtime(PATH_ASSETS.'../js/datepicker-fr.js') ?>
     <script type="text/javascript" src="../js/datepicker-fr.{$dataPickerPlanning}.js"></script>
 
-    <?php $timePickerPlanning filemtime(PATH_ASSETS.'../plugins/bootstrap-timepicker/bootstrap-timepicker.min.js') ?>
     <script type="text/javascript" src='../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timePickerPlanning}.js'></script>
 
-    <?php $pickerDatePlanning filemtime(PATH_ASSETS.'../js/datepicker.js') ?>
     <script type="text/javascript" src="../js/datepicker.{$pickerDatePlanning}.js"></script>
 
-    <?php $clockPickerPlanning filemtime(PATH_ASSETS.'../js/jquery-clockpicker.min.js') ?>
     <script type="text/javascript" src="../js/jquery-clockpicker.min.{$clockPickerPlanning}.js"></script>
 
     <!-- Head SCRIPTS -->
-    <?php $modernzrPlanning filemtime(PATH_ASSETS.'../js/modernizr.js') ?>
     <script type="text/javascript" src="../js/modernizr.{$modernzrPlanning}.js"></script>
-    <?php $mobileDetectPlanning filemtime(PATH_ASSETS.'../js/mobile-detect.min.js') ?>
     <script type="text/javascript" src="../js/mobile-detect.min.{$mobileDetectPlanning}.js"></script>
-    <?php $mobileDetectModernPlanning filemtime(PATH_ASSETS.'../js/mobile-detect-modernizr.js') ?>
     <script type="text/javascript" src="../js/mobile-detect-modernizr.{$mobileDetectModernPlanning}.js"></script>
-    <?php $jqueryMaskedinputPlanning filemtime(PATH_ASSETS.'../js/jquery.maskedinput.min.js') ?>
     <script type="text/javascript" src="../js/jquery.maskedinput.min.{$jqueryMaskedinputPlanning}.js"></script>
 
-    <?php $pluginsCkeditorCkPlanning filemtime(PATH_ASSETS.'../plugins/ckeditor/ckeditor.js') ?>
     <script type="text/javascript" src='../plugins/ckeditor/ckeditor.{$pluginsCkeditorCkPlanning}.js'></script>
-    <?php $ckeditorAdaptersPlanning filemtime(PATH_ASSETS.'../plugins/ckeditor/adapters/jquery.js') ?>
     <script type="text/javascript" src='../plugins/ckeditor/adapters/jquery.{$ckeditorAdaptersPlanning}.js'></script>
 
-    <?php $jQryInputMaskPlanning filemtime(PATH_ASSETS.'../js/jquery.inputmask.js') ?>
     <script type="text/javascript" src="../js/jquery.inputmask.{$jQryInputMaskPlanning}.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

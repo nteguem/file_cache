@@ -29,41 +29,41 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="css/bootstrap.min.{$cssBootstrap4}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$cssFontAwesomeMin0}.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.{$cssFontAwesomeMinIe79}.css"><![endif]-->
+    <link href="css/font-entypo.{$cssFontEntypo8}.css" rel="stylesheet" type="text/css">    
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="css/fonts.{$cssFont7}.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-	<link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJqueryUiCustom6}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhoto5}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$pluginsIsotope4}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pluginsPnotify3}.css" media="screen" rel="stylesheet" type="text/css">    
+	<link href="plugins/google-code-prettify/prettify.{$pluginsGoogleCodePrettify2}.css" rel="stylesheet" type="text/css"> 
    
          
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMcustomScrollbar}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInput11}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$pluginsBootstrap}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$daterangepicker}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBootstrap22}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$pluginscolorpicker}.css" rel="stylesheet" type="text/css">            
 
 	<!-- Specific CSS -->
 	    
      
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
-    <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/theme.min.{$cssTheme23}.css" rel="stylesheet" type="text/css">
+    <!--[if IE]> <link href="css/ie.{$cssIe56}.css" rel="stylesheet" > <![endif]-->
+    <link href="css/chrome.{$cssChrome67}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
 
 
         
     <!-- Responsive CSS -->
-        	<link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+        	<link href="css/theme-responsive.min.{$theme678}.css" rel="stylesheet" type="text/css"> 
 
 	  
  
@@ -74,24 +74,21 @@
         
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom.{$customcss89}.css" rel="stylesheet" type="text/css">
 
 
 
     <!-- Head SCRIPTS -->
-    <?php  $moderniz1 = filemtime(PATH_ASSETS.'js/modernizr.js');?>
-    <script type="text/javascript" src="js/modernizr.<?php echo $moderniz1 ?>.js"></script> 
+    <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script> 
 
-    <?php  $detectMin = filemtime(PATH_ASSETS.'js/mobile-detect.min.js');?>
-    <script type="text/javascript" src="js/mobile-detect.min.<?php echo $detectMin ?>.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetect}.js"></script> 
 
-    <?php  $detectModerne = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js');?>
-    <script type="text/javascript" src="js/mobile-detect-modernizr.<?php echo $detectModerne ?>.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr}.js"></script> 
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/html5shiv.js"></script>
-      <script type="text/javascript" src="js/respond.min.js"></script>     
+      <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+      <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>     
     <![endif]-->
     
 </head>    

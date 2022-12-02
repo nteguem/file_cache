@@ -31,32 +31,21 @@
     <!-- CSS -->
 
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <?php $bootstrapIndexBorn = filemtime(PATH_ASSETS.'css/bootstrap.min.css') ?>
-    <link href="css/bootstrap.min.<?php echo $bootstrapIndexBorn ?>.css" rel="stylesheet" type="text/css">
-
-    <?php $awesomeIndexBorn = filemtime(PATH_ASSETS.'css/font-awesome.min.css') ?>
-    <link href="css/font-awesome.min.<?php echo $awesomeIndexBorn ?>.css" rel="stylesheet" type="text/css">
-    
+    <link href="css/bootstrap.min.{$bootIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$awIndexBorn}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
     <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <?php $fontEntypoIndexBorn = filemtime(PATH_ASSETS.'css/font-entypo.css') ?>
-    <link href="css/font-entypo.<?php $fontEntypoIndexBorn ?>.css" rel="stylesheet" type="text/css">    
+    <link href="css/font-entypo.{$entIndexBorn}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <?php $fontIndexBorn = filemtime(PATH_ASSETS.'css/fonts.css') ?>
-    <link href="css/fonts.<?php echo $fontIndexBorn ?>.css"  rel="stylesheet" type="text/css">
+    <link href="css/fonts.{$ftIndexBorn}.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <?php $customMinIndexBorn = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $customMinIndexBorn ?>.css" rel="stylesheet" type="text/css">
-    <?php $prettyPhotoMinIndexBorn = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css') ?>
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhotoMinIndexBorn ?>.css" rel="stylesheet" type="text/css">
-    <?php $isotopeIndexBorn = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css') ?>
-    <link href="plugins/isotope/css/isotope.<?php echo $isotopeIndexBorn ?>.css" rel="stylesheet" type="text/css">
-    <?php $pnotifyIndexBorn = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css') ?>
-    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnotifyIndexBorn ?>.css" media="screen" rel="stylesheet" type="text/css">    
-    <?php $prettyPrettyIndexBorn = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css') ?>
-    <link href="plugins/google-code-prettify/prettify.<?php $prettyPrettyIndexBorn ?>.css" rel="stylesheet" type="text/css"> 
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$cmIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$pretIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$iciIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pnIndexBorn}.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="plugins/google-code-prettify/prettify.{$prIndexBorn}.css" rel="stylesheet" type="text/css">
 
     <?php $mCustomScrollIndexBorn = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css') ?>
     <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mCustomScrollIndexBorn ?>.css" rel="stylesheet" type="text/css">
@@ -71,35 +60,36 @@
     <?php $colorPicIndexBorn = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css') ?>
     <link href="plugins/colorpicker/css/colorpicker.<?php echo $colorPicIndexBorn ?>.css" rel="stylesheet" type="text/css">   
 
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mcIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$tagsIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$swIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$dateIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$tmIndexBorn}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$clorIndexBorn}.css" rel="stylesheet" type="text/css">
 
     <!-- Specific CSS -->
-    <?php $bootstrapDataIndexBorn = filemtime(PATH_ASSETS.'plugins/dataTables/css/dataTables.bootstrap.css') ?>
-    <link href="plugins/dataTables/css/dataTables.bootstrap.<?php echo $bootstrapDataIndexBorn ?>.css" rel="stylesheet" type="text/css">
+
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$btdIndexBorn}.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <?php $themeIndexBorn = filemtime(PATH_ASSETS.'css/theme.min.css') ?>
-    <link href="css/theme.min.<?php echo $themeIndexBorn ?>.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.min.{$thIndexBorn}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
-    <link href="css/ie.css" rel="stylesheet"> <![endif]-->
-    <?php $chromeIndexBorn = filemtime(PATH_ASSETS.'css/chrome.css') ?>
-    <link href="css/chrome.<?php echo $chromeIndexBorn ?>.css" rel="stylesheet" type="text/chrome"IndexBorn >
-    <!-- chrome only css -->
+    <link href="css/ie.{$cssIe}.css" rel="stylesheet"> <![endif]-->
+    <link href="css/chrome.{$chrIndexBorn}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
     <!-- Responsive CSS -->
-    <?php $responsiveIndexBorn = filemtime(PATH_ASSETS.'css/theme-responsive.min.css') ?>
-    <link href="css/theme-responsive.min.<?php echo $responsiveIndexBorn ?>.css" rel="stylesheet" type="text/css"> 
+    <link href="css/theme-responsive.min.{$respIndexBorn}.css" rel="stylesheet" type="text/css">
 
 
     <!-- for specific page in style css -->
 
     <!-- for specific page responsive in style css -->
-    <?php $mCustomIndexBorn = filemtime(PATH_ASSETS.'css/jquery.mCustomScrollbar.min.css') ?>
-    <link type="text/css" href="css/jquery.mCustomScrollbar.min.<?php echo $mCustomIndexBorn ?>.css" rel="stylesheet" media="all"/>
+
+    <link type="text/css" href="css/jquery.mCustomScrollbar.min.{$mcMinIndexBorn}.css" rel="stylesheet" media="all"/>
 
     <!-- Custom CSS -->
-    <?php $widgetIndexBorn = filemtime(PATH_ASSETS.'custom/custom_widget.css') ?>
-    <link href="custom/custom_widget.<?php echo $widgetIndexBorn ?>.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom_widget.{$wigIndexBorn}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== -->
@@ -107,7 +97,7 @@
 
     <script type="text/javascript" src="js/jquery.{$jQuerry}.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/excanvas.js"></script>
+    <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>
     <![endif]-->
 
     <script type="text/javascript" src="js/bootstrap.min.{bootstrapMin }.js"></script>
@@ -120,7 +110,7 @@
 
     <script type="text/javascript" src="js/plugins.{$plugins}.js"></script>
 
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.breakpoints.js"></script>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.breakpoints.{$breakpoints}.js"></script>
 
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$jQuerryDataTablesMin}.js"></script>
 
@@ -142,7 +132,7 @@
 
     <script type="text/javascript" src="js/theme.{$theme}.js?1454423157"></script>
 
-    <script type="text/javascript" src="custom/custom.custom.js?1454423157"></script>
+    <script type="text/javascript" src="custom/custom.custom.{$custom}.js?1454423157"></script>
 
     <!-- Specific Page Scripts Put Here -->
 
@@ -163,8 +153,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/html5shiv.js"></script>
-    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+    <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>
     <![endif]-->
 
 

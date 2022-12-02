@@ -77,65 +77,41 @@
 
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-    <?php $jQuery_9 = filemtime(PATH_ASSETS.'js/jquery.js') ?>
 <script type="text/javascript" src="js/jquery.{$jQuery_9}.js"></script>
 
     <!--[if lt IE 9]>
       <script type="text/javascript" src="js/excanvas.js"></script>      
     <![endif]-->
-    <?php $bootstrapMin_09 = filemtime(PATH_ASSETS.'js/bootstrap.min.js') ?>
 <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin_09}.js"></script>
-    <?php $customMin_09 = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
 <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$customMin_09}.js'></script>
-    <?php $touchPunch_09 = filemtime(PATH_ASSETS.'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
 <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$touchPunch_09}.js"></script>
-    <?php $caroufRed_009 = filemtime(PATH_ASSETS.'js/caroufredsel.js') ?>
 <script type="text/javascript" src="js/caroufredsel.{$caroufRed_009}.js"></script>
-    <?php $plugins_09 = filemtime(PATH_ASSETS.'js/plugins.js') ?>
 <script type="text/javascript" src="js/plugins.{$plugins_09}.js"></script>
-    <?php $breackPoint_09 = filemtime(PATH_ASSETS.'plugins/breakpoints/breakpoints.js') ?>
 <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breackPoint_09}.js"></script>
-    <?php $dataTables_09 = filemtime(PATH_ASSETS.'plugins/dataTables/jquery.dataTables.min.js') ?>
 <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTables_09}.js"></script>
-    <?php $prettyPhoto_09 = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
 <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto_09}.js"></script>
-    <?php $contactMin_09 = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
 <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$contactMin_09}.js"></script>
-    <?php $tagsInput_09 = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.min.js') ?>
 <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$tagsInput_09}.js"></script>
-    <?php $bootStrap_09 = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
 <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$bootStrap_09}.js"></script>
-    <?php $blockUi_09 = filemtime(PATH_ASSETS.'plugins/blockUI/jquery.blockUI.js') ?>
 <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$blockUi_09}.js"></script>
-    <?php $pnotify_09 = filemtime(PATH_ASSETS.'plugins/pnotify/js/jquery.pnotify.min.js') ?>
 <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pnotify_09}.js"></script>
 
-    <?php $theme_09 = filemtime(PATH_ASSETS.'js/theme.js') ?>
     <script type="text/javascript" src="js/theme.{$theme_09}.js"></script>
-    <?php $customCustom_09 = filemtime(PATH_ASSETS.'custom/custom.js') ?>
     <script type="text/javascript" src="custom/custom.{$customCustom_09}.js"></script>
 
-    <?php $maskedIput_09 = filemtime(PATH_ASSETS.'js/jquery.maskedinput.min.js') ?>
     <script type="text/javascript" src="js/jquery.maskedinput.min.{$maskedIput_09}.js"></script> 
      
     <!-- Specific Page Scripts Put Here -->
-    <?php $wizardMin_09 = filemtime(PATH_ASSETS.'plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js') ?>
     <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$wizardMin_09}.js'></script>
 
-    <?php $frPicked_09 = filemtime(PATH_ASSETS.'js/datepicker-fr.js') ?>
     <script type="text/javascript" src="js/datepicker-fr.{$frPicked_09}.js"></script>
     <!-- Head SCRIPTS -->
-    <?php $modernizr_09 = filemtime(PATH_ASSETS.'js/modernizr.js') ?>
     <script type="text/javascript" src="js/modernizr.{$modernizr_09}.js"></script>
-        <?php $mobileDetectMin_09 = filemtime(PATH_ASSETS.'js/mobile-detect.min.js') ?>
 <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetectMin_09}.js"></script>
-        <?php $mobileDetectMdernizr_09 = filemtime(PATH_ASSETS.'js/mobile-detect-modernizr.js') ?>
 <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectMdernizr_09}.js"></script>09
     
-<?php $compteWidget_09 = filemtime(PATH_ASSETS.'js/compte_widget.js') ?>
     <script type="text/javascript" src="js/compte_widget.{$compteWidget_09}.js"></script>     
    <!-- Script pour l'auto-completion -->
-   <?php $autoCompleMin_09 = filemtime(PATH_ASSETS.'js/jquery.autocomplete.min.js') ?>
     <script type="text/javascript" src="js/jquery.autocomplete.min.{$autoCompleMin_09}.js"></script>
 
 

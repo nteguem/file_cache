@@ -1,5 +1,4 @@
-<?php $contextIfram = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextIfram ?>.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtIframe}.css">
 
 <iframe src="{$urlframe}" style="display:block; width:100%; height:185vh;" frameborder="no"></iframe>
 

@@ -1,12 +1,6 @@
 <!-- agenda v4-->
-  <?php $contextMenConsult = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextMenConsult ?>.css">
-
-  <?php $treeViewConsultCss = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewConsultCss ?>.css">
-
-  
-  <script type="text/javascript" src="js/datepicker-fr.{$datePicker_1}.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$tNuAgendaConsult}.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.{$treeAgandaConsult}.css">
 
   <script type="text/javascript" src="js/liste_e7.{$listeStime_1}.js?{$stime}"></script>
 

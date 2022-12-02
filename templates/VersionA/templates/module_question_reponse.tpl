@@ -22,7 +22,7 @@
             margin-bottom: 10px;
         }
     </style>
-    <link href="css/jquery.flowchart.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.flowchart.min.{$flowchartmIN}.css" rel="stylesheet" type="text/css">
 
     <script src="js/raphael-min.{$raphaelMin}.js"></script>
 

@@ -1,9 +1,5 @@
-
-<?php $contextdispoMaquette = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispoMaquette ?>.css">
-
-<?php $treeViewdisTreeview = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
-<link href="plugins/tagsInput/jquery.tagsinput.<?php echo $treeViewdisTreeview ?>.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtAgandaMaquette}.css">
+<link href="plugins/tagsInput/jquery.tagsinput.{$tagsAgandaMaquette}.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="js/liste_dispo.{$listeDispo}.js?v={$numero_version_alaxione}"></script>
 

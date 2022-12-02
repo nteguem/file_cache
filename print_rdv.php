@@ -454,7 +454,8 @@ if ($hasTemplate) {
 
 
     <!-- Head SCRIPTS -->
-    <script type="text/javascript" src="js/modernizr.js"></script>
+    <?php $modernizr = filemtime(PATH_ASSETS . 'js/modernizr.js'); ?>
+    <script type="text/javascript" src="js/modernizr.<?php echo $modernizr ?>.js"></script>
     <?php $mobileDetectMin = filemtime(PATH_ASSETS . 'js/mobile-detect.min'); ?>
     <script type="text/javascript" src="js/mobile-detect.min.<?php echo $mobileDetectMin ?>.js"></script>
     <?php $mobileDetectModernizr = filemtime(PATH_ASSETS . 'js/mobile-detect-modernizr'); ?>
@@ -469,7 +470,8 @@ if ($hasTemplate) {
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src='plugins/fullcalendar-2.3.1/lib/jquery.min.js'></script>
+    <?php $jquery = filemtime(PATH_ASSETS, 'plugins/fullcalendar-2.3.1/lib/jquery.min.js'); ?>
+    <script src='plugins/fullcalendar-2.3.1/lib/jquery.min.<?php echo $jquery ?>.js'></script>
 
     <!--[if lt IE 9]>
     <?php $excanvas = filemtime(PATH_ASSETS . 'js/excanvas.js'); ?>
@@ -533,9 +535,11 @@ if ($hasTemplate) {
 
 
     <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.js"></script>
+    <?php $loadImageVertical = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/load-image.min.js') ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.<?php echo $loadImageVertical ?>.js"></script>
     <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.js"></script>
+    <?php $iframeTransVertical = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.iframe-transport.js') ?>
+    <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.<?php echo $iframeTransVertical ?>.js"></script>
     <!-- The basic File Upload plugin -->
     <?php $jQuerryFileUpload = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload.js'); ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.<?php echo $jQuerryFileUpload ?>.js"></script>
@@ -559,7 +563,8 @@ if ($hasTemplate) {
     <script src='plugins/fullcalendar-2.3.1/lib/moment.min.<?php echo $momentMin1 ?>.js'></script>
     <?php $fullCalendarMin = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/fullcalendar.min.js'); ?>
     <script src='plugins/fullcalendar-2.3.1/fullcalendar.min.<?php echo $fullCalendarMin ?>.js'></script>
-    <script src='plugins/fullcalendar-2.3.1/lang-all.js'></script>
+    <?php $langAll = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/lang-all.js') ?>
+    <script src='plugins/fullcalendar-2.3.1/lang-all.<?php echo $langAll ?>.js'></script>
     <?php $ckeditor = filemtime(PATH_ASSETS . 'plugins/ckeditor/ckeditor.js'); ?>
     <script type="text/javascript" src='plugins/ckeditor/ckeditor.<?php echo $ckeditor ?>.js'></script>
     <?php $jQuerry1 = filemtime(PATH_ASSETS . 'plugins/ckeditor/adapters/jquery.js'); ?>
@@ -567,7 +572,8 @@ if ($hasTemplate) {
     <?php $maskedInputMin = filemtime(PATH_ASSETS . 'js/jquery.maskedinput.min.js'); ?>
     <script type="text/javascript" src="js/jquery.maskedinput.min.<?php echo $maskedInputMin ?>.js"></script>
 
-    <script type="text/javascript" src="js/maskchamps.js"></script>
+    <?php $maskChamps = filemtime(PATH_ASSETS . 'js/maskchamps.js') ?>
+    <script type="text/javascript" src="js/maskchamps.<?php echo $maskChamps ?>.js"></script>
 
     <style type="text/css">
         .autocomplete-suggestions {

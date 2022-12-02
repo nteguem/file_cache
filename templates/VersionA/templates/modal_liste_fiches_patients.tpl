@@ -3,10 +3,9 @@
      z-index: 9999 !important;
 }
 </style>
-<?php $customCarousel_1 = filemtime(PATH_ASSETS.'js/customCarousel.js') ?>
 <script src="js/customCarousel.{$customCarousel_1}.js"></script>
-<link rel="stylesheet" href="css/customCarousel.css">
-<link rel="stylesheet" href="css/modal-ts.css">
+<link rel="stylesheet" href="css/customCarousel.{$cssCustomCarouselCss}.css">
+<link rel="stylesheet" href="css/modal-ts.{$cssModalTsCss}.css">
 
 <div style="overflow-x: hidden;overflow-y: auto;" class="modal fade in" id="modalListeFichePatient" tabindex="-1"
     role="dialog" aria-labelledby="LabelmodalLIsteFichePatient" aria-hidden="false" data-keyboard="false"

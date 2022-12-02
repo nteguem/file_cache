@@ -30,39 +30,39 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="../css/font-entypo.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap.min.{$cssBootstrapMin892}.css" rel="stylesheet" type="text/css">
+    <link href="../css/font-awesome.min.{$cssFontAwesomeMin342}.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="../css/font-awesome-ie7.min.{$cssFontAwesomei732}.css"><![endif]-->
+    <link href="../css/font-entypo.{$cssFontEntypo}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="../css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="../css/fonts.{$cssFont7}.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="../plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-  <link href="../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJquery765}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhoto876}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/isotope/css/isotope.{$pluginsIsotope90}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/pnotify/css/jquery.pnotify.{$pluginspnotify45}.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../plugins/google-code-prettify/prettify.{$pluginsGoogleCodePrettify}.css" rel="stylesheet" type="text/css">
    
          
-    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="../plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMcustomScrollbar23}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInput5}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-switch/bootstrap-switch.{$pluginsBootstrapSwitch12}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/daterangepicker/daterangepicker-bs3.{$pluginsDaterange34}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBoottsrap67}.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/colorpicker/css/colorpicker.{$pluginscolorpicker90}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Theme CSS -->
-    <link href="../css/theme.min.css" rel="stylesheet" type="text/css">
-    <!--[if IE]> <link href="../css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="../css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+    <link href="../css/theme.min.{$cssTheme54}.css" rel="stylesheet" type="text/css">
+    <!--[if IE]> <link href="../css/ie.{$cssIe0}.css" rel="stylesheet" > <![endif]-->
+    <link href="../css/chrome.{$cssChrome23}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
         
     <!-- Responsive CSS -->
-          <link href="../css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+          <link href="../css/theme-responsive.min.{$cssThemeResponsive9}.css" rel="stylesheet" type="text/css">
 
     
  
@@ -73,7 +73,7 @@
         
     
     <!-- Custom CSS -->
-    <link href="../custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="../custom/custom.{$custom53}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== --> 
@@ -90,10 +90,10 @@
     <script type="text/javascript" src="../js/caroufredsel.{$caroufredsel2}.js"></script>
     <script type="text/javascript" src="../js/plugins.{$plugin2}.js"></script>
 
-    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$breakpoints2}.js"></script>
-    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$dataTables2}.js"></script>
-    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto2}.js"></script>
-  <link href="../css/jquery-clockpicker.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="../plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
+    <script type="text/javascript" src="../plugins/dataTables/jquery.dataTables.min.{$dataTables}.js"></script>
+    <script type="text/javascript" src="../plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto}.js"></script>
+  <link href="../css/jquery-clockpicker.min.{$cssJqueryClocpicker12}.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCustomScrollbar2}.js"></script>
     <script type="text/javascript" src="../plugins/tagsInput/jquery.tagsinput.min.{$tagsInput2}.js"></script>

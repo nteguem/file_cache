@@ -1,24 +1,15 @@
 <!-- agenda v4-->
-<?php $contextDispoBox = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextDispoBox ?>.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$jConAgandaDispoBox}.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.{$treeAgandaDispoBox}.css">
 
-  <?php $treeViewDispoBox = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewDispoBox ?>.css">
-
-
-  <?php $datepicker = filemtime(PATH_ASSETS . 'js/datepicker-fr.js') ?>
   <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
   
-  <?php $time = filemtime(PATH_ASSETS . 'js/liste_e7.js?{$stime}') ?>
   <script type="text/javascript" src="js/liste_e7.{$time}.js?{$stime}"></script>
 
-  <?php $planning = filemtime(PATH_ASSETS . 'js/js_planning_dispo.js?{$stime}') ?>
   <script type="text/javascript" src="js/js_planning_dispo.{$planning}.js?{$stime}"></script>
 
-  <?php $contextMenu = filemtime(PATH_ASSETS . 'js/jquery.contextmenu.js') ?>
   <script type="text/javascript" src="js/jquery.contextmenu.{$contextMenu}.js"></script>
 
-  <?php $treeview = filemtime(PATH_ASSETS . 'js/bootstrap-treeview.js') ?>
   <script type="text/javascript" src="js/bootstrap-treeview.{$treeview}.js"></script>
 
 {literal}
@@ -2709,7 +2700,7 @@ div.datepicker table td {
                                       $("#tel_mobile_patient_prendre_rdv_calendar").intlTelInput({
                                           preferredCountries:["fr", "be", "ch"],
                                           initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                          utilsScript: "js/utils.js"
+                                          utilsScript: "js/utils.{$utilsJs}.js"
                                       });
                                       $("#tel_mobile_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
                                       var countryDataInit = $("#tel_mobile_patient_prendre_rdv_calendar_indicatif").intlTelInput("getSelectedCountryData");
@@ -2741,7 +2732,7 @@ div.datepicker table td {
                                       $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput({
                                           preferredCountries:["fr", "be", "ch"],
                                           initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                          utilsScript: "js/utils.js"
+                                          utilsScript: "js/utils.{$utilsJs}.js"
                                       });
                                       $("#tel_fixe_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
                                       var countryDataInit = $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput("getSelectedCountryData");

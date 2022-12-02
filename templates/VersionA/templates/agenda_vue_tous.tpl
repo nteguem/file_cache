@@ -1,25 +1,24 @@
 <!-- Fullcalendar v5 -->
-<link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.css">
+<link rel="stylesheet" href="plugins/fullcalendar-v5/main.min.{$fullMinAgandaVueTous}.css">
 <script src="plugins/fullcalendar-v5/main.min.{$main}.js"></script>
-
 <script src="plugins/fullcalendar-v5/locales/fr.{$fullCalendar}.js"></script>
 
 <!-- jQuery contextmenu (rightclick) -->
-<link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.css">
-<script src="plugins/jquery-contextmenu/jquery.contextMenu.min.{pluginContextMenu}.js"></script>
-<script src="plugins/jquery-contextmenu/jquery.ui.position.{pluginContextMenuPosition}.js"></script>
+<link rel="stylesheet" href="plugins/jquery-contextmenu/jquery.contextMenu.min.{$xtAgandaVueTous}.css">
+<script src="plugins/jquery-contextmenu/jquery.contextMenu.min.{$pluginContextMenu}.js"></script>
+<script src="plugins/jquery-contextmenu/jquery.ui.position.{$pluginContextMenuPosition}.js"></script>
 
 <!-- Pikaday -->
-<link href="plugins/pikaday1.8.2/pikaday.css" rel="stylesheet">
+<link href="plugins/pikaday1.8.2/pikaday.{$pikaAgandaVueTous}.css" rel="stylesheet">
 <script src="plugins/pikaday1.8.2/pikaday.min.{$pikaday}.js"></script>
 
 <!-- script chelou de Guy -->
 <script type="text/javascript" src="js/js_planning_dispo.{$planningDispo}.js"></script>
 
 <!-- Calendar -->
-<link rel="stylesheet" href="css/calendar.css">
+<link rel="stylesheet" href="css/calendar.{$calAgandaVueTous}.css">
 <script type="text/javascript" src="js/calendar.{$calendar}.js"></script>
-<link href="css/font-icomoon.css" rel="stylesheet" type="text/css">
+<link href="css/font-icomoon.{$iComoonAgandaVueTous}.css" rel="stylesheet" type="text/css">
 
 <div id="calendarVueTous" style="display:flex;">
     <div class="menuBar">

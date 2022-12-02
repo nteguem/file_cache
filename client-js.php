@@ -109,7 +109,8 @@
                                     var idc = "identifiant_structure";
                                     var alx_v = "1";
                                     </script>'); ?><br/>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                    <?php $clientJs = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                                <?php echo htmlentities('<script type="text/javascript" src="/js/client.<?php echo $clientJs ?>.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -117,7 +118,8 @@
                                 var idc = "identifiant_structure";
                                 var alx_v = "1";
                             </script>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
+                            <?php $clientJs2 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                            <script type="text/javascript" src="/js/client.<?php echo $clientJs2 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -139,7 +141,8 @@
                                     var alx_v = "2";
                                     var alx_ort = "h";
                                     </script>'); ?><br/>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                    <?php $clientJs8 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                                <?php echo htmlentities('<script type="text/javascript" src="/js/client.<?php echo $clientJs8 ?>.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -148,7 +151,8 @@
                                 var alx_v = "2";
                                 var alx_ort = "h";
                             </script>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
+                            <?php $clientJs3 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                            <script type="text/javascript" src="/js/client.<?php echo $clientJs3 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -170,7 +174,8 @@
                                     var alx_v = "2";
                                     var alx_ort = "v";
                                     </script>'); ?><br/>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                    <?php $clientJs9 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                                <?php echo htmlentities('<script type="text/javascript" src="/js/client.<?php echo $clientJs9 ?>.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -179,7 +184,8 @@
                                 var alx_v = "2";
                                 var alx_ort = "v";
                             </script>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
+                            <?php $clientJs4 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                            <script type="text/javascript" src="/js/client.<?php echo $clientJs4 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -202,7 +208,8 @@
                                     var alx_v = "2";
                                     var alx_ort = "h";
                                     </script>'); ?><br/>   
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                    <?php $clientJs10 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                                <?php echo htmlentities('<script type="text/javascript" src="/js/client.<?php echo $clientJs10?>.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -212,7 +219,8 @@
                                 var alx_v = "2";
                                 var alx_ort = "h";
                             </script>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
+                            <?php $clientJs5 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                            <script type="text/javascript" src="/js/client.<?php echo $clientJs5 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -234,7 +242,8 @@
                                     var alx_v = "3";
                                     var alx_ort = "h";
                                     </script>'); ?><br/>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                    <?php $clientJs11 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                                <?php echo htmlentities('<script type="text/javascript" src="/js/client.<?php echo $clientJs11 ?>.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -243,7 +252,8 @@
                                 var alx_v = "3";
                                 var alx_ort = "h";
                             </script>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
+                            <?php $clientJs6 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                            <script type="text/javascript" src="/js/client.<?php echo $clientJs6 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>
@@ -265,7 +275,8 @@
                                     var alx_v = "3";
                                     var alx_ort = "v";
                                     </script>'); ?><br/>
-                                <?php echo htmlentities('<script type="text/javascript" src="https://'.$_SERVER["SERVER_NAME"].'/js/client.js"></script> '); ?><br/>
+                                    <?php $clientJs12 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                                <?php echo htmlentities('<script type="text/javascript" src="/js/client.<?php echo $clientJs12 ?>.js"></script> '); ?><br/>
                                 <?php echo htmlentities('<noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>'); ?>
                             </code>
 
@@ -274,7 +285,8 @@
                                 var alx_v = "3";
                                 var alx_ort = "v";
                             </script>
-                            <script type="text/javascript" src="https://<?php echo $_SERVER["SERVER_NAME"]; ?>/js/client.js"></script>
+                            <?php $clientJs7 = filemtime(PATH_ASSETS . '/js/client.js') ?>
+                            <script type="text/javascript" src="/js/client.<?php echo $clientJs7 ?>.js"></script>
                             <noscript>Le JavaScript est désactivé sur votre navigateur !</noscript>
                         </div>
                     </div>

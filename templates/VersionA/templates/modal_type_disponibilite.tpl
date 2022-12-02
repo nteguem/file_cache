@@ -30,54 +30,56 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="css/bootstrap.min.{$cssBoostrapMinCss}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$cssFontAwesomeMinCss}.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]>
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+    <link href="css/font-entypo.{$cssFontEntypoCss}.css" rel="stylesheet" type="text/css">  
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
-    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/fonts.{cssFontCss}.css"  rel="stylesheet" type="text/css">
+    <link href="css/datepicker.{$cssDatepickerCss}.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
-   
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$pluginsJqueryUiJquery}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$pluginsPrettyPhotoCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$pluginsIsotopeCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$plugingsPnotifyCss}.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="plugins/google-code-prettify/prettify.{$pluginsGoogleCodeCss}.css" rel="stylesheet" type="text/css"> 
+  
          
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="css/jquery-clockpicker.min.css" rel="stylesheet" type="text/css">
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$pluginsMCustomScrollbarCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$pluginsTagsInputCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$pluginsBoostrapSwitchCss}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$pluginsDaterangepickerCss}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBoostrapTimepickerCss}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$pluginsColorpickerCss}.css" rel="stylesheet" type="text/css">              
+
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$pluginsBoostrapTimepickerCss}.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-clockpicker.min.{$cssJqueryClockpicker}.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/theme.css" rel="stylesheet" type="text/css">
-    <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/theme.{$cssThemeCss}.css" rel="stylesheet" type="text/css">
+    <!--[if IE]> <link href="css/ie.{$cssIe}.css" rel="stylesheet" > <![endif]-->
+    <link href="css/chrome.{$cssChromeCss}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->     
 
 
         
     <!-- Responsive CSS -->
-          <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+          <link href="css/theme-responsive.min.{$CssThemeResponsiveMin279}.css" rel="stylesheet" type="text/css"> 
 
     
  
  
     <!-- for specific page in style css -->
-  <link href="css/jquery-ui.structure.min.css" rel="stylesheet" type="text/css">
-  <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
-  <link href="css/jquery-clockpicker.min.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery-ui.structure.min.{$cssJqueryUiStructureCss}.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery-ui.theme.min.{$cssJqueryUiThemeCss}.css" rel="stylesheet" type="text/css">
+  <link href="css/jquery-clockpicker.min.{$cssJqueryClockpickerminCss}.css" rel="stylesheet" type="text/css">
     <!-- for specific page responsive in style css -->
         
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+   <link href="custom/custom.{$cssCustomCss}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== --> 
@@ -85,7 +87,7 @@
   
     <script type="text/javascript" src="js/jquery.{$jQuerry}.js"></script> 
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/excanvas.js"></script>      
+      <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>      
     <![endif]-->
 
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrapMin}.js"></script> 
@@ -139,7 +141,7 @@
 
     <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetectMin}.js"></script> 
 
-    <script type="text/javascript" src="js/mobile-detect-modernizr.mobileDetectModernizr.js"></script> 
+    <script type="text/javascript" src="js/mobile-detect-modernizr.mobileDetectModernizr.{$mobileDetectModernizrr}.js"></script> 
 
     <script type="text/javascript" src="js/jquery.maskedinput.min.{$jQuerryMaskedInputMin}.js"></script>
 
@@ -149,8 +151,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/html5shiv.js"></script>
-      <script type="text/javascript" src="js/respond.min.js"></script>     
+      <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+      <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>     
     <![endif]-->
 
 {literal}

@@ -1,6 +1,8 @@
 
 
 <!-- Yannick test 2-->
+  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtAgandaDispoV3}.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.{$treeAgandaDispoV3}.css">
 
   <script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 

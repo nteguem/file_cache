@@ -1,8 +1,5 @@
-<?php $contextdispoTrancheCss = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispoTrancheCss ?>.css">
-
-<?php $tagsTranchesCss = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
-<link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsTranchesCss ?>.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtAgandaTrancheDispo}.css">
+<link href="plugins/tagsInput/jquery.tagsinput.{$tagsAgandaTrancheDispo}.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript" src="js/liste_dispo.{$listeDispo}.js?v={$numero_version_alaxione}"></script>
 

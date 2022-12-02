@@ -30,43 +30,45 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.{$booTModalWidgBack}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$aWModalWidgBack}.css" rel="stylesheet" type="text/css">
+
+    
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="css/font-entypo.{$entModalWidgBack}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
-               
-    <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-  <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
-   
-         
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <link href="css/fonts.{$ftModalWidgBack}.css"  rel="stylesheet" type="text/css">
 
+    <!-- Plugin CSS -->
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$cmModalWidgBack}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$preModalWidgBack}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$icIModalWidgBack}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pnModalWidgBack}.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="plugins/google-code-prettify/prettify.{$pretModalWidgBack}.css" rel="stylesheet" type="text/css"> 
+
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mCModalWidgBack}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$tagsModalWidgBack}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$sWModalWidgBack}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$bs3ModalWidgBack}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$tmModalWidgBack}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$clorModalWidgBack}.css" rel="stylesheet" type="text/css">            
+
+  
   <!-- Specific CSS -->
 
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$bddModalWidgBack}.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.min.{$thModalWidgBack}.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/chrome.{$chrModalWidgBack}.css" rel="stylesheet" type="text/chrome">
+<!-- chrome only css -->    
 
 
         
     <!-- Responsive CSS -->
-          <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
-
+    <link href="css/theme-responsive.min.{$respModalWidgBack}.css" rel="stylesheet" type="text/css">
     
  
  
@@ -74,10 +76,10 @@
         
     <!-- for specific page responsive in style css -->
         
-    <link type="text/css" href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="all" />
+    <link type="text/css" href="css/jquery.mCustomScrollbar.min.{$minMcModalWidgBack}.css" rel="stylesheet" media="all" />
 
     <!-- Custom CSS -->
-    <link href="custom/custom_widget.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom_widget.{$ccModalWidgBack}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== --> 

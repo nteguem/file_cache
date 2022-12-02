@@ -1,11 +1,6 @@
 <!-- agenda v4-->
-
-<?php $contextdispoVertical = filemtime(PATH_ASSETS.'css/jquery.contextmenu.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.<?php echo $contextdispoVertical ?>.css">
-
-  <?php $treeViewdispoVertical = filemtime(PATH_ASSETS.'css/bootstrap-treeview.css') ?>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.<?php echo $treeViewdispoVertical ?>.css">
-  
+<link rel="stylesheet" type="text/css" href="css/jquery.contextmenu.{$xtAgandaDispoVertical}.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.{$treeAgandaDispoVertical}.css">
 
 <script type="text/javascript" src="js/datepicker-fr.{$datepickerFr}.js"></script>
 
@@ -1931,7 +1926,7 @@
                                                                     $("#tel_mobile_patient_prendre_rdv_calendar").intlTelInput({
                                                                         preferredCountries: ["fr", "be", "ch"],
                                                                         initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                        utilsScript: "js/utils.js"
+                                                                        utilsScript: "js/utils.{$utilsJs}.js"
                                                                     });
                                                                     $("#tel_mobile_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
                                                                     var countryDataInit = $("#tel_mobile_patient_prendre_rdv_calendar_indicatif").intlTelInput("getSelectedCountryData");
@@ -1966,7 +1961,7 @@
                                                                     $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput({
                                                                         preferredCountries: ["fr", "be", "ch"],
                                                                         initialCountry: "{/literal}{$indicatif_structure}{literal}",
-                                                                        utilsScript: "js/utils.js"
+                                                                        utilsScript: "js/utils.{$utilsJs}.js"
                                                                     });
                                                                     $("#tel_fixe_patient_prendre_rdv_calendar").inputmask("99 99 99 99 99");
                                                                     var countryDataInit = $("#tel_fixe_patient_prendre_rdv_calendar").intlTelInput("getSelectedCountryData");

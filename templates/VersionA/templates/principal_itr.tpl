@@ -30,44 +30,45 @@
     <!-- CSS -->
        
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.{$booTPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="css/font-awesome.min.{$aWPrincipalItr}.css" rel="stylesheet" type="text/css">
+
     <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
-    <link href="css/font-entypo.css" rel="stylesheet" type="text/css">    
+    <link href="css/font-entypo.{$entPrincipalItr}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css"  rel="stylesheet" type="text/css">
+    <link href="css/fonts.{$ftPrincipalItr}.css"  rel="stylesheet" type="text/css">
                
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css"> 
-   
-         
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">    
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">            
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.{$cmPrincipalItr}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.{$prePrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/isotope/css/isotope.{$icIPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/pnotify/css/jquery.pnotify.{$pnPrincipalItr}.css" media="screen" rel="stylesheet" type="text/css">    
+    <link href="plugins/google-code-prettify/prettify.{$pretPrincipalItr}.css" rel="stylesheet" type="text/css"> 
+
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$mCPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/tagsInput/jquery.tagsinput.{$tagsPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-switch/bootstrap-switch.{$sWPrincipalItr}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/daterangepicker/daterangepicker-bs3.{$bs3PrincipalItr}.css" rel="stylesheet" type="text/css">    
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$tmPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$clorPrincipalItr}.css" rel="stylesheet" type="text/css">          
+
     <!-- Specific CSS -->
-    <link href="plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">      
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">  
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.css' rel='stylesheet' />
-    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.css' rel='stylesheet' media='print' />  
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$bddPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/jquery.dataTables.min.{$dmdPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload.{$fileUpPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.{$fileUiPrincipalItr}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.{$wyPrincipalItr}.css" rel="stylesheet" type="text/css">  
+    <link href='plugins/fullcalendar-2.3.1/fullcalendar.{$fllPrincipalItr}.css' rel='stylesheet' />
+    <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.{$fllPrintPrincipalItr}.css' rel='stylesheet' media='print' />  
     <!-- Theme CSS -->
-    <link href="css/theme.css" rel="stylesheet" type="text/css">
+     <link href="css/theme.{$thPrincipalItr}.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
+    <link href="css/chrome.{$chrPrincipalItr}.css" rel="stylesheet" type="text/chrome">
 
   
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css"> 
+    <link href="css/theme-responsive.min.{$respPrincipalItr}.css" rel="stylesheet" type="text/css">
 
 	
  
@@ -78,132 +79,91 @@
         
     
     <!-- Custom CSS -->
-    <link href="custom/custom.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom.{$ccPrincipalItr}.css" rel="stylesheet" type="text/css">
+
 
 
 {literal}
     <!-- Head SCRIPTS -->
-    <?php $modernizr = filemtime(PATH_ASSETS . 'js/modernizr.js') ?>
     <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script>
-    <?php $mobileDetect = filemtime(PATH_ASSETS . 'js/mobile-detect.min.js') ?>
     <script type="text/javascript" src="js/mobile-detect.min.{$mobileDetect=.js"></script>
-    <?php $mobileDetectModernizr = filemtime(PATH_ASSETS . 'js/mobile-detect-modernizr.js') ?>
     <script type="text/javascript" src="js/mobile-detect-modernizr.{$mobileDetectModernizr}.js"></script> 
  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/html5shiv.js"></script>
-      <script type="text/javascript" src="js/respond.min.js"></script>     
+      <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+      <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>     
     <![endif]-->
     
     
     <!-- Javascript =============================================== --> 
     <!-- Placed at the end of the document so the pages load faster --> 
-    <?php $fullCalendar = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/lib/jquery.min.js') ?>
     <script src='plugins/fullcalendar-2.3.1/lib/jquery.min.{$fullCalendar}.js'></script>
 
     <!--[if lt IE 9]>
-      <script type="text/javascript" src="js/excanvas.js"></script>      
+      <script type="text/javascript" src="js/excanvas.{$exCanva}.js"></script>      
     <![endif]-->
-    <?php $bootstrap = filemtime(PATH_ASSETS . 'js/bootstrap.min.js') ?>
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrap}.js"></script>
-    <?php $jqueryUi = filemtime(PATH_ASSETS . 'plugins/jquery-ui/jquery-ui.custom.min.js') ?>
     <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min.{$jqueryUi}.js'></script>
-    <?php $jqueryUiTouch = filemtime(PATH_ASSETS . 'plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') ?>
     <script type="text/javascript" src="plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.{$jqueryUiTouch}.js"></script>
 
-    <?php $caroufredsel = filemtime(PATH_ASSETS . 'js/caroufredsel.js') ?>
     <script type="text/javascript" src="js/caroufredsel.{$caroufredsel}.js"></script> 
-    <?php $Plugin = filemtime(PATH_ASSETS . 'js/plugins.js') ?>
     <script type="text/javascript" src="js/plugins.{$plugin}.js"></script>
-    <?php $framwork = filemtime(PATH_ASSETS . 'js/framwork_js.js') ?>
     <script type="text/javascript" src="js/framwork_js.{$framwork}.js"></script>
 
     <!-- Script pour l'auto-completion -->
-    <?php $autocomplete = filemtime(PATH_ASSETS . 'js/jquery.autocomplete.min.js') ?>
     <script type="text/javascript" src="js/jquery.autocomplete.min.{$autocomplete}.js"></script>
-    <?php $breakpoints = filemtime(PATH_ASSETS . 'plugins/breakpoints/breakpoints.js') ?>
     <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
-    <?php $dataTables = filemtime(PATH_ASSETS . 'plugins/dataTables/jquery.dataTables.min.js') ?>
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTables}.js"></script>
-    <?php $prettyPhoto = filemtime(PATH_ASSETS . 'plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.js') ?>
     <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto}.js"></script> 
 
-    <?php $mCustomScrollbar = filemtime(PATH_ASSETS . 'plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js') ?>
     <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCustomScrollbar}.js"></script>
-    <?php $tagsInput = filemtime(PATH_ASSETS . 'plugins/tagsInput/jquery.tagsinput.min.js') ?>
     <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$tagsInput}.js"></script>
-    <?php $switch = filemtime(PATH_ASSETS . 'plugins/bootstrap-switch/bootstrap-switch.min.js') ?>
     <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$switch}.js"></script>
-    <?php $blockUI = filemtime(PATH_ASSETS . 'plugins/blockUI/jquery.blockUI.js') ?>
     <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$blockUI}.js"></script>
-    <?php $pnotify = filemtime(PATH_ASSETS . 'plugins/pnotify/js/jquery.pnotify.min.js') ?>
     <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pnotify}.js"></script>
 
 
-    <?php $theme = filemtime(PATH_ASSETS . 'js/theme.js') ?>
     <script type="text/javascript" src="js/theme.{$theme}.js"></script>
-    <?php $custom = filemtime(PATH_ASSETS . 'custom/custom.js') ?>
     <script type="text/javascript" src="custom/custom.{$custom}.js"></script>
      
     <!-- Specific Page Scripts Put Here -->
-    <?php $dataTables2 = filemtime(PATH_ASSETS . 'plugins/dataTables/jquery.dataTables.min.js') ?>
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTables2}.js"></script>
-    <?php $dataTables3 = filemtime(PATH_ASSETS . 'plugins/dataTables/dataTables.bootstrap.js') ?>
     <script type="text/javascript" src="plugins/dataTables/dataTables.bootstrap.{$dataTables3}.js"></script>
-    <?php $datepicker = filemtime(PATH_ASSETS . 'js/datepicker-fr.js') ?>
     <script type="text/javascript" src="js/datepicker-fr.{$datepicker}.js"></script>
 
-    <?php $timepicker = filemtime(PATH_ASSETS . 'plugins/bootstrap-timepicker/bootstrap-timepicker.min.js') ?>
     <script type="text/javascript" src='plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timepicker}.js'></script>
-    <?php $moment = filemtime(PATH_ASSETS . 'plugins/daterangepicker/moment.min.js') ?>
     <script type="text/javascript" src='plugins/daterangepicker/moment.min.{$moment}.js'></script>
-    <?php $daterangepicker = filemtime(PATH_ASSETS . 'plugins/daterangepicker/daterangepicker.js') ?>
     <script type="text/javascript" src='plugins/daterangepicker/daterangepicker.{$daterangepicker}.js'></script>
-    <?php $colorpicker = filemtime(PATH_ASSETS . 'plugins/colorpicker/colorpicker.js') ?>
     <script type="text/javascript" src='plugins/colorpicker/colorpicker.{$colorpicker}.js'></script>
 
 
     <!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-    <?php $loadImg = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/load-image.min.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/load-image.min.{$loadImg}.js"></script>
     <!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-    <?php $transport = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.iframe-transport.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.iframe-transport.{$transport}.js"></script>
     <!-- The basic File Upload plugin -->
-    <?php $fileupload = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload.{$fileupload}.js"></script>
     <!-- The File Upload processing plugin -->
-    <?php $process = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-process.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-process.{$process}.js"></script>
     <!-- The File Upload image preview & resize plugin -->
-    <?php $image = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-image.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-image.{$image}.js"></script>
     <!-- The File Upload audio preview plugin -->
-    <?php $audio = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-audio.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-audio.{$audio}.js"></script>
     <!-- The File Upload validation plugin -->
-    <?php $validate = filemtime(PATH_ASSETS . 'plugins/jquery-file-upload/js/jquery.fileupload-validate.js') ?>
     <script type="text/javascript" src="plugins/jquery-file-upload/js/jquery.fileupload-validate.{$validate}.js"></script>
 
 
 
     <!-- Specific Page Scripts END -->
-    <?php $moment2 = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/lib/moment.min.js') ?>
     <script src='plugins/fullcalendar-2.3.1/lib/moment.min.{$moment2}.js'></script>
     
-    <?php $fullCalendar = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/fullcalendar.min.js') ?>
     <script src='plugins/fullcalendar-2.3.1/fullcalendar.min.{$fullCalendar}.js'></script>
-    <?php $lang = filemtime(PATH_ASSETS . 'plugins/fullcalendar-2.3.1/lang-all.js') ?>
     <script src='plugins/fullcalendar-2.3.1/lang-all.{$lang}.js'></script>
-    <?php $ckeditor = filemtime(PATH_ASSETS . 'plugins/ckeditor/ckeditor.js') ?>
     <script type="text/javascript" src='plugins/ckeditor/ckeditor.{$ckeditor}.js'></script>
-    <?php $adapters = filemtime(PATH_ASSETS . 'plugins/ckeditor/adapters/jquery.js') ?>
     <script type="text/javascript" src='plugins/ckeditor/adapters/jquery.{$adapters}.js'></script>
-    <?php $maskedinput = filemtime(PATH_ASSETS . 'js/jquery.maskedinput.min.js') ?>
     <script type="text/javascript" src="js/jquery.maskedinput.min.{$maskedinput}.js"></script>
 
-    <?php $maskchamps = filemtime(PATH_ASSETS . 'js/maskchamps.js') ?>
     <script type="text/javascript" src="js/maskchamps.{$maskchamps}.js"></script>
 
     <script type="text/javascript">

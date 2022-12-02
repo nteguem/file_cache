@@ -1,4 +1,3 @@
-<?php $loader = filemtime(PATH_ASSETS . 'https://www.gstatic.com/charts/loader.js') ?>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <div class="vd_title-section clearfix">
     <div class="vd_panel-header">
@@ -36,7 +35,6 @@
                             </div>
                         </div>
                         <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-                        <?php $select2 = filemtime(PATH_ASSETS . 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js') ?>
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
                         <label  class="col-sm-2 control-label">Choix des  stats</label>
                         <div class="col-sm-2 controls">
