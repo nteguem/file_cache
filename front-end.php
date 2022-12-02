@@ -187,7 +187,8 @@
 	<link href="../../plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prettyPhoto ?>.css" rel="stylesheet" type="text/css">
     <?php $steelSheet_2 = filemtime(PATH_ASSETS.'../../plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css'); ?>
 	<link href="../../plugins/isotope/css/isotope.<?php echo $steelSheet_2 ?>.css" rel="stylesheet" type="text/css">
-    <link href="../../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">    
+    <?php $pnotify66 = filemtime(PATH_ASSETS.'../../plugins/pnotify/css/jquery.pnotify.css" rel="stylesheet" type="text/css'); ?>
+	<link href="../../plugins/pnotify/css/jquery.pnotify.<?php echo $pnotify66 ?>.css" media="screen" rel="stylesheet" type="text/css">    
 	<?php $pnotify_3 = filemtime(PATH_ASSETS.'../../plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet'); ?>
 	<link href="../../plugins/google-code-prettify/prettify.<?php echo $pnotify_3 ?>.css" rel="stylesheet" type="text/css"> 
    
