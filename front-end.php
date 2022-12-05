@@ -660,7 +660,8 @@
 
 <!-- Javascript =============================================== --> 
 <!-- Placed at the end of the document so the pages load faster --> 
-<script type="text/javascript" src="../../js/jquery.js"></script> 
+<?php $jquery12 = filemtime(PATH_ASSETS.'../../js/jquery.js'); ?>
+<script type="text/javascript" src="../../js/jquery.<?php echo $jquery12 ?>.js"></script> 
 <!--[if lt IE 9]>
   <script type="text/javascript" src="js/excanvas.js"></script>      
 <![endif]-->

@@ -48,7 +48,7 @@
     <link href="../plugins/prettyPhoto-plugin/css/prettyPhoto.{$prettyphotoM}.css" rel="stylesheet" type="text/css">
     <link href="../plugins/isotope/css/isotope.{$isotopeMM}.css" rel="stylesheet" type="text/css">
     <link href="../plugins/pnotify/css/jquery.pnotify.{$pnotifyMM}.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="../plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <link href="../plugins/google-code-prettify/prettify.{$prettify5}.css" rel="stylesheet" type="text/css">
 
 
     <link href="../plugins/mCustomScrollbar/jquery.mCustomScrollbar.{$customscrollbarMM}.css" rel="stylesheet" type="text/css">

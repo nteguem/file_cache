@@ -33,7 +33,7 @@
     
     <link href="css/font-awesome.min.{$awesomeMin}.css" rel="stylesheet" type="text/css">
     <!--[if IE 7]>
-    <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.{$awesomeie7}.css"><![endif]-->
     
     <link href="css/font-entypo.{$entypo_4}.css" rel="stylesheet" type="text/css">
 
@@ -59,41 +59,41 @@
     <link href="plugins/bootstrap-switch/bootstrap-switch.{$boostrapSwitch_3}.css" rel="stylesheet" type="text/css">
     
     <link href="plugins/daterangepicker/daterangepicker-bs3.{$daterangepicker_1}.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.{$timepicker12}.css" rel="stylesheet" type="text/css">
+    <link href="plugins/colorpicker/css/colorpicker.{$colorpicker12}.css" rel="stylesheet" type="text/css">
 
     <!-- Specific CSS -->
 
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="plugins/dataTables/css/dataTables.bootstrap.{$datatables12}.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/theme.min.{$theme12}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
-    <link href="css/ie.css" rel="stylesheet"> <![endif]-->
-    <link href="css/chrome.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
+    <link href="css/ie.{$ieMM}.css" rel="stylesheet"> <![endif]-->
+    <link href="css/chrome.{$chrome12}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
     <!-- Responsive CSS -->
-    <link href="css/theme-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="css/theme-responsive.min.{$responsive12}.css" rel="stylesheet" type="text/css">
 
 
     <!-- for specific page in style css -->
 
     <!-- for specific page responsive in style css -->
 
-    <link type="text/css" href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="all"/>
+    <link type="text/css" href="css/jquery.mCustomScrollbar.min.{$mCustomScrollbar12}.css" rel="stylesheet" media="all"/>
 
-    <link rel="stylesheet" href="css/intlTelInput.css">
-    <!-- <link rel="stylesheet" href="css/mobiscroll.css"> -->
+    <link rel="stylesheet" href="css/intlTelInput.{$Intltelinput12}.css">
+    <!-- <link rel="stylesheet" href="css/mobiscroll.{$mobilscroll12}.css"> -->
     <!-- Custom CSS -->
-    <link href="custom/custom_widget.css" rel="stylesheet" type="text/css">
+    <link href="custom/custom_widget.{$customWidget12}.css" rel="stylesheet" type="text/css">
 
 
     <!-- Javascript =============================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="js/jquery.{$jquery}.js"></script>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/excanvas.js"></script>
+    <script type="text/javascript" src="js/excanvas.{$excanvas12}.js"></script>
     <![endif]-->
     <script type="text/javascript" src="js/bootstrap.min.{$bootstrap}.js"></script>
     <script type="text/javascript" src='plugins/jquery-ui/jquery-ui.custom.min{$jqueryUiCustom}.js'></script>
