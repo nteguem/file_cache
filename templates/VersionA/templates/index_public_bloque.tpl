@@ -91,13 +91,13 @@
     <script type="text/javascript" src="js/caroufredsel.{$caroufredsel}.js"></script> 
     <script type="text/javascript" src="js/plugins.{$plugins}.js"></script>
 
-    <script type="text/javascript" src="plugins/breakpoints/breakpoints.{breakpoints}.js"></script>
+    <script type="text/javascript" src="plugins/breakpoints/breakpoints.{$breakpoints}.js"></script>
     <script type="text/javascript" src="plugins/dataTables/jquery.dataTables.min.{$dataTables}.js"></script>
     <script type="text/javascript" src="plugins/prettyPhoto-plugin/js/jquery.prettyPhoto.{$prettyPhoto}.js"></script> 
 
     <script type="text/javascript" src="plugins/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.{$mCustomScrollbar}.js"></script>
-    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{tagsInput}.js"></script>
-    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{boostrapSwitch}.js"></script>
+    <script type="text/javascript" src="plugins/tagsInput/jquery.tagsinput.min.{$tagsInput}.js"></script>
+    <script type="text/javascript" src="plugins/bootstrap-switch/bootstrap-switch.min.{$boostrapSwitch}.js"></script>
     <script type="text/javascript" src="plugins/blockUI/jquery.blockUI.{$blockUi}.js"></script>
     <script type="text/javascript" src="plugins/pnotify/js/jquery.pnotify.min.{$pnotify}.js"></script>
 
@@ -106,10 +106,10 @@
      
     <!-- Specific Page Scripts Put Here -->
 
-    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{bootstrapWizard}.js'></script>
+    <script type="text/javascript" src='plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.{$bootstrapWizard}.js'></script>
 
 
-    <script type="text/javascript" src="js/datepicker-fr.{datePickerFr}.js"></script>
+    <script type="text/javascript" src="js/datepicker-fr.{$datePickerFr}.js"></script>
 
     <!-- Head SCRIPTS -->
     <script type="text/javascript" src="js/modernizr.{$modernizr}.js"></script> 

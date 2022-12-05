@@ -30,7 +30,7 @@
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
     <link href="../css/bootstrap.min.{$cssBootstrapMinCss}.css" rel="stylesheet" type="text/css">
     <link href="../css/font-awesome.min.{$cssFontAwesomeCss}.css" rel="stylesheet" type="text/css">
-    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.{$fontawesomemin}.css"><![endif]-->
     <link href="../css/font-entypo.{$cssFontEntypoCss}.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
@@ -60,7 +60,7 @@
     <link href='../plugins/fullcalendar-2.3.1/fullcalendar.print.{$pluginsFullcalendar231Print}.css' rel='stylesheet' media='print' />
     <!-- Theme CSS -->
     <link href="../css/theme.{$cssThemeCss}.css" rel="stylesheet" type="text/css">
-    <!--[if IE]> <link href="../css/ie.css" rel="stylesheet" > <![endif]-->
+    <!--[if IE]> <link href="../css/ie.{$cssIe0}.css" rel="stylesheet" > <![endif]-->
     <link href="../css/chrome.{$cssChromeCss}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
   
@@ -120,11 +120,7 @@
     <script type="text/javascript" src="../plugins/blockUI/jquery.blockUI.{$blocKUiCentreClient}.js"></script>
     <script type="text/javascript" src="../plugins/pnotify/js/jquery.pnotify.min.{$pnofyCentreClient}.js"></script>
 
-
-<?php
-  $theme = filemtime(PATH_ASSETS.'../js/theme.js');
-?> 
-    <script type="text/javascript" src="../js/theme.<?php echo $theme ?>.js"></script>
+    <script type="text/javascript" src="../js/theme.{$theme2}.js"></script>
 
     <script type="text/javascript" src="../js/theme.{$themeCentreClient}.js"></script>
     <script type="text/javascript" src="../custom/custom.{$custCustomCentreClient}.js"></script>

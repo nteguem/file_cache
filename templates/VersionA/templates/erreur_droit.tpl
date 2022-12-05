@@ -62,7 +62,7 @@
     <!-- Theme CSS -->
     <link href="css/theme.min.{$thErreurDroit}.css" rel="stylesheet" type="text/css">
     <!--[if IE]>
-    <link href="css/ie.css" rel="stylesheet"> <![endif]-->
+    <link href="css/ie.{$cssIe}.css" rel="stylesheet"> <![endif]-->
     <link href="css/chrome.{$chrErreurDroit}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->
 
 
@@ -86,8 +86,8 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="js/html5shiv.js"></script>
-    <script type="text/javascript" src="js/respond.min.js"></script>
+    <script type="text/javascript" src="js/html5shiv.{$html5shiv}.js"></script>
+    <script type="text/javascript" src="js/respond.min.{$respondMin}.js"></script>
     <![endif]-->
 
 </head>

@@ -30,7 +30,7 @@
     <!-- Bootstrap & FontAwesome & Entypo CSS -->
     <link href="css/bootstrap.min.{$cssBoostrapMinCss}.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.min.{$cssFontAwesomeMinCss}.css" rel="stylesheet" type="text/css">
-    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+    <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.{$fontawesomemin}.css"><![endif]-->
     <link href="css/font-entypo.{$cssFontEntypoCss}.css" rel="stylesheet" type="text/css">   
 
      <!-- Fonts CSS -->
@@ -56,7 +56,7 @@
 
     <!-- Theme CSS -->
     <link href="css/theme.min.{$cssThemeMinCss}.css" rel="stylesheet" type="text/css">
-    <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
+    <!--[if IE]> <link href="css/ie.{$cssIe}.css" rel="stylesheet" > <![endif]-->
     <link href="css/chrome.{$cssChromeCss}.css" rel="stylesheet" type="text/chrome"> <!-- chrome only css -->    
   
 
