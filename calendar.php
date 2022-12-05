@@ -38,29 +38,46 @@
     <link href="css/font-entypo.css" rel="stylesheet" type="text/css">
 
     <!-- Fonts CSS -->
-    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+    <?php $fntCalendar = filemtime(PATH_ASSETS.'css/fonts.css') ?>
+    <link href="css/fonts.<?php echo $fntCalendar ?>.css" rel="stylesheet" type="text/css">
 
     <!-- Plugin CSS -->
-    <link href="plugins/jquery-ui/jquery-ui.custom.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.css" rel="stylesheet" type="text/css">
-    <link href="plugins/isotope/css/isotope.css" rel="stylesheet" type="text/css">
-    <link href="plugins/pnotify/css/jquery.pnotify.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="plugins/google-code-prettify/prettify.css" rel="stylesheet" type="text/css">
+    <?php $cmCalendar = filemtime(PATH_ASSETS.'plugins/jquery-ui/jquery-ui.custom.min.css') ?>
+    <link href="plugins/jquery-ui/jquery-ui.custom.min.<?php echo $cmCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $prCalendar = filemtime(PATH_ASSETS.'plugins/prettyPhoto-plugin/css/prettyPhoto.css') ?>
+    <link href="plugins/prettyPhoto-plugin/css/prettyPhoto.<?php echo $prCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $iciCalendar = filemtime(PATH_ASSETS.'plugins/isotope/css/isotope.css') ?>
+    <link href="plugins/isotope/css/isotope.<?php echo $iciCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $pnCalendar = filemtime(PATH_ASSETS.'plugins/pnotify/css/jquery.pnotify.css') ?>
+    <link href="plugins/pnotify/css/jquery.pnotify.<?php echo $pnCalendar ?>.css" media="screen" rel="stylesheet" type="text/css">
+    <?php $prprCalendar = filemtime(PATH_ASSETS.'plugins/google-code-prettify/prettify.css') ?>
+    <link href="plugins/google-code-prettify/prettify.<?php echo $prprCalendar ?>.css" rel="stylesheet" type="text/css">
 
 
-    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
-    <link href="plugins/tagsInput/jquery.tagsinput.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-switch/bootstrap-switch.css" rel="stylesheet" type="text/css">
-    <link href="plugins/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/colorpicker/css/colorpicker.css" rel="stylesheet" type="text/css">
+    <?php $mscCalendar = filemtime(PATH_ASSETS.'plugins/mCustomScrollbar/jquery.mCustomScrollbar.css') ?>
+    <link href="plugins/mCustomScrollbar/jquery.mCustomScrollbar.<?php echo $mscCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $tagsCalendar = filemtime(PATH_ASSETS.'plugins/tagsInput/jquery.tagsinput.css') ?>
+    <link href="plugins/tagsInput/jquery.tagsinput.<?php echo $tagsCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $swCalendar = filemtime(PATH_ASSETS.'plugins/bootstrap-switch/bootstrap-switch.css') ?>
+    <link href="plugins/bootstrap-switch/bootstrap-switch.<?php echo $swCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $bs3Calendar = filemtime(PATH_ASSETS.'plugins/daterangepicker/daterangepicker-bs3.css') ?>
+    <link href="plugins/daterangepicker/daterangepicker-bs3.<?php echo $bs3Calendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $tmCalendar = filemtime(PATH_ASSETS.'plugins/bootstrap-timepicker/bootstrap-timepicker.min.css') ?>
+    <link href="plugins/bootstrap-timepicker/bootstrap-timepicker.min.<?php echo $tmCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $clorCalendar = filemtime(PATH_ASSETS.'plugins/colorpicker/css/colorpicker.css') ?>
+    <link href="plugins/colorpicker/css/colorpicker.<?php echo $clorCalendar ?>.css" rel="stylesheet" type="text/css">
     <!-- Specific CSS -->
-    <link href="plugins/dataTables/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
-    <link href="plugins/dataTables/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+    <?php $dtCalendar = filemtime(PATH_ASSETS.'plugins/dataTables/css/jquery.dataTables.min.css') ?>
+    <link href="plugins/dataTables/css/jquery.dataTables.min.<?php echo $dtCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $bootpCalendar = filemtime(PATH_ASSETS.'plugins/dataTables/css/dataTables.bootstrap.css') ?>
+    <link href="plugins/dataTables/css/dataTables.bootstrap.<?php echo $bootpCalendar ?>.css" rel="stylesheet" type="text/css">
 
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet" type="text/css">
-    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.css" rel="stylesheet" type="text/css">
-    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet" type="text/css">
+    <?php $filUpCalendar = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/css/jquery.fileupload.css') ?>
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload.<?php echo $filUpCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $filUpUiCalendar = filemtime(PATH_ASSETS.'plugins/jquery-file-upload/css/jquery.fileupload-ui.css') ?>
+    <link href="plugins/jquery-file-upload/css/jquery.fileupload-ui.<?php echo $filUpUiCalendar ?>.css" rel="stylesheet" type="text/css">
+    <?php $wyCalendar = filemtime(PATH_ASSETS.'plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.css') ?>
+    <link href="plugins/bootstrap-wysiwyg/css/bootstrap-wysihtml5-0.0.2.<?php echo $wyCalendar ?>.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
     <?php $themeMinCss = filemtime(PATH_ASSETS.'css/theme.min.css') ?>
