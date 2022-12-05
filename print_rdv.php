@@ -429,7 +429,8 @@ if ($hasTemplate) {
     <link href='plugins/fullcalendar-2.3.1/fullcalendar.print.<?php echo $fullCalenderPrintPrintRdv ?>.css' rel='stylesheet' media='print' />
 
     <!-- Theme CSS -->
-    <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <?php $themeNN = filemtime(PATH_ASSETS.'css/theme.css'); ?>
+    <link href="css/theme.<?php echo $themeNN ?>.css" rel="stylesheet" type="text/css">
     <!--[if IE]> <link href="css/ie.css" rel="stylesheet" > <![endif]-->
     <?php $chromePrintRdv = filemtime(PATH_ASSETS.'css/chrome.css') ?>
     <link href="css/chrome.<?php echo $chromePrintRdv ?>.css" rel="stylesheet" type="text/chrome">
